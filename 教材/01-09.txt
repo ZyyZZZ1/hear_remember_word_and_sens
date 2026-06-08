@@ -1,0 +1,60 @@
+# 生词
+tres 三
+latinoamericano 拉丁美洲的；拉丁美洲人
+América 美洲
+Latinoamérica 拉丁美洲
+latín 拉丁语
+argentino 阿根廷的；阿根廷人
+Cuba 古巴
+Buenas tardes 下午好
+tarde 下午，午后
+a （人称前置词）
+presentar 介绍，引见
+le 您/他/她（与格代词）向这个人.+动词
+también 也，同样
+hispanohablante 西班牙语母语者
+pero 但是，可是
+
+# 例句
+Buenas tardes, profesor Ramírez. 下午好，拉米雷斯老师。
+¿Cómo estás? 你好吗？
+Bien, gracias. 很好，谢谢。
+Le presento a mis amigos: Carmen y Fernando. 我向您介绍我的朋友：卡门和费尔南多。
+Mucho gusto. 很高兴认识你。
+Encantada. 很高兴认识你。
+¿De dónde son ustedes? 你们来自哪里？
+¿Son también mexicanos? 你们也是墨西哥人吗？
+No, Carmen es argentina y yo soy de Cuba. 不，卡门是阿根廷人，我来自古巴。
+Los tres somos latinoamericanos. 我们三人都是拉丁美洲人。
+Pero ahora estamos en China. 但是我们现在在中国。
+Estudiamos chino. 我们学习中文。
+Profesor, ¿es usted también latinoamericano? 老师，您也是拉丁美洲人吗？
+No, soy español. 不，我是西班牙人。
+Enseño nuestra lengua en una universidad de este país. 我在这个国家的一所大学里教授我们的语言。
+Pero también enseño chino a los hispanohablantes. 而且我也教西班牙语母语者中文。
+
+# 语法点
+## 前置词 a
+1. presentar + a + 人
+固定搭配 presentar a alguien 表示“介绍某人”。指人的名词作宾语时，前面必须加前置词 a 作为人称标记。
+对应例句：5
+
+2. enseñar + 内容 + a + 人
+双宾语固定结构 enseñar algo a alguien，意为“教某人某物”，动作对象前需使用前置词 a。
+对应例句：16
+
+## 固定句式 ser de + 地点/国家
+该结构用来表达“来自某地、是某国人”；询问籍贯常用 ¿De dónde eres? / ¿De dónde son ustedes?。
+对应例句：8、9
+
+## 与格代词 le
+代词 le 代指您/他/她，用作间接宾语，**必须放在变位动词之前**。
+对应例句：5
+
+## 副词 también
+意为“也、同样”，常规位置为主语之后、变位动词之前。
+对应例句：9、14、16
+
+## 连词 pero
+意为“但是、可是”，可置于句首或句中，后直接衔接句子，是常用转折连词。
+对应例句：12、16
