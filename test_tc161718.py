@@ -20,9 +20,12 @@ def test_tc16():
         runner.start()
         runner.select_textbook_and_wait_menu()
 
-        # 进入模式 3
+        # 进入模式 3（听写子菜单）
         runner.send("3")
         runner.wait_for_text("[听写模式]", timeout=5)
+        # 选择"听写单词"
+        runner.send("1")
+        time.sleep(0.3)
         runner.wait_for_text("当前单词：", timeout=5)
 
         # 读取当前单词
@@ -71,9 +74,12 @@ def test_tc17():
         runner.start()
         runner.select_textbook_and_wait_menu()
 
-        # 进入模式 3
+        # 进入模式 3（听写子菜单）
         runner.send("3")
         runner.wait_for_text("[听写模式]", timeout=5)
+        # 选择"听写单词"
+        runner.send("1")
+        time.sleep(0.3)
         runner.wait_for_text("当前单词：", timeout=5)
 
         output = runner.get_output()
@@ -135,7 +141,7 @@ def test_tc17():
 
 
 def test_tc18():
-    """TC-18: 连续两次拼写正确后不再出现"""
+    """TC-18: 一次拼写正确后不再出现（新规则：答对即过）"""
     results = []
     runner = ProgramRunner()
 
@@ -143,9 +149,12 @@ def test_tc18():
         runner.start()
         runner.select_textbook_and_wait_menu()
 
-        # 进入模式 3
+        # 进入模式 3（听写子菜单）
         runner.send("3")
         runner.wait_for_text("[听写模式]", timeout=5)
+        # 选择"听写单词"
+        runner.send("1")
+        time.sleep(0.3)
         runner.wait_for_text("当前单词：", timeout=5)
 
         output = runner.get_output()
@@ -156,38 +165,13 @@ def test_tc18():
         target = words[-1]
         results.append((f"目标单词 '{target}'", "TC-18 预期结果", "PASS"))
 
-        # 第一次正确拼写
+        # 正确拼写一次（答对即过，不排回队尾）
         runner.send(target)
         time.sleep(0.5)
         runner.wait_for_text("[OK]", timeout=5)
-        results.append((f"第1次正确拼写 '{target}'", "TC-18 预期结果：第一次后还会出现", "PASS"))
+        results.append((f"正确拼写 '{target}' 一次", "TC-18 预期结果：答对即过", "PASS"))
 
-        # 巩固轮：正确拼写后词排到队尾，需跳过其他词直到 target 再出现
-        time.sleep(0.3)
-        consolidation_found = False
-        for _ in range(20):
-            runner.wait_for_text("当前单词：", timeout=5)
-            time.sleep(0.2)
-            current_words = extract_words_from_output(runner.get_output())
-            if not current_words:
-                break
-            cw = current_words[-1]
-            if cw == target:
-                runner.send(target)
-                time.sleep(0.5)
-                runner.wait_for_text("[OK]", timeout=5)
-                consolidation_found = True
-                results.append((f"第2次正确拼写 '{target}'（巩固轮）",
-                                "TC-18 预期结果：第二次后不再出现", "PASS"))
-                break
-            else:
-                runner.send("S")
-                time.sleep(0.3)
-
-        if not consolidation_found:
-            results.append((f"巩固轮未等到 '{target}'", "TC-18 预期结果", "WARN"))
-
-        # 继续跳过后续所有词，统计 target 在 stdout 历史中总出现次数
+        # 继续跳过后续所有词，验证 target 不再出现
         for _ in range(20):
             runner.wait_for_text("当前单词：", timeout=3)
             current_words = extract_words_from_output(runner.get_output())
@@ -197,13 +181,13 @@ def test_tc18():
             time.sleep(0.3)
 
         total_count = runner.get_output().count(f"当前单词：{target}")
-        if total_count <= 2:
-            results.append((f"'{target}' 总出现次数={total_count}，<=2",
-                            "TC-18 预期结果：连续两次正确后不再出现", "PASS"))
+        if total_count <= 1:
+            results.append((f"'{target}' 总出现次数={total_count}，<=1",
+                            "TC-18 预期结果：一次正确后不再出现", "PASS"))
         else:
-            results.append((f"'{target}' 总出现次数={total_count}，>2",
-                            "TC-18 预期结果：连续两次正确后不再出现",
-                            f"FAIL 出现了超过 2 次"))
+            results.append((f"'{target}' 总出现次数={total_count}，>1",
+                            "TC-18 预期结果：一次正确后不再出现",
+                            f"FAIL 出现了超过 1 次"))
 
     finally:
         runner.stop()

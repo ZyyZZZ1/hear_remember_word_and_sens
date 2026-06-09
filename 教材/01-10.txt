@@ -1,0 +1,57 @@
+# 生词
+cuatro 四、4
+todo 全部的、全体的、整个的、所有的、一切的
+asignatura 课程、科目
+conversación 对话、交谈、谈话
+otro 另外的、别的、新的
+cosa 物、物品、东西
+trabajar 劳动、工作
+contento 高兴的、愉快的、满意的、满足的
+gramática 语法、文法
+Alemania 德国
+siempre 一直、总是、永远
+preguntar 问、询问、提问
+me 我（yo的宾格和与格，在句中用作直接宾语或间接宾语）
+hombre 男人、男性、男子、男的
+mujer 妇女、女人、女子、女性、女的
+lectura 读、念、朗读、阅读
+todos los días 每天、每一天、天天
+alemán 德语
+vario 多个、数个、若干、许多、好几个
+cada 每一个、每、每个、各、各个
+uno 一个人、某个人、任何人（有时用作讲话人自称）
+ocupado 忙的、繁忙的、忙碌的
+pues 那么、嗯（语气词，一般放在句首）
+cada uno 每个人、每人、大家、所有人
+encargar 委托、托付
+encargarse 负责、管理、照顾、掌管（+ de）
+
+# 例句
+Los cuatro somos amigos. 我们四个人是朋友。
+Ahora estamos en Alemania. 现在我们在德国。
+Estudiamos alemán. 我们学习德语。
+Tenemos muchas clases todos los días y estamos siempre muy ocupados, pero contentos. 我们每天有很多课，总是很忙碌，但很快乐。
+¿Me preguntas quién es nuestro profesor? 你问我我们的老师是谁？
+Pues tenemos varios: tres hombres y cuatro mujeres. 那么我们有好几个：三男四女。
+Cada uno se encarga de una asignatura: lectura, gramática, conversación y muchas otras cosas. 每个人负责一个科目：阅读、语法、会话和许多其他事情。
+Pues todos trabajan mucho. 大家都工作很多。
+
+# 语法点
+代词式动词 **encargarse de** —— 表示"负责、掌管"
+代词式动词 encargarse 后必须接介词 de 才能表示"负责某事、掌管某事"，这是本课最重要的固定搭配。
+例句：Cada uno se encarga de una asignatura.（每个人负责一个科目。）
+
+常用频率短语 **todos los días** —— 表示"每天"
+todos los días 是西班牙语中表示日常频率的核心短语，意为"每天、天天"，在句中作时间状语，通常放在句末。
+例句：Tenemos muchas clases todos los días.（我们每天有很多课。）
+
+不定代词短语 **cada uno** —— 表示"每个人"
+cada uno 意为"每个人、所有人"，作主语时谓语动词必须用单数形式。
+例句：Cada uno se encarga de una asignatura.（每个人负责一个科目。）
+
+形容词性数一致规则
+西班牙语形容词需要与所修饰的名词保持性和数的一致。例如：
+- 阳性单数：un profesor ocupado（一位忙碌的老师）
+- 阴性单数：una profesora ocupada（一位忙碌的女老师）
+- 阳性复数：tres profesores ocupados（三位忙碌的老师）
+- 阴性复数：cuatro profesoras ocupadas（四位忙碌的女老师）

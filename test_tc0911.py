@@ -20,12 +20,14 @@ def test_tc09():
         runner.start()
         runner.select_textbook_and_wait_menu()
 
-        # 进入模式 3
+        # 进入模式 3（听写子菜单）
         runner.send("3")
         runner.wait_for_text("[听写模式]", timeout=5)
+        # 选择"听写单词"
+        runner.send("1")
+        time.sleep(0.3)
 
         # 等待第一个单词出现
-        time.sleep(0.5)
         runner.wait_for_text("当前单词：", timeout=5)
         output = runner.get_output()
         words = extract_words_from_output(output)
@@ -101,9 +103,12 @@ def test_tc11():
         runner.start()
         runner.select_textbook_and_wait_menu()
 
-        # 进入模式 3
+        # 进入模式 3（听写子菜单）
         runner.send("3")
         runner.wait_for_text("[听写模式]", timeout=5)
+        # 选择"听写单词"
+        runner.send("1")
+        time.sleep(0.3)
         runner.wait_for_text("当前单词：", timeout=5)
 
         # 按 Q
