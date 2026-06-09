@@ -18,10 +18,30 @@ from collections import deque
 # -- 依赖检测 ----------------------------------------------
 HAS_TTS = False
 HAS_AUDIO = False
-TTS_VOICE_ES = None   # 西语语音
-TTS_VOICE_ZH = None   # 中文语音
+TTS_VOICE_ES = None   # 西语语音（SAPI fallback）
+TTS_VOICE_ZH = None   # 中文语音（SAPI）
 TTS_LOCK = threading.Lock()
+PIPER_VOICE_ES = None  # Piper 西语模型（优先使用）
+PIPER_MODEL_DIR = os.path.join(os.path.dirname(__file__), "piper_models")
 
+# --- Piper TTS（本地神经网络，自然度优于 SAPI）---
+try:
+    import numpy as np
+    from piper.voice import PiperVoice
+    _piper_model = os.path.join(PIPER_MODEL_DIR, "es_ES-carlfm-x_low.onnx")
+    _piper_config = os.path.join(PIPER_MODEL_DIR, "es_ES-carlfm-x_low.onnx.json")
+    if os.path.exists(_piper_model) and os.path.exists(_piper_config):
+        PIPER_VOICE_ES = PiperVoice.load(_piper_model, config_path=_piper_config, use_cuda=False)
+        print(f"[TTS] Piper 西语语音：es_ES-carlfm-x_low", flush=True)
+        HAS_TTS = True
+    else:
+        print(f"[TTS] Piper 模型未下载，请运行 download_piper_model.py", flush=True)
+except ImportError:
+    print(f"[TTS] Piper 未安装，使用 SAPI 后备", flush=True)
+except Exception as e:
+    print(f"[TTS] Piper 加载失败：{e}", flush=True)
+
+# --- SAPI TTS（后备方案，中文语音）---
 try:
     import win32com.client
     _sapi = win32com.client.Dispatch("SAPI.SpVoice")
@@ -30,18 +50,18 @@ try:
         v = _voices.Item(i)
         name = v.GetDescription()
         lang = v.GetAttribute("Language")
-        if "sabina" in name.lower() or "español" in name.lower():
-            TTS_VOICE_ES = v
-            print(f"[TTS] 西语语音：{name}", flush=True)
-        elif "huihui" in name.lower() or (lang and "804" in str(lang)):
+        if "huihui" in name.lower() or (lang and "804" in str(lang)):
             TTS_VOICE_ZH = v
             print(f"[TTS] 中文语音：{name}", flush=True)
-    if TTS_VOICE_ES is None and _voices.Count > 0:
+        elif PIPER_VOICE_ES is None and ("sabina" in name.lower() or "español" in name.lower()):
+            TTS_VOICE_ES = v
+            print(f"[TTS] 西语语音(SAPI)：{name}", flush=True)
+    if PIPER_VOICE_ES is None and TTS_VOICE_ES is None and _voices.Count > 0:
         TTS_VOICE_ES = _voices.Item(0)
-        print(f"[TTS] 西语使用默认语音：{TTS_VOICE_ES.GetDescription()}", flush=True)
+        print(f"[TTS] 西语使用默认语音(SAPI)：{TTS_VOICE_ES.GetDescription()}", flush=True)
     HAS_TTS = True
 except Exception as e:
-    print(f"[TTS] 初始化失败：{e}", flush=True)
+    print(f"[TTS] SAPI 初始化失败：{e}", flush=True)
 
 try:
     import sounddevice as sd
@@ -247,7 +267,26 @@ def _tts_speak_with_voice(text, voice):
 
 
 def tts_speak(text):
-    """西语 TTS 朗读"""
+    """西语 TTS 朗读（优先 Piper，回退 SAPI）"""
+    if PIPER_VOICE_ES:
+        try:
+            with TTS_LOCK:
+                audio = b""
+                for chunk in PIPER_VOICE_ES.synthesize_stream_raw(text):
+                    audio += chunk
+                if HAS_AUDIO and audio:
+                    import io
+                    import wave
+                    import sounddevice as sd
+                    audio_np = np.frombuffer(audio, dtype=np.int16).astype(np.float32) / 32767.0
+                    sd.play(audio_np, samplerate=22050)
+                    sd.wait()
+        except Exception as e:
+            print(f"[TTS Piper] 朗读失败：{e}", flush=True)
+            # fall through to SAPI
+        else:
+            return
+    # SAPI fallback
     if not TTS_VOICE_ES:
         return
     _tts_speak_with_voice(text, TTS_VOICE_ES)
@@ -256,17 +295,15 @@ def tts_speak(text):
 def tts_speak_zh(text):
     """中文 TTS 朗读"""
     if not TTS_VOICE_ZH:
-        # 无中文语音时静默跳过（模式 2 屏幕已有中文显示）
         return
     _tts_speak_with_voice(text, TTS_VOICE_ZH)
 
 
 def tts_speak_async(text):
     """西语 TTS 朗读（后台线程）"""
-    if not TTS_VOICE_ES:
-        return
-    t = threading.Thread(target=tts_speak, args=(text,), daemon=True)
-    t.start()
+    if PIPER_VOICE_ES or TTS_VOICE_ES:
+        t = threading.Thread(target=tts_speak, args=(text,), daemon=True)
+        t.start()
 
 
 def tts_speak_zh_async(text):
@@ -619,6 +656,7 @@ def _run_one_group_es_to_zh(groups, gi, kind):
 
         print(f"\n  [答案] {es_text} → {zh_text}\n")
         sys.stdout.flush()
+        tts_speak_zh(zh_text)  # 单词用中文语音读出中文释义
 
         # ── 决策 ──
         result = _decision_pnbr(gs, es_text)
@@ -702,6 +740,10 @@ def _decision_pnbr(gs, es_text):
                 # N → continue loop, go further back
         elif choice == "Q":
             return "quit"
+        else:
+            # 按 Enter 或其他键默认 = N（保留稍后）
+            gs.keep_current()
+            return None
 
 
 def mode_2_listen_zh_say_es():
@@ -827,12 +869,13 @@ def _run_es_to_zh_item(item, pq):
     judge = wait_key("  答对了吗？[Y=对 / N=错 / S=别再问我 / Q=退出] > ")
     if judge == "Q":
         return "quit"
-    elif judge == "N":
-        pq.mark_wrong(item)
     elif judge == "S":
         pq.mark_skip(item)
-    else:
+    elif judge == "Y":
         pq.mark_correct(item)
+    else:
+        # 按 Enter 或任意键默认 = 错，必须明确按 Y 才算对
+        pq.mark_wrong(item)
     print(f"  剩余：{pq.remaining} 题\n")
     sys.stdout.flush()
 
@@ -888,12 +931,13 @@ def _run_zh_to_es_item(item, pq):
     judge = wait_key("  答对了吗？[Y=对 / N=错 / S=别再问我 / Q=退出] > ")
     if judge == "Q":
         return "quit"
-    elif judge == "N":
-        pq.mark_wrong(item)
     elif judge == "S":
         pq.mark_skip(item)
-    else:
+    elif judge == "Y":
         pq.mark_correct(item)
+    else:
+        # 按 Enter 或任意键默认 = 错，必须明确按 Y 才算对
+        pq.mark_wrong(item)
     print(f"  剩余：{pq.remaining} 题\n")
     sys.stdout.flush()
 

@@ -3,3 +3,4 @@ __pycache__/
 *.pyo
 test_report.md
 tasks/
+piper_models/
