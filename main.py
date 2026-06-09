@@ -271,15 +271,15 @@ def tts_speak(text):
     if PIPER_VOICE_ES:
         try:
             with TTS_LOCK:
-                audio = b""
-                for chunk in PIPER_VOICE_ES.synthesize_stream_raw(text):
-                    audio += chunk
-                if HAS_AUDIO and audio:
-                    import io
-                    import wave
-                    import sounddevice as sd
+                chunks = []
+                sr = 16000
+                for chunk in PIPER_VOICE_ES.synthesize(text):
+                    chunks.append(chunk.audio_int16_bytes)
+                    sr = chunk.sample_rate
+                if chunks and HAS_AUDIO:
+                    audio = b"".join(chunks)
                     audio_np = np.frombuffer(audio, dtype=np.int16).astype(np.float32) / 32767.0
-                    sd.play(audio_np, samplerate=22050)
+                    sd.play(audio_np, samplerate=sr)
                     sd.wait()
         except Exception as e:
             print(f"[TTS Piper] 朗读失败：{e}", flush=True)

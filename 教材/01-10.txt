@@ -30,7 +30,7 @@ encargarse 负责、管理、照顾、掌管（+ de）
 Los cuatro somos amigos. 我们四个人是朋友。
 Ahora estamos en Alemania. 现在我们在德国。
 Estudiamos alemán. 我们学习德语。
-Tenemos muchas clases todos los días y estamos siempre muy ocupados, pero contentos. 我们每天有很多课，总是很忙碌，但很快乐。
+Tenemos muchas clases todos los días, y estamos siempre muy ocupados, pero contentos. 我们每天有很多课，总是很忙碌，但很快乐。
 ¿Me preguntas quién es nuestro profesor? 你问我我们的老师是谁？
 Pues tenemos varios: tres hombres y cuatro mujeres. 那么我们有好几个：三男四女。
 Cada uno se encarga de una asignatura: lectura, gramática, conversación y muchas otras cosas. 每个人负责一个科目：阅读、语法、会话和许多其他事情。
