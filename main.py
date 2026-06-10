@@ -13,6 +13,7 @@ import threading
 import random
 import difflib
 import msvcrt
+import re
 from collections import deque
 
 # -- 依赖检测 ----------------------------------------------
@@ -21,20 +22,33 @@ HAS_AUDIO = False
 TTS_VOICE_ES = None   # 西语语音（SAPI fallback）
 TTS_VOICE_ZH = None   # 中文语音（SAPI）
 TTS_LOCK = threading.Lock()
-PIPER_VOICE_ES = None  # Piper 西语模型（优先使用）
+PIPER_VOICES = []      # Piper 西语模型池（随机抽签）
 PIPER_MODEL_DIR = os.path.join(os.path.dirname(__file__), "piper_models")
+
+# 所有可用的 Piper 西班牙语模型
+_PIPER_MODEL_NAMES = [
+    "es_ES-davefx-medium",
+    "es_ES-sharvard-medium",
+    "es_MX-claude-high",
+    "es_AR-daniela-high",
+]
 
 # --- Piper TTS（本地神经网络，自然度优于 SAPI）---
 try:
     import numpy as np
     from piper.voice import PiperVoice
-    _piper_model = os.path.join(PIPER_MODEL_DIR, "es_ES-carlfm-x_low.onnx")
-    _piper_config = os.path.join(PIPER_MODEL_DIR, "es_ES-carlfm-x_low.onnx.json")
-    if os.path.exists(_piper_model) and os.path.exists(_piper_config):
-        PIPER_VOICE_ES = PiperVoice.load(_piper_model, config_path=_piper_config, use_cuda=False)
-        print(f"[TTS] Piper 西语语音：es_ES-carlfm-x_low", flush=True)
-        HAS_TTS = True
-    else:
+    for name in _PIPER_MODEL_NAMES:
+        model_path = os.path.join(PIPER_MODEL_DIR, f"{name}.onnx")
+        config_path = os.path.join(PIPER_MODEL_DIR, f"{name}.onnx.json")
+        if os.path.exists(model_path) and os.path.exists(config_path):
+            try:
+                voice = PiperVoice.load(model_path, config_path=config_path, use_cuda=False)
+                PIPER_VOICES.append(voice)
+                print(f"[TTS] Piper 西语语音已加载：{name}", flush=True)
+                HAS_TTS = True
+            except Exception as e:
+                print(f"[TTS] Piper {name} 加载失败：{e}", flush=True)
+    if not PIPER_VOICES:
         print(f"[TTS] Piper 模型未下载，请运行 download_piper_model.py", flush=True)
 except ImportError:
     print(f"[TTS] Piper 未安装，使用 SAPI 后备", flush=True)
@@ -53,10 +67,10 @@ try:
         if "huihui" in name.lower() or (lang and "804" in str(lang)):
             TTS_VOICE_ZH = v
             print(f"[TTS] 中文语音：{name}", flush=True)
-        elif PIPER_VOICE_ES is None and ("sabina" in name.lower() or "español" in name.lower()):
+        elif not PIPER_VOICES and ("sabina" in name.lower() or "español" in name.lower()):
             TTS_VOICE_ES = v
             print(f"[TTS] 西语语音(SAPI)：{name}", flush=True)
-    if PIPER_VOICE_ES is None and TTS_VOICE_ES is None and _voices.Count > 0:
+    if not PIPER_VOICES and TTS_VOICE_ES is None and _voices.Count > 0:
         TTS_VOICE_ES = _voices.Item(0)
         print(f"[TTS] 西语使用默认语音(SAPI)：{TTS_VOICE_ES.GetDescription()}", flush=True)
     HAS_TTS = True
@@ -117,10 +131,15 @@ def parse_textbook(filepath):
             continue  # 注释行跳过
 
         if section == "vocab":
-            # 格式：西语 中文（第一个空格分隔）
-            parts = line.split(None, 1)
-            if len(parts) == 2:
-                result["vocab"].append({"es": parts[0], "zh": parts[1]})
+            # 格式：西语 中文 —— 以第一个非拉丁/空格字符为界（支持多词短语）
+            m = re.match(r'^([a-záéíóúüñA-ZÁÉÍÓÚÜÑ\s]+?)\s*([^a-záéíóúüñA-ZÁÉÍÓÚÜÑ\s].*)$', line)
+            if m:
+                result["vocab"].append({"es": m.group(1).strip(), "zh": m.group(2).strip()})
+            else:
+                # fallback：按第一个空格分
+                parts = line.split(None, 1)
+                if len(parts) == 2:
+                    result["vocab"].append({"es": parts[0], "zh": parts[1]})
 
         elif section == "sentence":
             # 格式：西语句子 中文翻译
@@ -267,13 +286,14 @@ def _tts_speak_with_voice(text, voice):
 
 
 def tts_speak(text):
-    """西语 TTS 朗读（优先 Piper，回退 SAPI）"""
-    if PIPER_VOICE_ES:
+    """西语 TTS 朗读（随机抽 Piper 模型，回退 SAPI）"""
+    if PIPER_VOICES:
+        voice = random.choice(PIPER_VOICES)
         try:
             with TTS_LOCK:
                 chunks = []
                 sr = 16000
-                for chunk in PIPER_VOICE_ES.synthesize(text):
+                for chunk in voice.synthesize(text):
                     chunks.append(chunk.audio_int16_bytes)
                     sr = chunk.sample_rate
                 if chunks and HAS_AUDIO:
@@ -292,16 +312,60 @@ def tts_speak(text):
     _tts_speak_with_voice(text, TTS_VOICE_ES)
 
 
+# 持久化 SAPI 中文语音对象（用于打断）
+_SP_ZH = None
+
 def tts_speak_zh(text):
-    """中文 TTS 朗读"""
+    """中文 TTS 朗读（可打断）"""
+    global _SP_ZH
     if not TTS_VOICE_ZH:
         return
-    _tts_speak_with_voice(text, TTS_VOICE_ZH)
+    try:
+        import pythoncom
+        pythoncom.CoInitialize()
+    except Exception:
+        pass
+    try:
+        if _SP_ZH is None:
+            _SP_ZH = win32com.client.Dispatch("SAPI.SpVoice")
+            _SP_ZH.Voice = TTS_VOICE_ZH
+            _SP_ZH.Rate = 1
+            _SP_ZH.Volume = 100
+        # 后台线程做同步朗读，主线程轮询打断
+        done = threading.Event()
+        def _speak():
+            try:
+                import pythoncom
+                pythoncom.CoInitialize()
+            except Exception:
+                pass
+            try:
+                sp_local = win32com.client.Dispatch("SAPI.SpVoice")
+                sp_local.Voice = TTS_VOICE_ZH
+                sp_local.Rate = 1
+                sp_local.Volume = 100
+                sp_local.Speak(text, 0)  # synchronous
+            except Exception:
+                pass
+            finally:
+                done.set()
+        t = threading.Thread(target=_speak, daemon=True)
+        t.start()
+        print("  （按任意键跳过中文朗读）", end="", flush=True)
+        while not done.is_set():
+            if msvcrt.kbhit():
+                msvcrt.getch()
+                _SP_ZH.Speak("", 3)  # purge all SAPI speech
+                break
+            time.sleep(0.1)
+        print("\r" + " " * 36 + "\r", end="", flush=True)
+    except Exception:
+        pass
 
 
 def tts_speak_async(text):
     """西语 TTS 朗读（后台线程）"""
-    if PIPER_VOICE_ES or TTS_VOICE_ES:
+    if PIPER_VOICES or TTS_VOICE_ES:
         t = threading.Thread(target=tts_speak, args=(text,), daemon=True)
         t.start()
 
@@ -1022,7 +1086,6 @@ def _mode_dictation_words():
 
 def _normalize_sentence(text):
     """规范化句子用于比较：去掉所有标点、统一大小写、合并空白"""
-    import re
     cleaned = text.strip()
     # 去掉所有标点符号（保留字母、数字、空格）
     cleaned = re.sub(r'[.,:;!?¿¡\-—"\'«»()]', '', cleaned)

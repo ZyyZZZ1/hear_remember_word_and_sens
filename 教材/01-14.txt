@@ -1,0 +1,68 @@
+# 生词
+madre 母亲、妈妈
+menor 更小的、更少的、较小的、较少的
+ya 已经
+inglés 英文、英语
+uno 一、1
+mayor 年长的、年纪大的、年迈的、上了年纪的、老的
+temprano 早的、早
+bañarse 洗澡、沐浴
+secundaria 中学
+diente 牙、齿、牙齿
+peinarse 梳头
+después de （表示时间）在……之后
+cepillarse 刷、刷洗
+desayunar 吃早餐、吃早点、吃早饭
+llevar 带上、带去、送去、送到、送
+primero 首先
+escuela 学校、小学
+luego 即刻、立即、马上
+tomar 搭乘（常见搭配：el avión、el barco、el tren、el autobús）
+autobús 公共汽车、公交汽车、公交车、巴士、大巴、公共巴士、公交巴士（常见搭配：coger、tomar、subirse）
+para [表示目的]为了
+centro 中心
+estudio 学习
+por la mañana 在早晨、在早上、在上午
+por la tarde 在下午、在午后
+por eso 因此、所以、这就是为什么
+regresar 回、返回、回来、回去
+tarde 晚、迟
+
+# 例句
+Su madre es profesora. Enseña inglés en un colegio. 他的母亲是一名教师，她在一所学校教英语。
+Son menores que él. 他们比他年纪小。
+Los abuelos, ya muy mayores, no trabajan. 祖父母年纪已经很大了，不再工作。
+Todos los días se levanta muy temprano. 他每天都起得很早。
+Se baña, se cepilla los dientes y se peina. 他洗澡、刷牙然后梳头。
+Juan estudia bachillerato (la secundaria). 胡安在读高中（中学）。
+Después de desayunar, primero lleva a sus hermanos al colegio (la escuela) y luego toma un autobús para ir al instituto (a su centro de estudios). 吃完早饭后，他先送弟弟妹妹去学校，接着乘坐公交车去往学院（他的学习中心）。
+Por la mañana tiene cuatro clases y por la tarde, también cuatro. 他上午有四节课，下午也有四节课。
+Todo el día está muy ocupado, por eso regresa a casa muy tarde. 他一整天都很忙，所以很晚才回到家。
+
+# 语法点
+代词式动词bañarse —— 表示自主进行“洗澡”这个动作，代词式动词需搭配自复代词使用
+例句：Se baña, se cepilla los dientes y se peina.
+
+代词式动词cepillarse —— 表“刷洗”，后可直接接宾语dientes，表达刷牙的含义
+例句：Se baña, se cepilla los dientes y se peina.
+
+代词式动词peinarse —— 指代“（自己）梳头”，为常用日常自复动作动词
+例句：Se baña, se cepilla los dientes y se peina.
+
+短语después de —— 后可接动词原形，表达“在做完某事之后”
+例句：Después de desayunar, primero lleva a sus hermanos al colegio (la escuela) y luego toma un autobús para ir al instituto (a su centro de estudios).
+
+动词搭配tomar + 交通工具 —— tomar后接autobús等交通工具名词，固定表示“搭乘交通工具”
+例句：Después de desayunar, primero lleva a sus hermanos al colegio (la escuela) y luego toma un autobús para ir al instituto (a su centro de estudios).
+
+介词para表目的 —— 置于动词前，用来引出动作所要达成的目的
+例句：Después de desayunar, primero lleva a sus hermanos al colegio (la escuela) y luego toma un autobús para ir al instituto (a su centro de estudios).
+
+时间短语por la mañana / por la tarde —— 固定搭配，分别表示“在上午、在下午”，用于描述时段活动
+例句：Por la mañana tiene cuatro clases y por la tarde, también cuatro.
+
+连接短语por eso —— 用于句中衔接因果关系，意为“因此、所以”
+例句：Todo el día está muy ocupado, por eso regresa a casa muy tarde.
+
+形容词比较级menor que —— menor作形容词，搭配que用于两者对比，表“比……年纪更小”
+例句：Son menores que él.
