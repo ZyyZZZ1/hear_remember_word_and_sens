@@ -836,45 +836,119 @@ def mode_2_listen_zh_say_es():
 
 
 def _mode_zh_to_es_words():
-    """听中文说西语——单词池，5个一组"""
-    items = [{"type": "word", "es": v["es"], "zh": v["zh"]} for v in TEXTBOOK["vocab"]]
+    """听中文说西语——单词池，组菜单 + GroupSession"""
+    items = [{"es": v["es"], "zh": v["zh"]} for v in TEXTBOOK["vocab"]]
     groups = [items[i:i + GROUP_SIZE] for i in range(0, len(items), GROUP_SIZE)]
-    for gi, group in enumerate(groups, 1):
-        print(f"\n[模式2-单词] 第 {gi}/{len(groups)} 组 — S=跳过  R=重听  Q=退出\n")
-        sys.stdout.flush()
-        pq = PracticeQueue(group)
-        while not pq.empty:
-            item = pq.next()
-            result = _run_zh_to_es_item(item, pq)
-            if result == "quit":
-                return
-        print(f"-- 第 {gi} 组通关！--\n")
-        sys.stdout.flush()
-        time.sleep(0.5)
-    print("-- 全部单词通关！--\n")
-    sys.stdout.flush()
-    time.sleep(0.5)
+    _run_group_menu_zh_to_es("单词", groups)
 
 
 def _mode_zh_to_es_sentences():
-    """听中文说西语——句子池，5句一组"""
-    items = [{"type": "sentence", "es": s["es"], "zh": s["zh"]} for s in TEXTBOOK["sentences"]]
+    """听中文说西语——句子池，组菜单 + GroupSession"""
+    items = [{"es": s["es"], "zh": s["zh"]} for s in TEXTBOOK["sentences"]]
     groups = [items[i:i + GROUP_SIZE] for i in range(0, len(items), GROUP_SIZE)]
-    for gi, group in enumerate(groups, 1):
-        print(f"\n[模式2-句子] 第 {gi}/{len(groups)} 组 — S=跳过  R=重听  Q=退出\n")
+    _run_group_menu_zh_to_es("句子", groups)
+
+
+def _run_group_menu_zh_to_es(kind, groups):
+    """组菜单：列出每组词/句，用户选组进入练习"""
+    while True:
+        print()
+        print("=" * 36)
+        print(f"          [模式2-{kind}] 共 {len(groups)} 组")
+        print("=" * 36)
+        for gi, group in enumerate(groups, 1):
+            words = ", ".join(item["es"] for item in group)
+            print(f"  [{gi}] 第 {gi} 组：{words}")
+        print("  [B] 返回")
+        print("=" * 36)
         sys.stdout.flush()
-        pq = PracticeQueue(group)
-        while not pq.empty:
-            item = pq.next()
-            result = _run_zh_to_es_item(item, pq)
-            if result == "quit":
-                return
-        print(f"-- 第 {gi} 组通关！--\n")
+
+        choice = wait_key("请选择 > ")
+        if choice == "B":
+            return
+        try:
+            gi = int(choice) - 1
+            if 0 <= gi < len(groups):
+                _run_one_group_zh_to_es(groups, gi, kind)
+        except ValueError:
+            print("  无效选项，请重新选择。")
+            sys.stdout.flush()
+
+
+def _run_one_group_zh_to_es(groups, gi, kind):
+    """单组练习（模式2）：GroupSession 驱动"""
+    group = groups[gi]
+    total_groups = len(groups)
+    gs = GroupSession(group)
+
+    while not gs.all_passed:
+        item = gs.current
+        es_text = item["es"]
+        zh_text = item["zh"]
+        passed_info = f"  ✓{gs.passed_count}/{gs.total}" if gs.passed_count > 0 else ""
+
+        # ── 展示中文 ──
+        print(f"\n{'─' * 36}")
+        print(f"  第 {gi+1}/{total_groups} 组 · 第 {gs.current_index}/{gs.total} 词  {passed_info}")
+        print(f"{'─' * 36}")
+        print(f"\n  {zh_text}\n")
         sys.stdout.flush()
-        time.sleep(0.5)
-    print("-- 全部句子通关！--\n")
+
+        # ── TTS 中文朗读（可打断）──
+        tts_speak_zh(zh_text)
+
+        # ── 录音：用户说西语 ──
+        qq = _record_phase_zh(zh_text)
+        if qq == "quit":
+            return
+
+        # ── 回放 + 原音对比 + 答案 ──
+        stop_and_playback()
+        print("  -- 原音对比 --")
+        sys.stdout.flush()
+        tts_speak(es_text)
+
+        print(f"\n  [答案] {zh_text} → {es_text}\n")
+        sys.stdout.flush()
+
+        # ── 决策 ──
+        result = _decision_pnbr(gs, es_text)
+        if result == "quit":
+            return
+
+    print(f"\n-- 第 {gi+1} 组通关！--")
     sys.stdout.flush()
     time.sleep(0.5)
+
+    if gi + 1 < total_groups:
+        nxt = wait_key(f"  [Enter] 继续第 {gi+2} 组  [B] 回组菜单  [Q] 退出 > ")
+        if nxt == "Q":
+            return
+        if nxt != "B":
+            _run_one_group_zh_to_es(groups, gi + 1, kind)
+
+
+def _record_phase_zh(zh_text):
+    """录音阶段（模式2）：听中文 → 说西语。支持 R 重听中文、Q 退出。"""
+    print("  请说出对应的西语，说完按 Enter…")
+    sys.stdout.flush()
+    start_recording()
+    user_input = wait_line("  > ")
+    cmd = user_input.strip().upper() if user_input else ""
+
+    if cmd == "Q":
+        stop_and_playback()
+        return "quit"
+    if cmd == "R":
+        stop_and_playback()
+        tts_speak_zh(zh_text)
+        start_recording()
+        user_input = wait_line("  > ")
+        cmd = user_input.strip().upper() if user_input else ""
+        if cmd == "Q":
+            stop_and_playback()
+            return "quit"
+    return None
 
 
 def _run_es_to_zh_item(item, pq):

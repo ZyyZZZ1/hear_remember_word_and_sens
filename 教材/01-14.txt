@@ -27,6 +27,7 @@ por la tarde 在下午、在午后
 por eso 因此、所以、这就是为什么
 regresar 回、返回、回来、回去
 tarde 晚、迟
+abuelos 祖父母
 
 # 例句
 Su madre es profesora. Enseña inglés en un colegio. 他的母亲是一名教师，她在一所学校教英语。
