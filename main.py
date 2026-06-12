@@ -1138,7 +1138,7 @@ def _mode_dictation_words():
                 sys.stdout.flush()
                 continue
 
-            if cmd.strip() == es_text:
+            if cmd.strip().lower() == es_text.lower():
                 pq.mark_correct()
                 print(f"[OK] 正确！")
                 print(f"  剩余：{pq.remaining} 题\n")
@@ -1401,7 +1401,7 @@ def mode_5_mixed():
                 if is_sentence:
                     correct = _normalize_sentence(cmd) == _normalize_sentence(es_text)
                 else:
-                    correct = cmd == es_text
+                    correct = cmd.strip().lower() == es_text.lower()
 
                 if correct:
                     pq.mark_correct()
