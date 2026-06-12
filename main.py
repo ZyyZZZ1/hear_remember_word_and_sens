@@ -1097,7 +1097,9 @@ def mode_3_dictation():
 
         choice = wait_key("请选择 > ")
         if choice == "1":
-            _mode_dictation_words()
+            items = [{"es": v["es"], "zh": v["zh"]} for v in TEXTBOOK["vocab"]]
+            groups = [items[i:i + GROUP_SIZE] for i in range(0, len(items), GROUP_SIZE)]
+            _run_group_menu_dictation_word(groups)
         elif choice == "2":
             _mode_dictation_sentences()
         elif choice == "Q":
@@ -1107,55 +1109,86 @@ def mode_3_dictation():
             sys.stdout.flush()
 
 
-def _mode_dictation_words():
-    """听写单词：5个一组，程序念西语单词，用户键盘拼写，自动判罚"""
-    items = [{"es": v["es"], "zh": v["zh"]} for v in TEXTBOOK["vocab"]]
-    groups = [items[i:i + GROUP_SIZE] for i in range(0, len(items), GROUP_SIZE)]
-    for gi, group in enumerate(groups, 1):
-        print(f"\n[听写-单词] 第 {gi}/{len(groups)} 组 — 按S跳过 按Q返回")
-        print("-" * 36 + "\n")
+def _run_group_menu_dictation_word(groups):
+    """组菜单：列出每组单词，用户选组进入听写"""
+    while True:
+        print()
+        print("=" * 36)
+        print(f"          [听写-单词] 共 {len(groups)} 组")
+        print("=" * 36)
+        for gi, group in enumerate(groups, 1):
+            words = ", ".join(item["es"] for item in group)
+            print(f"  [{gi}] 第 {gi} 组：{words}")
+        print("  [B] 返回")
+        print("=" * 36)
         sys.stdout.flush()
 
-        pq = PracticeQueue(group)
-        while not pq.empty:
-            item = pq.next()
-            es_text = item["es"]
+        choice = wait_key("请选择 > ")
+        if choice == "B":
+            return
+        try:
+            gi = int(choice) - 1
+            if 0 <= gi < len(groups):
+                _run_one_group_dictation_word(groups, gi)
+        except ValueError:
+            print("  无效选项，请重新选择。")
+            sys.stdout.flush()
 
-            print(f"当前单词：{es_text}")
+
+def _run_one_group_dictation_word(groups, gi):
+    """单组单词听写：PracticeQueue 驱动"""
+    group = groups[gi]
+    total_groups = len(groups)
+
+    print(f"\n[听写-单词] 第 {gi+1}/{total_groups} 组 — 按S跳过 按Q返回")
+    print("-" * 36 + "\n")
+    sys.stdout.flush()
+
+    pq = PracticeQueue(group)
+    while not pq.empty:
+        item = pq.next()
+        es_text = item["es"]
+
+        print(f"当前单词：{es_text}")
+        sys.stdout.flush()
+        tts_speak_async(es_text)
+
+        user_input = wait_line("> ")
+        cmd = user_input.strip()
+
+        if cmd.upper() == "Q":
+            print()
+            sys.stdout.flush()
+            return
+        if cmd.upper() == "S":
+            pq.mark_skip()
+            print(f"  已跳过，剩余：{pq.remaining} 题\n")
+            sys.stdout.flush()
+            continue
+
+        if cmd.strip().lower() == es_text.lower():
+            pq.mark_correct()
+            print(f"[OK] 正确！")
+            print(f"  剩余：{pq.remaining} 题\n")
+            sys.stdout.flush()
+        else:
+            pq.mark_wrong()
+            print(f"[NG] 错误，正确拼写：{es_text}")
+            print(f"  剩余：{pq.remaining} 题\n")
             sys.stdout.flush()
             tts_speak_async(es_text)
 
-            user_input = wait_line("> ")
-            cmd = user_input.strip()
-
-            if cmd.upper() == "Q":
-                print()
-                sys.stdout.flush()
-                return
-            if cmd.upper() == "S":
-                pq.mark_skip()
-                print(f"  已跳过，剩余：{pq.remaining} 题\n")
-                sys.stdout.flush()
-                continue
-
-            if cmd.strip().lower() == es_text.lower():
-                pq.mark_correct()
-                print(f"[OK] 正确！")
-                print(f"  剩余：{pq.remaining} 题\n")
-                sys.stdout.flush()
-            else:
-                pq.mark_wrong()
-                print(f"[NG] 错误，正确拼写：{es_text}")
-                print(f"  剩余：{pq.remaining} 题\n")
-                sys.stdout.flush()
-                tts_speak_async(es_text)
-
-        print(f"-- 第 {gi} 组通关！--\n")
-        sys.stdout.flush()
-        time.sleep(0.5)
-    print("-- 全部单词通关！--\n")
+    print(f"-- 第 {gi+1} 组通关！--\n")
     sys.stdout.flush()
     time.sleep(0.5)
+
+    # 下一组？
+    if gi + 1 < total_groups:
+        nxt = wait_key(f"  [Enter] 继续第 {gi+2} 组  [B] 回组菜单  [Q] 退出 > ")
+        if nxt == "Q":
+            return
+        if nxt != "B":
+            _run_one_group_dictation_word(groups, gi + 1)
 
 
 def _normalize_sentence(text):
