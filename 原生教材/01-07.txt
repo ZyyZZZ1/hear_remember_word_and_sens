@@ -1,0 +1,111 @@
+在学习西班牙语的动词变位之前，我们已经在之前掌握了西班牙语中所有的主格人称代词，分别为：
+
+yo 我；tú 你；él 他； ella 她； usted 您； nosotros 我们； vosotros 你们； ellos他们； ellas她们； ustedes诸位
+
+西班牙语的动词要按照主语的人称、数、性进行动词变位，因此记忆时要和主语人称一起记忆。
+
+按照词尾特点，西班牙语的动词可分为规则动词和不规则动词，其中规则动词共有三组，具体的变化规则为：
+
+1. 第一组规则动词的特征：动词不定式以-ar结尾，如hablar, cantar，也有一些例外，比如contar是不规则动词。
+
+
+hablar - 说话
+主格人称代词（单数）	动词变位	主格人称代词（复数）	动词变位
+yo	hablo	nosotros / nosotras	hablamos
+tú	hablas	vosotros / vosotras	habláis
+él / ella / usted	habla	ellos/ellas/ustedes	hablan
+cantar - 唱
+主格人称代词（单数）	动词变位	主格人称代词（复数）	动词变位
+yo	canto	nosotros / nosotras	cantamos
+tú	cantas	vosotros / vosotras	cantáis
+él / ella / usted	canta	ellos/ellas/ustedes	cantan
+estudio - 学、学习
+主格人称代词（单数）	动词变位	主格人称代词（复数）	动词变位
+yo	estudio	nosotros / nosotras	estudiamos
+tú	estudias	vosotros / vosotras	estudiáis
+él / ella / usted	estudia	ellos/ellas/ustedes	estudian
+例句：
+
+Estudio mucho.  我学习很努力（字面意思为：我学习很多）。
+
+¿Qué estudias?  你是学什么的（用来询问对方的专业，字面意思为：你学什么）？
+
+Estudio español.  我是学西班牙语的。
+
+2. 第二组规则动词的特征：动词不定式以-er结尾，如comer，beber，也有一些例外，比如soler是不规则动词。
+
+
+comer - 吃
+主格人称代词（单数）	动词变位	主格人称代词（复数）	动词变位
+yo	como	nosotros / nosotras	comemos
+tú	comes	vosotros / vosotras	coméis
+él / ella / usted	come	ellos/ellas/ustedes	comen
+beber - 喝
+主格人称代词（单数）	动词变位	主格人称代词（复数）	动词变位
+yo	bebo	nosotros / nosotras	bebemos
+tú	bebes	vosotros / vosotras	bebéis
+él / ella / usted	bebe	ellos/ellas/ustedes	beben
+3. 第三组规则动词的特征：动词不定式以-ir结尾，如cumplir, subir，也有一些例外，比如ir是不规则动词。
+
+
+cumplir - 完成
+主格人称代词（单数）	动词变位	主格人称代词（复数）	动词变位
+yo	cumplo	nosotros / nosotras	cumplimos
+tú	cumples	vosotros / vosotras	cumplís
+él / ella / usted	cumple	ellos/ellas/ustedes	cumplen
+subir - 上升
+主格人称代词（单数）	动词变位	主格人称代词（复数）	动词变位
+yo	subo	nosotros / nosotras	subimos
+tú	subes	vosotros / vosotras	subís
+él / ella / usted	sube	ellos/ellas/ustedes	suben
+4. 还有很多动词是不规则的，常用的有ser, estar, tener, poder, poner。下面是这些单词的动词变位表，请大家牢记：
+
+
+ser - 是
+主格人称代词（单数）	动词变位	主格人称代词（复数）	动词变位
+yo	soy	nosotros / nosotras	somos
+tú	eres	vosotros / vosotras	sois
+él / ella / usted	es	ellos/ellas/ustedes	son
+estar - 处于、处在
+主格人称代词（单数）	动词变位	主格人称代词（复数）	动词变位
+yo	estoy	nosotros / nosotras	estamos
+tú	estás	vosotros / vosotras	estáis
+él / ella / usted	está	ellos/ellas/ustedes	están
+tener - 有
+主格人称代词（单数）	动词变位	主格人称代词（复数）	动词变位
+yo	tengo	nosotros / nosotras	tenemos
+tú	tienes	vosotros / vosotras	tenéis
+él / ella / usted	tiene	ellos/ellas/ustedes	tienen
+poder - 能够
+主格人称代词（单数）	动词变位	主格人称代词（复数）	动词变位
+yo	puedo	nosotros / nosotras	podemos
+tú	puedes	vosotros / vosotras	podéis
+él / ella / usted	puede	ellos/ellas/ustedes	pueden
+poner - 放
+主格人称代词（单数）	动词变位	主格人称代词（复数）	动词变位
+yo	pongo	nosotros / nosotras	ponemos
+tú	pones	vosotros / vosotras	ponéis
+él / ella / usted	pone	ellos/ellas/ustedes	ponen
+venir - 来
+主格人称代词（单数）	动词变位	主格人称代词（复数）	动词变位
+yo	vengo	nosotros / nosotras	venimos
+tú	vienes	vosotros / vosotras	venís
+él / ella / usted	viene	ellos/ellas/ustedes	vienen
+ir - 去
+主格人称代词（单数）	动词变位	主格人称代词（复数）	动词变位
+yo	voy	nosotros / nosotras	vamos
+tú	vas	vosotros / vosotras	vais
+él / ella / usted	va	ellos/ellas/ustedes	van
+tener是及物动词，后面一般跟直接宾语。例如：
+
+Yo tengo clase de español.  我有西语课。
+
+¿Tienes novio?  你有男朋友吗？
+
+Sí, tengo novio.  是的，我有男朋友。
+
+No, no tengo novio.  不，我没有男朋友。
+
+¿Qué tienes en la mano?  你的手里有什么？
+
+Tengo un libro en la mano.  我手里有一本书。

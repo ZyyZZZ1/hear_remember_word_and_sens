@@ -1,0 +1,79 @@
+1. 形容词有阳性和阴性的变化。作为名词的修饰语，它必须与名词保持阴阳性的一致。
+
+(1) 以“o” 结尾的形容词在修饰阳性名词时，词尾保持不变。在修饰阴性名词时，词尾变为“a”。
+
+
+名词词性	形容词词尾
+阳性	o → o
+阴性	o → a
+例句：
+
+Mucho gusto.  很高兴认识你。
+
+Tengo un amigo peruano.  我有一个秘鲁朋友。
+
+Vive ahí toda su familia.  他全家都住在那里。
+
+Tomás vive en una casa pequeña.  托马斯住在一间小房子里。
+
+(2) 以“e”结尾的形容词没有词尾变化。
+
+
+名词词性	形容词词尾
+阳性	-e
+阴性	-e
+例句：
+
+Estudiamos en un instituto muy grande.  我们在一个很大的学院学习。
+
+¿Es su colegio grande?  您的学校大吗？
+
+Estudia en una universidad grande.  他在一所大的大学里学习。
+
+Tomás vive en una casa grande.  托马斯住在一间大房子里。
+
+2. 作为名词的修饰语，形容词也应当与之保持单复数的一致。
+
+(1) 以元音结尾的形容词在变为复数时，词尾添加“s”。
+
+
+复数名词	形容词
+阳性	词尾添加s
+阴性	词尾添加s
+例句：
+
+Todos los días Pepe se levanta muy temprano.  佩佩每天都起的很早。
+
+Esta casa tiene varios dormitorios.  这间房有好几个卧室。
+
+Tenemos una casa grande con muchas habitaciones.  我们有一间带很多房间的房子。
+
+Le presento a mis amigas peruanas: Ana y Elena.  我向您介绍我的秘鲁朋友：安娜和艾蕾娜。
+
+(2) 以辅音结尾的形容词变为复数时，词尾加“es”。
+
+注意：为了保持单词原有的重读音节，一些形容词在变为复数时，需要添加重音符号，而另一些形容词则需要去掉重音符号。
+
+
+复数名词	形容词
+阳性	词尾添加es
+阴性	词尾添加es
+¿Tienes un amigo inglés?  你有一个英国朋友吗？
+
+¿Tienen ustedes amigos ingleses?  诸位有英国朋友吗？
+
+Nuestra profesora es muy joven.  我们的女老师非常年轻。
+
+Nuestras profesoras son jóvenes.  我们的女老师们非常年轻。
+
+(3) 在由系动词ser和estar+形容词构成的系表结构中，形容词应当与主语保持单复数和阴阳性的一致。
+
+例句：
+
+El chico es mexicano.  这个小伙子是墨西哥人。
+
+Los chicos son mexicanos.  这些小伙子们是墨西哥人。
+
+La chica está ocupada, pero contenta.  这个女孩很忙碌但很高兴。
+
+Las chicas están ocupadas, pero contentas.  女孩们很忙碌但很高兴。

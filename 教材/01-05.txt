@@ -1,0 +1,85 @@
+# 生词
+Ana 安娜（人名）
+Susana 苏珊娜（人名）
+Tomás 托马斯（人名）
+cómo 怎么（疑问词）
+llamarse 叫，名叫（自复动词原形）
+me 我（宾格/与格代词）
+te 你（宾格/与格代词）
+se 他/她/您（自复代词，第三人称）
+llamo （我）叫（llamarse第一人称单数变位）
+llamas （你）叫（llamarse第二人称单数变位）
+llama （他/她/您）叫（llamarse第三人称单数变位）
+Hola 你好
+buenos días 早上好，你好
+bueno 好的
+día 天，日子
+mi 我的（物主形容词，单数）
+mis 我的（物主形容词，复数）
+español 西班牙的；西班牙人（阳性）
+española 西班牙的；西班牙人（阴性）
+cubano 古巴的；古巴人（阳性）
+cubana 古巴的；古巴人（阴性）
+chileno 智利的；智利人（阳性）
+chilena 智利的；智利人（阴性）
+de 的；来自（前置词）
+encantado 很高兴的
+conocer 认识，了解
+mucho gusto 很高兴（认识你）
+mucho 非常，很多
+gusto 高兴，愉快
+profesor 老师，教授（阳性）
+chino 中文，汉语；中国的
+nuestro 我们的（物主形容词，阳性单数）
+su 他/她/您/他们的（物主形容词，单数）
+sus 他/她/您/他们的（物主形容词，复数）
+entonces 那么
+alumno 学生（阳性）
+alumna 学生（阴性）
+
+# 例句
+¿Cómo te llamas? 你叫什么名字？
+Hola, buenos días. 你好，早上好。
+Buenos días. 早上好。
+Yo soy Paco. 我是帕科。
+Y tú, ¿cómo te llamas? 你呢，你叫什么名字？
+Yo me llamo Ana. 我叫安娜。
+Ellos son mis amigos. 他们是我的朋友。
+Ella se llama Susana y él se llama Tomás. 她叫苏珊娜，他叫托马斯。
+¿Son ustedes españoles? 诸位是西班牙人吗？
+Yo soy española, Susana es cubana y Tomás, chileno. 我是西班牙人，苏珊娜是古巴人，托马斯是智利人。
+Encantado de conocerlos. 很高兴认识诸位。
+Mucho gusto. 很高兴（认识你）。
+¿Es usted profesor? 您是老师吗？
+Sí, soy profesor de chino. 是的，我是中文老师。
+Ah, usted es nuestro profesor de chino. 啊，您是我们的中文老师。
+Entonces, somos sus alumnos. 那么，我们是您的学生。
+
+# 语法点
+自复动词 llamarse 的用法
+llamarse 是自复动词，意为"叫、名叫"，由动词 llamar（叫）加自复代词 se 构成。其陈述式现在时变位为：yo me llamo（我叫）、tú te llamas（你叫）、él/ella/usted se llama（他/她/您叫）。自复代词 me、te、se 必须放在变位动词之前。当主语省略时，自复代词仍须保留，因为自复代词指明人称。
+对应例句：1,5,6,8
+
+问候语与礼貌用语
+本课出现三种常用问候语：Hola（你好）是非正式场合的通用问候；Buenos días（早上好/你好）用于上午时段的正式或半正式问候；Mucho gusto（很高兴）和 Encantado（很高兴）用于初次见面的寒暄，其中 Encantado 需与说话者的性别一致（女性说 Encantada）。
+对应例句：2,3,11,12
+
+疑问词 cómo
+cómo 是疑问词，意为"怎么、如何"，重音符号加在第一个音节的 o 上。用于询问方式、状态等，后接变位动词。在本课中用于询问姓名：¿Cómo te llamas?（你叫什么名字？）。
+对应例句：1,5
+
+国家与国籍形容词
+西班牙语中国籍形容词有阴阳性和单复数变化：español/española（西班牙人）、cubano/cubana（古巴人）、chileno/chilena（智利人）。以 -o 结尾的为阳性，以 -a 结尾的为阴性。询问国籍常用 ¿Son ustedes españoles? 等句式。
+对应例句：9,10
+
+物主形容词 mi、mis、nuestro、su、sus
+物主形容词表示所属关系，须与所修饰名词的数和性保持一致。mi（我的，单数）和 mis（我的，复数）只有数的一致，无性的一致。nuestro（我们的，阳性单数）有性和数的变化。su（他/她/您/他们的，单数）和 sus（复数）只有数的一致，根据上下文区分人称。
+对应例句：7,15,16
+
+前置词 de
+de 是西班牙语中最常用的前置词之一，有多种含义和用法：1）表示所属关系"的"，如 profesor de chino（中文老师）；2）在固定搭配中，如 encantado de + 动词原形（很高兴做某事）。
+对应例句：11,14
+
+名词的数与性
+西班牙语名词有阳性（通常以 -o 结尾）和阴性（通常以 -a 结尾）之分，且有单复数变化（加 -s）。本课新出现带有阴阳性对立的名词：profesor/profesora（教师）、alumno/alumna（学生）。形容词也需与名词在性和数上保持一致。
+对应例句：13,14,16

@@ -1,0 +1,68 @@
+# 生词
+Li Meilan	李美兰（人名）
+Manolo	马诺洛（人名）
+Elena	艾蕾娜（人名）
+chico	男孩，小伙子
+chica	女孩，姑娘
+mexicano	墨西哥的；墨西哥人（阳性）
+mexicana	墨西哥的；墨西哥人（阴性）
+panameño	巴拿马的；巴拿马人（阳性）
+panameña	巴拿马的；巴拿马人（阴性）
+ese	那个（阳性单数指示形容词）
+esos	那些（阳性复数指示形容词）
+esa	那个（阴性单数指示形容词）
+esas	那些（阴性复数指示形容词）
+las	定冠词（阴性复数）
+dos	二
+joven	年轻人（单数）
+jóvenes	年轻人（复数）
+novio	男朋友
+novios	情侣（复数）
+Solo	仅仅，只是
+Las dos	两人，两个都
+Qué va	哪有的事，才不是呢（口语表达）
+
+# 例句
+Ana y Li Meilan son amigas.	安娜和李美兰是朋友。
+Ana es mexicana y Li Meilan es china.	安娜是墨西哥人，李美兰是中国人。
+Las dos son estudiantes.	她们俩都是学生。
+Meilan, ¿eres amiga de esos jóvenes?	美兰，你是那些年轻人的朋友吗？
+Sí, soy amiga de ellos.	是的，我是他们的朋友。
+¿Quién es ese chico?	那个男孩是谁？
+¿Se llama Manolo?	他叫马诺洛吗？
+Sí, él se llama Manolo.	是的，他叫马诺洛。
+¿Es cubano?	他是古巴人吗？
+No, no es cubano.	不，他不是古巴人。
+Es panameño.	他是巴拿马人。
+¿No se llama Elena esa chica?	那个女孩不是叫艾蕾娜吗？
+No, no se llama Elena.	不，她不叫艾蕾娜。
+Ella es Susana.	她是苏珊娜。
+¿Son novios?	他们是情侣吗？
+¿Quiénes? ¿Elena y Manolo?	谁？艾蕾娜和马诺洛？
+¡Qué va!	哪有的事！
+Solo son amigos.	他们只是朋友。
+
+# 语法点
+指示形容词 ese/esos/esa/esas
+指示形容词用于指代离听话人较近或离说话人较远的人或事物，表示"那个、那些"。指示形容词有性和数的变化，须与所修饰名词保持一致：ese（阳性单数，那个）、esos（阳性复数，那些）、esa（阴性单数，那个）、esas（阴性复数，那些）。本课中出现了 ese chico（那个男孩）、esa chica（那个女孩）、esos jóvenes（那些年轻人）。
+对应例句：4,6,12
+
+名词与形容词的阴阳性配合
+西班牙语中名词和形容词都有阴阳性之分。一般来说，以 -o 结尾的名词/形容词为阳性，以 -a 结尾的为阴性。本课新出现的阴阳性对立词包括：chico/chica（男孩/女孩）、mexicano/mexicana（墨西哥人）、panameño/panameña（巴拿马人）、novio/novia（男朋友/女朋友）。在句中，主语、系动词后的形容词（如国籍形容词）应当与被修饰的名词在性和数上保持一致。例如 Ana es mexicana（安娜是墨西哥人，用阴性形式）与 Es panameño（他是巴拿马人，用阳性形式）。
+对应例句：1,2,3,8,11
+
+疑问句的否定形式
+西班牙语中可以构成反问式的否定疑问句，语序为：¿No + 变位动词 + 其他成分？。这种句式常用于表达说话人的惊讶、确认或反问语气，类似于中文的"不是……吗？"。例如 ¿No se llama Elena esa chica?（那个女孩不是叫艾蕾娜吗？），暗示说话人认为那个女孩叫艾蕾娜，只是向对方确认。
+对应例句：12
+
+口语表达 ¡Qué va!
+¡Qué va! 是西班牙语中非常常见的口语感叹表达，意为"哪有的事！""才不是呢！""哪有啊！"，用于强烈否定对方刚才说的话。它比简单的 no 更生动、更口语化。在本课中，当 Ana 问 Susana 和 Manolo 是不是情侣时，Li Meilan 用 ¡Qué va! 来强烈否认。
+对应例句：17
+
+疑问词 quién/quiénes 的进阶用法
+在已学基础上，本课展示了 quién 和 quiénes 的更自然使用方式。在对话中，发话人说出单个疑问词 ¿Quiénes? 之后，追加更具体的询问范围 ¿Elena y Manolo?，形成"谁？艾蕾娜和马诺洛？"这种口语化的追问。这展示了疑问词在实际对话中可以单独使用，而不必总是出现在完整的疑问句结构中。
+对应例句：6,16
+
+疑问句中的主语位置
+在西班牙语的疑问句中（无论一般疑问句、特殊疑问句还是否定疑问句），如果主语出现，必须放在变位动词之后。这与陈述句「主语 + 谓语」的正常语序不同。结合已学知识回顾：01-04已讲一般疑问句"变位动词提前到句首"、特殊疑问句"疑问词+变位动词"；本课出现的 ¿No se llama Elena esa chica? 中主语 esa chica 明确位于动词之后。本课疑问句中主语置于动词之后的典型例句包括：¿eres amiga de esos jóvenes?（主语省略但隐含 tú）、¿Quién es ese chico?（主语 ese chico 在动词 es 之后）、¿Es cubano?（主语省略）、¿No se llama Elena esa chica?（主语 esa chica 在动词之后）、¿Son novios?（主语省略）。与陈述句正常语序对比：陈述句中主语在前动词在后（如 Ella es Susana），而疑问句中必须颠倒（如 ¿Es usted profesor?，见01-05）。疑问词本身就是句中成分，紧接变位动词；若有明确主语则放在变位动词后面。
+对应例句：4, 6, 7, 9, 12, 15

@@ -1,0 +1,144 @@
+# 生词
+hablar	说话
+cantar	唱
+estudiar	学习
+hablo	（我）说
+hablas	（你）说
+habla	（他/她/您）说
+hablamos	（我们）说
+habláis	（你们）说
+hablan	（他们/她们/诸位）说
+canto	（我）唱
+cantas	（你）唱
+canta	（他/她/您）唱
+cantamos	（我们）唱
+cantáis	（你们）唱
+cantan	（他们/她们/诸位）唱
+estudio	（我）学习
+estudias	（你）学习
+estudia	（他/她/您）学习
+estudiamos	（我们）学习
+estudiáis	（你们）学习
+estudian	（他们/她们/诸位）学习
+comer	吃
+beber	喝
+como	（我）吃
+comes	（你）吃
+come	（他/她/您）吃
+comemos	（我们）吃
+coméis	（你们）吃
+comen	（他们/她们/诸位）吃
+bebo	（我）喝
+bebes	（你）喝
+bebe	（他/她/您）喝
+bebemos	（我们）喝
+bebéis	（你们）喝
+beben	（他们/她们/诸位）喝
+cumplir	完成
+subir	上升
+cumplo	（我）完成
+cumples	（你）完成
+cumple	（他/她/您）完成
+cumplimos	（我们）完成
+cumplís	（你们）完成
+cumplen	（他们/她们/诸位）完成
+subo	（我）上升
+subes	（你）上升
+sube	（他/她/您）上升
+subimos	（我们）上升
+subís	（你们）上升
+suben	（他们/她们/诸位）上升
+estar	处于，在
+estoy	（我）处于，我在
+estás	（你）处于，你在
+está	（他/她/您）处于，在
+estamos	（我们）处于，我们在
+estáis	（你们）处于，你们在
+están	（他们/她们/诸位）处于，在
+tener	有
+tengo	（我）有
+tienes	（你）有
+tiene	（他/她/您）有
+tenemos	（我们）有
+tenéis	（你们）有
+tienen	（他们/她们/诸位）有
+poder	能够
+puedo	（我）能够
+puedes	（你）能够
+puede	（他/她/您）能够
+podemos	（我们）能够
+podéis	（你们）能够
+pueden	（他们/她们/诸位）能够
+poner	放
+pongo	（我）放
+pones	（你）放
+pone	（他/她/您）放
+ponemos	（我们）放
+ponéis	（你们）放
+ponen	（他们/她们/诸位）放
+venir	来
+vengo	（我）来
+vienes	（你）来
+viene	（他/她/您）来
+venimos	（我们）来
+venís	（你们）来
+vienen	（他们/她们/诸位）来
+ir	去
+voy	（我）去
+vas	（你）去
+va	（他/她/您）去
+vamos	（我们）去
+vais	（你们）去
+van	（他们/她们/诸位）去
+mucho	很，很多
+qué	什么（疑问词）
+verbo	动词
+clase	课，课堂
+libro	书
+mano	手
+un	一个（不定冠词，阳性单数）
+en	在……里；在……上
+conocer	认识
+tener clase de español	有西班牙语课
+tener novio	有男朋友
+en la mano	在手里
+
+# 例句
+Estudio mucho.	我学习很多。
+¿Qué estudias?	你学什么？
+Estudio español.	我学西班牙语。
+Yo tengo clase de español.	我有西班牙语课。
+¿Tienes novio?	你有男朋友吗？
+Sí, tengo novio.	是的，我有男朋友。
+No, no tengo novio.	不，我没有男朋友。
+¿Qué tienes en la mano?	你的手里有什么？
+Tengo un libro en la mano.	我手里有一本书。
+
+# 语法点
+规则动词变位总述
+西班牙语动词按照词尾特点可分为规则动词和不规则动词。规则动词共有三组：第一组以 -ar 结尾，如 hablar（说话）、cantar（唱）、estudiar（学习）；第二组以 -er 结尾，如 comer（吃）、beber（喝）；第三组以 -ir 结尾，如 cumplir（完成）、subir（上升）。规则动词的变位遵循固定规律：去掉词尾 -ar/-er/-ir，换上各人对应的词尾。记忆动词时必须与主语人称一起记忆。
+对应例句：1,2,3
+
+第一组规则动词（-ar）变位规则
+以 -ar 结尾的动词，去掉 -ar 后分别加上：-o（yo）、-as（tú）、-a（él/ella/usted）、-amos（nosotros/nosotras）、-áis（vosotros/vosotras）、-an（ellos/ellas/ustedes）。以 hablar 为例：yo hablo, tú hablas, él/ella/usted habla, nosotros/nosotras hablamos, vosotros/vosotras habláis, ellos/ellas/ustedes hablan。以 cantar 为例：yo canto, tú cantas, él/ella/usted canta, nosotros/nosotras cantamos, vosotros/vosotras cantáis, ellos/ellas/ustedes cantan。以 estudiar 为例：yo estudio, tú estudias, él/ella/usted estudia, nosotros/nosotras estudiamos, vosotros/vosotras estudiáis, ellos/ellas/ustedes estudian。
+对应例句：1,2,3
+
+第二组规则动词（-er）变位规则
+以 -er 结尾的动词，去掉 -er 后分别加上：-o（yo）、-es（tú）、-e（él/ella/usted）、-emos（nosotros/nosotras）、-éis（vosotros/vosotras）、-en（ellos/ellas/ustedes）。以 comer 为例：yo como, tú comes, él/ella/usted come, nosotros/nosotras comemos, vosotros/vosotras coméis, ellos/ellas/ustedes comen。以 beber 为例：yo bebo, tú bebes, él/ella/usted bebe, nosotros/nosotras bebemos, vosotros/vosotras bebéis, ellos/ellas/ustedes beben。
+对应例句：
+
+第三组规则动词（-ir）变位规则
+以 -ir 结尾的动词，去掉 -ir 后分别加上：-o（yo）、-es（tú）、-e（él/ella/usted）、-imos（nosotros/nosotras）、-ís（vosotros/vosotras）、-en（ellos/ellas/ustedes）。以 cumplir 为例：yo cumplo, tú cumples, él/ella/usted cumple, nosotros/nosotras cumplimos, vosotros/vosotras cumplís, ellos/ellas/ustedes cumplen。以 subir 为例：yo subo, tú subes, él/ella/usted sube, nosotros/nosotras subimos, vosotros/vosotras subís, ellos/ellas/ustedes suben。
+对应例句：
+
+不规则动词变位总述
+不规则动词不遵循上述规则变位模式，需要单独记忆每个动词的六种人称形式。本课介绍七个常用的不规则动词，连同已学的 ser（是），共八个：ser（是）、estar（处于/在）、tener（有）、poder（能够）、poner（放）、venir（来）、ir（去）。它们的陈述式现在时变位如下：ser — yo soy, tú eres, él/ella/usted es, nosotros/nosotras somos, vosotros/vosotras sois, ellos/ellas/ustedes son；estar — yo estoy, tú estás, él/ella/usted está, nosotros/nosotras estamos, vosotros/vosotras estáis, ellos/ellas/ustedes están；tener — yo tengo, tú tienes, él/ella/usted tiene, nosotros/nosotras tenemos, vosotros/vosotras tenéis, ellos/ellas/ustedes tienen；poder — yo puedo, tú puedes, él/ella/usted puede, nosotros/nosotras podemos, vosotros/vosotras podéis, ellos/ellas/ustedes pueden；poner — yo pongo, tú pones, él/ella/usted pone, nosotros/nosotras ponemos, vosotros/vosotras ponéis, ellos/ellas/ustedes ponen；venir — yo vengo, tú vienes, él/ella/usted viene, nosotros/nosotras venimos, vosotros/vosotras venís, ellos/ellas/ustedes vienen；ir — yo voy, tú vas, él/ella/usted va, nosotros/nosotras vamos, vosotros/vosotras vais, ellos/ellas/ustedes van。
+对应例句：4,5,6,7,8,9
+
+及物动词 tener 的用法
+tener 是及物动词，意为"有"，后面一般跟直接宾语。常用搭配有：tener clase de español（有西班牙语课）、tener novio（有男朋友）、tener un libro en la mano（手里有一本书）。否定形式为 no tener，no 放在变位动词之前，如 no tengo novio（我没有男朋友）。疑问句中 tener 可提前到句首，如 ¿Tienes novio?（你有男朋友吗？）。
+对应例句：4,5,6,7,8,9
+
+疑问词 qué 的用法
+qué 是疑问词，意为"什么"，用于询问事物或内容。在句中常位于变位动词之前。例如：¿Qué estudias?（你学什么？）、¿Qué tienes en la mano?（你的手里有什么？）。与已学疑问词 cómo（怎么）和 quién/quiénes（谁）一样，qué 带有重音符号。
+对应例句：2,8

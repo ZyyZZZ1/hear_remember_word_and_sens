@@ -1,0 +1,63 @@
+1. 主格人称代词与系动词SER的陈述式现在时变位
+
+西班牙语中的人称代词有主格、宾格、与格、属格和夺格之分。主格人称代词有第一、二、三人称单复数共六种形式，均在句中作主语。
+
+西班牙语中所有的动词都有6种人称，所有的动词原形（inf.）都是动名词概念，所有动词都是以-ar，-er，-ir结尾的
+
+
+人称与数	主格人称代词
+第一人称单数	yo
+第二人称单数	tú
+第三人称单数	él, ella, usted
+第一人称复数	nosotros, nosotras
+第二人称复数	vosotros, vosotras
+第三人称复数	ellos, ellas, ustedes
+
+人称	主格人称代词	系动词 SER的变位
+我	yo	soy
+你	tú	eres
+他、她、您	él, ella, usted	es
+我们	nosotros, nosotras	somos
+你们	vosotros, vosotras	sois
+他们、她们、诸位	ellos, ellas, ustedes	son
+由于仅凭动词变位就可以判断出主语的人称和数，在西班牙语中主语经常可以省略，例如：
+
+Soy Lorena.  我是洛雷娜。
+
+Eres Paco.  你是帕科。
+
+重音符号的作用：1） 表示重音； 2）区分单词： tú (主格人称代词：你) tu (物主形容词：你的)， él（主格人称代词：他）el （定冠词）。
+
+2. 句子的语序
+
+1） 陈述句： 主语 + 谓语 （变位动词 + 其他）
+
+Yo soy Lorena.  我是洛雷娜。
+
+Nosotros somos amigos.  我们是朋友。
+
+Ellos son estudiantes.  他们是学生。
+
+2）一般疑问句有两种构成方式：a. 陈述句语调上扬；b. 把陈述句的变位动词提前到句首，例如：
+
+¿Eres estudiante?  你是学生吗？
+
+¿Eres tú estudiante?  你是学生吗？
+
+Sí, soy estudiante.  是的，我是学生。 (注意sí有重音，无重音si代表如果if)
+
+No, no soy estudiante.  不，我不是学生。 （否定句： 主语+no+变位动词， 注意no放在变位动词之前）
+
+3）特殊疑问句： 语序为特殊疑问词+变位动词，西班牙语中只要是特殊疑问词都有重音符号，且重音符号加在自身的重音位置上。
+
+Yo soy Lorena.  我是洛雷娜。
+
+¿Quién eres tú?  你是谁？
+
+¿Quién es él?  他是谁？
+
+Él es Paco.  他是帕科。
+
+¿Quiénes son ellos?  他们是谁？
+
+Ellos son Lorena y Paco.  他们是洛雷娜和帕科。

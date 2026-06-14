@@ -24,6 +24,7 @@ TTS_VOICE_ZH = None   # 中文语音（SAPI）
 TTS_LOCK = threading.Lock()
 PIPER_VOICES = []      # Piper 西语模型池（随机抽签）
 PIPER_MODEL_DIR = os.path.join(os.path.dirname(__file__), "piper_models")
+FAVORITES_FILE = os.path.join(os.path.dirname(__file__), "favorites.json")
 
 # 所有可用的 Piper 西班牙语模型
 _PIPER_MODEL_NAMES = [
@@ -33,16 +34,21 @@ _PIPER_MODEL_NAMES = [
     "es_AR-daniela-high",
 ]
 
+# sharvard / claude 单字合成末尾截断，仅用于句子模式
+_PIPER_WORD_SAFE = {"es_ES-davefx-medium", "es_AR-daniela-high"}
+
 # --- Piper TTS（本地神经网络，自然度优于 SAPI）---
 try:
     import numpy as np
     from piper.voice import PiperVoice
+    _PIPER_BY_NAME = {}
     for name in _PIPER_MODEL_NAMES:
         model_path = os.path.join(PIPER_MODEL_DIR, f"{name}.onnx")
         config_path = os.path.join(PIPER_MODEL_DIR, f"{name}.onnx.json")
         if os.path.exists(model_path) and os.path.exists(config_path):
             try:
                 voice = PiperVoice.load(model_path, config_path=config_path, use_cuda=False)
+                _PIPER_BY_NAME[name] = voice
                 PIPER_VOICES.append(voice)
                 print(f"[TTS] Piper 西语语音已加载：{name}", flush=True)
                 HAS_TTS = True
@@ -54,6 +60,7 @@ except ImportError:
     print(f"[TTS] Piper 未安装，使用 SAPI 后备", flush=True)
 except Exception as e:
     print(f"[TTS] Piper 加载失败：{e}", flush=True)
+
 
 # --- SAPI TTS（后备方案，中文语音）---
 try:
@@ -223,6 +230,27 @@ def scan_textbooks():
     return textbooks
 
 
+def _build_favorites_textbook():
+    """用所有教材的收藏词构建虚拟教材"""
+    fav = _load_favorites()
+    all_textbooks = scan_textbooks()
+    vocab = []
+    seen = set()
+    for tb in all_textbooks:
+        for es_word in fav.get(tb["name"], []):
+            for v in tb["vocab"]:
+                if v["es"] == es_word and es_word not in seen:
+                    vocab.append(dict(v))
+                    seen.add(es_word)
+                    break
+    return {
+        "name": "收藏集",
+        "vocab": vocab,
+        "sentences": [],
+        "grammar": [],
+    }
+
+
 def select_textbook():
     """教材选择菜单，返回用户选择的教材或 None（退出）"""
     textbooks = scan_textbooks()
@@ -232,16 +260,22 @@ def select_textbook():
         print("教材格式参见 教材管理-交互设计.md\n")
         return None
 
-    if len(textbooks) == 1:
+    # 构建收藏集
+    fav_textbook = _build_favorites_textbook()
+    has_fav = len(fav_textbook["vocab"]) > 0
+
+    if len(textbooks) == 1 and not has_fav:
         tb = textbooks[0]
         print(f"\n自动加载教材：{tb['name']}（{len(tb['vocab'])}个生词 / {len(tb['sentences'])}条例句 / {len(tb['grammar'])}个语法点）\n")
         return tb
 
-    # 多教材选择
+    # 教材选择
     print("\n" + "=" * 36)
     print("          西班牙语陪练")
     print("=" * 36)
     print("  请选择教材：\n")
+    if has_fav:
+        print(f"  [*] 收藏集（{len(fav_textbook['vocab'])} 个收藏词）")
     for i, tb in enumerate(textbooks, 1):
         n_grammar = len(tb["grammar"])
         grammar_str = f"{n_grammar}个语法点" if n_grammar > 0 else "无语法点"
@@ -253,6 +287,8 @@ def select_textbook():
         choice = wait_key("请选择 > ")
         if choice == "Q":
             return None
+        if choice == "*" and has_fav:
+            return fav_textbook
         try:
             idx = int(choice) - 1
             if 0 <= idx < len(textbooks):
@@ -285,10 +321,21 @@ def _tts_speak_with_voice(text, voice):
         print(f"[TTS] 朗读失败：{e}", flush=True)
 
 
-def tts_speak(text):
+def _piper_pick(for_sentence=False):
+    """选 Piper 模型：句子全用，单词避开 sharvard/claude"""
+    if for_sentence:
+        return random.choice(PIPER_VOICES)
+    # 单词：只选不易截断的模型
+    safe = [v for n, v in _PIPER_BY_NAME.items() if n in _PIPER_WORD_SAFE]
+    if safe:
+        return random.choice(safe)
+    return random.choice(PIPER_VOICES)
+
+
+def tts_speak(text, is_sentence=False):
     """西语 TTS 朗读（随机抽 Piper 模型，回退 SAPI）"""
     if PIPER_VOICES:
-        voice = random.choice(PIPER_VOICES)
+        voice = _piper_pick(for_sentence=is_sentence)
         try:
             with TTS_LOCK:
                 chunks = []
@@ -363,10 +410,10 @@ def tts_speak_zh(text):
         pass
 
 
-def tts_speak_async(text):
+def tts_speak_async(text, is_sentence=False):
     """西语 TTS 朗读（后台线程）"""
     if PIPER_VOICES or TTS_VOICE_ES:
-        t = threading.Thread(target=tts_speak, args=(text,), daemon=True)
+        t = threading.Thread(target=tts_speak, args=(text, is_sentence), daemon=True)
         t.start()
 
 
@@ -376,6 +423,65 @@ def tts_speak_zh_async(text):
         return
     t = threading.Thread(target=tts_speak_zh, args=(text,), daemon=True)
     t.start()
+
+
+def _tts_speak_es_interruptible(es_text):
+    """西语 TTS 播放，期间任意键打断"""
+    done = threading.Event()
+    def _play():
+        try:
+            tts_speak(es_text)  # is_sentence=False → 只用单词安全模型
+        except Exception:
+            pass
+        finally:
+            done.set()
+    t = threading.Thread(target=_play, daemon=True)
+    t.start()
+    while not done.is_set():
+        if msvcrt.kbhit():
+            msvcrt.getch()
+            sd.stop()
+            return True  # 被打断
+        time.sleep(0.1)
+    return False  # 正常播完
+
+
+def _memory_import_loop(es_text, zh_text):
+    """记忆导入：固定 8 遍（2次西语+1次中文），任意键可打断"""
+    print(f"    （按任意键跳过当前词）", end="", flush=True)
+    interrupted = False
+    for i in range(1, 9):
+        print(f"\n    [{i}/8] {es_text}")
+        sys.stdout.flush()
+        # 西语第1遍
+        if _tts_speak_es_interruptible(es_text):
+            interrupted = True
+            break
+        time.sleep(0.15)
+        if msvcrt.kbhit():
+            msvcrt.getch()
+            interrupted = True
+            break
+        # 西语第2遍
+        if _tts_speak_es_interruptible(es_text):
+            interrupted = True
+            break
+        time.sleep(0.2)
+        if msvcrt.kbhit():
+            msvcrt.getch()
+            interrupted = True
+            break
+        # 中文1遍
+        tts_speak_zh(zh_text)
+        time.sleep(0.3)
+        if msvcrt.kbhit():
+            msvcrt.getch()
+            interrupted = True
+            break
+    print()
+    if interrupted:
+        print("    （已跳过）")
+    sys.stdout.flush()
 
 
 def _audio_callback(indata, frames, time_info, status):
@@ -539,23 +645,24 @@ class GroupSession:
         return self._key(item) in self._passed
 
     def pass_current(self):
-        """当前词通过"""
+        """当前词通过，返回 True 表示绕回起点"""
         self._passed.add(self._key(self.current))
         self._history.append(self._pos)
-        self._advance()
+        return self._advance()
 
     def keep_current(self):
-        """保留稍后：不标记通过，仅前进（绕回时还会遇到）"""
+        """保留稍后：不标记通过，仅前进。返回 True 表示绕回起点"""
         self._history.append(self._pos)
-        self._advance()
+        return self._advance()
 
     def _advance(self):
-        """移动到下一个非 passed 的词，支持绕回"""
+        """移动到下一个非 passed 的词，支持绕回。返回 True 表示已绕回"""
+        old_pos = self._pos
         for _ in range(len(self.items)):
             self._pos = (self._pos + 1) % len(self.items)
             if self._key(self.items[self._pos]) not in self._passed:
-                return
-        # 全部 passed，pos 留在原地
+                return self._pos <= old_pos
+        return False
 
     def go_back(self):
         """回到上一词。返回 (item, was_passed)；无历史返回 (None, False)"""
@@ -574,18 +681,67 @@ class GroupSession:
 
 # -- UI 工具 -----------------------------------------------
 
+# -- 收藏夹 -----------------------------------------------
+
+def _load_favorites():
+    """加载收藏夹（按教材名分组的西语单词列表）"""
+    import json
+    if os.path.exists(FAVORITES_FILE):
+        try:
+            with open(FAVORITES_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            pass
+    return {}
+
+
+def _save_favorites(fav):
+    """保存收藏夹"""
+    import json
+    with open(FAVORITES_FILE, "w", encoding="utf-8") as f:
+        json.dump(fav, f, ensure_ascii=False, indent=2)
+
+
+def _get_favorites():
+    """获取当前教材的收藏列表（西语单词 str 列表）"""
+    if TEXTBOOK is None:
+        return []
+    fav = _load_favorites()
+    return fav.get(TEXTBOOK["name"], [])
+
+
+def _toggle_favorite(es_text):
+    """切换收藏状态，返回 True=已收藏, False=已取消"""
+    if TEXTBOOK is None:
+        return False
+    fav = _load_favorites()
+    key = TEXTBOOK["name"]
+    if key not in fav:
+        fav[key] = []
+    if es_text in fav[key]:
+        fav[key].remove(es_text)
+        _save_favorites(fav)
+        return False
+    else:
+        fav[key].append(es_text)
+        _save_favorites(fav)
+        return True
+
+
 def print_menu():
     """打印主菜单（stdout 约定 A）"""
     print()
     print("=" * 36)
     print("          西班牙语陪练  ")
     print("=" * 36)
+    print("  [0] 记忆导入")
     print("  [1] 听西语说中文")
     print("  [2] 听中文说西语")
     print("  [3] 听写")
     print("  [4] 跟读")
     print("  [5] 混着来")
     print("  [G] 语法讲解")
+    print("  [T] 选教材")
     print("  [Q] 退出")
     print("=" * 36)
     sys.stdout.flush()
@@ -612,6 +768,135 @@ def wait_line(prompt="> "):
 
 
 # -- 模式实现 ----------------------------------------------
+
+# -- 模式 0：记忆导入 ----------------------------------------
+
+def mode_0_memory_import():
+    """模式 0：记忆导入 —— 每词循环 8 遍西语+中文，建立初步记忆"""
+    items = [{"es": v["es"], "zh": v["zh"]} for v in TEXTBOOK["vocab"]]
+    groups = [items[i:i + GROUP_SIZE] for i in range(0, len(items), GROUP_SIZE)]
+    _run_group_menu_memory_import("单词", groups)
+
+
+def _run_group_menu_memory_import(kind, groups):
+    """组菜单：列出每组词，用户选组进入记忆导入"""
+    all_items = [{"es": v["es"], "zh": v["zh"]} for v in TEXTBOOK["vocab"]]
+    while True:
+        fav_words = _get_favorites()
+        print()
+        print("=" * 36)
+        print(f"          [记忆导入-{kind}] 共 {len(groups)} 组")
+        print("=" * 36)
+        print(f"  [R] 随机组（{len(all_items)} 个词，乱序）")
+        if fav_words:
+            print(f"  [*] 收藏组（{len(fav_words)} 个词）")
+        for gi, group in enumerate(groups, 1):
+            words = ", ".join(item["es"] for item in group)
+            print(f"  [{gi}] 第 {gi} 组：{words}")
+        print("  [B] 返回")
+        print("=" * 36)
+        sys.stdout.flush()
+
+        choice = wait_key("请选择 > ")
+        if choice == "B":
+            return
+        if choice == "R":
+            shuffled = list(all_items)
+            random.shuffle(shuffled)
+            _run_one_group_memory_import([shuffled], 0)
+            continue
+        if choice == "*" and fav_words:
+            fav_items = [it for it in all_items if it["es"] in fav_words]
+            if fav_items:
+                _run_one_group_memory_import([fav_items], 0)
+            else:
+                print("  收藏的词不在当前教材中。")
+                sys.stdout.flush()
+            continue
+        try:
+            gi = int(choice) - 1
+            if 0 <= gi < len(groups):
+                _run_one_group_memory_import(groups, gi)
+        except ValueError:
+            print("  无效选项，请重新选择。")
+            sys.stdout.flush()
+
+
+def _run_one_group_memory_import(groups, gi):
+    """单组记忆导入：GroupSession 驱动，每词 8 遍循环"""
+    import re
+    group = groups[gi]
+    total_groups = len(groups)
+    gs = GroupSession(group)
+
+    skip_group = False
+    while not gs.all_passed and not skip_group:
+        item = gs.current
+        es_text = item["es"]
+        zh_first = re.split(r'[,，、]', item["zh"])[0].strip()
+
+        print(f"\n{'─' * 36}")
+        print(f"  记忆导入 · 第 {gi+1}/{total_groups} 组 · 第 {gs.current_index}/{gs.total} 词")
+        print(f"{'─' * 36}")
+        print(f"  {es_text} — {zh_first}\n")
+        sys.stdout.flush()
+
+        _memory_import_loop(es_text, zh_first)
+
+        # P/N/B/R/G/F/Q 决策
+        while True:
+            choice = wait_key("  [P]通过  [N]保留  [B]上词  [R]重听  [G]下组  [F]收藏  [Q]退出 > ")
+            if choice == "P":
+                if gs.pass_current() and gs.total > 1:
+                    tts_speak_zh("循环结束，回到第一个词")
+                break
+            elif choice == "N":
+                if gs.keep_current() and gs.total > 1:
+                    tts_speak_zh("循环结束，回到第一个词")
+                break
+            elif choice == "R":
+                print(f"\n  [重听] {es_text}")
+                sys.stdout.flush()
+                _memory_import_loop(es_text, zh_first)
+            elif choice == "B":
+                prev_item, was_passed = gs.go_back()
+                if prev_item is not None:
+                    print(f"\n  [回退] {prev_item['es']}")
+                    sys.stdout.flush()
+                    zh_first = re.split(r'[,，、]', prev_item['zh'])[0].strip()
+                    _memory_import_loop(prev_item['es'], zh_first)
+                break
+            elif choice == "F":
+                added = _toggle_favorite(es_text)
+                print(f"    {'★ 已收藏' if added else '☆ 已取消收藏'}")
+                sys.stdout.flush()
+                continue
+            elif choice == "G":
+                skip_group = True
+                break
+            elif choice == "Q":
+                print()
+                sys.stdout.flush()
+                return
+            else:
+                # 默认回车 = N（保留稍后）
+                if gs.keep_current() and gs.total > 1:
+                    tts_speak_zh("循环结束，回到第一个词")
+                break
+
+    print(f"\n-- 第 {gi+1} 组结束--\n")
+    sys.stdout.flush()
+    time.sleep(0.5)
+
+    if gi + 1 < total_groups:
+        nxt = wait_key(f"  [Enter] 继续第 {gi+2} 组  [B] 回组菜单  [Q] 退出 > ")
+        if nxt == "Q":
+            return
+        if nxt != "B":
+            _run_one_group_memory_import(groups, gi + 1)
+
+
+# -- 模式 1：听西语说中文 ------------------------------------
 
 def mode_1_listen_es_say_zh():
     """模式 1：听西语说中文 —— 子菜单选择单词/句子"""
@@ -654,11 +939,18 @@ def _mode_es_to_zh_sentences():
 
 def _run_group_menu_es_to_zh(kind, groups):
     """组菜单：列出每组词/句，用户选组进入练习"""
+    is_word = (kind == "单词")
+    all_items = [{"es": v["es"], "zh": v["zh"]} for v in TEXTBOOK["vocab"]]
     while True:
+        fav_words = _get_favorites() if is_word else []
         print()
         print("=" * 36)
         print(f"          [模式1-{kind}] 共 {len(groups)} 组")
         print("=" * 36)
+        if is_word:
+            print(f"  [R] 随机组（{len(all_items)} 个词，乱序）")
+        if fav_words:
+            print(f"  [*] 收藏组（{len(fav_words)} 个词）")
         for gi, group in enumerate(groups, 1):
             words = ", ".join(item["es"] for item in group)
             print(f"  [{gi}] 第 {gi} 组：{words}")
@@ -669,6 +961,16 @@ def _run_group_menu_es_to_zh(kind, groups):
         choice = wait_key("请选择 > ")
         if choice == "B":
             return
+        if choice == "R" and is_word:
+            shuffled = list(all_items)
+            random.shuffle(shuffled)
+            _run_one_group_es_to_zh([shuffled], 0, "单词")
+            continue
+        if choice == "*" and fav_words:
+            fav_items = [it for it in all_items if it["es"] in fav_words]
+            if fav_items:
+                _run_one_group_es_to_zh([fav_items], 0, "单词")
+            continue
         try:
             gi = int(choice) - 1
             if 0 <= gi < len(groups):
@@ -683,6 +985,7 @@ def _run_one_group_es_to_zh(groups, gi, kind):
     group = groups[gi]
     total_groups = len(groups)
     gs = GroupSession(group)
+    is_sent = (kind == "句子")
 
     while not gs.all_passed:
         item = gs.current
@@ -700,11 +1003,11 @@ def _run_one_group_es_to_zh(groups, gi, kind):
         # ── TTS 两遍 ──
         print(f"  听原音（第1遍）：{es_text}")
         sys.stdout.flush()
-        tts_speak(es_text)
+        tts_speak(es_text, is_sentence=is_sent)
         time.sleep(0.3)
         print(f"  听原音（第2遍）：{es_text}")
         sys.stdout.flush()
-        tts_speak(es_text)
+        tts_speak(es_text, is_sentence=is_sent)
         time.sleep(0.3)
 
         # ── 录音阶段 ──
@@ -716,19 +1019,21 @@ def _run_one_group_es_to_zh(groups, gi, kind):
         stop_and_playback()
         print("  -- 原音对比 --")
         sys.stdout.flush()
-        tts_speak(es_text)
+        tts_speak(es_text, is_sentence=is_sent)
 
         print(f"\n  [答案] {es_text} → {zh_text}\n")
         sys.stdout.flush()
         tts_speak_zh(zh_text)  # 单词用中文语音读出中文释义
 
         # ── 决策 ──
-        result = _decision_pnbr(gs, es_text)
+        result = _decision_pnbr(gs, es_text, allow_favorite=(kind == "单词"))
         if result == "quit":
             return
+        if result == "next_group":
+            break
 
-    # 本组通关
-    print(f"\n-- 第 {gi+1} 组通关！--")
+    # 本组通关（或被 G 跳过）
+    print(f"\n-- 第 {gi+1} 组结束--")
     sys.stdout.flush()
     time.sleep(0.5)
 
@@ -767,15 +1072,18 @@ def _record_phase(es_text):
     return None
 
 
-def _decision_pnbr(gs, es_text):
-    """P/N/B/R/Q 决策循环。返回 "quit" 表示 Q 退出。"""
+def _decision_pnbr(gs, es_text, allow_favorite=False):
+    """P/N/B/R/G/Q/(F) 决策循环。返回 "quit"/"next_group" 或 None。"""
+    fav_menu = "  [F]收藏" if allow_favorite else ""
     while True:
-        choice = wait_key("  [P]通过  [N]保留稍后  [B]上一词  [R]重听  [Q]退出 > ")
+        choice = wait_key(f"  [P]通过  [N]保留  [B]上词  [R]重听  [G]下组{fav_menu}  [Q]退出 > ")
         if choice == "P":
-            gs.pass_current()
+            if gs.pass_current() and gs.total > 1:
+                tts_speak_zh("循环结束，回到第一个词")
             return None
         elif choice == "N":
-            gs.keep_current()
+            if gs.keep_current() and gs.total > 1:
+                tts_speak_zh("循环结束，回到第一个词")
             return None
         elif choice == "R":
             tts_speak(es_text)
@@ -785,7 +1093,6 @@ def _decision_pnbr(gs, es_text):
             sys.stdout.flush()
             continue
         elif choice == "B":
-            # 回退链：一直退到非 passed 或用户确认
             while True:
                 prev_item, was_passed = gs.go_back()
                 if prev_item is None:
@@ -793,7 +1100,7 @@ def _decision_pnbr(gs, es_text):
                     sys.stdout.flush()
                     return None
                 if not was_passed:
-                    return None  # 外层循环会展示这个词
+                    return None
                 sub = wait_key(
                     f"  [上一词] 「{prev_item['es']}」已通关。"
                     f"[Y] 拉回来重新练习  [N] 跳过，继续往前退 > "
@@ -801,11 +1108,19 @@ def _decision_pnbr(gs, es_text):
                 if sub == "Y":
                     gs.unpass()
                     return None
-                # N → continue loop, go further back
+        elif choice == "G":
+            return "next_group"
+        elif choice == "F" and allow_favorite:
+            added = _toggle_favorite(es_text)
+            print(f"    {'★ 已收藏' if added else '☆ 已取消收藏'}")
+            sys.stdout.flush()
+            continue
         elif choice == "Q":
             return "quit"
         else:
-            # 按 Enter 或其他键默认 = N（保留稍后）
+            if gs.keep_current() and gs.total > 1:
+                tts_speak_zh("循环结束，回到第一个词")
+            return None
             gs.keep_current()
             return None
 
@@ -851,11 +1166,18 @@ def _mode_zh_to_es_sentences():
 
 def _run_group_menu_zh_to_es(kind, groups):
     """组菜单：列出每组词/句，用户选组进入练习"""
+    is_word = (kind == "单词")
+    all_items = [{"es": v["es"], "zh": v["zh"]} for v in TEXTBOOK["vocab"]]
     while True:
+        fav_words = _get_favorites() if is_word else []
         print()
         print("=" * 36)
         print(f"          [模式2-{kind}] 共 {len(groups)} 组")
         print("=" * 36)
+        if is_word:
+            print(f"  [R] 随机组（{len(all_items)} 个词，乱序）")
+        if fav_words:
+            print(f"  [*] 收藏组（{len(fav_words)} 个词）")
         for gi, group in enumerate(groups, 1):
             words = ", ".join(item["es"] for item in group)
             print(f"  [{gi}] 第 {gi} 组：{words}")
@@ -866,6 +1188,16 @@ def _run_group_menu_zh_to_es(kind, groups):
         choice = wait_key("请选择 > ")
         if choice == "B":
             return
+        if choice == "R" and is_word:
+            shuffled = list(all_items)
+            random.shuffle(shuffled)
+            _run_one_group_zh_to_es([shuffled], 0, "单词")
+            continue
+        if choice == "*" and fav_words:
+            fav_items = [it for it in all_items if it["es"] in fav_words]
+            if fav_items:
+                _run_one_group_zh_to_es([fav_items], 0, "单词")
+            continue
         try:
             gi = int(choice) - 1
             if 0 <= gi < len(groups):
@@ -880,6 +1212,7 @@ def _run_one_group_zh_to_es(groups, gi, kind):
     group = groups[gi]
     total_groups = len(groups)
     gs = GroupSession(group)
+    is_sent = (kind == "句子")
 
     while not gs.all_passed:
         item = gs.current
@@ -906,17 +1239,19 @@ def _run_one_group_zh_to_es(groups, gi, kind):
         stop_and_playback()
         print("  -- 原音对比 --")
         sys.stdout.flush()
-        tts_speak(es_text)
+        tts_speak(es_text, is_sentence=is_sent)
 
         print(f"\n  [答案] {zh_text} → {es_text}\n")
         sys.stdout.flush()
 
         # ── 决策 ──
-        result = _decision_pnbr(gs, es_text)
+        result = _decision_pnbr(gs, es_text, allow_favorite=(kind == "单词"))
         if result == "quit":
             return
+        if result == "next_group":
+            break
 
-    print(f"\n-- 第 {gi+1} 组通关！--")
+    print(f"\n-- 第 {gi+1} 组结束--")
     sys.stdout.flush()
     time.sleep(0.5)
 
@@ -1252,9 +1587,9 @@ def _mode_dictation_sentences():
             print(f"  中文：{zh_text}")
             sys.stdout.flush()
 
-            tts_speak(es_text)
+            tts_speak(es_text, is_sentence=True)
             time.sleep(0.3)
-            tts_speak(es_text)
+            tts_speak(es_text, is_sentence=True)
 
             user_input = wait_line("> ")
             cmd = user_input.strip()
@@ -1269,9 +1604,9 @@ def _mode_dictation_sentences():
                 sys.stdout.flush()
                 continue
             if cmd.upper() == "R":
-                tts_speak(es_text)
+                tts_speak(es_text, is_sentence=True)
                 time.sleep(0.3)
-                tts_speak(es_text)
+                tts_speak(es_text, is_sentence=True)
                 user_input = wait_line("> ")
                 cmd = user_input.strip()
                 if cmd.upper() == "Q":
@@ -1298,7 +1633,7 @@ def _mode_dictation_sentences():
                 print(f"  （{_COLOR_GREEN}绿色{_COLOR_RESET}=正确  {_COLOR_RED}红色{_COLOR_RESET}=错误/遗漏）")
                 print(f"  剩余：{pq.remaining} 句\n")
                 sys.stdout.flush()
-                tts_speak_async(es_text)
+                tts_speak_async(es_text, is_sentence=True)
 
         print(f"-- 第 {gi} 组通关！--\n")
         sys.stdout.flush()
@@ -1339,11 +1674,11 @@ def _shadow_one(es_text, item, pq):
         # TTS 念两遍原句，让用户熟悉发音
         print(f"   请听原句（第1遍）：{es_text}")
         sys.stdout.flush()
-        tts_speak(es_text)
+        tts_speak(es_text, is_sentence=True)
         time.sleep(0.3)
         print(f"   请听原句（第2遍）：{es_text}")
         sys.stdout.flush()
-        tts_speak(es_text)
+        tts_speak(es_text, is_sentence=True)
         time.sleep(0.3)
 
         # 录音跟读
@@ -1368,7 +1703,7 @@ def _shadow_one(es_text, item, pq):
         time.sleep(0.5)
         print("  -- 原句 --")
         sys.stdout.flush()
-        tts_speak(es_text)
+        tts_speak(es_text, is_sentence=True)
 
         # 自判
         judge = wait_key("  跟读满意吗？[Y=满意 / N=再来一次 / S=别再问我 / Q=退出] > ")
@@ -1413,9 +1748,9 @@ def mode_5_mixed():
                 if is_sentence:
                     print(f"[听写-句子] 中文：{zh_text}")
                     sys.stdout.flush()
-                    tts_speak(es_text)
+                    tts_speak(es_text, is_sentence=True)
                     time.sleep(0.3)
-                    tts_speak(es_text)
+                    tts_speak(es_text, is_sentence=True)
                 else:
                     print(f"[听写-单词] 当前单词：{es_text}")
                     sys.stdout.flush()
@@ -1452,7 +1787,7 @@ def mode_5_mixed():
                         print(f"[NG] 错误，正确拼写：{es_text}")
                     print(f"  剩余：{pq.remaining} 题\n")
                     sys.stdout.flush()
-                    tts_speak_async(es_text)
+                    tts_speak_async(es_text, is_sentence=is_sentence)
             elif mode == "es→zh":
                 result = _run_es_to_zh_item(item, pq)
                 if result == "quit":
@@ -1530,7 +1865,7 @@ def _show_grammar_detail(idx):
     # 朗读例句
     for ei in g['examples']:
         if ei < len(sentences):
-            tts_speak(sentences[ei]['es'])
+            tts_speak(sentences[ei]['es'], is_sentence=True)
 
     # 子菜单
     while True:
@@ -1540,7 +1875,7 @@ def _show_grammar_detail(idx):
         elif cmd == "R":
             for ei in g['examples']:
                 if ei < len(sentences):
-                    tts_speak(sentences[ei]['es'])
+                    tts_speak(sentences[ei]['es'], is_sentence=True)
 
 
 # -- 主循环 ------------------------------------------------
@@ -1558,7 +1893,9 @@ def main():
         while True:
             print_menu()
             choice = wait_key("请选择 > ")
-            if choice == "1":
+            if choice == "0":
+                mode_0_memory_import()
+            elif choice == "1":
                 mode_1_listen_es_say_zh()
             elif choice == "2":
                 mode_2_listen_zh_say_es()
@@ -1570,6 +1907,10 @@ def main():
                 mode_5_mixed()
             elif choice == "G":
                 mode_g_grammar()
+            elif choice == "T":
+                new_tb = select_textbook()
+                if new_tb is not None:
+                    TEXTBOOK = new_tb
             elif choice == "Q":
                 print("\nAdiós! \n")
                 break

@@ -1,0 +1,10 @@
+¿Cómo te llamas?
+Ana: Hola, buenos días.
+Paco: Buenos días. Yo soy Paco. Y tú, ¿cómo te llamas?
+Ana: Yo me llamo Ana. Ellos son mis amigos. Ella se llama Susana y él se llama Tomás.
+Paco: ¿Son ustedes españoles?
+Ana: Yo soy española, Susana es cubana y Tomás, chileno.
+Paco: Encantado de conocerlos.
+Ana: Mucho gusto. ¿Es usted profesor?
+Paco: Sí, soy profesor de chino.
+Ana: Ah, usted es nuestro profesor de chino. Entonces, somos sus alumnos.

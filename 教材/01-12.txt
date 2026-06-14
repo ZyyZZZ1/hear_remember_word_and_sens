@@ -1,0 +1,40 @@
+# 生词
+（本课为物主形容词体系化总结课，所有词汇均已在之前课程中出现，无新词。）
+
+# 例句
+Mis padres trabajan en la universidad.	我父母在大学里工作。
+Vuestro dormitorio está ahí.	你们的卧室在那边。
+¿Dónde están nuestras habitaciones?	我们的房间在哪儿？
+¿Es tu novio latinoamericano?	你男朋友是拉丁美洲人吗？
+Sus amigos estudian español.	他（她，您）/ 他们（她们，诸位）的那些朋友在学西班牙语。
+Mis abuelos son médicos.	我祖父、祖母都是医生。
+Su dormitorio es grande.	他（她，您）/ 他们（她们，诸位）的卧室很大。
+¿Dónde está nuestra habitación?	我们的房间在哪儿？（一间房间）
+¿Dónde están nuestras habitaciones?	我们的房间在哪儿？（多间房间）
+
+# 语法点
+非重读物主形容词的形式
+非重读物主形容词表示所属关系，置于名词之前。其完整形式如下：
+
+| 人称 | 阳性单数 | 阴性单数 | 阳性复数 | 阴性复数 |
+|------|----------|----------|----------|----------|
+| 第一人称单数（yo） | mi 我的 | mi 我的 | mis 我的 | mis 我的 |
+| 第二人称单数（tú） | tu 你的 | tu 你的 | tus 你的 | tus 你的 |
+| 第三人称单数（él/ella/usted） | su 他/她/它/您的 | su 他/她/它/您的 | sus 他/她/它/您的 | sus 他/她/它/您的 |
+| 第一人称复数（nosotros/nosotras） | nuestro 我们的 | nuestra 我们的 | nuestros 我们的 | nuestras 我们的 |
+| 第二人称复数（vosotros/vosotras） | vuestro 你们的 | vuestra 你们的 | vuestros 你们的 | vuestras 你们的 |
+| 第三人称复数（ellos/ellas/ustedes） | su 他们/她们/它们/诸位的 | su 他们/她们/它们/诸位的 | sus 他们/她们/它们/诸位的 | sus 他们/她们/它们/诸位的 |
+
+注意：mi、tu、su 无阴阳性变化，只有单复数变化（mi→mis, tu→tus, su→sus）；nuestro 和 vuestro 既有阴阳性变化，也有单复数变化。
+对应例句：1, 2, 3, 4, 5
+
+非重读物主形容词的用法规则
+非重读物主形容词置于名词之前，并与所修饰的名词保持单数、复数的一致。第一人称复数（nuestro/nuestra/nuestros/nuestras）和第二人称复数（vuestro/vuestra/vuestros/vuestras）还应与所修饰的名词保持阴性、阳性的一致。例如：
+- nuestras habitaciones（"habitaciones"为阴性复数，故用"nuestras"）
+- vuestro dormitorio（"dormitorio"为阳性单数，故用"vuestro"）
+- nuestra habitación（"habitación"为阴性单数，故用"nuestra"）
+对应例句：1, 2, 3, 8, 9
+
+物主形容词性数变化与所指代人的关系
+非重读物主形容词的性、数变化取决于所修饰的名词，与所指代的人无关。例如：无论说话者是男性还是女性，"mis abuelos"始终用"mis"（因为"abuelos"是阳性复数）；无论"我们"是男是女，"nuestra habitación"始终用"nuestra"（因为"habitación"是阴性单数）。
+对应例句：6, 7, 8, 9

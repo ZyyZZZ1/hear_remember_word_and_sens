@@ -1,0 +1,98 @@
+# 生词
+peruano	秘鲁的；秘鲁人（阳性）
+peruana	秘鲁的；秘鲁人（阴性）
+pequeño	小的（阳性）
+pequeña	小的（阴性）
+grande	大的（无阴阳性变化）
+ahí	那里，在那儿
+vivir	住，居住，生活
+vivo	（我）住
+vives	（你）住
+vive	（他/她/您）住
+vivimos	（我们）住
+vivís	（你们）住
+viven	（他们/她们/诸位）住
+dormitorio	卧室
+colegio	学校
+con	和……一起、带有
+habitación	房间
+levantarse	起床（代词式动词）
+me levanto	（我）起床
+te levantas	（你）起床
+se levanta	（他/她/您）起床
+nos levantamos	（我们）起床
+os levantáis	（你们）起床
+se levantan	（他们/她们/诸位）起床
+
+# 例句
+Mucho gusto.	很高兴认识你。
+Tengo un amigo peruano.	我有一个秘鲁朋友。
+Vive ahí toda su familia.	他全家都住在那里。
+Tomás vive en una casa pequeña.	托马斯住在一间小房子里。
+Estudiamos en un instituto muy grande.	我们在一个很大的学院学习。
+¿Es su colegio grande?	您的学校大吗？
+Estudia en una universidad grande.	他在一所大的大学里学习。
+Tomás vive en una casa grande.	托马斯住在一间大房子里。
+Todos los días Pepe se levanta muy temprano.	佩佩每天都起得很早。
+Esta casa tiene varios dormitorios.	这间房有好几个卧室。
+Tenemos una casa grande con muchas habitaciones.	我们有一间带很多房间的大房子。
+Le presento a mis amigas peruanas: Ana y Elena.	我向您介绍我的秘鲁朋友：安娜和艾蕾娜。
+¿Tienes un amigo inglés?	你有一个英国朋友吗？
+¿Tienen ustedes amigos ingleses?	诸位有英国朋友吗？
+Nuestra profesora es muy joven.	我们的女老师非常年轻。
+Nuestras profesoras son jóvenes.	我们的女老师们非常年轻。
+El chico es mexicano.	这个小伙子是墨西哥人。
+Los chicos son mexicanos.	这些小伙子们是墨西哥人。
+La chica está ocupada, pero contenta.	这个女孩很忙碌但很高兴。
+Las chicas están ocupadas, pero contentas.	女孩们很忙碌但很高兴。
+Los chicos están ahí.	那些男孩在那里。
+Están ahí los chicos.	在那里呢，那些男孩。
+Muchos profesores trabajan en la universidad.	许多老师在这所大学工作。
+Trabajan en la universidad muchos profesores.	在这所大学工作的有许多老师。
+Una familia peruana vive en esta casa grande.	一个秘鲁家庭住在这所大房子里。
+Vive en esta casa grande una familia peruana.	住在这所大房子里的是一个秘鲁家庭。
+
+# 语法点
+形容词的阴阳性变化规则（一）：以 -o 结尾
+以 -o 结尾的形容词在修饰阳性名词时词尾保持 -o，修饰阴性名词时词尾变为 -a。例如 peruano/peruana（秘鲁的）、pequeño/pequeña（小的）。本课的例句展示了 amigo peruano（秘鲁朋友，阳性）与 amigas peruanas（秘鲁朋友，阴性）的对比，以及 casa pequeña（小房子，阴性）中的性数配合。
+对应例句：2、10、12
+
+形容词的阴阳性变化规则（二）：以 -e 结尾
+以 -e 结尾的形容词（如 grande"大的"）没有阴阳性词尾变化，无论修饰阳性名词还是阴性名词，词尾均保持 -e。本课中以 instituto grande（阳性，大的学院）和 universidad grande（阴性，大的大学）为例，展示了这类形容词的不变性。
+对应例句：5、6、7、8
+
+形容词的单复数变化规则（一）：以元音结尾加 -s
+以元音结尾的形容词在变为复数时，词尾直接添加 -s。例如 peruano → peruanos/peruanas、grande → grandes、pequeño → pequeñas、vario → varios。本课中 amigas peruanas（秘鲁朋友们）、varios dormitorios（好几个卧室）均遵循此规则。
+对应例句：9、10、12
+
+形容词的单复数变化规则（二）：以辅音结尾加 -es
+以辅音结尾的形容词变为复数时，词尾加 -es。特别需要注意的是，为了保持单词原有的重读音节，一些形容词在添加 -es 后需要添加或去掉重音符号。例如：joven → jóvenes（需要添加重音符号以保持原重音位置）、inglés → ingleses（需要添加 -es 并在书写上调整）。本课中外语国籍形容词 inglés/inglesa 的复数为 ingleses/inglesas。
+对应例句：13、14、15、16
+
+系表结构中形容词与主语的一致
+在由系动词 ser 或 estar 加形容词构成的系表结构中，形容词必须与主语保持单复数和阴阳性的一致。主语是阳性单数则形容词用阳性单数，主语是阴性单数则形容词用阴性单数，主语是复数则形容词也变为相应的复数形式。本课通过四组对比句展示了这一规则：el chico es mexicano / los chicos son mexicanos、la chica está ocupada, pero contenta / las chicas están ocupadas, pero contentas。
+对应例句：17、18、19、20
+
+规则动词 vivir（-ir 结尾）的陈述式现在时变位
+vivir 是第三组规则动词（以 -ir 结尾），意为"住、居住、生活"。其陈述式现在时变位遵循规则：去掉词尾 -ir，分别加上 -o（yo）、-es（tú）、-e（él/ella/usted）、-imos（nosotros/nosotras）、-ís（vosotros/vosotras）、-en（ellos/ellas/ustedes）。本课中出现第三人称单数形式 vive，如"Tomás vive en una casa pequeña"（托马斯住在一间小房子里）。
+对应例句：3、4、8
+
+代词式动词 levantarse 的用法
+levantarse 由动词 levantar（抬起）加自复代词 se 构成，意为"起床"。其变位为：me levanto、te levantas、se levanta、nos levantamos、os levantáis、se levantan。自复代词必须放在变位动词之前。本课中出现第三人称单数形式 se levanta，如"Todos los días Pepe se levanta muy temprano"（佩佩每天都起得很早）。
+对应例句：9
+
+陈述句中的主语后置
+西班牙语陈述句的常规语序是「主语 + 谓语」（如 Tomás vive en una casa pequeña，例句4），但主语也可以后置于动词之后，构成「谓语 + 主语」的变序。本课关键例句：Vive ahí toda su familia（例句3），主语 toda su familia 位于动词 vive 和地点状语 ahí 之后，这是典型的陈述句主语后置。
+主语后置的常见情形包括：
+① 主语较长或带有修饰成分时，倾向于后置以避免头重脚轻；
+② 引入新信息或突出主语时，将新信息放在句末；
+③ 句首为地点状语时（如 ahí 开头的句子），动词紧跟状语之后，主语后置。
+与疑问句中的主语后置不同（疑问句必须后置，见01-06），陈述句的主语后置是可选的、出于语气或信息结构的考虑。
+以下三组对比展示同义句的两种语序差异（所有用词均不超过本课范围）：
+【常规语序 S-V】Los chicos están ahí. 那些男孩在那里。
+【主语后置 V-S】Están ahí los chicos. 在那里呢，那些男孩。（句首动词凸显存在/方位）
+【常规语序 S-V】Muchos profesores trabajan en la universidad. 许多老师在这所大学工作。
+【主语后置 V-S】Trabajan en la universidad muchos profesores. 在这所大学工作的有许多老师。（主语带修饰语，后置更自然）
+【常规语序 S-V】Una familia peruana vive en esta casa grande. 一个秘鲁家庭住在这所大房子里。
+【主语后置 V-S】Vive en esta casa grande una familia peruana. 住在这所大房子里的是一个秘鲁家庭。（引入新信息，先说地点再说谁住）
+对应例句：3, 4, 21, 22, 23, 24, 25, 26

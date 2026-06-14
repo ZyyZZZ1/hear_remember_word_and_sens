@@ -1,0 +1,75 @@
+# 生词
+yo 我
+tú 你
+él 他
+ella 她
+usted 您
+nosotros 我们（阳性）
+nosotras 我们（阴性）
+vosotros 你们（阳性）
+vosotras 你们（阴性）
+ellos 他们
+ellas 她们
+ustedes 诸位/你们（礼貌式）
+ser 是（动词原形）
+soy 我是
+eres 你是
+es 他/她/您是
+somos 我们是
+sois 你们是
+son 他们/她们/诸位是
+estudiante 学生
+amigo 朋友（阳性）
+amigos 朋友们（阳性复数）
+Lorena 洛雷娜（人名）
+Paco 帕科（人名）
+quién 谁（单数）
+quiénes 谁（复数）
+sí 是的
+no 不
+y 和
+tu 你的（物主形容词）
+el 定冠词（阳性单数）
+o 或
+si 如果（无重音）
+
+# 例句
+Soy Lorena. 我是洛雷娜。
+Eres Paco. 你是帕科。
+Yo soy Lorena. 我是洛雷娜。
+Nosotros somos amigos. 我们是朋友。
+Ellos son estudiantes. 他们是学生。
+¿Eres estudiante? 你是学生吗？
+¿Eres tú estudiante? 你是学生吗？
+Sí, soy estudiante. 是的，我是学生。
+No, no soy estudiante. 不，我不是学生。
+¿Quién eres tú? 你是谁？
+¿Quién es él? 他是谁？
+Él es Paco. 他是帕科。
+¿Quiénes son ellos? 他们是谁？
+Ellos son Lorena y Paco. 他们是洛雷娜和帕科。
+
+# 语法点
+主格人称代词
+西班牙语的主格人称代词有六种人称形式：第一人称单数 yo（我）、第二人称单数 tú（你）、第三人称单数 él/ella/usted（他/她/您）、第一人称复数 nosotros/nosotras（我们）、第二人称复数 vosotros/vosotras（你们）、第三人称复数 ellos/ellas/ustedes（他们/她们/诸位）。主格人称代词在句中作主语。由于西班牙语动词变位本身已体现人称和数，主语经常可以省略。
+对应例句：1,2,3,4,5
+
+系动词 SER 的陈述式现在时变位
+动词 ser（是）是西班牙语中最基础的系动词，其陈述式现在时变位为：yo soy（我是）、tú eres（你是）、él/ella/usted es（他/她/您是）、nosotros/nosotras somos（我们是）、vosotros/vosotras sois（你们是）、ellos/ellas/ustedes son（他们/她们/诸位是）。西班牙语所有动词原形以 -ar、-er、-ir 结尾，且都有六种人称变位形式。
+对应例句：1,2,3,4,5
+
+陈述句的语序
+陈述句的语序为：主语 + 谓语（变位动词 + 其他成分）。主语可以省略，因为变位动词已指明人称和数。
+对应例句：1,2,3,4,5,12,14
+
+一般疑问句的构成
+一般疑问句有两种构成方式：a) 将陈述句语调上扬；b) 将变位动词提前到句首。肯定回答用 Sí（注意有重音符号，区别于无重音的 si"如果"），否定回答用 No, no + 变位动词，其中 no 必须放在变位动词之前。
+对应例句：6,7,8,9
+
+特殊疑问句的构成
+特殊疑问句的语序为：特殊疑问词 + 变位动词。西班牙语中所有特殊疑问词都带有重音符号，且重音符号加在自身的重音音节上。本课出现的疑问词有 quién（谁，单数）和 quiénes（谁，复数）。
+对应例句：10,11,13
+
+重音符号的作用
+西班牙语中重音符号有两个作用：1）标示单词的重音位置；2）区分同形异义词，例如 tú（主格人称代词"你"）与 tu（物主形容词"你的"），él（主格人称代词"他"）与 el（定冠词），sí（"是的"）与 si（"如果"）。
+对应例句：10,11,12
