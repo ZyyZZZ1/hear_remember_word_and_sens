@@ -11,13 +11,7 @@ vosotras 你们（阴性）
 ellos 他们
 ellas 她们
 ustedes 诸位/你们（礼貌式）
-ser 是（动词原形）
-soy 我是
-eres 你是
-es 他/她/您是
-somos 我们是
-sois 你们是
-son 他们/她们/诸位是
+ser	是 [soy, eres, es, somos, sois, son]
 estudiante 学生
 amigo 朋友（阳性）
 amigos 朋友们（阳性复数）

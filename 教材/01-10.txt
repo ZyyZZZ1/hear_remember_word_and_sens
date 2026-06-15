@@ -5,12 +5,12 @@ asignatura 课程、科目
 conversación 对话、交谈、谈话
 otro 另外的、别的、新的
 cosa 物、物品、东西
-trabajar 劳动、工作
+trabajar 劳动、工作 [trabajo, trabajas, trabaja, trabajamos, trabajáis, trabajan]
 contento 高兴的、愉快的、满意的、满足的
 gramática 语法、文法
 Alemania 德国
 siempre 一直、总是、永远
-preguntar 问、询问、提问
+preguntar 问、询问、提问 [pregunto, preguntas, pregunta, preguntamos, preguntáis, preguntan]
 me 我（yo的宾格和与格，在句中用作直接宾语或间接宾语）
 hombre 男人、男性、男子、男的
 mujer 妇女、女人、女子、女性、女的
@@ -23,8 +23,8 @@ uno 一个人、某个人、任何人（有时用作讲话人自称）
 ocupado 忙的、繁忙的、忙碌的
 pues 那么、嗯（语气词，一般放在句首）
 cada uno 每个人、每人、大家、所有人
-encargar 委托、托付
-encargarse 负责、管理、照顾、掌管（+ de）
+encargar 委托、托付 [encargo, encargas, encarga, encargamos, encargáis, encargan]
+encargarse 负责、管理、照顾、掌管（+ de） [me encargo, te encargas, se encarga, nos encargamos, os encargáis, se encargan]
 
 # 例句
 Los cuatro somos amigos. 我们四个人是朋友。

@@ -1,0 +1,47 @@
+# 生词
+universitario	大学的；大学生
+quedar	剩下，留下 [quedo, quedas, queda, quedamos, quedáis, quedan]
+algo	某事，某物；一些东西
+apenas	几乎不，勉强
+respirar	呼吸 [respiro, respiras, respira, respiramos, respiráis, respiran]
+descansar	休息 [descanso, descansas, descansa, descansamos, descansáis, descansan]
+deporte	体育运动
+noche	夜晚
+once	十一
+estudiantil	学生的
+aunque	尽管，虽然
+cansado	疲惫的
+
+# 例句
+Tenemos un horario muy apretado.	我们有一个非常紧凑的时间表。
+Los estudiantes universitarios tenemos un horario muy apretado.	我们大学生有一个非常紧凑的时间表。
+Nos levantamos muy temprano.	我们很早起床。
+Después de bañarnos, si todavía nos queda tiempo, leemos algo antes del desayuno.	洗完澡后，如果还有时间，我们在早餐前读点东西。
+Al comenzar las clases, ya apenas tenemos tiempo para respirar.	开始上课后，我们几乎连呼吸的时间都没有。
+Por eso, después del almuerzo, tenemos que descansar una hora.	因此，午饭后我们必须休息一小时。
+Por la tarde, muchos de nosotros siempre hacemos algo de deporte.	下午，我们很多人总是做些运动。
+Por la noche, hacemos los trabajos de casa.	晚上，我们做家庭作业。
+Nos acostamos a las once.	我们十一点睡觉。
+¿Estamos contentos con nuestra vida estudiantil?	我们对自己的学生生活满意吗？
+Aunque terminamos la jornada muy cansados, yo digo que sí.	虽然我们结束一天时非常疲惫，但我说是的（满意）。
+
+# 语法点
+代词式动词 levantarse 和 acostarse
+levantarse（起床）和 acostarse（就寝）是两个常用的代词式动词，均需根据主语人称搭配相应的自复代词（me, te, se, nos, os, se）。本课中使用第一人称复数 nos levantamos（我们起床）和 nos acostamos（我们就寝）。注意 acostarse 的词干元音 o 在重读时变为 ue（如 yo me acuesto），本课中 acostamos 为第一人称复数，重音不在词干，故不变。
+对应例句：3,9
+
+quedar —— "剩下、留下"
+quedar 在此处意为"剩下"，nos queda tiempo 意为"我们还有剩余的时间"。quedar 的这种用法中，主语是所剩之物（tiempo），而逻辑上的拥有者用与格代词（nos）表示。
+对应例句：4
+
+al + 动词原形 —— "当……的时候"
+al + 动词原形 构成时间状语，意为"当……的时候"，相当于 cuando + 变位动词。本课中 Al comenzar las clases（当开始上课时）即此用法。al 是 a + el 的缩合形式，后接动词原形。
+对应例句：5
+
+apenas —— "几乎不"
+apenas 是否定副词，意为"几乎不、勉强"，表示数量或程度的极度不足。本课中 apenas tenemos tiempo para respirar（我们几乎连呼吸的时间都没有）用以夸张地表达忙碌程度。
+对应例句：5
+
+aunque —— "尽管、虽然"
+aunque 是让步连词，引导让步状语从句，意为"尽管、虽然"。本课中 aunque terminamos la jornada muy cansados（虽然我们结束一天时非常疲惫），引出与主句相反的情况。
+对应例句：11

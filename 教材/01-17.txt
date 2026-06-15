@@ -1,0 +1,39 @@
+# 生词
+antes de	在……之前
+salir	出去，离开 [salgo, sales, sale, salimos, salís, salen]
+acostarse	睡觉，就寝 [me acuesto, te acuestas, se acuesta, nos acostamos, os acostáis, se acuestan]
+
+# 例句
+Yo me levanto a las siete.	我七点起床。
+Ella se peina antes de salir.	她在出门前梳了头。
+Nos tenemos que levantar a las siete.	我们必须在七点起床。
+Tenemos que levantarnos a las siete.	我们必须在七点起床。
+Me voy a acostar temprano.	我要早点睡。
+Voy a acostarme temprano.	我要早点睡。
+Después de levantarme, me peino.	起床后我梳头。
+Antes de acostarnos, nos cepillamos los dientes.	在睡觉之前，我们刷牙。
+
+# 语法点
+施事与受事 —— 代词式动词的概念
+句中的主语可以是施事（动作的执行者），也可以是受事（动作的承受者）。当主语同时是施事和受事时（如"自己给自己洗澡"），动词称为自反动词或自复动词。在西班牙语中，这类动词需要使用代词式动词，即根据不同人称带相应的自复代词（me, te, se, nos, os, se）。
+对应例句：1,2
+
+自复代词的人称形式
+自复代词与主语人称对应：yo → me、tú → te、él/ella/usted → se、nosotros/nosotras → nos、vosotros/vosotras → os、ellos/ellas/ustedes → se。注意第三人称单复数自复代词均为 se。
+对应例句：1,2,7,8
+
+代词式动词的变位规则
+代词式动词变位时，自复代词置于变位动词之前，与之分写。例如：Yo me levanto（我起床）、Ella se peina（她梳头）。自复代词必须与主语保持人称和数的一致。
+对应例句：1,2
+
+代词式动词与情态动词/助动词连用
+代词式动词与情态动词（如 tener que）或助动词（如 ir a）连用时，动词用原形。自复代词有两种位置：1）置于变位的情态动词/助动词之前，与之分写（如 Nos tenemos que levantar）；2）置于原形动词之后，与之合写（如 Tenemos que levantarnos）。两种形式表达相同的意思。
+对应例句：3,4,5,6
+
+代词式动词在状语中的位置
+在由 antes de 或 después de 等引导的状语中，自复代词只能置于原形动词之后并与之合写（如 Después de levantarme、Antes de acostarnos），不能置于 antes de / después de 之前。
+对应例句：7,8
+
+自复动词的施事-受事双重身份
+在代词式动词句中，主语同时是施事和受事，意为"自己对自己做某事"。当句中有其他成分占据直接宾语位置时（如 los dientes），兼有施事和受事双重身份的成分退居为间接宾语（如 Antes de acostarnos, nos cepillamos los dientes 中，nos 是间接宾语，los dientes 是直接宾语）。
+对应例句：8

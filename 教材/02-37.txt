@@ -1,0 +1,53 @@
+# 生词
+natural	自然的
+africano	非洲的
+señora	女士，夫人
+comenzar	开始 [comienzo, comienzas, comienza, comenzamos, comenzáis, comienzan]
+foto	照片
+dentro	在……里面
+detener	停止，停下 [detengo, detienes, detiene, detenemos, detenéis, detienen]
+motivo	原因，理由；por ningún motivo 绝不
+voz	声音；en voz alta 大声地
+alto	高的；大声的
+es decir	也就是说
+mucho menos	更不用说，更何况
+soler	习惯于，通常（soler + inf.） [suelo, sueles, suele, solemos, soléis, suelen]
+demasiado	太，过于
+gritar	喊叫，呼喊 [grito, gritas, grita, gritamos, gritáis, gritan]
+personal	人员，员工
+proteger	保护 [protejo, proteges, protege, protegemos, protegéis, protegen]
+muchacho	男孩，小伙子
+
+# 例句
+Una furgoneta que lleva turistas se acerca al Parque Natural en un país africano y el guía del grupo comienza a hablar.	一辆载着游客的面包车驶近非洲某国的自然公园，该团的导游开始讲话。
+Señoras y señores, ya estamos en la zona de las fieras. Por favor, escuchen con atención lo que les voy a decir.	女士们先生们，我们已经进入野兽区域了。请仔细听我将要告诉你们的话。
+No se asomen por las ventanillas.	不要从车窗探头出去。
+Si quieren tomar fotos, háganlo desde dentro de la furgoneta.	如果诸位想拍照，请在面包车里面拍。
+Vamos a detenernos de vez en cuando para que observen bien lo que hacen los animales, pero no se apeen por ningún motivo.	我们会不时停下来以便诸位好好观察动物的行为，但无论如何都绝不要下车。
+No hablen en voz alta ni hagan ningún ruido, es decir, no molesten ni mucho menos asusten a los animales.	不要大声说话，也不要发出任何声音，也就是说，不要打扰动物，更不要惊吓它们。
+Deben ustedes saber que una fiera enfurecida suele ser muy peligrosa.	诸位必须知道，一头被激怒的野兽通常非常危险。
+Si alguna de ellas se acerca demasiado no griten ni la amenacen.	如果其中某只野兽靠得太近，不要喊叫，也不要威胁它。
+Nuestro personal sabe cómo protegerlos.	我们的工作人员知道如何保护诸位。
+Ah, otra cosa: de ninguna manera, les arrojen comida.	哦，还有一件事：绝对不要向它们扔食物。
+¡Eh, tú, muchacho, no te asomes por la ventana! ¿No ves que la furgoneta está atravesando la zona de los leones y las hienas?	嘿，你，小伙子，别从窗户探头出去！你没看见面包车正在穿过狮子和鬣狗的区域吗？
+
+# 语法点
+导游警告中的命令式综合运用
+本课通过一个完整的导游警告场景，综合运用了多种命令式形式：ustedes 肯定命令式（escuchen、háganlo）、ustedes 否定命令式（no se asomen、no se apeen、no hablen、no hagan、no griten、no amenacen、no arrojen）、usted 否定命令式（no te asomes）。展示了在实际场景中，命令式如何在肯定与否定、礼貌式与亲昵式之间自如切换。注意否定命令式中代词必须前置于 no 和动词之间（no se asomen、no se apeen、no te asomes）。
+对应例句：3,4,5,6,7,8,9,11,12
+
+短语 por ningún motivo（绝不、无论如何都不）
+por ningún motivo 是强烈否定短语，意为"在任何情况下都不、绝不"，语气比 de ninguna manera 更针对具体行为。在命令式中使用，表示严格禁止。本课中 pero no se apeen por ningún motivo 意为"但无论如何绝不要下车"。
+对应例句：5
+
+短语 es decir（也就是说）
+es decir 用于引出对前面内容的解释或换一种说法，相当于中文的"也就是说、即"。本课中 es decir, no molesten ni mucho menos asusten a los animales 用 es decir 引导对前面行为要求的总结性解释。
+对应例句：6
+
+短语 mucho menos（更不用说）
+mucho menos 用于递进否定，意为"更不用说、更何况"，表示后面的行为比前面的更加不可接受。常与 ni siquiera（甚至都不）交替使用。本课中 ni mucho menos asusten a los animales 意为"更不要惊吓动物"。
+对应例句：6
+
+动词 soler + inf.（通常、习惯于）
+soler + 动词原形表示"通常做某事、习惯于做某事"，用来描述经常性或习惯性的行为。soler 是词干元音变化动词（o→ue）：suelo, sueles, suele, solemos, soléis, suelen。本课中 suele ser muy peligrosa 意为"通常非常危险"。
+对应例句：7

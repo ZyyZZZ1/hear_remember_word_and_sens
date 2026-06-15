@@ -1,0 +1,29 @@
+# 生词
+cuándo	什么时候（疑问副词，带重音符号）
+mañana	明天
+ocho	八
+instituto	学院，学校
+invitar	邀请 [invito, invitas, invita, invitamos, invitáis, invitan]
+mediodía	中午，正午
+organizar	组织，举办 [organizo, organizas, organiza, organizamos, organizáis, organizan]
+
+# 例句
+¿Cuándo vamos a ir al instituto?	我们什么时候去学校？
+Vamos a ir al instituto mañana a las ocho.	我们明天八点去学校。
+¿Cuándo los invitamos a comer?	我们什么时候请他们吃饭？
+Mañana al mediodía.	明天中午。
+¿Cuándo vamos a organizar la fiesta?	我们什么时候举办这个聚会？
+Mañana.	明天。
+
+# 语法点
+疑问副词cuándo的用法
+cuándo（带重音符号）是疑问副词，用于提问事件发生的时间。在疑问句中，cuándo置于句首，后接变位动词。注意区分cuándo（疑问副词，有重音）和cuando（时间连接词，无重音，已在02-03课学习）：前者用于提问，后者用于连接时间从句。
+对应例句：1,3,5
+
+ir a + 原形动词表示将来
+"ir a + 动词原形"是西班牙语中表示不久的将来或计划中即将发生的事情的常用结构，相当于汉语的"要/打算做某事"。ir按人称变位（voy/vas/va/vamos/vais/van），后接前置词a，再接动词原形。本课中"vamos a ir"（我们要去）、"vamos a organizar"（我们要举办）均为此结构。
+对应例句：1,2,3,5
+
+时间表达：钟点和时段
+西班牙语中用"a + las + 数字"表示"在几点钟"，如"a las ocho"（在八点）。"al mediodía"（在中午）是固定表达，al为a+el的缩合。
+对应例句：2,4

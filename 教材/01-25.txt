@@ -1,0 +1,62 @@
+# 生词
+alegría	高兴；快乐；喜悦
+padre	父亲
+padres	父母
+ensalada	沙拉
+verdura	蔬菜
+saber	知道；会（不规则动词） [sé, sabes, sabe, sabemos, sabéis, saben]
+antes de	在……之前
+cansado	疲劳的；累的
+de acuerdo	同意；好的（固定词组）
+de nada	不客气；没关系（固定词组）
+sentarse	坐下（代词式动词） [me siento, te sientas, se sienta, nos sentamos, os sentáis, se sientan]
+cenar	吃晚饭 [ceno, cenas, cena, cenamos, cenáis, cenan]
+gracias	谢谢
+invitación	邀请
+aquí	这里
+mañana	明天
+salir	出去；离开（不规则动词） [salgo, sales, sale, salimos, salís, salen]
+compra	购买
+salir de compras	去购物
+por supuesto	当然
+por favor	请；劳驾
+
+# 例句
+Nos levantamos a las once.	我们11点起床。
+Vamos al colegio.	我们去上学。
+Venimos con mucha alegría.	我们非常高兴地来了。
+Vamos al hospital con mis padres.	我们和爸爸妈妈一起去医院。
+¿Pedimos una ensalada de verduras?	我们要一份蔬菜沙拉吗？
+Encantado de conocerlos.	很高兴认识诸位。
+Muchos de nosotros sabemos que tienes mucho trabajo.	我们之中许多人都知道你有很多工作。
+Los chicos desayunan antes de las clases.	孩子们上课前吃早饭。
+Después de trabajar mucho el joven está cansado.	大量工作后这个年轻人感到很累。
+De acuerdo, de nada.	当然，没关系。
+Nos sentamos para cenar.	我们坐下吃饭。
+Pedimos ensalada para los dos.	我们给他们俩点了沙拉。
+Gracias por la invitación.	感谢邀请。
+¿Qué haces por aquí?	你在这儿干啥？
+Hoy por la mañana no tengo clases.	我今天上午没课。
+Mañana por la tarde podemos salir de compras.	明天下午我们可以去买东西。
+Por supuesto, por favor.	当然；请。
+
+# 语法点
+介词 a 的用法
+介词 a 有两种主要用法：1）表示时间，用于钟点前，回答 ¿a qué hora? 提问，如 Nos levantamos a las once（我们11点起床），此用法已在01-23课详细讲解；2）表示目的地或方向，如 Vamos al colegio（我们去上学），a 与阳性单数定冠词 el 缩合成 al。a 还可用于指人的直接宾语前（见01-09）。
+对应例句：1,2
+
+介词 con 的用法
+介词 con 有两种主要用法：1）表示方式，相当于"以……方式""带着……"，如 Venimos con mucha alegría（我们非常高兴地来了）；2）表示伴随，相当于"和……一起"，如 Vamos al hospital con mis padres（我们和爸爸妈妈一起去医院）。
+对应例句：3,4
+
+介词 de 的用法
+介词 de 的用法非常广泛：1）表示内容，说明事物的性质或内容，如 ensalada de verduras（蔬菜沙拉）；2）表示原因，如 Encantado de conocerlos（很高兴认识诸位）；3）表示整体中的一部分，如 Muchos de nosotros（我们之中的许多人）；4）构成时间副词短语，如 antes de las clases（上课前）、después de trabajar（工作后）；5）和其他词构成固定词组，如 de acuerdo（当然/同意）、de nada（不客气/没关系）。
+对应例句：5,6,7,8,9,10
+
+介词 para 的用法
+介词 para 有两种主要用法：1）表示目的，相当于"为了"，后接动词原形或名词，如 Nos sentamos para cenar（我们坐下吃饭）；2）表示对象，相当于"给……"，如 Pedimos ensalada para los dos（我们给他们俩点了沙拉）。
+对应例句：11,12
+
+介词 por 的用法
+介词 por 有四种主要用法：1）表示原因，相当于"因为""为……"，如 Gracias por la invitación（感谢邀请）；2）表示地点，相当于"在……附近/一带"，如 ¿Qué haces por aquí?（你在这儿干啥？）；3）表示时间段，构成时间短语，如 por la mañana（在上午）、por la tarde（在下午）；4）构成固定词组，如 por supuesto（当然）、por favor（请）。
+对应例句：13,14,15,16,17

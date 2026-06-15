@@ -1,0 +1,77 @@
+# 生词
+por qué	为什么
+vida	生活，生命
+alegría	高兴，喜悦
+volver	返回；再次（volver a + 动词原形 = 再次做某事） [vuelvo, vuelves, vuelve, volvemos, volvéis, vuelven]
+hacer	做 [hago, haces, hace, hacemos, hacéis, hacen]
+aquí	这里
+medio	半，一半（阳性形式；阴性形式 media 见 01-18）
+doctorado	博士学位
+sin	没有
+realidad	现实；en realidad = 实际上
+hay	有（haber 的无人称形式）
+decir	说 [digo, dices, dice, decimos, decís, dicen]
+mismo	相同的；lo mismo = 同样的事
+baño	洗澡（名词）；浴室
+comedor	食堂，饭厅
+comenzar	开始 [comienzo, comienzas, comienza, comenzamos, comenzáis, comienzan]
+hasta	直到
+leer	阅读 [leo, lees, lee, leemos, leéis, leen]
+repasar	复习 [repaso, repasas, repasa, repasamos, repasáis, repasan]
+lección	课
+prepararse	准备 [me preparo, te preparas, se prepara, nos preparamos, os preparáis, se preparan]
+nuevo	新的
+metro	地铁
+real	真正的，实际的
+mediodía	中午
+almuerzo	午餐
+campus	校园
+quedarse	留下，待在 [me quedo, te quedas, se queda, nos quedamos, os quedáis, se quedan]
+biblioteca	图书馆
+casi	几乎
+
+# 例句
+¿Por qué no me hablas más de tu vida?	你为什么不跟我多聊聊你的生活呢？
+Hola, José. ¡Tú también en España! ¡Qué casualidad!	你好，何塞。你也来西班牙了！好巧啊！
+¡Qué alegría de volver a verte!	真高兴再次见到你！
+¿Qué haces por aquí?	你在这里做什么？
+Vengo a un curso de verano.	我来参加一个夏令营。
+España organiza estos cursos todos los años.	西班牙每年都举办这些课程。
+¿Y tú? ¿Llevas mucho tiempo aquí?	你呢？你在这里待了很久了吗？
+Sí, llevo año y medio en una universidad del país.	是的，我在这国家的一所大学待了一年半。
+Estoy en un curso de doctorado.	我在读一个博士课程。
+¡Doctorado! ¡Y yo sin saberlo!	博士！而我竟然不知道！
+En realidad no hay mucho que decir.	其实没什么好说的。
+Todos los días hago lo mismo: me levanto a las siete en punto, me baño, me cepillo los dientes, me peino y luego voy al comedor de estudiantes a tomar el desayuno.	每天我做同样的事：我七点整起床，洗澡，刷牙，梳头，然后去学生食堂吃早餐。
+Como las clases no comienzan hasta las nueve, todavía tengo tiempo para leer.	因为课到九点才开始，我还有时间阅读。
+Repaso las lecciones estudiadas y me preparo para las nuevas.	我复习学过的课程并为新课做准备。
+A las ocho y media salgo de la residencia y voy a la facultad en metro.	八点半我离开宿舍，乘地铁去系里。
+¡Vaya horario más apretado! ¡Y eso, antes de comenzar la jornada real!	多么紧凑的时间表！而这还只是在真正的一天开始之前！
+Pues ya ves.	你看吧（就是这样）。
+Al mediodía, almuerzo en un comedor del campus.	中午，我在校园的一个食堂吃午饭。
+Después me quedo en la biblioteca casi toda la tarde para estudiar.	之后我几乎整个下午都待在图书馆学习。
+
+# 语法点
+疑问词 por qué
+¿Por qué...? 意为"为什么……？"，用于询问原因。por qué 由前置词 por 和疑问词 qué 组成，注意与 porque（因为，回答用）的区分。本课中 ¿Por qué no me hablas más de tu vida?（你为什么不跟我多聊聊你的生活呢？）是反问句式，带有轻微的抱怨语气。
+对应例句：1
+
+volver a + 动词原形 —— "再次做某事"
+volver a + 动词原形 是固定结构，意为"再次做某事"或"重新做某事"。volver 在此结构中已失去"返回"的本义，转而表示动作的重复。本课中 volver a verte（再次见到你）即此用法。
+对应例句：3
+
+llevar + 时间段 —— 表示持续的时间
+llevar + 时间段 表示"已经做了……时间"，用于描述动作或状态持续的时间长度。本课中 llevo año y medio（我待了一年半）和 ¿Llevas mucho tiempo aquí?（你在这里待了很久了吗？）均为此用法。注意 llevar 在此已不表"携带"而表时间持续。
+对应例句：7,8
+
+无人称动词 haber —— hay
+hay 是动词 haber 的无人称形式，意为"有"，表示存在。hay 没有主语，无论后面是单数还是复数名词，始终使用 hay。本课中 no hay mucho que decir（没什么好说的）即此用法。
+对应例句：11
+
+前置词 hasta —— "直到"
+hasta 表示时间或空间的终点，意为"直到"。本课中 las clases no comienzan hasta las nueve（课到九点才开始），not...until 的结构与英语类似，即主句否定 + hasta 引出时间点。
+对应例句：13
+
+反身动词 prepararse
+prepararse 是 preparar（准备）的代词式动词形式，意为"（为某事）做准备"。与 preparar 不同，prepararse 强调为自己做准备。本课中 me preparo para las nuevas（我为新课做准备）。
+对应例句：14

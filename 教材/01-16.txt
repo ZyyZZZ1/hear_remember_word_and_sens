@@ -1,0 +1,62 @@
+# 生词
+esta	这个（指示形容词，阴性单数）
+estos	这些（指示形容词，阳性复数）
+estas	这些（指示形容词，阴性复数）
+esto	这个（指示代词，中性）
+eso	那个（指示代词，中性）
+aquel	那个（指示形容词，阳性单数，远指）
+aquella	那个（指示形容词，阴性单数，远指）
+aquellos	那些（指示形容词，阳性复数，远指）
+aquellas	那些（指示形容词，阴性复数，远指）
+aquello	那个（指示代词，中性，远指）
+adónde	去哪里（a + dónde 的合写）
+facultad	系，学院
+residencia	宿舍
+verano	夏天
+teléfono	电话
+año	年
+organizar	组织，举办 [organizo, organizas, organiza, organizamos, organizáis, organizan]
+señor	先生
+
+# 例句
+Esta casa tiene muchas habitaciones.	这间房子有很多房间。
+Estos estudiantes son españoles.	这些学生是西班牙人。
+¿Quién es ese joven?	那个年轻人是谁？
+¿Adónde van esos autobuses?	那些公交车去哪里？
+¿Van ustedes a aquel colegio?	诸位去那个学校吗？
+Estudiamos en aquella universidad.	我们在那个大学读书。
+Esta es mi casa.	这是我的房子。
+Los españoles organizan cursos de verano todos los años. Vengo a uno de estos.	西班牙人每年都会举办夏令营。我来其中一个。
+Estudiamos en esta facultad y mis amigos, en esa.	我们在这个系学习，我的朋友们在那个系。
+Los chicos viven en esta residencia y las chicas, en aquella.	男孩子们住在这栋宿舍，女孩子们住在那栋宿舍。
+¿Qué es esto?	这个是什么？
+Esto es un teléfono móvil.	这是一部手机。
+
+# 语法点
+指示形容词概述
+指示形容词用来指明所谈及的人或事物与对话者双方之间的相对位置，应放在所修饰的名词之前，并与名词保持性、数一致。与汉语不同，西班牙语中有三组指示形容词：este 系列（近指，距说话者近）、ese 系列（中指，距听话者近）、aquel 系列（远指，距双方都远）。每组分阳性单数、阴性单数、阳性复数、阴性复数四种形式。
+对应例句：1,2,3,4,5,6
+
+este 系列 —— 近指
+este（阳性单数）、esta（阴性单数）、estos（阳性复数）、estas（阴性复数）用来指距离说话者较近的人或物，相当于汉语的"这个""这些"。
+对应例句：1,2
+
+ese 系列 —— 中指
+ese（阳性单数）、esa（阴性单数）、esos（阳性复数）、esas（阴性复数）用来指距离听话者较近的人或物，相当于汉语的"那个""那些"。注意：在指人的名词前使用 ese 系列可能带有轻蔑、不敬的口吻，此时通常用定冠词替代（如用 el señor 替代 ese señor）。
+对应例句：3,4
+
+aquel 系列 —— 远指
+aquel（阳性单数）、aquella（阴性单数）、aquellos（阳性复数）、aquellas（阴性复数）用来指距离说话者和听话者都较远的人或物，相当于汉语的"那个（远处的）""那些（远处的）"。
+对应例句：5,6
+
+指示代词
+指示代词与指示形容词在形式上完全相同（este, esta, estos, estas, ese, esa, esos, esas, aquel, aquella, aquellos, aquellas），只是脱离名词而独立使用，并与所指代的名词保持性、数一致。指示代词代替已提及的名词，避免重复。
+对应例句：7,8,9,10
+
+指示代词的中性形式
+指示代词有中性形式：esto、eso、aquello，用于指代抽象的概念、事物或不确定的东西。中性形式没有性和数的变化，只能独立使用，不能修饰名词。
+对应例句：11,12
+
+adónde —— a + dónde 的合写
+前置词 a 与疑问词 dónde 连用时，必须合写为 adónde，意为"去哪里""往何处"。这与 a + el 缩合为 al 的规则类似。
+对应例句：4

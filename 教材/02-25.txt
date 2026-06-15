@@ -1,0 +1,75 @@
+# 生词
+comprador	顾客，买方
+Ecuador	厄瓜多尔
+donde	那里（关系副词）
+tan	如此，那么
+como	像，如同（比较）
+Madrid	马德里（西班牙首都）
+en efecto	确实，事实上
+época	季节，时期
+mostrar	展示，给……看 [muestro, muestras, muestra, mostramos, mostráis, muestran]
+algún	某个，一些（alguno 的短尾形式）
+perdón	抱歉，对不起
+bonito	漂亮的，好看的
+color	颜色
+gris	灰色的
+recomendar	推荐，建议 [recomiendo, recomiendas, recomienda, recomendamos, recomendáis, recomiendan]
+oscuro	暗的，深的（颜色）
+probar	试；尝试；试穿 [pruebo, pruebas, prueba, probamos, probáis, prueban]
+detrás	在……后面
+cortina	帘子，窗帘
+amarillo	黄色的
+probador	试衣间
+sentar	适合，合身（sentar bien/mal 合身/不合身） [siento, sientas, sienta, sentamos, sentáis, sientan]
+perfecto	完美的
+llevarse	带走，买走 [me llevo, te llevas, se lleva, nos llevamos, os lleváis, se llevan]
+deber	欠；应该 [debo, debes, debe, debemos, debéis, deben]
+más	更，更多
+seguir	跟随；继续 [sigo, sigues, sigue, seguimos, seguís, siguen]
+allá	那里（较远处）
+mostrador	柜台
+además	此外，另外
+lluvia	雨
+elegir	选择 [elijo, eliges, elige, elegimos, elegís, eligen]
+caja	收银台；盒子
+disposición	支配，安排；a su disposición 听您吩咐
+cualquier	任何一个
+amable	和蔼的，友善的
+
+# 例句
+Buenas tardes, señorita.	下午好，小姐。
+Buenas tardes. ¿En qué puedo servirle?	下午好。有什么可以帮您的？
+Mire, acabo de venir de Ecuador, donde el invierno no es tan frío como en Madrid. Ya ve usted, necesito comprar mucha ropa.	您看，我刚从厄瓜多尔来，那里的冬天不像马德里这么冷。您瞧，我需要买很多衣服。
+Hace usted bien, porque, en efecto, para la temperatura de esta época, está usted muy poco abrigado. Dígame qué es lo que quiere.	您做得对，因为，确实，就这个季节的温度而言，您穿得太少了。告诉我您想要什么。
+Muéstreme primero algún suéter, perdón, jersey como dicen ustedes. Ah, espere. Allí veo uno muy bonito, sí, ese de color gris. Pásemelo, por favor.	先给我看看毛衣，对不起，就像你们说的 jersey。啊，等等。那里我看到一件很漂亮的，是的，那件灰色的。请递给我。
+Pero ese es de la talla L. Creo que a usted le queda bien uno de la M. Le recomiendo ese otro de color azul oscuro, es de su talla.	但那件是L号的。我觉得您穿M号的合适。我向您推荐那件深蓝色的，是您的尺寸。
+Está bien. ¿Puedo probármelo?	好的。我可以试穿一下吗？
+Sí, aquí lo tiene, pruébeselo ahí, detrás de esa cortina amarilla.	可以，给您，在那里试，那幅黄色帘子后面。
+Me queda bien y el color me sienta perfecto. Me lo llevo. ¿Cuánto le debo?	我穿得合适，颜色也非常适合我。我买了。多少钱？
+¿No quiere usted algo más?	您不要别的了吗？
+Ah, sí, sí, sí. ¿Tienen también chaquetas y pantalones de tela gruesa?	啊，要，要，要。你们还有厚布料的外套和裤子吗？
+Sígame, por favor, hacia allá, a aquel mostrador.	请跟我来，往那边，到那个柜台。
+Otra cosa: necesito, además, un abrigo impermeable para los días de lluvia.	还有一件事：另外，我需要一件雨天穿的防水大衣。
+Todo eso hay aquí. No tiene usted más que elegir, probarse y pagar en la caja. Ya sabe, nos tiene a su disposición para cualquier cosa que necesite.	这儿都有。您只需挑选、试穿和在收银台付款。您知道，我们随时听您吩咐，无论您需要什么。
+Es usted muy amable, gracias.	您真友好，谢谢。
+
+# 语法点
+比较结构 tan...como（和……一样……）
+tan + 形容词 + como 用于比较两个事物在某方面的程度相同，相当于中文的"像……一样……"。本课中 el invierno no es tan frío como en Madrid 意为"冬天不像马德里那么冷"。否定式 no tan...como 表示"不如……那样……"。
+对应例句：3
+
+肯定命令式（礼貌式 usted）继续展开
+本课大量使用礼貌式 usted 的肯定命令式：Mire（您看）、Dígame（您告诉我）、Muéstreme（您给我看）、Pásemelo（您递给我）、pruébeselo（您试穿）、Sígame（您跟我来）。命令式中代词必须后附于动词并与之连写，必要时加重音符号以保持原重音位置。
+对应例句：3,4,5,6,8,13
+
+购物常用表达
+本课提供了完整的购物场景用语：¿En qué puedo servirle?（有什么可以帮您的？）、Me lo llevo（我买了）、¿Cuánto le debo?（多少钱？）、¿No quiere usted algo más?（您不要别的了吗？）、a su disposición（听您吩咐/为您服务）。这些是购物场景中的核心表达。
+对应例句：2,10,11,15
+
+代词组合与命令式的配合
+在肯定命令式中，宾格代词和与格代词需后附于动词并与之连写为一个词。如果代词组合使重音位移，需要在原重音音节上加标重音符号。本课展示了多个代词附于命令式的例子：Pásemelo（pase + me + lo）、probármelo（probar + me + lo）、pruébeselo（pruebe + se + lo）。
+对应例句：5,7,8
+
+短语 en efecto（确实，事实上）
+en efecto 是正式场合中表示确认和肯定的常用短语，相当于中文的"确实、的确、事实上"，用于加强前面的陈述。
+对应例句：4

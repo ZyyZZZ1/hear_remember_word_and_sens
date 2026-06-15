@@ -1,0 +1,49 @@
+# 生词
+hábito	习惯
+variar	变化，不同 [varío, varías, varía, variamos, variáis, varían]
+cultura	文化
+pueblo	人民；村镇
+considerar	认为，考虑 [considero, consideras, considera, consideramos, consideráis, consideran]
+normal	正常的
+España	西班牙
+de buenas a primeras	突然地，冷不防地
+salario	工资，薪水
+casado	已婚的
+aspecto	外表，方面
+nunca	从不，永不
+edad	年龄
+telefonear	打电话 [telefoneo, telefoneas, telefonea, telefoneamos, telefoneáis, telefonean]
+antes de	在……之前
+ocho	八
+once	十一
+sencillamente	简单地，仅仅
+olvidar	忘记 [olvido, olvidas, olvida, olvidamos, olvidáis, olvidan]
+evitar	避免 [evito, evitas, evita, evitamos, evitáis, evitan]
+enseguida	马上，立刻
+
+# 例句
+Los hábitos varían según la cultura de los pueblos. Comportamientos que se consideran normales en China, pueden resultar chocantes en otros países. Si quieres ir a España o a otros países de habla española; entonces lee con atención estos consejos.	习惯因各民族文化而异。在中国被认为是正常的行为，在其他国家可能会令人震惊。如果你想去西班牙或其他西班牙语国家，那就仔细阅读这些建议。
+Si una persona todavía no es tu amigo de confianza, no le preguntes así, de buenas a primeras, cuál es su salario.	如果一个人还不是你信任的朋友，不要这样冷不防地问他工资是多少。
+A una chica no le preguntes si está casada o si tiene novio.	对女孩不要问她是否已婚或有男朋友。
+Si conoces a una mujer con aspecto de tener más de veinticinco años, nunca le hagas pregunta: ¿Qué edad tiene?	如果你认识一个看起来超过二十五岁的女人，永远不要问她：你多大了？
+No telefonees a nadie ni antes de las ocho de la mañana ni después de las once de la noche.	早上八点之前和晚上十一点之后不要给任何人打电话。
+Cuando alguien te elogia, diciendo, por ejemplo, que hablas bien español, no le digas: No, lo hablo muy mal. En vez de esto, dale las gracias, sencillamente.	当有人夸你，比如说你西班牙语说得好，不要对他说：不，我说得很差。相反，简单地向他道谢就好了。
+Si alguien te hace un regalo, no te limites a agradecerle; tienes que abrir el paquete enseguida y decir algo así como: ¡Qué bonito! Es usted muy amable.	如果有人送你礼物，不要只是感谢他；你应该马上打开包裹，然后说类似这样的话：真漂亮！您真友好。
+Puedo darte muchos otros consejos más, pero, por el momento, creo que ya es suficiente. No los olvides. Y evita hacer lo que no debes.	我还可以给你更多其他的建议，但眼下我觉得已经足够了。别忘了它们。并且避免做不该做的事。
+
+# 语法点
+否定命令式在文化建议中的运用
+本课通过一系列文化礼仪建议，集中展示了否定命令式在日常指导中的实际运用：no le preguntes（你别问）、no le hagas（你别对他/她说）、no telefonees（你别打电话）、no le digas（你别对他说）、no los olvides（你别忘了它们）。这些否定命令式都是 tú 形式，用于表达忠告和建议，语气为"你应该避免做……"。
+对应例句：2,3,4,5,6,8
+
+短语 de buenas a primeras（冷不防地）
+de buenas a primeras 是西班牙语固定短语，意为"突然地、冷不防地、开门见山地"，用于描述没有铺垫、直接进入敏感话题的行为。在本课中修饰 preguntar（询问），表示不礼貌的直截了当的询问方式。
+对应例句：2
+
+频率副词 nunca（从不）
+nunca 是绝对否定副词，意为"从不、永不"，语气比 no 更强烈。nunca 位于动词之前时，不再需要 no；但也可放在动词之后，此时动词前需加 no（如 no le preguntes nunca）。本课中 nunca le hagas pregunta 展示了 nunca 在否定命令式中的使用。
+对应例句：4
+
+文化差异与西班牙语国家的礼仪
+本课从跨文化角度介绍了西班牙语国家的一些社交礼仪：不要随意询问工资（salario）、婚姻状况（casada）、年龄（edad）；不要在清晨或深夜打电话；受到夸奖时要道谢而不是否认；收到礼物时要当场打开并表达赞美。这些是西班牙语国家的重要社交规范。
+对应例句：2,3,4,5,6,7

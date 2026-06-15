@@ -1,0 +1,56 @@
+# 生词
+compañero	同学；同伴
+casa	家；房子
+nueve	九
+empezar	开始（e → ie 词根变化动词） [empiezo, empiezas, empieza, empezamos, empezáis, empiezan]
+ayudar	帮助 [ayudo, ayudas, ayuda, ayudamos, ayudáis, ayudan]
+cocina	厨房
+invitado	客人；来宾
+recibir	接收；迎接 [recibo, recibes, recibe, recibimos, recibís, reciben]
+felicitar	祝贺 [felicito, felicitas, felicita, felicitamos, felicitáis, felicitan]
+muy	非常
+feliz	幸福的；快乐的
+sala	客厅；大厅
+todavía	仍然；还
+pronto	早；很快
+ponerse a + inf.	开始做…… [me pongo, te pones, se pone, nos ponemos, os ponéis, se ponen]
+charlar	聊天 [charlo, charlas, charla, charlamos, charláis, charlan]
+comenzar	开始（e → ie 词根变化动词） [comienzo, comienzas, comienza, comenzamos, comenzáis, comienzan]
+almuerzo	午餐
+sabroso	美味的
+mundo	世界
+todo el mundo	所有人；每个人
+copa	酒杯
+brindar	干杯；祝酒 [brindo, brindas, brinda, brindamos, brindáis, brindan]
+
+# 例句
+Hoy es el cumpleaños de Yolanda. Cumple diecinueve años.	今天是约兰达的生日。她满十九岁。
+Para celebrarlo, invita a sus compañeros a almorzar en casa.	为了庆祝，她邀请同学们来家里吃午饭。
+Es un día de mucho trabajo para ella.	对她来说是工作很多的一天。
+A las nueve y media de la mañana empieza a ayudar a su madre en la cocina.	上午九点半，她开始在厨房帮妈妈的忙。
+A las once y cuarto, llegan los primeros invitados.	十一点一刻，第一批客人到达。
+Yolanda los recibe con mucha alegría.	约兰达非常高兴地迎接他们。
+Ellos la felicitan.	他们祝贺她。
+Yolanda, muy feliz, los lleva a la sala y los presenta a sus padres.	约兰达非常开心，带他们到客厅，向他们介绍了自己的父母。
+Como todavía es pronto para almorzar, los chicos se sientan y se ponen a charlar.	因为离吃午饭还早，年轻人们坐下开始聊天。
+A la una y media, la madre invita a los amigos de Yolanda a sentarse a la mesa.	一点半，母亲邀请约兰达的朋友们入席。
+Comienza el almuerzo.	午餐开始了。
+Hay muchos platos sabrosos.	有很多美味的菜肴。
+Todo el mundo levanta su copa para brindar.	所有人举起酒杯干杯。
+
+# 语法点
+第三人称宾格代词 lo / los / la / las
+继01-27课引入宾格代词 lo（阳性单数"它"）之后，本课进一步展示了第三人称宾格代词的完整体系。当直接宾语是第三人称（他/她/他们/她们/某物）时，用宾格代词替代以避免重复：lo（他/它，阳性单数）、la（她/它，阴性单数）、los（他们/它们，阳性复数）、las（她们/它们，阴性复数）。宾格代词必须放在变位动词之前。本课中出现了 los recibe（迎接他们）、la felicitan（祝贺她）、los lleva（带他们）、los presenta（介绍他们），展示了宾格代词在上下文中的实际运用。注意区分：lo 在01-27课中替代事物（postre），在本课中 los/la 替代人。
+对应例句：6,7,8
+
+动词短语 ponerse a + inf.：表示开始做某事
+ponerse a + 动词原形是常用的动词短语，表示"开始做某事"，强调动作的开始。它由代词式动词 ponerse（使自身处于某状态）加前置词 a 再加动词原形构成。本课中 se ponen a charlar（他们开始聊天）即为典型用法。这一结构与 empezar a + inf. / comenzar a + inf. 意义相近，可以互换使用。
+对应例句：9
+
+动词 ayudar 及 empezar/comenzar 的用法
+ayudar 意为"帮助"，用法为 ayudar a + 人，表示"帮助某人"，人称前置词 a 不可省略，如 ayudar a su madre（帮助她妈妈）。empezar 和 comenzar 同义，均意为"开始"，两者都是 e → ie 词根变化动词，用法为 empezar/comenzar a + inf.，如 empieza a ayudar（开始帮助）、Comienza el almuerzo（午餐开始了）。这三组动词在本课中集中出现。
+对应例句：4,11
+
+邀请与宴会场景综合表达
+本课综合运用了已学的邀请（invitar a）、祝贺（felicitar）、时间表达（a las nueve y media、a las once y cuarto、a la una y media）、地点（en casa、en la cocina、a la sala、a la mesa）以及本课新学的 brindar（干杯）、todo el mundo（所有人）等，构成一个完整的生日宴会场景叙事。这展示了如何将分散的语法点和词汇整合为连贯的语篇。
+对应例句：1,2,4,5,6,7,8,9,10,11,12,13

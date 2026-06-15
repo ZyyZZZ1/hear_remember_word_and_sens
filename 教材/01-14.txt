@@ -1,4 +1,6 @@
-# 生词
+﻿# 生词
+padre	父亲
+médico	医生
 madre 母亲、妈妈
 menor 更小的、更少的、较小的、较少的
 ya 已经
@@ -9,18 +11,18 @@ mayor 年长的、年纪大的、年迈的、上了年纪的、老的
 Lima 利马（秘鲁首都）
 Perú 秘鲁
 temprano 早的、早
-bañarse 洗澡、沐浴
+bañarse 洗澡、沐浴 [me baño, te bañas, se baña, nos bañamos, os bañáis, se bañan]
 secundaria 中学
 diente 牙、齿、牙齿
-peinarse 梳头
+peinarse 梳头 [me peino, te peinas, se peina, nos peinamos, os peináis, se peinan]
 después de （表示时间）在……之后
-cepillarse 刷、刷洗
-desayunar 吃早餐、吃早点、吃早饭
-llevar 带上、带去、送去、送到、送
+cepillarse 刷、刷洗 [me cepillo, te cepillas, se cepilla, nos cepillamos, os cepilláis, se cepillan]
+desayunar 吃早餐、吃早点、吃早饭 [desayuno, desayunas, desayuna, desayunamos, desayunáis, desayunan]
+llevar	带上(to take)、带去(to bring)、送去(to send)、送到(to drop off)、送(to give a ride) [llevo, llevas, lleva, llevamos, lleváis, llevan]
 primero 首先
 escuela 学校、小学
 luego 即刻、立即、马上
-tomar 搭乘（常见搭配：el avión、el barco、el tren、el autobús）
+tomar 搭乘（常见搭配：el avión、el barco、el tren、el autobús） [tomo, tomas, toma, tomamos, tomáis, toman]
 autobús 公共汽车、公交汽车、公交车、巴士、大巴、公共巴士、公交巴士（常见搭配：coger、tomar、subirse）
 todo el día 一整天
 para [表示目的]为了
@@ -30,7 +32,7 @@ por la mañana 在早晨、在早上、在上午
 por la tarde 在下午、在午后
 que （比较级连词）比……
 por eso 因此、所以、这就是为什么
-regresar 回、返回、回来、回去
+regresar 回、返回、回来、回去 [regreso, regresas, regresa, regresamos, regresáis, regresan]
 tarde 晚、迟
 abuelos 祖父母
 

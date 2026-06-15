@@ -1,0 +1,55 @@
+# 生词
+bibliotecaria	图书管理员（女性）
+comedor	饭厅，餐厅
+defecto	缺点，缺陷
+diez	十
+poco a poco	一点一点地，逐步地
+encender	点燃，打开（电器） [enciendo, enciendes, enciende, encendemos, encendéis, encienden]
+seguir	跟随，继续 [sigo, sigues, sigue, seguimos, seguís, siguen]
+acostarse	上床睡觉，躺下 [me acuesto, te acuestas, se acuesta, nos acostamos, os acostáis, se acuestan]
+avanzar	前进，推进 [avanzo, avanzas, avanza, avanzamos, avanzáis, avanzan]
+indicar	指出，指示 [indico, indicas, indica, indicamos, indicáis, indican]
+llegar	到达 [llego, llegas, llega, llegamos, llegáis, llegan]
+
+# 例句
+Escríbeme, por favor.	请写信给我。
+Si tienes esa novela, tráemela mañana, por favor.	如果你有那本小说，明天请把它带给我。
+¿Quieren ustedes leer las revistas de la universidad? Pídansela a la bibliotecaria.	诸位想读大学杂志吗？向图书管理员要。
+¿Dónde ponemos esta mesa, señorita?	我们把这张桌子放哪儿，小姐？
+Ponedla en el comedor.	你们把它放在饭厅。
+Pónganla en el comedor.	诸位把它放在饭厅。
+Decidnos qué defectos tenemos.	你们告诉我们我们有什么缺点。
+Dígannos qué defectos tenemos.	诸位告诉我们我们有什么缺点。
+Dejadme hacer el trabajo poco a poco.	你们让我一点一点地干活。
+Déjenme hacer el trabajo poco a poco.	诸位让我一点一点地干活。
+Son las diez. Levantaos ya.	十点了。你们快起床。
+Son las diez. Levántense ya.	十点了。诸位快起床。
+
+# 语法点
+命令式概述
+当对话的一方祈使或命令另一方做某事时，西班牙语动词须采取命令式变位（modo imperativo）。本课学习第二人称亲昵式单数（tú）、礼貌式单数（usted）及礼貌式复数（ustedes）的肯定命令式变位。命令式只有肯定形式，否定命令使用虚拟式（后续课程学习）。
+对应例句：1,2,3
+
+规则动词命令式变位
+对于规则动词，tú的命令式变位规则为：第一变位动词（-ar）去-ar加-a（如trabaja），第二、三变位动词（-er/-ir）去-er/-ir加-e（如come, vive）。usted的命令式正好与tú的元音互换：第一变位加-e（trabaje），第二、三变位加-a（coma, viva）。ustedes的变位在usted形式末尾添加-n（trabajen, coman, vivan）。
+对应例句：（本例句区未直接使用规则动词命令式）
+
+不规则动词命令式变位
+陈述式现在时变位中有元音替换（e→ie, o→ue, e→i）的不规则动词，在命令式中保持重读音节上的元音替换规则，然后加上相应的命令式词尾。例如：pensar→piensa（tú）/piense（usted）/piensen（ustedes）；pedir→pide（tú）/pida（usted）/pidan（ustedes）；encontrar→encuentra（tú）/encuentre（usted）/encuentren（ustedes）。部分动词为保持发音一致，命令式变位中拼写会发生变化：z→c（avanzar→avance）、c→qu（indicar→indique）、g→gu（llegar→llegue）。
+对应例句：3
+
+代词式动词的命令式
+代词式动词在命令式中，自复代词置于变位动词之后并与之连写。为保持重音不位移，需在原来重读音节上添加重音符号。例如：levantarse→levántate（tú）, levántese（usted）, levántense（ustedes）；acostarse→acuéstate, acuéstese, acuéstense。第二人称亲昵式复数（vosotros）的代词式动词命令式，失去词尾辅音d（如levantad+os→levantaos）。
+对应例句：11,12
+
+命令式中宾格和与格代词的位置
+宾格和与格人称代词置于命令式动词之后，并与之连写，必要时须添加重音符号以保持原重音位置。例如：escribir+me→escríbeme（写信给我）；traer+me+la→tráemela（把它带给我）；pedir+se+la→pídansela（诸位向她要它）。注意与格代词在宾格代词前并变为se的规则在命令式中同样适用。
+对应例句：1,2,3
+
+命令式两套人称的对比
+本课展示了同一指令用亲昵式复数（vosotros）和礼貌式复数（ustedes）两套人称的对比：ponedla vs. pónganla（你们/诸位把它放在）、decidnos vs. dígannos（你们/诸位告诉我们）、dejadme vs. déjenme（你们/诸位让我）、levantaos vs. levántense（你们/诸位起床）。注意礼貌式需添加重音符号以保持原重音位置，而亲昵式复数则不需要（其重音自然落在倒数第二音节）。
+对应例句：5,6,7,8,9,10,11,12
+
+代词连写时的重音规则总结
+当前置词变为后附代词时（命令式、原形动词+代词），若添加代词后重音位置发生位移，必须添加重音符号。这一规则在本课系统体现：escríbeme（在i上加重音）、tráemela（在a上加重音）、pídansela（在i上加重音）、pónganla（在o上加重音）、dígannos（在i上加重音）、déjenme（在e上加重音）、levántense（在a上加重音）。掌握此规则对于正确书写命令式至关重要。
+对应例句：1,2,3,6,8,10,12

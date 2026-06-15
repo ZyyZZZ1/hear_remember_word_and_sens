@@ -484,6 +484,138 @@ def _memory_import_loop(es_text, zh_text):
     sys.stdout.flush()
 
 
+def _spelling_quiz_phase(es_text, zh_text):
+    """记忆导入打字测验：8遍循环结束后，让用户输入拼写和中文。
+    非阻塞设计——输错不阻止过题，2次错误后展示答案并给抄写机会。
+    按R重听当前词，按Enter跳过，按Q退出。"""
+    import re
+
+    # ── 提示音：用中文TTS唤醒用户注意力 ──
+    print(f"\n  {'─' * 30}")
+    print(f"  🔔 请准备打字！")
+    sys.stdout.flush()
+    tts_speak_zh("请准备打字")
+    time.sleep(0.15)
+
+    # ── 拼写测验 ──
+    spelling_attempts = 0
+    spelling_done = False
+    while spelling_attempts < 2 and not spelling_done:
+        print(f"  请输入单词拼写（按R重听 / 按Enter跳过 / 按Q退出）:")
+        sys.stdout.flush()
+        user_input = wait_line("  > ")
+        cmd = user_input.strip()
+
+        if cmd.upper() == "Q":
+            return "quit"
+        if cmd.upper() == "R":
+            print(f"  [重听] {es_text}")
+            sys.stdout.flush()
+            tts_speak(es_text)
+            time.sleep(0.15)
+            continue
+        if cmd == "":
+            print(f"  （已跳过拼写）")
+            sys.stdout.flush()
+            spelling_done = True
+            break
+
+        if cmd.lower() == es_text.lower():
+            print(f"  {_COLOR_GREEN}✓ 拼写正确！{_COLOR_RESET}")
+            sys.stdout.flush()
+            spelling_done = True
+        else:
+            spelling_attempts += 1
+            if spelling_attempts == 1:
+                print(f"  {_COLOR_RED}✗ 不对，再试试？{_COLOR_RESET}")
+                sys.stdout.flush()
+            else:
+                # 第2次还错：展示正确答案（错/漏字符标红），让用户抄一遍
+                colored = _highlight_char_diff(es_text, cmd)
+                print(f"  你的输入：{cmd}")
+                print(f"  正确拼写：{colored}")
+                print(f"  （{_COLOR_GREEN}绿色{_COLOR_RESET}=正确  {_COLOR_RED}红色{_COLOR_RESET}=错漏）")
+                print(f"  请照着输入一遍：")
+                sys.stdout.flush()
+                tts_speak(es_text)
+                copy_input = wait_line("  > ").strip()
+                if copy_input.upper() == "Q":
+                    return "quit"
+                if copy_input.lower() == es_text.lower():
+                    print(f"  ✓ 好的！")
+                else:
+                    colored2 = _highlight_char_diff(es_text, copy_input)
+                    print(f"  没关系，正确的拼写是：{colored2}")
+                sys.stdout.flush()
+                spelling_done = True
+
+    time.sleep(0.2)
+
+    # ── 中文释义测验 ──
+    zh_attempts = 0
+    zh_done = False
+    zh_variants = [v.strip() for v in re.split(r'[,，、；;]', zh_text) if v.strip()]
+
+    while zh_attempts < 2 and not zh_done:
+        print(f"  请输入中文意思（按R重听 / 按Enter跳过 / 按Q退出）:")
+        sys.stdout.flush()
+        user_input = wait_line("  > ")
+        cmd = user_input.strip()
+
+        if cmd.upper() == "Q":
+            return "quit"
+        if cmd.upper() == "R":
+            tts_speak(es_text)
+            time.sleep(0.15)
+            tts_speak_zh(zh_text)
+            continue
+        if cmd == "":
+            print(f"  （已跳过中文）")
+            sys.stdout.flush()
+            zh_done = True
+            break
+
+        # 模糊匹配：精确命中 或 用户输入包含在释义中 或 释义包含在用户输入中
+        matched = any(
+            cmd == v or v in cmd or cmd in v
+            for v in zh_variants
+        )
+        if not matched:
+            # 字符重叠度检测（处理"美丽" vs "美丽的"这种情况）
+            common = set(cmd) & set(zh_text.replace(",", "").replace("，", "").replace(" ", ""))
+            total = set(zh_text.replace(",", "").replace("，", "").replace(" ", ""))
+            if total and len(common) >= len(total) * 0.5:
+                matched = True
+
+        if matched:
+            print(f"  {_COLOR_GREEN}✓ 中文正确！{_COLOR_RESET}")
+            sys.stdout.flush()
+            zh_done = True
+        else:
+            zh_attempts += 1
+            if zh_attempts == 1:
+                print(f"  {_COLOR_RED}✗ 不对，再试试？{_COLOR_RESET}")
+                sys.stdout.flush()
+            else:
+                print(f"  中文答案：{_COLOR_GREEN}{zh_text}{_COLOR_RESET}")
+                print(f"  请照着输入一遍：")
+                sys.stdout.flush()
+                tts_speak_zh(zh_text)
+                copy_input = wait_line("  > ").strip()
+                if copy_input.upper() == "Q":
+                    return "quit"
+                if copy_input == zh_text or any(copy_input == v for v in zh_variants):
+                    print(f"  ✓ 好的！")
+                else:
+                    print(f"  没关系，记住即可：{zh_text}")
+                sys.stdout.flush()
+                zh_done = True
+
+    print()
+    sys.stdout.flush()
+    return None
+
+
 def _audio_callback(indata, frames, time_info, status):
     """InputStream 回调：累积录音数据"""
     if status:
@@ -678,6 +810,11 @@ class GroupSession:
         """把当前词从 passed 中移除，拉回来重练"""
         self._passed.discard(self._key(self.current))
 
+    def reset_all(self):
+        """重置所有词为未通过状态，回到第一个词"""
+        self._passed.clear()
+        self._pos = 0
+
 
 # -- UI 工具 -----------------------------------------------
 
@@ -726,6 +863,118 @@ def _toggle_favorite(es_text):
         fav[key].append(es_text)
         _save_favorites(fav)
         return True
+
+
+# -- 句子实词收藏 ------------------------------------------
+
+# 西班牙语虚词：冠词、介词、连词、代词、常见小品词
+_SPANISH_STOP_WORDS = {
+    'el', 'la', 'los', 'las', 'un', 'una', 'unos', 'unas', 'lo', 'al', 'del',
+    'a', 'de', 'en', 'por', 'para', 'con', 'sin', 'sobre', 'entre', 'hacia',
+    'hasta', 'desde', 'según', 'contra', 'durante', 'tras', 'ante', 'bajo',
+    'y', 'e', 'o', 'u', 'ni', 'que', 'pero', 'sino', 'aunque', 'porque', 'pues', 'si',
+    'yo', 'tú', 'él', 'ella', 'nosotros', 'nosotras', 'vosotros', 'vosotras',
+    'ellos', 'ellas', 'me', 'te', 'se', 'nos', 'os', 'le', 'les',
+    'mi', 'mis', 'tu', 'tus', 'su', 'sus',
+    'no', 'ya', 'sí', 'más', 'menos', 'muy', 'tan', 'cada',
+    'como', 'cuando', 'donde', 'quien', 'quienes', 'cual', 'cuales',
+    'este', 'esta', 'estos', 'estas', 'ese', 'esa', 'esos', 'esas',
+    'aquel', 'aquella', 'aquellos', 'aquellas', 'esto', 'eso', 'aquello',
+    'bien', 'mal', 'así', 'allí', 'allá', 'aquí', 'ahora', 'luego',
+    'después', 'antes', 'siempre', 'nunca', 'también', 'tampoco',
+    'todo', 'toda', 'todos', 'todas', 'mucho', 'mucha', 'muchos', 'muchas',
+    'poco', 'poca', 'pocos', 'pocas', 'otro', 'otra', 'otros', 'otras',
+    'qué', 'cuál', 'cuáles', 'quién', 'quiénes', 'cómo', 'cuándo', 'dónde',
+    'cuánto', 'cuánta', 'cuántos', 'cuántas',
+    'hay', 'ser', 'estar', 'haber',
+}
+
+
+def _extract_content_words(sentences):
+    """从句子列表中提取实词：去虚词、去重、去已收藏，返回排序列表"""
+    import re
+    already_fav = set(_get_favorites())
+    words = set()
+    for s in sentences:
+        es_text = s.get('es', '')
+        tokens = re.findall(r"[a-záéíóúüñA-ZÁÉÍÓÚÜÑ]+", es_text)
+        for token in tokens:
+            t = token.lower()
+            if len(t) <= 1:
+                continue
+            if t in _SPANISH_STOP_WORDS:
+                continue
+            if t in already_fav:
+                continue
+            words.add(t)
+    return sorted(words)
+
+
+def _prompt_favorite_words(content_words):
+    """枚举展示实词列表，用户输入编号选择收藏。返回收藏数量。"""
+    if not content_words:
+        return 0
+
+    n = len(content_words)
+    print(f"\n  {'─' * 30}")
+    print(f"  本课句子中的实词（共 {n} 个，已排除虚词和已收藏词）：")
+    print(f"  {'─' * 30}")
+
+    # 两列展示
+    half = (n + 1) // 2
+    max_left = max((len(content_words[i]) for i in range(half)), default=10)
+    col_width = max(max_left + 7, 30)
+
+    for i in range(half):
+        left = f"  [{i+1}] {content_words[i]}"
+        left_pad = left.ljust(col_width)
+        right_idx = i + half
+        if right_idx < n:
+            right = f"[{right_idx+1}] {content_words[right_idx]}"
+        else:
+            right = ""
+        print(f"{left_pad}{right}")
+
+    print(f"  [0] 全选  [Enter] 跳过")
+    sys.stdout.flush()
+
+    choice = wait_line("  输入编号（空格分隔）> ")
+    if not choice.strip():
+        return 0
+
+    # 解析编号
+    selected = set()
+    if choice.strip() == '0':
+        selected = set(range(n))
+    else:
+        for part in choice.split():
+            try:
+                idx = int(part) - 1
+                if 0 <= idx < n:
+                    selected.add(idx)
+            except ValueError:
+                pass
+
+    if not selected:
+        return 0
+
+    # 写入收藏夹
+    fav = _load_favorites()
+    key = TEXTBOOK['name']
+    if key not in fav:
+        fav[key] = []
+
+    added = 0
+    for idx in sorted(selected):
+        word = content_words[idx]
+        if word not in fav[key]:
+            fav[key].append(word)
+            added += 1
+
+    _save_favorites(fav)
+    print(f"  ★ 已收藏 {added} 个单词")
+    sys.stdout.flush()
+    return added
 
 
 def print_menu():
@@ -843,16 +1092,26 @@ def _run_one_group_memory_import(groups, gi):
 
         _memory_import_loop(es_text, zh_first)
 
+        # 打字测验：拼写 + 中文（非阻塞，输错不影响过题）
+        if _spelling_quiz_phase(es_text, zh_first) == "quit":
+            print()
+            sys.stdout.flush()
+            return
+
         # P/N/B/R/G/F/Q 决策
         while True:
             choice = wait_key("  [P]通过  [N]保留  [B]上词  [R]重听  [G]下组  [F]收藏  [Q]退出 > ")
             if choice == "P":
                 if gs.pass_current() and gs.total > 1:
-                    tts_speak_zh("循环结束，回到第一个词")
+                    result = _handle_loop_end(gs)
+                    if result == "goto_next":
+                        skip_group = True
                 break
             elif choice == "N":
                 if gs.keep_current() and gs.total > 1:
-                    tts_speak_zh("循环结束，回到第一个词")
+                    result = _handle_loop_end(gs)
+                    if result == "goto_next":
+                        skip_group = True
                 break
             elif choice == "R":
                 print(f"\n  [重听] {es_text}")
@@ -881,9 +1140,18 @@ def _run_one_group_memory_import(groups, gi):
             else:
                 # 默认回车 = N（保留稍后）
                 if gs.keep_current() and gs.total > 1:
-                    tts_speak_zh("循环结束，回到第一个词")
+                    result = _handle_loop_end(gs)
+                    if result == "goto_next":
+                        skip_group = True
                 break
 
+    # G 跳过或循环结束选下一组：直接进下一组，不提示
+    if skip_group:
+        if gi + 1 < total_groups:
+            _run_one_group_memory_import(groups, gi + 1)
+        return
+
+    # 本组通关
     print(f"\n-- 第 {gi+1} 组结束--\n")
     sys.stdout.flush()
     time.sleep(0.5)
@@ -935,6 +1203,13 @@ def _mode_es_to_zh_sentences():
     items = [{"es": s["es"], "zh": s["zh"]} for s in TEXTBOOK["sentences"]]
     groups = [items[i:i + GROUP_SIZE] for i in range(0, len(items), GROUP_SIZE)]
     _run_group_menu_es_to_zh("句子", groups)
+    # 结束后提示收藏句子中的实词
+    if TEXTBOOK["sentences"]:
+        words = _extract_content_words(TEXTBOOK["sentences"])
+        if words:
+            yn = wait_key("  要收藏本课句子中的实词吗？[Y/N] > ")
+            if yn == "Y":
+                _prompt_favorite_words(words)
 
 
 def _run_group_menu_es_to_zh(kind, groups):
@@ -1029,10 +1304,13 @@ def _run_one_group_es_to_zh(groups, gi, kind):
         result = _decision_pnbr(gs, es_text, allow_favorite=(kind == "单词"))
         if result == "quit":
             return
-        if result == "next_group":
-            break
+        if result == "goto_next":
+            # G 跳过或循环结束选下一组：直接进下一组，不提示
+            if gi + 1 < total_groups:
+                _run_one_group_es_to_zh(groups, gi + 1, kind)
+            return
 
-    # 本组通关（或被 G 跳过）
+    # 本组通关
     print(f"\n-- 第 {gi+1} 组结束--")
     sys.stdout.flush()
     time.sleep(0.5)
@@ -1046,44 +1324,84 @@ def _run_one_group_es_to_zh(groups, gi, kind):
             _run_one_group_es_to_zh(groups, gi + 1, kind)
 
 
-def _record_phase(es_text):
-    """录音阶段：等待用户说完按 Enter。支持 R 重听、Q 退出。
-    返回 "quit" 表示退出，否则返回 None。"""
-    print("  请说出中文意思，说完按 Enter…")
-    sys.stdout.flush()
-    start_recording()
-    user_input = wait_line("  > ")
-    cmd = user_input.strip().upper() if user_input else ""
+def _prompt_record(prompt="按 Enter 开始录音", extra_hint=""):
+    """两段式录音：先提示按 Enter 开始，再提示按 Enter 结束。
+    录音数据留在 REC_CHUNKS 中，由调用者通过 stop_and_playback() 播放。
+    返回用户输入的命令（大写），空字符串表示录音完成。
+    """
+    if not HAS_AUDIO:
+        return ""
 
-    if cmd == "Q":
-        stop_and_playback()
-        return "quit"
-    if cmd == "R":
-        stop_and_playback()
-        tts_speak(es_text)
-        time.sleep(0.3)
-        tts_speak(es_text)
-        start_recording()
-        user_input = wait_line("  > ")
-        cmd = user_input.strip().upper() if user_input else ""
+    # 清空缓冲区残留输入（TTS 播放期间的误触键可能堆积在此）
+    while msvcrt.kbhit():
+        msvcrt.getch()
+
+    user_input = wait_line(f"  {prompt}{extra_hint}")
+    cmd = user_input.strip().upper() if user_input else ""
+    if cmd:
+        return cmd
+
+    start_recording()
+
+    # 再次清空：防止启动录音前瞬间有残留回车混入
+    while msvcrt.kbhit():
+        msvcrt.getch()
+
+    print("  正在录音... 按 Enter 结束录音", end="", flush=True)
+    wait_line("")
+    print()
+    # 停止录音流，但不播放（由调用者决定何时播放）
+    global REC_STREAM
+    if REC_STREAM:
+        try:
+            REC_STREAM.stop()
+            REC_STREAM.close()
+            REC_STREAM = None
+        except Exception:
+            pass
+    return ""
+
+
+def _record_phase(es_text):
+    """录音阶段：按 Enter 开始录音，再按 Enter 结束。支持 R 重听、Q 退出。
+    返回 "quit" 表示退出，否则返回 None。"""
+    while True:
+        cmd = _prompt_record("按 Enter 开始录音", "  [R]重听 [Q]退出 > ")
         if cmd == "Q":
-            stop_and_playback()
             return "quit"
-    return None
+        if cmd == "R":
+            tts_speak(es_text)
+            time.sleep(0.3)
+            tts_speak(es_text)
+            continue
+        # 正常录音完成（空字符串）
+        return None
+
+
+def _handle_loop_end(gs):
+    """循环结束：询问用户下一组还是从头开始。
+    返回 "goto_next"（下一组）或 None（从头开始）。"""
+    choice = wait_key("  循环结束！[Enter] 下一组  [S] 从头开始 > ")
+    if choice == "S":
+        gs.reset_all()
+        tts_speak_zh("从头开始")
+        return None
+    # Enter（默认）或其他键：去下一组
+    return "goto_next"
 
 
 def _decision_pnbr(gs, es_text, allow_favorite=False):
-    """P/N/B/R/G/Q/(F) 决策循环。返回 "quit"/"next_group" 或 None。"""
+    """P/N/B/R/G/Q/(F) 决策循环。返回 "quit"/"goto_next" 或 None。"""
     fav_menu = "  [F]收藏" if allow_favorite else ""
     while True:
         choice = wait_key(f"  [P]通过  [N]保留  [B]上词  [R]重听  [G]下组{fav_menu}  [Q]退出 > ")
         if choice == "P":
             if gs.pass_current() and gs.total > 1:
-                tts_speak_zh("循环结束，回到第一个词")
+                return _handle_loop_end(gs)
             return None
         elif choice == "N":
             if gs.keep_current() and gs.total > 1:
-                tts_speak_zh("循环结束，回到第一个词")
+                return _handle_loop_end(gs)
             return None
         elif choice == "R":
             tts_speak(es_text)
@@ -1109,7 +1427,7 @@ def _decision_pnbr(gs, es_text, allow_favorite=False):
                     gs.unpass()
                     return None
         elif choice == "G":
-            return "next_group"
+            return "goto_next"
         elif choice == "F" and allow_favorite:
             added = _toggle_favorite(es_text)
             print(f"    {'★ 已收藏' if added else '☆ 已取消收藏'}")
@@ -1118,10 +1436,9 @@ def _decision_pnbr(gs, es_text, allow_favorite=False):
         elif choice == "Q":
             return "quit"
         else:
+            # 默认回车 = N（保留稍后）
             if gs.keep_current() and gs.total > 1:
-                tts_speak_zh("循环结束，回到第一个词")
-            return None
-            gs.keep_current()
+                return _handle_loop_end(gs)
             return None
 
 
@@ -1162,6 +1479,13 @@ def _mode_zh_to_es_sentences():
     items = [{"es": s["es"], "zh": s["zh"]} for s in TEXTBOOK["sentences"]]
     groups = [items[i:i + GROUP_SIZE] for i in range(0, len(items), GROUP_SIZE)]
     _run_group_menu_zh_to_es("句子", groups)
+    # 结束后提示收藏句子中的实词
+    if TEXTBOOK["sentences"]:
+        words = _extract_content_words(TEXTBOOK["sentences"])
+        if words:
+            yn = wait_key("  要收藏本课句子中的实词吗？[Y/N] > ")
+            if yn == "Y":
+                _prompt_favorite_words(words)
 
 
 def _run_group_menu_zh_to_es(kind, groups):
@@ -1248,9 +1572,13 @@ def _run_one_group_zh_to_es(groups, gi, kind):
         result = _decision_pnbr(gs, es_text, allow_favorite=(kind == "单词"))
         if result == "quit":
             return
-        if result == "next_group":
-            break
+        if result == "goto_next":
+            # G 跳过或循环结束选下一组：直接进下一组，不提示
+            if gi + 1 < total_groups:
+                _run_one_group_zh_to_es(groups, gi + 1, kind)
+            return
 
+    # 本组通关
     print(f"\n-- 第 {gi+1} 组结束--")
     sys.stdout.flush()
     time.sleep(0.5)
@@ -1264,26 +1592,16 @@ def _run_one_group_zh_to_es(groups, gi, kind):
 
 
 def _record_phase_zh(zh_text):
-    """录音阶段（模式2）：听中文 → 说西语。支持 R 重听中文、Q 退出。"""
-    print("  请说出对应的西语，说完按 Enter…")
-    sys.stdout.flush()
-    start_recording()
-    user_input = wait_line("  > ")
-    cmd = user_input.strip().upper() if user_input else ""
-
-    if cmd == "Q":
-        stop_and_playback()
-        return "quit"
-    if cmd == "R":
-        stop_and_playback()
-        tts_speak_zh(zh_text)
-        start_recording()
-        user_input = wait_line("  > ")
-        cmd = user_input.strip().upper() if user_input else ""
+    """录音阶段（模式2）：按 Enter 开始录音，再按 Enter 结束。支持 R 重听中文、Q 退出。"""
+    while True:
+        cmd = _prompt_record("按 Enter 开始录音", "  [R]重听 [Q]退出 > ")
         if cmd == "Q":
-            stop_and_playback()
             return "quit"
-    return None
+        if cmd == "R":
+            tts_speak_zh(zh_text)
+            continue
+        # 正常录音完成（空字符串）
+        return None
 
 
 def _run_es_to_zh_item(item, pq):
@@ -1301,32 +1619,19 @@ def _run_es_to_zh_item(item, pq):
     tts_speak(es_text)
     time.sleep(0.3)
 
-    # 录音
-    print("   请说出中文意思，说完按 Enter…")
-    sys.stdout.flush()
-    start_recording()
-    user_input = wait_line("  > ")
-    cmd = user_input.upper().strip() if user_input else ""
-
-    if cmd == "Q":
-        stop_and_playback()
-        return "quit"
-    if cmd == "S":
-        stop_and_playback()
-        pq.mark_skip(item)
-        return
-    if cmd == "R":
-        stop_and_playback()
-        tts_speak(es_text)
-        start_recording()
-        user_input = wait_line("  > ")
-        cmd = user_input.upper().strip() if user_input else ""
-        if cmd in ("Q", "S"):
-            stop_and_playback()
-            if cmd == "Q":
-                return "quit"
+    # 录音（两段式：按 Enter 开始，再按 Enter 结束）
+    while True:
+        cmd = _prompt_record("按 Enter 开始录音", "  [R]重听 [S]跳过 [Q]退出 > ")
+        if cmd == "Q":
+            return "quit"
+        if cmd == "S":
             pq.mark_skip(item)
             return
+        if cmd == "R":
+            tts_speak(es_text)
+            continue
+        # 正常录音完成（空字符串）
+        break
 
     # 回放录音
     stop_and_playback()
@@ -1363,32 +1668,19 @@ def _run_zh_to_es_item(item, pq):
     sys.stdout.flush()
     tts_speak_zh(zh_text)
 
-    # 录音
-    print("   请说出对应的西语，说完按 Enter…")
-    sys.stdout.flush()
-    start_recording()
-    user_input = wait_line("  > ")
-    cmd = user_input.upper().strip() if user_input else ""
-
-    if cmd == "Q":
-        stop_and_playback()
-        return "quit"
-    if cmd == "S":
-        stop_and_playback()
-        pq.mark_skip(item)
-        return
-    if cmd == "R":
-        stop_and_playback()
-        tts_speak_zh(zh_text)
-        start_recording()
-        user_input = wait_line("  > ")
-        cmd = user_input.upper().strip() if user_input else ""
-        if cmd in ("Q", "S"):
-            stop_and_playback()
-            if cmd == "Q":
-                return "quit"
+    # 录音（两段式：按 Enter 开始，再按 Enter 结束）
+    while True:
+        cmd = _prompt_record("按 Enter 开始录音", "  [R]重听 [S]跳过 [Q]退出 > ")
+        if cmd == "Q":
+            return "quit"
+        if cmd == "S":
             pq.mark_skip(item)
             return
+        if cmd == "R":
+            tts_speak_zh(zh_text)
+            continue
+        # 正常录音完成（空字符串）
+        break
 
     # 回放
     stop_and_playback()
@@ -1569,6 +1861,26 @@ def _highlight_diff(original, user_input):
     return colored_user, colored_orig
 
 
+def _highlight_char_diff(correct, user_input):
+    """逐字符对比用户输入和正确拼写，返回正确拼写的 ANSI 颜色版本。
+    用户打对的部分 → 绿色，漏打/错打的部分 → 红色。"""
+    GREEN = '\033[92m'
+    RED = '\033[91m'
+    RESET = '\033[0m'
+
+    sm = difflib.SequenceMatcher(None, user_input.lower(), correct.lower())
+
+    parts = []
+    for tag, i1, i2, j1, j2 in sm.get_opcodes():
+        if tag == 'equal':
+            parts.append(GREEN + correct[j1:j2] + RESET)
+        elif tag in ('insert', 'replace'):
+            parts.append(RED + correct[j1:j2] + RESET)
+        # 'delete': user has extra chars not in correct → nothing to show in correct
+
+    return ''.join(parts)
+
+
 def _mode_dictation_sentences():
     """听写句子：5句一组，程序念西语句子，用户键盘输入完整句子，自动判罚"""
     items = [{"es": s["es"], "zh": s["zh"]} for s in TEXTBOOK["sentences"]]
@@ -1641,6 +1953,13 @@ def _mode_dictation_sentences():
     print("-- 全部句子通关！--\n")
     sys.stdout.flush()
     time.sleep(0.5)
+    # 提示收藏句子中的实词
+    if TEXTBOOK["sentences"]:
+        words = _extract_content_words(TEXTBOOK["sentences"])
+        if words:
+            yn = wait_key("  要收藏本课句子中的实词吗？[Y/N] > ")
+            if yn == "Y":
+                _prompt_favorite_words(words)
 
 
 # -- 模式 4：跟读 ------------------------------------------
@@ -1666,6 +1985,13 @@ def mode_4_shadowing():
     print("-- 全部句子通关！--\n")
     sys.stdout.flush()
     time.sleep(0.5)
+    # 提示收藏句子中的实词
+    if TEXTBOOK["sentences"]:
+        words = _extract_content_words(TEXTBOOK["sentences"])
+        if words:
+            yn = wait_key("  要收藏本课句子中的实词吗？[Y/N] > ")
+            if yn == "Y":
+                _prompt_favorite_words(words)
 
 
 def _shadow_one(es_text, item, pq):
@@ -1681,20 +2007,14 @@ def _shadow_one(es_text, item, pq):
         tts_speak(es_text, is_sentence=True)
         time.sleep(0.3)
 
-        # 录音跟读
-        print("   请跟读… 说完按 Enter")
-        sys.stdout.flush()
-        start_recording()
-        user_input = wait_line("  > ")
-        cmd = user_input.upper().strip() if user_input else ""
-
+        # 录音跟读（两段式：按 Enter 开始，再按 Enter 结束）
+        cmd = _prompt_record("按 Enter 开始跟读", "  [S]跳过 [Q]退出 > ")
         if cmd == "Q":
-            stop_and_playback()
             return "quit"
         if cmd == "S":
-            stop_and_playback()
             pq.mark_skip(item)
             return
+        # 正常录音完成（空字符串）
 
         # 对比：先播你的录音，再播一遍原句
         print("  -- 你的录音 --")
@@ -1803,6 +2123,14 @@ def mode_5_mixed():
     print("-- 全部混着来通关！--\n")
     sys.stdout.flush()
     time.sleep(0.5)
+    # 提示收藏句子中的实词（混着来模式下仅从句型题中提取）
+    sentence_items = [it for it in items if it.get("type") == "sentence"]
+    if sentence_items:
+        words = _extract_content_words(sentence_items)
+        if words:
+            yn = wait_key("  要收藏本课句子中的实词吗？[Y/N] > ")
+            if yn == "Y":
+                _prompt_favorite_words(words)
 
 
 # -- 语法讲解 ----------------------------------------------

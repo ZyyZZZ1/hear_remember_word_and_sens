@@ -1,0 +1,118 @@
+# 生词
+paquete	包裹，包
+verdad	真相，事实；de verdad 真的
+entender	理解，明白 [entiendo, entiendes, entiende, entendemos, entendéis, entienden]
+cenar	吃晚饭 [ceno, cenas, cena, cenamos, cenáis, cenan]
+acercarse	靠近，接近 [me acerco, te acercas, se acerca, nos acercamos, os acercáis, se acercan]
+demás	其余的，其他的
+descansar	休息 [descanso, descansas, descansa, descansamos, descansáis, descansan]
+asunto	事情，问题
+importante	重要的
+tema	话题，主题
+viajar	旅行 [viajo, viajas, viaja, viajamos, viajáis, viajan]
+Chile	智利
+mes	月，月份
+acompañar	陪伴，陪同 [acompaño, acompañas, acompaña, acompañamos, acompañáis, acompañan]
+persona	人
+mejorar	改善，提高 [mejoro, mejoras, mejora, mejoramos, mejoráis, mejoran]
+pronunciación	发音
+cuál	哪一个
+así	这样，如此
+sin	没有，不
+sala	客厅，厅
+sofá	沙发
+almorzar	吃午饭 [almuerzo, almuerzas, almuerza, almorzamos, almorzáis, almuerzan]
+entregar	交出，提交 [entrego, entregas, entrega, entregamos, entregáis, entregan]
+nota	分数；笔记；便条
+noventa y cinco	九十五
+sesenta y cinco	六十五
+a pesar de	尽管，虽然
+según	根据，按照
+compañero	同学，同事，同伴
+camiseta	T恤衫
+limpiar	打扫，清洁 [limpio, limpias, limpia, limpiamos, limpiáis, limpian]
+ordenar	整理，收拾 [ordeno, ordenas, ordena, ordenamos, ordenáis, ordenan]
+sentarse	坐下 [me siento, te sientas, se sienta, nos sentamos, os sentáis, se sientan]
+luego de	在……之后
+rato	一会儿，片刻
+médico	医生
+papel	纸
+facultad	系，学院
+veinticinco	二十五
+minuto	分钟
+regalar	赠送（礼物） [regalo, regalas, regala, regalamos, regaláis, regalan]
+juguete	玩具
+almuerzo	午餐
+bastar	足够 [basto, bastas, basta, bastamos, bastáis, bastan]
+ninguno	没有一个，任何都不
+lugar	地方
+quedarse	留下，待在 [me quedo, te quedas, se queda, nos quedamos, os quedáis, se quedan]
+
+# 例句
+¿Dónde dejo los libros?	我把书放哪里？
+Allá, en aquella mesa.	那里，在那张桌子上。
+Dejen, por favor, los paquetes en el pasillo. Aquí, adentro, ya no hay espacio.	请把包裹放在走廊里。这里面已经没有地方了。
+Bueno, os dejo. Ya es muy tarde, tengo que regresar a casa.	好吧，我走了。太晚了，我得回家了。
+¿De verdad piensas dejar tu país para ir a otro que no conoces?	你真的打算离开你的国家去另一个你不了解的国家吗？
+Déjenme pasar, por favor. Tengo que hablar con el gerente.	请让我进去。我得和经理谈谈。
+No entiendo por qué no dejes hablar a la chica con nosotros.	我不明白你为什么不让那女孩跟我们说话。
+Ya es muy tarde. Deja de estudiar. Vamos a cenar.	现在太晚了。别学了。我们去吃饭吧。
+La mujer, sin dejar de peinarse, se acerca a la puerta para ver quién llama.	女人边梳头边向门口走去，想看看是谁在敲门。
+¿Habla usted francés?	您会说法语吗？
+Mi amigo solo habla chino y un poco de español.	我的朋友只会说中文和一点西班牙语。
+Puede usted hablar en español. Aquí todos entendemos esta lengua.	您可以说西班牙语。这里我们都懂这门语言。
+Mi amigo es inglés, pero le gusta hablar en español.	我朋友是英国人，但他喜欢说西班牙语。
+Ya no pienso hablar más. Estoy cansado.	我不想再说话了。我累了。
+Dejad de hablar, ya. ¿No veis que los demás quieren descansar?	别说话了。你没看到别人想休息吗？
+Si crees que es un asunto muy importante, ¿por qué no hablas de eso con el gerente?	如果你认为这是一个非常重要的问题，为什么不和经理谈谈呢？
+No hable usted con Luis de ese tema. No le gusta nada.	别跟路易斯说这个话题。他一点也不喜欢。
+¿Qué piensas hacer esta tarde?	你今天下午打算做什么？
+Pensamos viajar a Chile el mes que viene. ¿No quieres acompañarnos?	我们计划下个月前往智利。你不想加入我们吗？
+Los alumnos piensan que el profesor González es una persona que habla poco pero dice mucho.	学生们认为冈萨雷斯教授是一个讲得少但说得多的人。
+Pienso que tienes que mejorar tu pronunciación.	我认为你需要提高你的发音。
+¿En cuál de esas universidades quieres estudiar? Piénsalo bien.	你想去哪所大学学习？仔细想想。
+Pero, chico, no hables así, sin pensar.	但是，孩子，不要那样说话，不假思索。
+Estos días pienso mucho en mis padres.	这些天我经常想起我的父母。
+¿En quién estás pensando?	你在想谁？
+La sala es tan pequeña que no sé dónde poner el sofá.	客厅太小了以至于我不知道沙发放在哪里。
+¿Son los libros que me traes? Por favor, ponlos ahí, en la mesa.	这些是你给我带来的书吗？请把它们放在桌子上。
+Es hora de almorzar. Voy a poner la mesa.	该吃午饭了。我去摆桌子。
+La mesa ya está puesta. Fernando, deja de trabajar y ven a cenar.	桌子已经摆好了。费尔南多，别工作了，来吃饭吧。
+El trabajo que acabas de entregar me gusta mucho. Te voy a poner un noventa y cinco.	我真的很喜欢你刚刚交给我的作业。我给你打95分。
+Teresa no entiende por qué la profesora siempre le pone la nota de sesenta y cinco, a pesar de que, según ella cree, sus trabajos son mejores que los de sus compañeros.	特蕾莎不明白为什么老师总是给她65分，尽管据她说，她的作业比她的同学们更好。
+Si no te gusta esa camiseta amarilla, ponte esta azul.	如果你不喜欢那件黄色T恤，就穿这件蓝色的。
+Si piensa usted salir, tiene que ponerse más ropa porque hace frío.	如果您打算出去，您必须穿上更多的衣服，因为现在很冷。
+Después de limpiar y ordenar la sala, la madre se sienta en el sofá y se pone a leer.	打扫完客厅后，妈妈坐在沙发上开始看书。
+Luego de pensar un rato, el médico se pone a escribir algo en un papel.	在思考了一会儿之后，医生开始在一张纸上写一些东西。
+Mi casa queda lejos de la universidad.	我家离大学很远。
+En una universidad tan grande, ¿dónde queda vuestra facultad?	在这么大的大学里，你们系在哪里？
+Quedan veinticinco minutos para las seis.	到六点还差二十五分钟。
+Luego de regalar tus juguetes, ¿cuántos te quedan todavía?	赠送完你的玩具后，你还剩下多少？
+Mira, es lo que queda del almuerzo. ¿Te basta?	看，这是剩下的午餐。这对你来说够了吗？
+No pienso ir a ningún lugar. Quiero quedarme en casa.	我哪儿也不去。我想呆在家里。
+Entonces, quédate aquí y espera a Juan.	那么，你就呆在这儿等胡安。
+
+# 语法点
+dejar 的多重用法
+dejar 是高频多义动词：A. 及物动词"放、搁、丢"（如 Dejen los paquetes en el pasillo）；B. "离开"（如 os dejo 我走了）；C. "允许、准许"（如 Déjenme pasar）；D. dejar de + inf. "停止做某事"（如 Deja de estudiar）。其中 dejar de + inf. 是重要固定搭配，区别于 dejar + inf.（允许做某事）。注意：sin dejar de + inf. 表示"一边……一边……、不停做……的同时"。
+对应例句：1,3,5,7,8
+
+hablar 的多种搭配
+hablar 可作及物动词（说某种语言，如 Habla usted francés），也可作不及物动词。常见搭配：hablar en + 语言（用某种语言说话）、hablar con alguien de algo（与某人谈论某事）、hablar poco/mucho（说得少/多）。本课系统展示了 hablar 的多种用法和固定搭配。
+对应例句：9,11,15,16
+
+pensar 的多重含义
+pensar 有多种含义和搭配：A. pensar + inf. "打算做"（如 Pienso viajar）；B. pensar + que 从句"认为"（如 Pienso que...）；C. pensar + 名词"思考"（如 Piénsalo bien）；D. pensar en "想念、思念"（如 Pienso en mis padres）。注意 pensar 是词干元音变化动词（e→ie）：pienso, piensas, piensa, pensamos, pensáis, piensan。
+对应例句：17,18,19,23,24
+
+poner 的多重用法
+poner 本义为"放、摆"，但有丰富的引申义：A. poner la mesa "摆桌子（准备就餐）"；B. poner una nota "打分"；C. ponerse "穿、戴"（代词式）；D. ponerse a + inf. "开始做某事"。其中 ponerse a + inf. 是核心固定搭配，表示开始做一项费时费力的活动。
+对应例句：25,27,29,31,33
+
+quedar 与 quedarse 的区分
+quedar（不及物）意为"位于"（如 Mi casa queda lejos）或"剩下"（如 Quedan veinticinco minutos）。quedarse（代词式）意为"留下、待在"（如 Quiero quedarme en casa）。二者在意义和用法上有明确分工：quedar 表示状态/位置/剩余，quedarse 表示自主决定留下。
+对应例句：35,37,40,41
+
+短语 a pesar de（尽管）
+a pesar de + 名词/动词原形表示"尽管、虽然"，相当于 aunque，是表达让步的常用短语。本课中 a pesar de que 接从句，表达"尽管……"。
+对应例句：30

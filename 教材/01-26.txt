@@ -1,0 +1,31 @@
+# 生词
+haber	有（无人称动词） [he, has, ha, hemos, habéis, han; 无人称形式: hay]
+hay	有（haber的陈述式现在时无人称形式）
+campus	校园
+universitario	大学的
+comedor	食堂；餐厅
+residencia	宿舍；住所
+al lado de	在……旁边
+sobre	在……上面
+cuánto	多少（疑问词，阳性单数）
+cuántos	多少（疑问词，阳性复数）
+
+# 例句
+En nuestro campus universitario hay varios comedores.	我们大学校园里有好几个食堂。
+Hay una residencia de estudiantes al lado de la universidad.	大学旁边有一个学生宿舍。
+¿Qué hay sobre la mesa?	桌子上有什么？
+¿Cuántos estudiantes tiene vuestra universidad?	你们大学有多少学生？
+¿Cuántos estudiantes hay en vuestra universidad?	你们大学有多少学生？
+
+# 语法点
+无人称动词 haber 的用法
+haber 在表示"有、存在"的含义时是无人称动词，只有第三人称单数一种形式：hay（陈述式现在时）。hay 没有主语，与表示处所、方位的介词或副词共同构成无人称句，表示"在……（某处）有……（某物）"。句式为：hay + 存在物 + 地点状语。存在物在语法上是直接宾语，因此不带定冠词（除非特别确指）。存在物与 hay 在数上不要求一致——无论存在物是单数还是复数，hay 始终保持不变。
+对应例句：1,2,3
+
+haber（hay）与 tener 的区别
+两者都可译为"有"，但用法完全不同：1）tener 必须有明确主语，表示"某人拥有某物"，如 ¿Cuántos estudiantes tiene vuestra universidad?（你们大学有多少学生？），主语是 vuestra universidad，强调"大学拥有"；2）hay 是无人称句，不涉及"谁拥有"，仅表示"某处存在某物"，如 ¿Cuántos estudiantes hay en vuestra universidad?（你们大学里有多少学生？），强调"大学里有"。两句意思相近但要根据语境选择。hay 通常与地点状语（en...、sobre...、al lado de...等）配合使用。
+对应例句：4,5
+
+常见地点表达
+本课引入了几个常见的地点表达词：al lado de（在……旁边），如 al lado de la universidad（在大学旁边）；sobre（在……上面），如 sobre la mesa（在桌子上）。这些与已学的 en（在……里/上）一起构成西班牙语中最基础的地点表达方式。
+对应例句：2,3

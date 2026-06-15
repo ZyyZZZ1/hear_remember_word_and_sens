@@ -1,0 +1,34 @@
+# 生词
+casualidad	巧合
+vaya	好一个……（感叹词，来自动词 ir）
+más	更，更加
+horario	时间表，日程
+apretado	紧凑的，紧的
+terminar	结束，完成 [termino, terminas, termina, terminamos, termináis, terminan]
+media	一半（media hora = 半个小时）
+hora	小时
+imposible	不可能的
+
+# 例句
+¡Qué casualidad!	好巧啊！
+¡Qué bien!	真好！
+¡Qué bien hablas español!	你西语说得真好！
+¡Vaya horario más apretado!	多么紧凑的时间表！
+¿Terminar este trabajo en media hora? ¡Imposible!	半个小时之内结束这项工作？不可能！
+
+# 语法点
+感叹句的基本结构
+感叹句用于表示感叹、惊讶等情绪。书写中，句子前后应分别使用倒写感叹号（¡）和正写感叹号（!）。西班牙语中最常见的感叹句结构为：¡Qué + 名词/形容词/副词!，如 ¡Qué casualidad!（好巧啊！）、¡Qué bien!（真好！）。感叹词 qué 在感叹句中不带重音符号时可修饰名词，带重音符号时可修饰形容词或副词。
+对应例句：1,2,3
+
+¡Qué + 形容词/副词!
+¡Qué + 形容词/副词! 构成对程度或状态的感叹，如 ¡Qué bien!（真好！）。当 qué 后接形容词再加句子时，结构为 ¡Qué + 形容词 + 动词!，如 ¡Qué bien hablas español!（你西语说得真好！）。
+对应例句：2,3
+
+¡Vaya + 名词! 感叹结构
+¡Vaya + 名词 (+ más + 形容词)! 是另一种常用的感叹句式，意为"多么……的……！"。vaya 是动词 ir 的虚拟式形式，在此用作感叹词。结构比 ¡Qué...! 更口语化，带有更强的感情色彩。
+对应例句：4
+
+其他感叹形式
+感叹句也可以采用疑问句形式来表达惊讶或质疑，如 ¿Terminar este trabajo en media hora? ¡Imposible!（半个小时之内结束这项工作？不可能！）。这种用法不需要回答，纯粹是修辞性感叹。
+对应例句：5

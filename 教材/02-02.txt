@@ -1,0 +1,35 @@
+# 生词
+gustar	使喜欢（使动动词） [gusto, gustas, gusta, gustamos, gustáis, gustan]
+encantar	使着迷，使非常喜欢（使动动词） [encanto, encantas, encanta, encantamos, encantáis, encantan]
+novela	小说
+leer	读，阅读 [leo, lees, lee, leemos, leéis, leen]
+fiesta	聚会，节日，派对
+almorzar	吃午饭 [almuerzo, almuerzas, almuerza, almorzamos, almorzáis, almuerzan]
+cafetería	咖啡馆，自助餐厅
+estilo	风格，方式
+escribir	写，书写 [escribo, escribes, escribe, escribimos, escribís, escriben]
+nos	我们（与格/宾格代词）
+os	你们（与格/宾格代词）
+les	他们/她们/诸位（与格代词）
+
+# 例句
+Me gusta su novela.	我喜欢他的小说。
+¿Te gustan sus novelas?	你喜欢他的小说吗？
+Nos gusta leer sus novelas.	我们喜欢读他的小说。
+Le encanta hablar con jóvenes.	他喜欢和年轻人聊天。
+¿No os encantan las fiestas?	你们不喜欢聚会吗？
+A Luis le gusta almorzar en esta cafetería.	路易斯喜欢在这家咖啡馆吃中饭。
+A Susana y a Gloria les encanta este estilo de escribir.	苏珊娜和格洛丽亚喜欢这种写作风格。
+
+# 语法点
+动词gustar和encantar的使动结构
+gustar和encantar组成的句子相当于汉语中的使动结构，意思是某人（或某物）使某人有某种感受。句中主语是受事者（被喜欢/被着迷的事物），以名词、代词、原形动词或动宾词组等形式出现。那个被激发出感受的人（我、你、他、我们、你们、他们）以与格人称代词me、te、le、nos、os、les形式出现，在西班牙语语法中称为间接宾语。动词的单复数取决于受事主语是单数还是复数：主语单数用gusta/encanta，主语复数用gustan/encantan。
+对应例句：1,2,3,4,5
+
+与格人称代词总表
+与格人称代词共六个人称：me（我）、te（你）、le（他/她/您）、nos（我们）、os（你们）、les（他们/她们/诸位）。在gustar和encantar句型中，与格代词必须放在变位动词之前。
+对应例句：1,2,3,4,5
+
+用"a+名词或代词"明确所指
+当第三人称与格代词le/les可能产生歧义时（既可指他/她/您，也可指他们/她们/诸位），常使用"a+名词或代词"的结构来明确所指对象，置于句首或句中。
+对应例句：6,7

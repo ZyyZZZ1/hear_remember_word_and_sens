@@ -1,107 +1,29 @@
 # 生词
-hablar	说话
-cantar	唱
-estudiar	学习
-hablo	（我）说
-hablas	（你）说
-habla	（他/她/您）说
-hablamos	（我们）说
-habláis	（你们）说
-hablan	（他们/她们/诸位）说
-canto	（我）唱
-cantas	（你）唱
-canta	（他/她/您）唱
-cantamos	（我们）唱
-cantáis	（你们）唱
-cantan	（他们/她们/诸位）唱
-estudio	（我）学习
-estudias	（你）学习
-estudia	（他/她/您）学习
-estudiamos	（我们）学习
-estudiáis	（你们）学习
-estudian	（他们/她们/诸位）学习
-comer	吃
-beber	喝
-como	（我）吃
-comes	（你）吃
-come	（他/她/您）吃
-comemos	（我们）吃
-coméis	（你们）吃
-comen	（他们/她们/诸位）吃
-bebo	（我）喝
-bebes	（你）喝
-bebe	（他/她/您）喝
-bebemos	（我们）喝
-bebéis	（你们）喝
-beben	（他们/她们/诸位）喝
-cumplir	完成
-subir	上升
-cumplo	（我）完成
-cumples	（你）完成
-cumple	（他/她/您）完成
-cumplimos	（我们）完成
-cumplís	（你们）完成
-cumplen	（他们/她们/诸位）完成
-subo	（我）上升
-subes	（你）上升
-sube	（他/她/您）上升
-subimos	（我们）上升
-subís	（你们）上升
-suben	（他们/她们/诸位）上升
-estar	处于，在
-estoy	（我）处于，我在
-estás	（你）处于，你在
-está	（他/她/您）处于，在
-estamos	（我们）处于，我们在
-estáis	（你们）处于，你们在
-están	（他们/她们/诸位）处于，在
-tener	有
-tengo	（我）有
-tienes	（你）有
-tiene	（他/她/您）有
-tenemos	（我们）有
-tenéis	（你们）有
-tienen	（他们/她们/诸位）有
-poder	能够
-puedo	（我）能够
-puedes	（你）能够
-puede	（他/她/您）能够
-podemos	（我们）能够
-podéis	（你们）能够
-pueden	（他们/她们/诸位）能够
-poner	放
-pongo	（我）放
-pones	（你）放
-pone	（他/她/您）放
-ponemos	（我们）放
-ponéis	（你们）放
-ponen	（他们/她们/诸位）放
-venir	来
-vengo	（我）来
-vienes	（你）来
-viene	（他/她/您）来
-venimos	（我们）来
-venís	（你们）来
-vienen	（他们/她们/诸位）来
-ir	去
-voy	（我）去
-vas	（你）去
-va	（他/她/您）去
-vamos	（我们）去
-vais	（你们）去
-van	（他们/她们/诸位）去
-mucho	很，很多
-qué	什么（疑问词）
-verbo	动词
-clase	课，课堂
-libro	书
-mano	手
-un	一个（不定冠词，阳性单数）
-en	在……里；在……上
-conocer	认识
-tener clase de español	有西班牙语课
-tener novio	有男朋友
-en la mano	在手里
+hablar	说话 [hablo, hablas, habla, hablamos, habláis, hablan]
+cantar	唱 [canto, cantas, canta, cantamos, cantáis, cantan]
+estudiar	学习 [estudio, estudias, estudia, estudiamos, estudiáis, estudian]
+comer	吃 [como, comes, come, comemos, coméis, comen]
+beber	喝 [bebo, bebes, bebe, bebemos, bebéis, beben]
+cumplir	完成 [cumplo, cumples, cumple, cumplimos, cumplís, cumplen]
+subir	上升 [subo, subes, sube, subimos, subís, suben]
+estar	处于，在 [estoy, estás, está, estamos, estáis, están]
+tener	有 [tengo, tienes, tiene, tenemos, tenéis, tienen]
+poder	能够 [puedo, puedes, puede, podemos, podéis, pueden]
+poner	放 [pongo, pones, pone, ponemos, ponéis, ponen]
+venir	来 [vengo, vienes, viene, venimos, venís, vienen]
+ir	去 [voy, vas, va, vamos, vais, van]
+mucho 很，很多
+qué 什么（疑问词）
+verbo 动词
+clase 课，课堂
+libro 书
+mano 手
+un 一个（不定冠词，阳性单数）
+en 在……里；在……上
+conocer	认识 [conozco, conoces, conoce, conocemos, conocéis, conocen]
+tener clase de español 有西班牙语课
+tener novio 有男朋友
+en la mano 在手里
 
 # 例句
 Estudio mucho.	我学习很多。

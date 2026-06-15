@@ -1,5 +1,6 @@
 # 生词
-（本课无新增生词）
+hermano 兄弟；兄弟姐妹
+hospital	医院
 
 # 例句
 Los hermanos de José van a la universidad.	何塞的兄弟姐妹去上大学。

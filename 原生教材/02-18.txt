@@ -1,0 +1,189 @@
+ SHARP LINGO
+ 
+请问您对目前的学习体验满意吗？快来评论区留下您宝贵的建议吧！
+返回
+模块02 - 第18讲 - 肯定命令式
+放大字体 打印模式 记笔记、报错或提问 显示本课记忆卡片
+
+如果对话的一方祈使或命令另一方做某事，这时，西班牙语动词须采取相应的形态变化，称作命令式变位。我们先来学习一下命令式第二人称亲昵式单数(tú)及礼貌式单数、复数(usted,ustedes)的变位。
+
+一、第二人称亲昵式单数及礼貌式的单复数命令式
+
+1. 规则动词变位
+
+第二人称单数的变位规则是：去掉第一变位动词词尾-ar，亲昵式在词干上加命令式词尾-a，礼貌式则加词尾-e；去掉第二和第三变位动词词尾-er和-ir，分别在词干上加命令式词尾-e和-a。
+
+第二人称礼貌式复数的变位很简单，只需在其单数形式末尾加添“n”即可。详见下表：
+
+人称	trabajar	comer	vivir
+tú	trabaja	come	vive
+usted	trabaje	coma	viva
+ustedes	trabajen	coman	vivan
+
+2. 不规则动词变位
+
+陈述式现在时变位不规则的动词在命令式变位中要保持亲昵式单数和礼貌式单复数人称重读音节上某些特定的元音替换规则（参考本册第四、五、六课及本课语法项目六有关某些不规则动词变位动词的陈述式现在时），然后再加上相应的命令式词尾。例如：
+
+原形动词及元音替换规则	陈述式变位	命令式变位
+encender
+e → ie	tú: enciendes
+usted: enciende
+ustedes: encienden	tú: enciende
+usted: encienda
+ustedes: enciendan
+encontrar
+o → ue	tú: encuentras
+usted: encuentra
+ustedes: encuentran	tú: encuentra
+usted: encuentre
+ustedes: encuentren
+pedir
+e → i	tú: pides
+usted: pide
+ustedes: piden	tú: pide
+usted: pida
+ustedes: pidan
+pensar
+e → ie	tú: piensas
+usted: piensa
+ustedes: piensan	tú: piensa
+usted: piense
+ustedes: piensen
+seguir
+e → i	tú: sigues
+usted: sigue
+ustedes: siguen	tú: sigue
+usted: siga
+ustedes: sigan
+
+如果动词为代词式动词，则自复代词置于词尾，并与变位动词连写。为保持重音不位移，应添加重音符号。例如：
+
+人称	acostarse
+陈述式	acostarse
+命令式	levantarse
+陈述式	levantarse
+命令式	limpiarse
+陈述式	limpiarse
+命令式
+tú	te acuestas	acuéstate	te levantas	levántate	te limpias	límpiate
+usted	se acuesta	acuéstese	se levanta	levántese	se limpia	límpiese
+ustedes	se acuestan	acuéstense	se levantan	levántense	se limpian	límpiense
+
+宾格和与格人称代词置于命令式动词之后，并与之连写，有时须添加重音符号。
+
+例句：
+
+Escríbeme, por favor.  请写信给我。
+
+Si tienes esa novela, tráemela mañana, por favor.  如果你有那本小说，明天请把它带给我。
+
+¿Quieren ustedes leer las revistas de la universidad? Pídansela a la bibliotecaria.  诸位想读大学杂志吗？向图书管理员要。
+
+注意：为了避免某些音素相邻出现而造成的刺耳感觉，这一规则在实际运用过程中会出现一些变通。比如，凡遇到-noslos,-noslas;-oslos,-oslas 这类音节，便往往略去一个代词，或宾格或与格，视语境而定。例如，不说Entreganoslos,而说 Entreganos 或Entregalos。缺失的代词所指，自会由语境和上下文提示。
+
+3. 用法：一些动词在命令式变位中拼写会出现变化。例如：
+
+二、第一人称复数、第二人称亲昵式复数命令式
+
+原形动词及书写变化	陈述式变位	命令式变位
+avanzar
+z → c	tú: avanzas
+usted: avanza
+ustedes: avanzan	tú: avanza
+usted: avance
+ustedes: avancen
+indicar
+c → qu	tú: indicas
+usted: indica
+ustedes: indican	tú: indica
+usted: indique
+ustedes: indiquen
+llegar
+g → gu	tú: llegas
+usted: llega
+ustedes: llegan	tú: llega
+usted: llegue
+ustedes: lleguen
+
+命令式第一人称复数的变位规则是：去掉第一变位动词词尾-ar,在词干上增添-emos;去掉第二、三变位动词词尾-er和-ir,在词干上增添-amos。
+
+命令式第二人称复数亲昵式的变位规则是：去掉第一变位动词词尾-ar,在词干上增添-ad;去掉第二、三变位动词词尾-er和-ir,在词干上分别增添-ed和-id。详见下表：
+
+人称	trabajar	comer	vivir
+nosotros, nosotras	trabajemos	comamos	vivamos
+vosotros, vosotras	trabajad	comed	vivid
+
+如果动词带有宾格、与格代词或自复代词，均应置于变位动词之后，并与之合写。同时，为保持重音不位移，第二人称礼貌式应添加重音符号。试比较：
+
+¿Dónde ponemos esta mesa, señorita?  我们把这张桌子放哪儿，小姐？
+
+Ponedla en el comedor.  你们把它放在饭厅。
+
+O:
+
+Pónganla en el comedor.  诸位把它放在饭厅。
+
+Decidnos qué defectos tenemos.  你们告诉我们我们有什么缺点。
+
+O:
+
+Dígan nos qué defectos tenemos.  诸位告诉我们我们有什么缺点。
+
+Dejadme hacer el trabajo poco a poco.  你们让我一点点干活。
+
+O:
+
+Déjenme hacer el trabajo poco a poco.  诸位让我一点点干活。
+
+Son las diez. Levanta os ya.  十点了。你们快起床。
+
+O:
+
+Son las diez. Levántense ya.  十点了。诸位快起床。
+
+注意：命令式第一人称复数与后置宾格和与格代词连写时，也有变通情况(参看第九课语法)。遇到下列语段，往往要略去与格代词se。例如，不说：Encarguémoselo,而说：Encarguémoslo。这时，与格代词的所指则由语境或上下文以及介词a加名词或主格代词来指明：a Juan,a Susana,a ella, a ustedes, 等等。
+
+注意：如果动词为代词式动词，命令式第一人称复数变位失去词尾辅音s;第二人称复数亲昵式失去词尾辅音d。此外，第一人称复数应添加重音符号。请看下表：
+
+人称	acostarse	levantarse	ponerse
+nosotros, nosotras	acostémonos	levantémonos	pongámonos
+vosotros, vosotras	acostaos	levantaos	poneos
+
+我们已经学了动词命令式变位的所有人称，现将各人称变位列表如下：
+
+人称	estudiar	comer	vivir
+tú	estudia	come	vive
+usted	estudie	coma	viva
+nosotros, nosotras	estudiemos	comamos	vivamos
+vosotros, vosotras	estudiad	comed	vivid
+ustedes	estudien	coman	vivan
+
+注：背景为淡绿色的句子是被您保存过的句子。
+×
+
+请注意，本页的内容仅供查阅之用，您在这里进行的单词或语法学习的时长将不会被系统记录，若您想要让学习时间反映在您的学习记录当中，请在关闭本对话框后，点击本页最上方的“进入教室”按钮，然后按照网站系统的规划继续学习。
+
+关闭
+
+关于我们
+
+服务简介 常见问题
+
+联系我们
+
+  
+
+ hello@sharplingo.cn
+
+隐私及条款
+
+服务条款 隐私政策 Cookie政策
+
+Copyright © 2026 SharpLingo
+
+
+甘公网安备 62010202003105号
+
+ 
+
+陇ICP备2021000492号-1

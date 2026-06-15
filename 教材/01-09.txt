@@ -5,11 +5,12 @@ América 美洲
 Latinoamérica 拉丁美洲
 latín 拉丁语
 argentino 阿根廷的；阿根廷人
+bien	好，很好
 Cuba 古巴
 Buenas tardes 下午好
 tarde 下午，午后
 a （人称前置词）
-presentar 介绍，引见
+presentar 介绍，引见 [presento, presentas, presenta, presentamos, presentáis, presentan]
 le 您/他/她（与格代词）向这个人.+动词
 también 也，同样
 hispanohablante 西班牙语母语者

@@ -1,0 +1,31 @@
+# 生词
+dar	给，给予 [doy, das, da, damos, dais, dan]
+pagar	支付，付款 [pago, pagas, paga, pagamos, pagáis, pagan]
+señora	女士，太太，夫人
+prestar	借出，借给 [presto, prestas, presta, prestamos, prestáis, prestan]
+traer	带来，拿来 [traigo, traes, trae, traemos, traéis, traen]
+
+# 例句
+Enseño español a estudiantes chinos.	我教中国学生西班牙语。
+Te doy un libro.	我给你一本书。
+Llevo las revistas a mi profesor.	我把杂志带给我的老师。
+El profesor les dice a los alumnos que mañana no hay clases.	老师告诉学生们明天没有课。
+¿Le pagamos a usted o a esa señora?	我们付给您还是那位女士？
+Allí está nuestro profesor.	我们老师在那里。
+Podemos pedirle prestados esos libros.	我们可以向他借那些书。
+¿Quién va a traernos esos libros y esas revistas?	谁会给我们带来那些书和杂志？
+Voy a leerles a ustedes este libro.	我来给诸位读这本书。
+Puedes escribirle a nuestra profesora para preguntarle eso.	你可以给我们老师写信向她问那件事。
+
+# 语法点
+间接宾语的概念
+有些动词可以带双宾语：一个回答¿qué?（什么）的提问，称为直接宾语；另一个回答¿a quién?（对谁）的提问，称为间接宾语。常见可带双宾语的动词包括dar（给）、decir（说）、llevar（带给）、traer（带来）、enseñar（教）等。名词作间接宾语时，前面必须加前置词a。通常语序为：直接宾语在前，间接宾语在后（均置于动词之后）。如果直接宾语是从句，则需颠倒语序。
+对应例句：1,2,3,4
+
+与格人称代词总表
+与格人称代词（指代间接宾语的代词）共有六个人称：me（我）、te（你）、le（他/她/您）、nos（我们）、os（你们）、les（他们/她们/诸位）。在连续语段中，为避免重复，作间接宾语的名词可用与格代词指代。与格代词可置于变位动词之前（分写）或原形动词之后（连写）。
+对应例句：5,6,7,8,9,10
+
+用"a+名词/代词"复指消除歧义
+由于第三人称与格代词le既可以指代他/她，也可以指代您，les既可以指代他们/她们，也可以指代诸位，为避免歧义，常用"a+名词或代词"的结构来明确所指对象。
+对应例句：5,8,10

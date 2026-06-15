@@ -5,24 +5,15 @@ pequeño	小的（阳性）
 pequeña	小的（阴性）
 grande	大的（无阴阳性变化）
 ahí	那里，在那儿
-vivir	住，居住，生活
-vivo	（我）住
-vives	（你）住
-vive	（他/她/您）住
-vivimos	（我们）住
-vivís	（你们）住
-viven	（他们/她们/诸位）住
+casa	房子，家
+vivir	住，居住，生活 [vivo, vives, vive, vivimos, vivís, viven]
 dormitorio	卧室
+familia	家庭
 colegio	学校
 con	和……一起、带有
 habitación	房间
-levantarse	起床（代词式动词）
-me levanto	（我）起床
-te levantas	（你）起床
-se levanta	（他/她/您）起床
-nos levantamos	（我们）起床
-os levantáis	（你们）起床
-se levantan	（他们/她们/诸位）起床
+instituto	学院，高中
+levantarse	起床 [me levanto, te levantas, se levanta, nos levantamos, os levantáis, se levantan]
 
 # 例句
 Mucho gusto.	很高兴认识你。

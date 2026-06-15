@@ -1,0 +1,14 @@
+# 生词
+alguien	某人，有人
+arrojar	扔，投掷 [arrojo, arrojas, arroja, arrojamos, arrojáis, arrojan]
+comida	食物
+
+# 例句
+Cuando alguien te elogia diciendo que hablas bien español, no le digas: "No, lo hablo muy mal."	当有人夸你说你西班牙语说得好的时候，不要跟他说："不，我说的不好。"
+El guía dice a los turistas que no asusten a los animales arrojándoles comida.	导游告诉游客不要向动物扔食物惊吓它们。
+La niña va a agradecer a la abuela dándole un beso.	小女孩要给奶奶一个吻来感谢她。
+
+# 语法点
+副动词表示方式（gerundio como complemento de modo）
+副动词除了在 estar + gerundio 结构中表示进行外，还可以独立使用，表示动作发生的方式，相当于一个方式副词。本课三个例句展示了这一用法：diciendo（通过说……的方式）、arrojándoles comida（通过向它们扔食物的方式）、dándole un beso（通过给她一个吻的方式）。副动词表示方式时，其逻辑主语通常与主句动词的主语一致。副动词后附代词时（如 arrojándoles、dándole），必须在重读音节上加标重音符号。
+对应例句：1,2,3

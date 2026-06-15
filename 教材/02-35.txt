@@ -1,0 +1,12 @@
+# 生词
+librería	书店
+
+# 例句
+¿Quieres acompañarme a la librería?	你想陪我去书店吗？
+Susana quiere descansar porque está cansada.	苏珊娜想休息因为她累了。
+¿De qué quiere hablar usted con nosotros?	您想跟我们说什么？
+
+# 语法点
+动词短语 querer + inf.（想做……）
+querer + 动词原形表示"想要做（某事）、愿意做（某事）"，是西班牙语中表达意愿和打算的最常用结构之一。querer 按人称变位，后面的原形动词保持不变。本课展示了三种人称的使用：quieres（你）、quiere（他/她/您）、quiere（第三人称）。注意 querer 是词干元音变化动词（e→ie）：quiero, quieres, quiere, queremos, queréis, quieren。querer 单独使用时意为"想要、爱"，后接动词原形时意为"想做某事"。
+对应例句：1,2,3

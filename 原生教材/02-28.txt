@@ -1,0 +1,253 @@
+ SHARP LINGO
+ 
+请问您对目前的学习体验满意吗？快来评论区留下您宝贵的建议吧！
+返回
+模块02 - 第28讲 - 否定命令式
+放大字体 打印模式 记笔记、报错或提问 显示本课记忆卡片
+
+这里需要说明一下，西班牙语正规语法中，没有否定命令式(imperativo negativo)这个范畴，因为这里使用的是我们不久将学到的虚拟式。但是为了便于操作，权且杜撰这个较为通俗的山寨术语。
+
+1. 形式
+
+西班牙语的否定命令式由否定副词no加动词的虚拟式现在时构成。意思是“别做……,不要做……,不许做……”。
+
+规则动词变位：
+
+本课先讲第二人称亲昵式单数、复数(tú,vosotros)和第二人称礼貌式单数(usted)的变位。规则是：去掉原形动词的词尾-ar,-er和-ir,然后在词干上加如下各人称的词尾。
+
+人称	第一变位动词	第二、三变位动词
+tú	-es	-as
+usted	-e	-a
+vosotros, vosotras	-éis	-áis
+
+例词：
+
+人称	trabajar	comer	escribir
+tú	no trabajes	no comas	no escribas
+usted	no trabaje	no coma	no escriba
+vosotros, vosotras	no trabajéis	no comáis	no escribáis
+
+注意：亲昵式第二人称复数变位带重音符号。
+
+某些不规则动词变位：
+
+(1) 陈述式现在时第一人称单数(yo)的词根加上述第二、三变位动词的第二人称亲昵式单数、复数和第二人称礼貌式单数(tú,vosotros/as,usted)的否定命令式词尾。如 decir,hacer, oir, poner, salir, tener, traer, venir 等。
+
+人称	decir:
+digo	hacer:
+hago	oír:
+oigo	poner:
+pongo	salir:
+salgo	tener:
+tengo	traer:
+traigo	venir:
+vengo
+tú	no digas	no hagas	no oigas	no pongas	no salgas	no tengas	no traigas	no vengas
+usted	no diga	no haga	no oiga	no ponga	no salga	no tenga	no traiga	no venga
+vosotros, vosotras	no digáis	no hagáis	no oigáis	no pongáis	no salgáis	no tengáis	no traigáis	no vengáis
+
+(2) 陈述式现在时单数人称词根(参考本课语法项目四)加上述第一、二、三变位动词第二人称亲昵式及礼貌式单数的(tú,usted)否定命令式词尾；相应的复数人称词根加第二人称亲昵式复数(vosotros/as)否定命令式词根。如 contar,entender, jugar, pensar, volver 等。
+
+人称	contar:
+cuento	entender:
+entiendo	jugar:
+juego	pensar:
+pienso	volver:
+vuelvo
+tú	no cuentes	no entiendas	no juegues	no pienses	no vuelvas
+usted	no cuente	no entienda	no juegue	no piense	no vuelva
+vosotros, vosotras	no contéis	no entendáis	no juguéis	no penséis	no volváis
+
+(3) 有些动词的否定命令式变位发生书写变化。如 empezar,pagar, recoger, sacar 等。
+
+人称	empezar	pagar	recoger	sacar
+tú	no empieces	no pagues	no recojas	no saques
+usted	no empiece	no pague	no recoja	no saque
+vosotros, vosotras	no empecéis	no paguéis	no recojáis	no saquéis
+
+(4) 其他：
+
+人称	ir	ser	ver
+tú	no vayas	no seas	no veas
+usted	no vaya	no sea	no vea
+vosotros, vosotras	no vayáis	no seáis	no veáis
+
+2. 否定命令式带宾格、与格代词或为代词式动词时的语序：
+
+与肯定命令式不同，否定命令式带宾格、与格或自复代词时，将其置于否定副词no和变位动词之间。试比较：
+
+- Dígaselo.  把这件事告诉他。
+
+- No se lo diga.  不要把这件事告诉他。
+
+- Levántate.  你快起床。
+
+- No te levantes.  你别起床。
+
+本课讲解第一人称复数(nosotros)和第二人称礼貌式复数(ustedes)的变位：
+
+1. 变位规则：去掉原形动词的词尾-ar,-er和-ir,然后在词干上加以下各人称的词尾。
+
+人称	第一变位动词	第二、三变位动词
+nosotros, nosotras	-emos	-amos
+ustedes	-en	-an
+
+例词：
+
+人称	trabajar	comer	escribir
+nosotros, nosotras	no trabajemos	no comamos	no escribamos
+ustedes	no trabajen	no coman	no escriban
+
+下面表格中列出规则动词的全部人称：
+
+人称	第一变位动词	第二、三变位动词
+tú	-es	-as
+él, ella, usted	-e	-a
+nosotros, nosotras	-emos	-amos
+vosotros, vosotras	-éis	-áis
+ellos, ellas, ustedes	-en	-an
+
+例词：
+
+人称	trabajar	comer	escribir
+tú	no trabajes	no comas	no escribas
+usted	no trabaje	no coma	no escriba
+nosotros, nosotras	no trabajemos	no comamos	no escribamos
+vosotros, vosotras	no trabajéis	no comáis	no escribáis
+ustedes	no trabajen	no coman	no escriban
+
+2. 不规则动词：
+
+(1) 陈述式现在时第一人称单数的词根分别加上述第二、三变位动词的第一人称复数(nosotros)和第二人称礼貌式复数(ustedes)的否定命令式词尾。如 decir, hacer, oir, poner,salir, tener, traer, venir 等。
+
+人称	decir:
+digo	hacer:
+hago	oír:
+oigo	poner:
+pongo	salir:
+salgo	tener:
+tengo	traer:
+traigo	venir:
+vengo
+nosotros, nosotras	no digamos	no hagamos	no oigamos	no pongamos	no salgamos	no tengamos	no traigamos	no vengamos
+ustedes	no digan	no hagan	no oigan	no pongan	no salgan	no tengan	no traigan	no vengan
+
+下面列出这些动词否定命令式的全部人称变位：
+
+人称	decir:
+digo	hacer:
+hago	oír:
+oigo	poner:
+pongo	salir:
+salgo	tener:
+tengo	traer:
+traigo	venir:
+vengo
+tú	no digas	no hagas	no oigas	no pongas	no salgas	no tengas	no traigas	no vengas
+usted	no diga	no haga	no oiga	no ponga	no salga	no tenga	no traiga	no venga
+nosotros, nosotras	no digamos	no hagamos	no oigamos	no pongamos	no salgamos	no tengamos	no traigamos	no vengamos
+vosotros, vosotras	no digáis	no hagáis	no oigáis	no pongáis	no salgáis	no tengáis	no traigáis	no vengáis
+ustedes	no digan	no hagan	no oigan	no pongan	no salgan	no tengan	no traigan	no vengan
+
+(2) 陈述式现在时单数人称词根加上述第一、二、三变位动词第二人称复数礼貌式(ustedes)的否定命令式词尾；复数人称词根加复数第一人称(nosotros)的否定命令式词尾。如 contar, entender, pensar, volver 等。
+
+人称	contar:
+contamos
+cuento	entender:
+entendemos
+entiendo	pensar:
+pensamos
+pienso	volver:
+volvemos
+vuelvo
+nosotros, nosotras	no contemos	no entendamos	no pensemos	no volvamos
+ustedes	no cuenten	no entiendan	no piensen	no vuelvan
+
+下面列出这些动词否定命令式的全部人称变位：
+
+人称	contar:
+contamos
+cuento	entender:
+entendemos
+entiendo	pensar:
+pensamos
+pienso	volver:
+volvemos
+vuelvo
+tú	no cuentes	no entiendas	no pienses	no vuelvas
+usted	no cuente	no entienda	no piense	no vuelva
+nosotros, nosotras	no contemos	no entendamos	no pensemos	no volvamos
+vosotros, vosotras	no contéis	no entendáis	no penséis	no volváis
+ustedes	no cuenten	no entiendan	no piensen	no vuelvan
+
+(3) 有些动词的否定命令式变位发生书写变化。如 empezar,pagar, recoger, sacar 等。
+
+人称	empezar	pagar	recoger	sacar
+nosotros, nosotras	no empecemos	no paguemos	no recojamos	no saquemos
+ustedes	no empiecen	no paguen	no recojan	no saquen
+
+下面列出这些动词否定命令式的全部人称变位：
+
+人称	empezar	pagar	recoger	sacar
+tú	no empieces	no pagues	no recojas	no saques
+usted	no empiece	no pague	no recoja	no saque
+nosotros, nosotras	no empecemos	no paguemos	no recojamos	no saquemos
+vosotros, vosotras	no empecéis	no paguéis	no recojáis	no saquéis
+ustedes	no empiecen	no paguen	no recojan	no saquen
+
+(4) 其他：
+
+人称	ir	ser	ver
+nosotros, nosotras	no vayamos	no seamos	no veamos
+ustedes	no vayan	no sean	no vean
+
+下面列出这些动词否定命令式的全部人称变位：
+
+人称	ir	ser	ver
+tú	no vayas	no seas	no veas
+usted	no vaya	no sea	no vea
+nosotros, nosotras	no vayamos	no seamos	no veamos
+vosotros, vosotras	no vayáis	no seáis	no veáis
+ustedes	no vayan	no sean	no vean
+
+上一课已经提醒大家注意：与肯定命令式不同，否定命令式带宾格、与格或自复代词时，将其置于否定副词 no和变位动词之间。
+
+例句：
+
+- Cuéntenselo.  把这件事讲给他听。
+
+- No se lo cuenten.  别把这件事讲给他听。
+
+- Vámonos.  我们走吧。
+
+- No nos vayamos  我们别走。
+
+注：背景为淡绿色的句子是被您保存过的句子。
+×
+
+请注意，本页的内容仅供查阅之用，您在这里进行的单词或语法学习的时长将不会被系统记录，若您想要让学习时间反映在您的学习记录当中，请在关闭本对话框后，点击本页最上方的“进入教室”按钮，然后按照网站系统的规划继续学习。
+
+关闭
+
+关于我们
+
+服务简介 常见问题
+
+联系我们
+
+  
+
+ hello@sharplingo.cn
+
+隐私及条款
+
+服务条款 隐私政策 Cookie政策
+
+Copyright © 2026 SharpLingo
+
+
+甘公网安备 62010202003105号
+
+ 
+
+陇ICP备2021000492号-1

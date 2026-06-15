@@ -1,0 +1,56 @@
+# 生词
+mío	我的（重读物主形容词/物主代词，阳性单数）
+tuyo	你的（重读物主形容词/物主代词，阳性单数）
+suyo	他/她/您/他们/诸位/她们的（重读物主形容词/物主代词，阳性单数）
+médico	医生
+tía	阿姨，姨妈，伯母
+ciudad	城市
+México	墨西哥
+doscientos	两百
+extranjero	外国的；外国人
+abuela	祖母，外婆
+llave	钥匙
+texto	课文，文本
+difícil	困难的，难的
+hijo	儿子
+piso	楼层，公寓
+camiseta	汗衫，T恤
+verde	绿色的
+rojo	红色的
+
+# 例句
+Un hermano mío es médico.	我的一个哥哥是医生。
+Una tía suya vive en la ciudad de México.	他的一个阿姨住在墨西哥城。
+Unos doscientos estudiantes extranjeros estudian chino en la universidad vuestra, ¿verdad?	近两百个外国学生在你们大学学中文，对吗？
+Mi hermano es médico.	我哥哥是医生。
+Su tía vive en la ciudad de México.	他姨妈住在墨西哥城。
+Ramón, ¿no es tuya la revista?	拉蒙，这本杂志不是你的吗？
+Estos libros son nuestros.	这些书是我们的。
+Abuela, ¿son tuyas o mías estas llaves?	外婆，这些钥匙是你的还是我的？
+¡Madre mía! ¡Qué texto tan difícil!	我的妈呀！这么难的课文！
+¿Qué quieres, hijo mío?	你想要什么，我的儿子？
+¿Qué dices, amigo mío?	你说什么，我的朋友？
+Nuestra habitación está en este piso. ¿Dónde está la vuestra?	我们的房间在这一层。你们的在哪里？
+Tu camiseta es verde. La mía es roja.	你的汗衫是绿色的。我的是红色的。
+Yo leo tus libros y tú lees los míos.	我看你的书而你看我的。
+
+# 语法点
+重读物主形容词的形式
+重读物主形容词表示所属关系，必须置于所修饰的名词之后，并与名词保持性和数的一致。其完整形式为：mío/mía/míos/mías（我的）、tuyo/tuya/tuyos/tuyas（你的）、suyo/suya/suyos/suyas（他/她/您/他们/她们/诸位的）、nuestro/nuestra/nuestros/nuestras（我们的）、vuestro/vuestra/vuestros/vuestras（你们的）。注意nuestro和vuestro的形式与非重读物主形容词相同。
+对应例句：1,2,3,6,7,8,12,13,14
+
+重读物主形容词的用法（一）：与带冠词的名词合用
+重读物主形容词与不定冠词（un/una/unos/unas）加名词合用时，所指不确定，表示"某人的一个……"。例如"un hermano mío"（我的一个哥哥，不确定是哪个）。与之对比，非重读物主形容词所指是确定的："mi hermano"（我哥哥，确定的那个）。
+对应例句：1,2,3,4,5
+
+重读物主形容词的用法（二）：在名词谓语句中作表语
+重读物主形容词在ser引导的名词谓语句中用作表语，表示所属。此时重读物主形容词须与主语保持性和数一致。
+对应例句：6,7,8
+
+重读物主形容词的用法（三）：在感叹句或呼语中
+在感叹句或呼语中，重读物主形容词与不带冠词的名词连用，表达亲近、亲切的语气。如"¡Madre mía!"（我的妈呀！）、"hijo mío"（我的儿子）、"amigo mío"（我的朋友）。
+对应例句：9,10,11
+
+物主代词
+物主代词的形式与重读物主形容词一致，但必须与定冠词（el/la/los/las）合用，并与所指代的名词保持性和数一致。物主代词用于替代"物主形容词+名词"的结构，避免重复。例如"la mía"（我的那件，指camiseta）、"los míos"（我的那些，指libros）、"la vuestra"（你们的那个，指habitación）。
+对应例句：12,13,14

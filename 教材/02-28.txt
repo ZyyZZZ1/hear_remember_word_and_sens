@@ -1,0 +1,33 @@
+# 生词
+escribir	写，书写 [escribo, escribes, escribe, escribimos, escribís, escriben]
+contar	讲述；数，计算 [cuento, cuentas, cuenta, contamos, contáis, cuentan]
+empezar	开始 [empiezo, empiezas, empieza, empezamos, empezáis, empiezan]
+recoger	捡起，收拾；收集 [recojo, recoges, recoge, recogemos, recogéis, recogen]
+sacar	取出，拿出 [saco, sacas, saca, sacamos, sacáis, sacan]
+
+# 例句
+Cuéntenselo.	把这件事讲给他听。
+No se lo cuenten.	别把这件事讲给他听。
+Vámonos.	我们走吧。
+No nos vayamos.	我们别走。
+
+# 语法点
+否定命令式的构成规则
+西班牙语否定命令式由否定副词 no 加动词的虚拟式现在时构成，意为"别做……、不要做……"。规则动词变位规则：第一变位动词（-ar）去掉词尾加 -es（tú）、-e（usted）、-emos（nosotros）、-éis（vosotros）、-en（ustedes）；第二、三变位动词（-er/-ir）去掉词尾加 -as（tú）、-a（usted）、-amos（nosotros）、-áis（vosotros）、-an（ustedes）。例如：no trabajes, no comas, no escribas 等。
+对应例句：2,4
+
+不规则动词否定命令式（一）：第一人称单数词根类
+以陈述式现在时第一人称单数（yo）的词根为基础，加上第二、三变位动词的否定命令式词尾。此类动词包括：decir（digo → no digas）、hacer（hago → no hagas）、oír（oigo → no oigas）、poner（pongo → no pongas）、salir（salgo → no salgas）、tener（tengo → no tengas）、traer（traigo → no traigas）、venir（vengo → no vengas）等。
+对应例句：（本语法点为抽象规则，无直接例句）
+
+不规则动词否定命令式（二）：词干元音变化类
+以陈述式现在时单数人称词根为基础，加上相应词尾。此类动词包括：contar（cuento → no cuentes）、entender（entiendo → no entiendas）、jugar（juego → no juegues）、pensar（pienso → no pienses）、volver（vuelvo → no vuelvas）等。注意复数人称（nosotros、vosotros）保持原词干元音不变（如 no contemos、no volváis）。
+对应例句：（本语法点为抽象规则，无直接例句）
+
+否定命令式中代词的位置
+与肯定命令式不同（代词后附于动词），否定命令式中的宾格、与格和自复代词必须置于否定副词 no 和变位动词之间。试比较：肯定命令式 Cuéntenselo（讲给他听）→ 否定命令式 No se lo cuenten（别讲给他听）；肯定命令式 Vámonos（我们走吧）→ 否定命令式 No nos vayamos（我们别走）。
+对应例句：1,2,3,4
+
+书写变化类动词的否定命令式
+部分动词在否定命令式变位中发生书写变化以保持发音：empezar（c→ce：no empieces）、pagar（g→gue：no pagues）、recoger（g→ja：no recojas）、sacar（c→que：no saques）等。
+对应例句：（本语法点为抽象规则，无直接例句）

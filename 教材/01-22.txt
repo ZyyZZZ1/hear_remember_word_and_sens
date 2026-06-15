@@ -1,0 +1,72 @@
+# 生词
+cero	零
+cinco	五
+seis	六
+ocho	八
+nueve	九
+diez	十
+once	十一（见 01-20）
+doce	十二
+trece	十三
+catorce	十四
+quince	十五
+dieciséis	十六
+diecisiete	十七
+dieciocho	十八
+diecinueve	十九
+veinte	二十
+veintiuno	二十一
+veintidós	二十二
+veinticinco	二十五
+veintiocho	二十八
+treinta	三十
+treinta y uno	三十一
+treinta y tres	三十三
+treinta y cuatro	三十四
+treinta y seis	三十六
+treinta y nueve	三十九
+cuarenta	四十
+cincuenta	五十
+sesenta	六十
+setenta	七十
+ochenta	八十
+noventa	九十
+ciento	一百
+ciento uno	一百零一
+ciento veinte	一百二十
+doscientos	二百
+doscientos diez	二百一十
+trescientos	三百
+trescientos veinte	三百二十
+cuatrocientos	四百
+cuatrocientos treinta	四百三十
+quinientos	五百
+seiscientos	六百
+setecientos	七百
+ochocientos	八百
+novecientos	九百
+mil	一千
+
+# 例句
+（本课无完整西班牙语句子）
+
+# 语法点
+基数词 0-15
+西班牙语基数词 0-15 为基本词汇，需要逐一记忆：0=cero, 1=uno, 2=dos, 3=tres, 4=cuatro, 5=cinco, 6=seis, 7=siete, 8=ocho, 9=nueve, 10=diez, 11=once, 12=doce, 13=trece, 14=catorce, 15=quince。其中 uno 在阳性单数名词前缩为 un。
+对应例句：（本课无例句）
+
+基数词 16-29
+16-19 由 diez + 个位数连写构成：dieciséis(16), diecisiete(17), dieciocho(18), diecinueve(19)。注意 dieciséis 带重音符号。20 为 veinte。21-29 由 veinti + 个位数连写构成（也可分写）：veintiuno(21), veintidós(22), veinticinco(25), veintiocho(28)。21-29 分写时需加 y：veinte y uno。
+对应例句：（本课无例句）
+
+基数词 30-99
+30=treinta, 40=cuarenta, 50=cincuenta, 60=sesenta, 70=setenta, 80=ochenta, 90=noventa。31 以上一般分写，十位和个位之间加 y：treinta y uno(31), treinta y tres(33), cuarenta y cinco(45)。无重音变化。
+对应例句：（本课无例句）
+
+基数词 100-999
+100 在计数时为 cien，在具体数字中使用 ciento：ciento uno(101), ciento veinte(120)。200-900 的整百（200= doscientos, 300=trescientos, 400=cuatrocientos, 500=quinientos, 600=seiscientos, 700=setecientos, 800=ochocientos, 900=novecientos）均与所修饰名词保持阴阳性一致。注意 500 quinientos 和 700 setecientos 的拼写不规则变化。百位与十位、个位之间通常不加 y。
+对应例句：（本课无例句）
+
+基数词 1000
+mil 表示一千，无阴阳性和复数变化。2000 为 dos mil, 3000 为 tres mil 等，mil 始终不变。
+对应例句：（本课无例句）

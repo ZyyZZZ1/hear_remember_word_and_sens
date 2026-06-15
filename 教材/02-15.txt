@@ -1,0 +1,60 @@
+# 生词
+bienvenido	欢迎
+quedar	剩下，遗留；处于（某状态） [quedo, quedas, queda, quedamos, quedáis, quedan]
+pendiente	待处理的，悬而未决的
+gritar	喊叫，大声叫嚷 [grito, gritas, grita, gritamos, gritáis, gritan]
+carrito	小推车，手推车
+equipaje	行李
+junto	一起的，挨着的
+junto a	在……旁边
+debajo de	在……下面
+maletín	小手提箱，公文包
+bolso	包，手提包
+demás	其余的，其他的
+los demás	其他人，其余的人
+señor	先生，男士
+mostrador	柜台，前台
+dueño	主人，物主
+oír	听见，听到 [oigo, oyes, oye, oímos, oís, oyen]
+pena	遗憾，可惜，难过
+vecino	邻居
+
+# 例句
+Buenos días a todos. Bienvenidos.	大家早上好。欢迎。
+Gracias. ¿Queda algo pendiente?	谢谢。还有什么待办的事吗？
+No. Ya pueden subir a sus habitaciones.	没有了。诸位可以上楼去自己的房间了。
+¡Mi maleta! ¿Dónde está mi maleta?	我的手提箱！我的手提箱在哪儿？
+No grites, mujer.	别喊，老婆。
+Mira al chico del carrito.	你看推车的那个小伙子。
+Él se encarga de subirnos los equipajes.	他负责把我们的行李送上去。
+La tuya es roja, ¿verdad?	你的是红色的，对吗？
+Está junto a la mía, ahí, debajo de los maletines, las mochilas y los bolsos de los demás.	它就在我的旁边，那儿，在其他人小手提箱、背包和手提包的下面。
+Perdón, señores, un momento.	对不起，先生们，等一下。
+Aquí, en el mostrador, hay un libro y una revista.	这里，在前台上，有一本书和一本杂志。
+¿Alguno de ustedes es el dueño?	你们中哪位是物主？
+El libro es mío.	书是我的。
+Oye, Ramón, ¿no es tuya la revista?	喂，拉蒙，这本杂志不是你的吗？
+Sí, es mía. ¿Puedes pasármela? Gracias.	是的，是我的。你能把它递给我吗？谢谢。
+¿Quién sabe cuál es el número de nuestra habitación y en qué piso está?	谁知道我们的房间号是多少，在几楼？
+El número de nuestra habitación es el 1863 y está en el piso 18.	我们的房间号是1863，在18楼。
+¿Y la vuestra, Raquel?	那你们的呢，拉凯尔？
+La nuestra está en el piso 16.	我们的在16楼。
+Lo sé porque el número de la habitación es el 1641.	我知道，因为房间号是1641。
+¡Qué pena no ser vecinos del mismo piso!	真可惜我们不是同一层的邻居！
+
+# 语法点
+地点表达：junto a / debajo de
+"junto a"表示"在……旁边、紧挨着"，"debajo de"表示"在……下面"。两者均为前置词短语，后接名词或代词。当de后面出现定冠词el时，需缩合为del（如del carrito）。
+对应例句：9
+
+动词oír与interjection "Oye"
+oír是"听见、听到"的意思，与escuchar（聆听、注意听）有区别。其命令式亲昵式单数形式"Oye"（你听）常用作口语中的招呼语或插话语，相当于"喂、嘿、听着"，用于引起对方注意。
+对应例句：14
+
+被动含义表达
+"Bienvenidos"（欢迎）是过去分词作形容词的用法，字面意思是"被欢迎的"，须与所指人群的性和数保持一致（欢迎男性或混合群体用bienvenidos，女性群体用bienvenidas）。同样，"pendiente"也是源自动词pender的形容词，在本课中作表语，"queda algo pendiente"表示"还有什么待处理的事吗"。
+对应例句：1,2
+
+物主代词的综合运用
+本课密集使用了物主代词：la tuya（你的）、la mía（我的）、la vuestra（你们的）、la nuestra（我们的）。物主代词替代"物主形容词+名词"，避免重复，在前一课（02-11）已系统学习。
+对应例句：8,9,13,14,15,18,19

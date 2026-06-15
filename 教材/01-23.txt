@@ -1,0 +1,62 @@
+# 生词
+hora	小时；时间；钟点
+diez	十
+cuarto	一刻钟；四分之一
+media	半；一半
+cinco	五
+seis	六
+siete	七
+ocho	八
+once	十一
+veinticinco	二十五
+cincuenta	五十
+en punto	整点；……点整
+decir	说；告诉 [digo, dices, dice, decimos, decís, dicen]
+acostarse	上床睡觉；躺下 [me acuesto, te acuestas, se acuesta, nos acostamos, os acostáis, se acuestan]
+a qué hora	在几点（询问具体时刻）
+
+# 例句
+¿Qué hora es?	几点了？
+Es la una.	一点了。
+Es la una y diez.	一点十分了。
+¿Tienes hora?	你知道几点了吗？
+Sí, son las dos y cuarto.	是的，两点一刻了。
+¿Tiene usted hora?	您知道几点了吗？
+Sí, son las tres y media.	是的，三点半了。
+¿Qué hora tienes?	你知道几点了吗？
+Son las cinco menos cuarto.	五点差一刻了。
+¿Qué hora tiene usted?	您知道几点了吗？
+Son las seis menos diez.	六点差十分了。
+Son las ocho en punto.	八点整了。
+¿Puede decirme la hora?	您能告诉我几点了吗？
+Sí, son las diez y veinticinco.	可以，现在是十点二十五分。
+Es la una y cinco.	一点零五分了。
+Es la una y media.	一点半了。
+Es la una y cincuenta.	一点五十了。
+Son las dos y cuarto.	两点一刻了。
+Son las siete menos diez.	七点差十分了。
+¿A qué hora te levantas?	你几点起床？
+Me levanto a las siete.	我七点起床。
+¿A qué hora os acostáis todos los días?	你们每天几点睡？
+Nos acostamos a las once.	我们十一点睡。
+
+# 语法点
+钟点询问句式
+西班牙语中询问钟点有六种常用句式：1）¿Qué hora es?（几点了？）是最通用的问法；2）¿Tienes hora?（你知道几点了吗？）用 tú 形式，口语常用；3）¿Tiene usted hora?（您知道几点了吗？）用 usted 敬语形式；4）¿Qué hora tienes? 同义，强调"你"知道；5）¿Qué hora tiene usted? 同义敬语；6）¿Puede decirme la hora?（您能告诉我几点了吗？）是最礼貌的问法，使用 poder + decirme。
+对应例句：1,4,6,8,10,13
+
+钟点表达法：Es la una / Son las + 数字
+西班牙语中表达钟点时，必须使用阴性定冠词 la 或 las。从1:00到1:59，使用单数阴性定冠词 la，系动词用 es，如 Es la una（一点了）、Es la una y diez（一点十分了）。从2:00开始使用复数阴性定冠词 las，系动词用 son，如 Son las dos（两点了）、Son las tres y media（三点半了）。
+对应例句：2,3,5,7,15,16,19
+
+分钟表达：y + 分钟 / menos + 分钟
+分钟数直接跟在钟点数之后用 y 连接，表示"几点过几分"（如 Es la una y diez — 一点十分、Son las diez y veinticinco — 十点二十五分）。分钟数超过30分时通常用 menos 表达"差几分到几点"（如 Son las cinco menos cuarto — 五点差一刻、Son las seis menos diez — 六点差十分）。这种 menos 表达法在口语中非常常用。
+对应例句：3,9,11,14,17,19
+
+特殊钟点表达
+y cuarto 表示"一刻"（十五分），如 son las dos y cuarto（两点一刻）；y media 表示"半"（三十分），如 es la una y media（一点半）；en punto 表示"整点"，如 son las ocho en punto（八点整）。这些是日常会话中最常用的时间表达。
+对应例句：5,7,12,16,18
+
+钟点作状语：a qué hora / a las + 时间
+钟点作状语时，提问方式用疑问短语 ¿A qué hora...?（几点……？），回答用介词 a 加钟点，如 a las siete（在七点）、a las once（在十一点）。前置词 a 与定冠词 la/las 连用，构成时间状语。
+对应例句：20,21,22,23

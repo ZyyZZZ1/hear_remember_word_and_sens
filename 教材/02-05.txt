@@ -1,0 +1,69 @@
+# 生词
+escritor	作家
+verdad	真相，事实；对吗（反问语气）
+moderno	现代的
+mirar	看，瞧 [miro, miras, mira, miramos, miráis, miran]
+hora	小时，时间，时刻
+recoger	收拾，捡起，收集 [recojo, recoges, recoge, recogemos, recogéis, recogen]
+meter	放入，塞入 [meto, metes, mete, metemos, metéis, meten]
+mochila	书包，背包
+algo	某物，某事，一些东西
+poco	少的，少量的
+un poco	一点，一些
+antes	之前，事先
+querer	想，想要；爱 [quiero, quieres, quiere, queremos, queréis, quieren]
+sed	渴，口渴
+casualidad	巧合，偶然
+por casualidad	碰巧，偶然
+botella	瓶子
+agua	水
+coger	拿，取，喝（在一些地区使用） [cojo, coges, coge, cogemos, cogéis, cogen]
+gracias	谢谢
+de nada	不客气，不用谢
+campus	校园
+allí	那里
+cerca	近的，附近的
+cerca de	在……附近
+aquí	这里
+restaurante	餐厅，餐馆
+allá	那里，那边
+
+# 例句
+¿Qué lees, Gloria?	你在读什么，格洛丽亚？
+Una novela de Vargas Llosa.	一本巴尔加斯·略萨的小说。
+Es un escritor peruano, ¿verdad?	他是秘鲁作家，对吗？
+Me gustan sus novelas.	我喜欢他的小说。
+Me encanta su estilo moderno.	我喜欢他的现代风格。
+Mira, es mediodía, hora de almorzar.	你看，中午了，该吃午饭了。
+¿Por qué no recoges tus cosas y las metes en tu mochila?	你为什么不把你的东西收起来放进你的书包呢？
+Vamos a comer algo.	我们去吃点东西吧。
+Tengo mucha hambre.	我很饿。
+Yo también un poco, pero antes quiero beber algo.	我也有点饿，但是之前我想喝点东西。
+Tengo mucha sed.	我很渴。
+Por casualidad, tengo una botella de agua.	碰巧，我有一瓶水。
+¿La quieres coger?	你想喝它吗？
+Sí, gracias, Pablo.	是的，谢谢，巴勃罗。
+De nada.	不客气。
+Pero, ¿dónde vamos a almorzar?	但是，我们去哪里吃午饭？
+¿En la cafetería del campus?	在校园的咖啡馆吗？
+No, allí, no.	不，那里不去。
+Cerca de aquí hay un pequeño restaurante.	这附近有一家小餐馆。
+¿Vamos allá?	我们去那里吗？
+Vamos.	走吧。
+
+# 语法点
+反问语气 ¿verdad?
+¿verdad? 置于陈述句句末，构成反问，相当于汉语的"对吗？""是吧？"，用于向对方确认信息或寻求认同。这是西班牙语口语中极为常用的表达方式。
+对应例句：3
+
+hora de + 原形动词
+"hora de + 动词原形"表示"该做……的时间了"，是一个常用的固定表达。如"hora de almorzar"（该吃午饭的时间了，午饭时间）。
+对应例句：6
+
+ir a + 原形动词表示将来（复习）
+本课再次出现"ir a + 原形动词"结构表示即将发生的动作：Vamos a comer algo（我们去吃点东西吧），¿dónde vamos a almorzar?（我们去哪里吃午饭？）。
+对应例句：8,16
+
+地点副词aquí, allí, allá, cerca
+西班牙语中表示位置远近的地点副词：aquí（这里，离说话人最近）、allí（那里，离说话人较远但离听话人较近）、allá（那边，离双方都远或泛指远处）。cerca de 表示"在……附近"。注意区别于已学过的ahí（那里，在那儿）。
+对应例句：17,19,20

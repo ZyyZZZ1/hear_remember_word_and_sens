@@ -1,0 +1,17 @@
+# 生词
+hambre	饿，饥饿
+sed	渴，口渴
+acostarse	躺下，睡觉（代词式动词） [me acuesto, te acuestas, se acuesta, nos acostamos, os acostáis, se acuestan]
+cansado	累的，疲倦的
+agua	水
+
+# 例句
+Si tienes hambre, vamos a comer.	如果你饿了，我们就去吃饭。
+Vamos a comer si tienes hambre.	我们去吃饭如果你饿了。
+Toma agua si tienes sed.	如果你渴了就喝水。
+Acuéstese si está cansado.	如果您累了就睡觉。
+
+# 语法点
+连接词SI与条件从句
+连接词 si 意为"如果"，用来引导条件从句，表示实现主句事件所依赖的条件。由 si 引导的从句可以置于主句之前，也可以置于主句之后。主句中的动词可以为陈述式现在时或命令式。条件从句在前时，通常用逗号与主句隔开；条件从句在后时则无需逗号。si 与表示肯定回答的 sí（带重音符号）不同，si 不带重音。
+对应例句：1,2,3,4

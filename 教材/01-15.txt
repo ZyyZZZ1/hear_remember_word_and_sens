@@ -1,0 +1,70 @@
+# 生词
+cuánto	多少
+dónde	哪里
+parecer	看似，好像 [parezco, pareces, parece, parecemos, parecéis, parecen]
+ciudad	城市
+bastante	相当，足够
+allí	那里
+verdad	事实；¿verdad? 对吧？
+siete	七
+padres	父母
+suponer	猜想，假设 [supongo, supones, supone, suponemos, suponéis, suponen]
+sala de estar	客厅
+cuarto de baño	浴室，卫生间
+todavía	仍然，还
+desayuno	早餐（名词）
+tan	如此，这么
+recargado	繁重的，紧凑的
+muy	非常
+tiempo	时间
+señora	女士，夫人
+
+# 例句
+¿Cuántos son en tu familia?	你家里有几口人？
+Hola, chico, eres José, ¿no?	你好，小伙子，你是何塞，对吗？
+Sí, señora, buenos días. Soy José.	是的，女士，早上好。我是何塞。
+¿De dónde eres? Pareces latinoamericano.	你是哪里人？你看起来像拉丁美洲人。
+Sí, soy peruano y vivo en Lima.	是的，我是秘鲁人，我住在利马。
+¿Es grande la ciudad de Lima?	利马城大吗？
+Sí, es una ciudad bastante grande.	是的，它是一个相当大的城市。
+Vives allí con tu familia, ¿verdad?	你和你的家人住在那里，对吗？
+¿Cuántos son?	有几口人？
+Somos siete: mis abuelos, mis padres, mis hermanos y yo.	我们是七口人：我的祖父母、我的父母、我的兄弟姐妹和我。
+Supongo que tu casa es grande.	我猜你的房子很大。
+Sí, tenemos una casa con una sala de estar, cuatro dormitorios, una cocina y dos cuartos de baño.	是的，我们有一栋房子，带一个客厅、四间卧室、一个厨房和两个卫生间。
+¿Estudias en la universidad?	你在大学读书吗？
+¡Qué va! Estoy todavía en el bachillerato.	哪里啊！我还在读高中。
+Mis hermanos van a un colegio.	我的弟弟们去一所学校。
+Todos los días me levanto muy temprano, tomo el desayuno y llevo a mis hermanos a su colegio.	每天我很早起床，吃早餐，然后带我的弟弟们去他们的学校。
+Luego, tomo un autobús y me voy a mi instituto.	然后，我乘公交车去我的学院。
+¡Qué día tan recargado!	多么繁重的一天啊！
+Todo el tiempo estás ocupado.	你所有时间都很忙。
+
+# 语法点
+疑问词 cuánto(s)
+cuánto 是疑问词，意为"多少"，与名词连用时需与名词保持性、数一致（cuánto/cuánta/cuántos/cuántas）。在本课中用于询问家庭成员数量：¿Cuántos son en tu familia?（你家里有几口人？）和 ¿Cuántos son?（有几口人？）。
+对应例句：1,9
+
+疑问词 dónde
+dónde 是疑问词，意为"哪里"，用于询问地点。常与前置词 de 连用构成 ¿De dónde...?（从哪里来/是哪里人？）。本课中 ¿De dónde eres? 询问对方的籍贯或来历。
+对应例句：4
+
+附加疑问句 ¿verdad? 和 ¿no?
+西班牙语中在陈述句后加上 ¿verdad? 或 ¿no? 构成附加疑问句，用于向对方确认信息或征求同意，相当于汉语的"对吗？""是吧？"。¿verdad? 来自名词 verdad（事实、真理），¿no? 为否定词 no 的疑问用法。
+对应例句：1,8
+
+动词 parecer
+parecer 意为"看似、好像"，常与形容词或名词连用，表示外表给人的印象。本课中 Pareces latinoamericano（你看起来像拉丁美洲人）使用第二人称单数变位 pareces。
+对应例句：4
+
+动词 suponer
+suponer 意为"猜想、假设"，由前缀 su- 加 poner 构成，变位方式与 poner 相同。本课中 Supongo que...（我猜想……）后接名词性从句。
+对应例句：11
+
+感叹句 ¡Qué...!
+¡Qué + 名词/形容词 + tan + 形容词! 构成感叹句，表示强烈的感叹语气。本课中 ¡Qué va!（哪里啊！表示否定或谦虚）和 ¡Qué día tan recargado!（多么繁重的一天啊！）均为感叹用法。
+对应例句：14,18
+
+家庭与住房词汇
+本课引入了家庭成员的表达：padres（父母）、familia（家庭）。住房空间的表达：casa（房子、家）、sala de estar（客厅）、cuarto de baño（浴室、卫生间）。注意 cuarto 意为"房间"，cuarto de baño 字面意为"洗澡的房间"。
+对应例句：10,12

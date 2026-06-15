@@ -1,0 +1,53 @@
+# 生词
+ruido	噪音，声响
+buscar	寻找，找 [busco, buscas, busca, buscamos, buscáis, buscan]
+cuento	故事
+molestar	打扰，烦扰 [molesto, molestas, molesta, molestamos, molestáis, molestan]
+encontrar	找到；encontrarse 感觉，处于（健康状态） [encuentro, encuentras, encuentra, encontramos, encontráis, encuentran]
+calle	街道
+peligroso	危险的
+solución	解决方案
+televisión	电视（媒体）
+programa	节目
+televisor	电视机
+volumen	音量；体积
+mundo	世界；todo el mundo 所有人
+jardín	花园
+regar	浇水，灌溉 [riego, riegas, riega, regamos, regáis, riegan]
+barro	泥，泥巴
+papá	爸爸
+barrer	打扫，扫 [barro, barres, barre, barremos, barréis, barren]
+estorbar	妨碍，挡路 [estorbo, estorbas, estorba, estorbamos, estorbáis, estorban]
+
+# 例句
+Niños, no hagáis tanto ruido; la gente mayor está descansando.	孩子们，别这么吵；老人们正在休息。
+¿Podemos, entonces, buscar al abuelo para que nos cuente un cuento?	那我们可以去找爷爷让他给我们讲个故事吗？
+No lo molestéis. Estos días, el abuelito no se encuentra bien.	别打扰他。这些天，爷爷身体不舒服。
+¿Podemos ir a jugar a la calle?	我们可以去街上玩吗？
+No vayáis a jugar ahí; es muy peligroso.	别去那里玩；非常危险。
+Ah, ya tenemos la solución: la televisión. Vamos a ver el programa para niños. Justo lo están pasando en este momento.	啊，我们有办法了：电视。我们去看儿童节目吧。正好现在正在播。
+¡No, nada con el televisor! Siempre lo ponéis a todo volumen y molestáis a todo el mundo.	不，别碰电视机！你们总是把音量开到最大，打扰到所有人。
+Entonces, ¿podemos ir al jardín?	那，我们可以去花园吗？
+¡No! ¡No podéis ir al jardín! Lo acabo de regar y hay mucho barro allí. Os vais a ensuciar los zapatos y la ropa.	不行！你们不能去花园！我刚浇过水，那里有很多泥。你们会把鞋和衣服弄脏的。
+Bueno, solo nos queda la biblioteca de papá. Es un buen lugar para leer.	好吧，只剩下爸爸的书房了。那是读书的好地方。
+¡No penséis en eso! Ahora mismo la voy a barrer y limpiar. Dejadme pasar. No me estorbéis.	别想那个！我现在要去扫地和打扫。让我过去。别挡着我。
+Entonces, ¿qué es lo que podemos hacer?	那么，我们能做什么呢？
+¡No molestéis a vuestra madre!	别烦你们的妈妈！
+No te estamos molestando, mamá. Solo te preguntamos. No comprendemos por qué los mayores siempre nos decís: ¡No hagáis esto! ¡No hagáis lo otro!	我们没有烦你，妈妈。我们只是问你。我们不理解为什么大人们总是对我们说：别做这个！别做那个！
+
+# 语法点
+否定命令式（vosotros 形式）的应用
+本课通过日常家庭对话大量展示了 vosotros（你们）的否定命令式用法：no hagáis（别做）、no lo molestéis（别打扰他）、no vayáis（别去）、no penséis（别想）、no me estorbéis（别挡着我）、no molestéis（别烦）。否定命令式中，代词前置于 no 和动词之间，与肯定命令式的代词后附不同。
+对应例句：1,3,5,11,13
+
+短语 encontrarse bien/mal（身体好/不好）
+encontrarse 是代词式动词，意为"处于（某种状态）、感觉"，常与 bien（好）或 mal（不好）搭配，用于表达身体健康状况。本课中 el abuelito no se encuentra bien 意为"爷爷身体不舒服"。
+对应例句：3
+
+短语 todo el mundo（所有人、大家）
+todo el mundo 字面意思为"全世界"，但在日常西班牙语中意为"所有人、大家"，相当于 todos。本课中 molestáis a todo el mundo 意为"你们打扰到所有人"。
+对应例句：7
+
+短语 para que + 虚拟式（为了……）
+para que 引导目的从句，表示"为了让某人做某事"，后面须用虚拟式现在时。本课中 para que nos cuente un cuento 意为"为了让他给我们讲个故事"。这是 para que + 虚拟式的首次出现，表明目的从句的主语与主句主语不同时需使用虚拟式。
+对应例句：2

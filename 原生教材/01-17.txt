@@ -1,0 +1,75 @@
+ SHARP LINGO
+ 
+请问您对目前的学习体验满意吗？快来评论区留下您宝贵的建议吧！
+返回
+模块01 - 第17讲 - 代词式动词
+放大字体 打印模式 记笔记、报错或提问 显示本课记忆卡片
+
+1. 施事与受事
+
+句中的主语可以是施事，也可以是受事。比如汉语句子：客人走了。这里的客人便是施事。而在“衣服洗了”一句中，衣服明显是受事。很多时候，主语既是施事，又是受事。比如：你该洗个澡了。除非幼儿或高龄老人，一般都是自己给自己洗澡。这时候的动词叫做自反或自复动词，在汉语里没有特殊标记，而在西班牙语中则要使用代词式动词，即根据不同人称带相应的自复代词。
+
+单数人称	单数自复代词	复数人称	复数自复代词
+yo	me	nosotros, nosotras	nos
+tú	te	vosotros, vosotras	os
+él, ella, usted	se	ellos, ellas, ustedes	se
+
+2. 代词式动词变位时，代词置于动词之前，与之分写。
+
+Yo me levanto a las siete.  我七点起床。
+
+Ella se peina antes de salir.  她在出门前梳了头。
+
+代词式动词可以与情态动词或诸多助动词连用构成动词短语，也可以与介词、副词等结合构成句中状语。这时，代词式动词不变位，用原形。但是，自复代词仍要与主语保持人称和数的一致，可置于变位的情态动词或助动词之前，与之分写，也可置于代词式动词原形之后，与之合写：
+
+例句：
+
+Nos tenemos que levantar a las siete.  我们必须在七点起床。
+
+Tenemos que levantarnos a las siete.  我们必须在七点起床。
+
+Me voy a acostar temprano.  我要早点睡。
+
+Voy a acostarme temprano.  我要早点睡。
+
+但在状语中，只能是第二种形式：
+
+Después de levantarme, me peino.  起床后我梳头。
+
+Antes de acostarnos, nos cepillamos los dientes.  在睡觉之前，我们刷牙。
+
+3. 代词式动词也称自复动词，即表示动作返回施事本身。
+
+在句子 Yo me levanto a las siete 和 Ella se peina antes de salir 中，主语“yo”和“ella”既是施事，又是受事，两种语用功能在同一个句子成分中重叠，意思是“自己把自己抬起来”,“自己给自己梳头”。
+
+有时候，句中会有另一个成分占据直接宾语的位置。于是，兼有施事和受事双重身份的句子成分便退居为间接宾语。在 Antes de acostarnos, nos cepillamos los dientes 中，直接宾语是 los dientes, nos 是间接宾语。
+
+注：背景为淡绿色的句子是被您保存过的句子。
+×
+
+请注意，本页的内容仅供查阅之用，您在这里进行的单词或语法学习的时长将不会被系统记录，若您想要让学习时间反映在您的学习记录当中，请在关闭本对话框后，点击本页最上方的“进入教室”按钮，然后按照网站系统的规划继续学习。
+
+关闭
+
+关于我们
+
+服务简介 常见问题
+
+联系我们
+
+  
+
+ hello@sharplingo.cn
+
+隐私及条款
+
+服务条款 隐私政策 Cookie政策
+
+Copyright © 2026 SharpLingo
+
+
+甘公网安备 62010202003105号
+
+ 
+
+陇ICP备2021000492号-1

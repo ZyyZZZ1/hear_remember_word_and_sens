@@ -1,0 +1,32 @@
+# 生词
+cuando	当……的时候（时间连接词，无重音）
+hambre	饿，饥饿
+casa	房子，家
+sucio	脏的，肮脏的
+limpiar	打扫，清洁 [limpio, limpias, limpia, limpiamos, limpiáis, limpian]
+descansar	休息 [descanso, descansas, descansa, descansamos, descansáis, descansan]
+saber	知道，得知 [sé, sabes, sabe, sabemos, sabéis, saben]
+sentir	感觉，感到 [siento, sientes, siente, sentimos, sentís, sienten]
+muy	很，非常
+entrar	进入 [entro, entras, entra, entramos, entráis, entran]
+sentarse	坐下 [me siento, te sientas, se sienta, nos sentamos, os sentáis, se sientan]
+sofá	沙发
+dolor	疼痛，痛
+
+# 例句
+Cuando tengo hambre, como.	当我饿的时候，我就吃。
+Cuando la casa está sucia, Beatriz la limpia.	当房子脏的时候，贝亚特丽斯就把它打扫干净。
+A Luis le gusta leer novelas cuando descansa.	路易斯喜欢在休息的时候看小说。
+Al saberlo, nos sentimos muy contentos.	一得知此事我们就感到非常高兴。
+Al entrar en casa, Luis se sienta en el sofá.	一进家门路易斯就坐到了沙发上。
+Al levantarnos, nos cepillamos los dientes y desayunamos.	我们一起床就去刷牙、吃早饭。
+Al cepillarse los dientes, siente mucho dolor.	他一刷牙，就感到很疼。
+
+# 语法点
+时间连接词cuando引导的时间从句
+cuando（无重音符号）是常用的时间连接词，引导时间从句，表示主句事件发生的时间。时间从句可以放在主句之前，也可以放在主句之后。当时间从句置于主句之前时，通常用逗号与主句隔开。注意区别于疑问副词cuándo（带重音符号，用于提问时间）。
+对应例句：1,2,3
+
+al+不定式时间结构
+"al + 动词原形"是时间从句的另一种句式，带有"一……就……"的含义，表示主句动作紧接着从句动作发生。如果原形动词是代词式动词，自复代词应与主句主语保持一致（人称和数），并置于原形动词之后与之连写。例如：Al levantarnos...（我们一起来就……）、Al cepillarse...（他一刷……就……）。
+对应例句：4,5,6,7

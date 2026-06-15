@@ -1,0 +1,63 @@
+# 生词
+comprar	买 [compro, compras, compra, compramos, compráis, compran]
+querer	想要；爱 [quiero, quieres, quiere, queremos, queréis, quieren]
+mañana	明天
+invitar	邀请 [invito, invitas, invita, invitamos, invitáis, invitan]
+cenar	吃晚饭 [ceno, cenas, cena, cenamos, cenáis, cenan]
+restaurante	餐厅
+fiesta	聚会
+hoy	今天
+compañero	同伴，同学
+lo	他/它（宾格代词，阳性单数；注意区别于定冠词 el）
+ayudar	帮助 [ayudo, ayudas, ayuda, ayudamos, ayudáis, ayudan]
+recibir	迎接，接收 [recibo, recibes, recibe, recibimos, recibís, reciben]
+puerta	门
+cumpleaños	生日
+limpiar	打扫，清洁 [limpio, limpias, limpia, limpiamos, limpiáis, limpian]
+allá	那里（较远）
+
+# 例句
+Estudio español.	我学西班牙语。
+Voy a comprar algo.	我去买点东西。
+Ahora queremos descansar.	现在我们想要休息。
+Ellos me preguntan si estamos cansados.	他们问我我们是否累了。
+¿Qué le vas a comprar a tu hermano?	你要给你弟弟买什么？
+¿Qué queréis hacer mañana?	你们明天想做什么？
+¿Qué quieres decir?	你想说什么？
+Llevo a mis abuelos al hospital.	我把我的爷爷奶奶送到医院。
+Invitamos a nuestros amigos a cenar en un restaurante español.	我们请我们的朋友去一家西班牙餐厅吃晚饭。
+¿A quién llevan ellos al hospital?	他们把谁送去了医院？
+¿A quiénes invitamos a la fiesta?	我们请谁参加聚会？
+¿Quieres invitar a tus compañeros a cenar?	你想邀请你的同学吃晚饭吗？
+Sí, quiero invitarlos a cenar.	是的，我想请他们吃晚饭。
+¿A qué hora hacéis los trabajos?	你们几点干活？
+Los hacemos a las cuatro de la tarde.	我们下午四点做。
+Mis compañeros son muy buenos. Me ayudan mucho.	我的同学非常好。他们帮了我很多。
+Esta tarde no estamos ocupados. Puedes venir a vernos.	今天下午我们不忙。你可以来看我们。
+Pepe tiene dos hermanas. Todos los días por la mañana las lleva al instituto.	佩佩有两个妹妹。他每天上午把她们送去学校。
+Los amigos llegan y Rebeca los recibe en la puerta antes de llevarlos a la sala.	朋友们到了，在把他们带去客厅前，丽贝卡在门口迎接他们。
+Hoy es mi cumpleaños. Os invito a comer.	今天是我的生日。我请你们吃饭。
+Yolanda recibe a sus amigos y los lleva al comedor.	约兰达迎接她的朋友们并把他们带到了饭厅。
+Esta es vuestra habitación. Tenéis que limpiarla.	这是你们的房间。你们必须把它打扫干净。
+¿Estudias en esa universidad? ¿Puedes llevarnos allá?	你在那所大学读书吗？你可以带我们去那边吗？
+
+# 语法点
+直接宾语的概念
+有些动词通常必须跟名词或名词性短语组合才能表达完整的意思。这类充实动词含义的名词、代词、名词词组或其他名词化的词类或语段，就称作直接宾语。例如 estudiar 需要说明"学什么"（Estudio español.），comprar 需要说明"买什么"（Voy a comprar algo.）。针对直接宾语提问应使用疑问代词 qué。
+对应例句：1,2,3,4,5,6,7
+
+指人的直接宾语前加 a
+当直接宾语是人或拟人的事物时，必须在前面加前置词 a。例如 Llevo a mis abuelos al hospital（我把爷爷奶奶送去医院）。针对指人的直接宾语提问时，必须将 a 放在疑问代词之前：¿A quién...?（把谁……？）。
+对应例句：8,9,10,11
+
+宾格人称代词概述
+在语篇中，如果同一个直接宾语在相邻语段中重复出现，西班牙语通常用宾格代词来指代，以避免重复。宾格代词有六种人称形式：yo → me、tú → te、él/ella/usted → lo/la、nosotros/nosotras → nos、vosotros/vosotras → os、ellos/ellas/ustedes → los/las。注意第三人称单数和复数宾格代词除了单复数变化，还有阴阳性区分。
+对应例句：12,13,14,15
+
+宾格代词的位置规则
+宾格代词在句子中可以置于变位动词之前，与之分写（如 Los hacemos），也可置于原形动词之后，与之连写（如 invitarlos、limpiarla、llevarnos）。当句子中有情态动词或助动词时，宾格代词可以放在情态动词之前（如 Puedes llevarnos），也可以连在原形动词之后。
+对应例句：13,14,15,17,22,23
+
+第三人称宾格代词的性数一致
+第三人称宾格代词必须与所替代的名词保持性、数一致：阳性单数用 lo，阴性单数用 la，阳性复数用 los，阴性复数用 las。例如替代 hermanas（阴性复数）用 las，替代 amigos（阳性复数）用 los。
+对应例句：18,19

@@ -1,0 +1,82 @@
+# 生词
+acabar	结束，完成 [acabo, acabas, acaba, acabamos, acabáis, acaban]
+acabar de	刚刚（做完某事）
+despedirse	告别，告辞 [me despido, te despides, se despide, nos despedimos, os despedís, se despiden]
+invitado	客人，受邀者
+encontrar	发现，遇到；觉得 [encuentro, encuentras, encuentra, encontramos, encontráis, encuentran]
+desarreglado	凌乱的，不整齐的
+suciedad	肮脏，污垢
+ni	也不，也没有
+desorden	混乱，杂乱
+ponerse a	开始（做某事） [me pongo, te pones, se pone, nos ponemos, os ponéis, se ponen]
+retirar	撤去，拿走 [retiro, retiras, retira, retiramos, retiráis, retiran]
+vaso	杯子
+copa	高脚杯，酒杯
+lavar	洗，清洗 [lavo, lavas, lava, lavamos, laváis, lavan]
+más	更，更多
+periódico	报纸
+revista	杂志
+estantería	书架，搁架
+trapo	抹布
+mojado	湿的，潮湿的
+fregar	擦洗，拖（地） [friego, friegas, friega, fregamos, fregáis, friegan]
+silla	椅子
+terminar	结束，完成 [termino, terminas, termina, terminamos, termináis, terminan]
+escoba	扫帚
+comenzar	开始 [comienzo, comienzas, comienza, comenzamos, comenzáis, comienzan]
+barrer	扫，打扫 [barro, barres, barre, barremos, barréis, barren]
+por último	最后
+sacar	取出，拿出 [saco, sacas, saca, sacamos, sacáis, sacan]
+fregona	拖把
+pasar	经过，通过，拖（地） [paso, pasas, pasa, pasamos, pasáis, pasan]
+suelo	地面，地板
+ver	看见，看到 [veo, ves, ve, vemos, veis, ven]
+limpio	干净的，清洁的
+arreglado	整齐的，收拾好的
+decir	说，告诉 [digo, dices, dice, decimos, decís, dicen]
+justo	恰好，正好
+momento	时刻，时候
+alguien	某人，有人
+puerta	门
+tener que	必须，不得不（做某事） [tengo, tienes, tiene, tenemos, tenéis, tienen]
+
+# 例句
+Beatriz acaba de tener una fiesta con sus amigos.	贝亚特丽斯刚和朋友们举行了一个聚会。
+Después de despedirse de los invitados, regresa a la sala y la encuentra muy sucia y desarreglada.	告别客人之后，她回到客厅，发现它又脏又乱。
+No le gustan la suciedad ni el desorden.	她不喜欢脏乱。
+Entonces se pone a trabajar.	于是她开始干活。
+Primero retira los platos, los vasos y las copas y los lleva a la cocina para lavarlos un poco más tarde.	她先撤走盘子、杯子和高脚杯，把它们带到厨房以便稍后再清洗。
+Luego recoge los libros, los periódicos y las revistas para ponerlos después en la estantería.	接着她把书、报纸和杂志收起来，以便之后放到书架上。
+Toma un trapo mojado y friega con él las mesas y las sillas.	她拿起一块湿抹布，用它擦洗桌子和椅子。
+Cuando termina, coge una escoba y comienza a barrer.	当她完成后，拿起一把扫帚开始扫地。
+Por último, saca una fregona y la pasa por todo el suelo.	最后，她拿出拖把，把它拖过整个地面。
+Al verlo todo limpio y arreglado, dice: "¡Qué contenta me siento! Ahora puedo descansar."	一看到一切都干净整齐了，她说："我感到多么高兴啊！现在我可以休息了。"
+Se sienta en el sofá.	她坐到沙发上。
+Saca una revista de la estantería y se pone a leer.	她从书架上拿出一本杂志开始读起来。
+Pero justo en este momento alguien llama a la puerta.	但就在这时候有人敲门。
+Beatriz tiene que levantarse para ir a ver quién es.	贝亚特丽斯不得不起来去看看是谁。
+
+# 语法点
+acabar de + 原形动词
+"acabar de + 动词原形"表示"刚刚做完某事"，用于描述刚过去不久发生的动作。这是西班牙语中表达最近过去的重要结构。
+对应例句：1
+
+ponerse a + 原形动词
+"ponerse a + 动词原形"表示"开始做某事"，强调动作的启动。与comenzar a / empezar a 意思相近，但ponerse a 更口语化。
+对应例句：4,12
+
+tener que + 原形动词
+"tener que + 动词原形"表示"必须/不得不做某事"，表达义务或必要性。这是西班牙语中极为常用的义务表达结构。
+对应例句：14
+
+否定连词 ni
+ni 是否定连词，用于连接两个或多个否定成分，相当于"也不、也没有"。在"no...ni..."结构中，ni 连接被否定的并列成分。例如本课中"no le gustan la suciedad ni el desorden"（她不喜欢脏也不喜欢乱）。
+对应例句：3
+
+顺序表达词
+本课出现多个表示动作先后顺序的连接词和短语：primero（首先）、luego（接着）、cuando termina（当完成后）、por último（最后）。这些词语用于描述一连串有序动作，在西语叙述中十分常见。
+对应例句：5,6,8,9
+
+感叹句 ¡Qué + 形容词 + 动词!
+"¡Qué + 形容词 + 动词!" 是感叹句的常用句式，表达强烈的情感，相当于"多么……啊！"。本课中"¡Qué contenta me siento!"（我感到多么高兴啊！）即为此句式。形容词需与主语保持性数一致。
+对应例句：10

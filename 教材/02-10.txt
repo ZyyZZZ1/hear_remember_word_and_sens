@@ -1,0 +1,62 @@
+# 生词
+hoy en día	如今，当今
+común	常见的，普遍的
+compra	购买，采购（名词）
+casi	几乎，差不多
+mundo	世界
+todo el mundo	所有人，大家
+en especial	特别是，尤其是
+sin embargo	然而，但是
+persona	人
+mayor	年长的，年纪大的（此处指老年人）
+resistirse	抗拒，拒绝 [me resisto, te resistes, se resiste, nos resistimos, os resistís, se resisten]
+usar	使用 [uso, usas, usa, usamos, usáis, usan]
+temer	害怕，担心 [temo, temes, teme, tememos, teméis, temen]
+estafar	诈骗，欺骗 [estafo, estafas, estafa, estafamos, estafáis, estafan]
+en realidad	实际上，其实
+realidad	现实，实际
+gente	人，人们
+ofrecer	提供 [ofrezco, ofreces, ofrece, ofrecemos, ofrecéis, ofrecen]
+servir	服务；有用，用于 [sirvo, sirves, sirve, servimos, servís, sirven]
+ventaja	优势，好处（已在02-09出现）
+acaso	难道（用于反问句）
+al mismo tiempo	同时
+tienda	商店
+preparar	准备 [preparo, preparas, prepara, preparamos, preparáis, preparan]
+comida	食物，饭菜
+adquirir	获得，买到 [adquiero, adquieres, adquiere, adquirimos, adquirís, adquieren]
+solo	仅仅，只
+teclear	敲键盘，打字输入 [tecleo, tecleas, teclea, tecleamos, tecleáis, teclean]
+ordenador	电脑，计算机（西班牙用语）
+computadora	电脑，计算机（拉丁美洲用语）
+universitario	大学的；大学生
+soler	习惯于，通常（做某事） [suelo, sueles, suele, solemos, soléis, suelen]
+
+# 例句
+Hoy en día, es común hacer compras por Internet.	如今，网上购物很普遍。
+Casi todo el mundo lo hace, en especial, los jóvenes.	几乎所有人都这样做，特别是年轻人。
+Sin embargo, algunas personas mayores se resisten a usar este servicio porque temen no hacerlo bien o ser estafadas.	然而，一些年长者拒绝使用这项服务，因为他们害怕做不好或者被骗。
+En realidad, ahora, más y más gente compra por Internet porque es un servicio que ofrece muchas ventajas y sirve para muchas cosas, sobre todo, para ganar tiempo.	实际上，现在越来越多的人在网上购物，因为这是一项提供很多便利的服务，对很多事情都有用，尤其是节省时间。
+¿Acaso puedes hacer los trabajos de casa y al mismo tiempo ir a comprar a la tienda?	难道你能一边做家务，同时去商店买东西吗？
+¿Acaso puedes preparar la comida y al mismo tiempo limpiar la casa?	难道你能一边做饭，同时打扫房子吗？
+Con el Internet no necesitas ir a la tienda ni preparar la comida porque puedes pedir las cosas que quieres a la tienda y también comida a los restaurantes.	有了互联网，你既不需要去商店，也不需要做饭，因为你可以向商店订购你想要的东西，也可以向餐厅订购饭菜。
+¿Quieres comprar una mesa, una silla, una botella de vino, una revista?	你想买一张桌子、一把椅子、一瓶酒、一本杂志吗？
+Todo esto lo puedes adquirir con solo teclear el ordenador (computadora).	所有这些你只需敲敲电脑键盘就能买到。
+Nosotros, los jóvenes universitarios, solemos comprar muchas cosas por Internet, sobre todo, libros.	我们大学生通常在互联网上买很多东西，尤其是书。
+
+# 语法点
+动词soler的用法
+soler是表示惯常行为的情态动词，意为"习惯于、通常做某事"，其陈述式现在时变位为：suelo, sueles, suele, solemos, soléis, suelen。soler后直接接动词原形，表示经常性的、习惯性的动作。solemos comprar = 我们通常买。
+对应例句：10
+
+反问句式 ¿Acaso...?
+"¿Acaso + 陈述句?" 构成反问句，表示"难道……吗？"，带有质疑或强调的语气，说话人预期对方同意自己的观点。这种反问不要求回答，而是为了强调某种显而易见的结论。
+对应例句：5,6
+
+短语sin embargo
+sin embargo是表示转折的连接短语，意为"然而、但是"，通常置于句首，用于引出与前述内容相反或不同的信息。与pero相比，sin embargo更正式，常用于书面语。
+对应例句：3
+
+短语hoy en día / en realidad / al mismo tiempo
+hoy en día（如今、当今）用于引入关于现代生活的话题；en realidad（实际上）用于纠正或补充说明真实情况；al mismo tiempo（同时）表示两个动作的同时性。
+对应例句：1,4,5,6

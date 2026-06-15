@@ -1,0 +1,93 @@
+# 生词
+molestar	打扰，麻烦 [molesto, molestas, molesta, molestamos, molestáis, molestan]
+en absoluto	绝对不，一点也不
+pensar	想，打算，思考 [pienso, piensas, piensa, pensamos, pensáis, piensan]
+hacer	做，干 [hago, haces, hace, hacemos, hacéis, hacen]
+sobre	关于；在……上面
+latino	拉丁的
+América Latina	拉丁美洲
+alguno	某个，一些
+interesante	有趣的
+tema	主题，话题
+papel	纸
+título	标题，书名
+necesitar	需要 [necesito, necesitas, necesita, necesitamos, necesitáis, necesitan]
+lista	清单，列表
+preparado	准备好的
+maravilla	奇迹，绝妙的事物
+cuánto	多少（疑问词）
+lleno	满的，充满的
+biblioteca	图书馆
+bien	好（副词）
+surtido	供应充足的，品种齐全的
+tanto	如此多，那么多
+no es para tanto	没那么夸张，不至于
+hábito	习惯
+sobre todo	尤其，特别是
+obra	作品，著作
+literario	文学的
+librería	书店
+algunas veces	有时候
+Internet	互联网
+buen	好的（bueno的短尾形式，用于阳性单数名词前）
+sistema	系统，方式
+así	这样，如此
+ganar	赢得，获得，节省 [gano, ganas, gana, ganamos, ganáis, ganan]
+tiempo	时间
+ventaja	优势，好处
+eso	那，那个（中性指示代词）
+perdón	对不起，抱歉
+medio	媒介，手段，方式
+esperar	等待，希望 [espero, esperas, espera, esperamos, esperáis, esperan]
+rato	一会儿，片刻
+servicio	服务
+
+# 例句
+Buenos días, profesora, ¿la molesto?	早上好，老师，我打扰您了吗？
+¿Molestar? ¡En absoluto!	打扰？一点也不！
+Pase. Está usted en su casa.	请进。就当在自己家一样。
+Gracias. Profesora, pienso hacer un trabajo sobre América Latina y vengo a pedirle prestados algunos libros en español.	谢谢。老师，我想做一个关于拉丁美洲的作业，来向您借一些西班牙语书。
+Tengo libros interesantes sobre el tema.	我有关于这个主题的有趣的书。
+Se los voy a prestar con mucho gusto, pero ¿por qué no escribe en este papel los títulos que necesita?	我很乐意把它们借给您，但为什么不把您需要的书名写在这张纸上呢？
+Ya tengo la lista.	我已经有清单了。
+Ah, viene preparado.	啊，您是有备而来。
+Entonces, vamos a mi estudio.	那么，我们去我的书房吧。
+¡Oh, qué maravilla! ¡Cuántas estanterías y todas llenas de libros!	哦，太棒了！这么多书架，全都装满了书！
+Tiene usted una biblioteca bien surtida.	您有一个藏书丰富的图书馆啊。
+No es para tanto.	没那么夸张。
+Siempre compro libros.	我一直买书。
+Lo hago porque tengo el hábito de leer.	我这么做是因为我有阅读的习惯。
+Leo, sobre todo, obras literarias.	我尤其读文学作品。
+Pero ¿cómo compra los libros? ¿Va a la librería?	但您怎么买书呢？去书店吗？
+Algunas veces. Ahora, lo hago por Internet.	有时候去。现在，我通过互联网买。
+Es un buen sistema.	这是个好方式。
+Así, ya no voy a la librería, y gano tiempo.	这样，我就不去书店了，还节省时间。
+Es verdad. Comprar por Internet tiene esa ventaja.	确实。网上购物有那个优势。
+¿Qué es eso?	那是什么？
+Perdón, llaman a la puerta.	对不起，有人敲门。
+Voy a ver quién es.	我去看看是谁。
+¡Qué casualidad!	太巧了！
+Hablamos de Internet y justo me traen los libros que acabo de encargar por este medio.	我们正聊着互联网，正好我刚刚通过这个方式订购的书就送来了。
+¿Puede esperarme un rato?	您可以等我一会儿吗？
+Voy a pagar el servicio.	我去付一下服务费。
+
+# 语法点
+宾格与格代词同时出现时的语序
+当宾格代词和与格代词同时出现在动词前时，与格代词在前，宾格代词在后。本课"Se los voy a prestar"中，se（与格代词le的变体）+ los（宾格代词，指代libros）= 把它们借给您。注意：与格代词le/les在宾格代词lo/la/los/las之前时，必须变为se。
+对应例句：6
+
+短尾形容词buen
+bueno在阳性单数名词之前时，需去掉词尾-o，变为短尾形式buen。如"un buen sistema"（一个好方式）。阴性形式buena和复数形式buenos/buenas不发生短尾变化。
+对应例句：19
+
+中性指示代词eso
+eso是中性指示代词，用于指代不确定性别的事物、抽象概念或前面提到过的整件事。与指示形容词ese/esa/esos/esas不同，eso不与名词连用，而是独立使用。本课"¿Qué es eso?"（那是什么？）中eso指代未知的事物。
+对应例句：22
+
+疑问词cuánto
+cuánto是疑问词，意为"多少"，有性数变化：cuánto（阳性单数）、cuánta（阴性单数）、cuántos（阳性复数）、cuántas（阴性复数），须与所修饰的名词保持性数一致。本课"¡Cuántas estanterías!"（多少书架啊！）中cuántas修饰阴性复数名词estanterías。
+对应例句：10
+
+no es para tanto
+"no es para tanto"是西班牙语常用口语表达，意为"没那么夸张、不至于、没那么大不了"，用于谦虚地回应别人的夸奖或淡化某事的严重性。
+对应例句：12

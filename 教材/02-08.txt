@@ -1,0 +1,31 @@
+# 生词
+por qué	为什么（疑问副词，就原因提问）
+porque	因为（原因连接词，无重音）
+tan	如此，那么，这么
+padre	父亲
+padres	父母
+seis	六
+cansado	累的，疲倦的
+hoy	今天
+
+# 例句
+¿Por qué no va a venir Juan?	胡安为什么不来？
+Porque tiene mucho trabajo. Está muy ocupado.	因为他有很多工作。他很忙。
+¿Por qué vivís en una casa tan grande?	为什么你们住在这么大的房子里？
+Porque somos muchos: mis padres y mis seis hermanos.	因为我们有很多人：我父母和我的六个兄弟姐妹。
+Queremos descansar porque estamos cansados.	我们想休息，因为我们累了。
+Hoy no trabajamos porque es día de fiesta.	今天我们不上班，因为今天是节假日。
+Como estamos cansados, queremos descansar.	因为我们累了，我们想休息。
+
+# 语法点
+疑问副词por qué的用法
+por qué（分写且qué带重音）是疑问副词，用来就事件的原因提问，意为"为什么"。答句中要使用连接词porque（合写且无重音）。注意区分三者的书写和发音：por qué（疑问，分写，重音）、porque（连接词，合写，无重音）、porqué（名词，合写，重音，意为"原因"，本课未涉及）。
+对应例句：1,3
+
+连接词porque引导的原因从句
+原因从句表示事件发生的原因，由连接词porque引导。porque是非重读词，由它引导的原因从句置于主句之后。这是西班牙语中最常用的表达原因的方式。
+对应例句：2,5,6
+
+como与porque的区别
+como也可以引导原因从句，但与porque有重要区别：①位置不同——porque引导的从句置于主句之后，como引导的从句置于主句之前；②语用不同——使用como时，一般需在同一句话中将原因导致的结果也说清楚。两者的转换示例：Queremos descansar porque estamos cansados. = Como estamos cansados, queremos descansar.
+对应例句：5,7

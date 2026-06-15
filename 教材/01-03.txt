@@ -1,0 +1,49 @@
+# 生词
+un	不定冠词（阳性单数）：一个
+una	不定冠词（阴性单数）：一个
+unos	不定冠词（阳性复数）：一些
+unas	不定冠词（阴性复数）：一些
+el	定冠词（阳性单数）
+la	定冠词（阴性单数）
+los	定冠词（阳性复数）
+las	定冠词（阴性复数）
+libro	书
+mesa	桌子
+móvil	手机；可移动的
+lápiz	铅笔
+lápices	铅笔（复数）
+alemanes	德国人（复数）
+vino	酒；葡萄酒
+chica	女孩
+ser	是 [soy, eres, es, somos, sois, son]
+es	他/她/它是（系动词 ser 的第三人称单数）
+de	的；从；关于（前置词）
+artículo	冠词
+sustantivo	名词
+nombre	名词（又称）
+singular	单数
+plural	复数
+masculino	阳性的
+femenino	阴性的
+indefinido	不定的
+definido	确定的
+
+# 例句
+El vino es de la chica.	那酒是那个女孩的。
+
+# 语法点
+名词的性和数
+西班牙语名词有阳性（masculino）和阴性（femenino）之分。大部分阳性名词以字母 o 结尾（如 libro），大部分阴性名词以字母 a 结尾（如 mesa、chica），但也有不少例外（如 móvil 以辅音结尾、lápiz 以辅音结尾，需要通过词典或冠词来判断其性）。名词还有单数（singular）和复数（plural）之分，大部分名词在单数词尾加 -s 或 -es 构成复数形式。冠词必须与所修饰的名词在性和数上保持一致。本知识点与01-02课的重音规则密切相关：复数变化可能导致重音位置改变（见下方"复数构成规则"）。
+对应例句：1
+
+不定冠词
+泛指名词（第一次提到的、或不被明确说明的某人或某物）前加不定冠词（artículo indefinido）。不定冠词有四种形式：阳性单数 un（如 un libro — 一本书）、阴性单数 una（如 una mesa — 一张桌子）、阳性复数 unos（如 unos libros — 一些书）、阴性复数 unas（如 unas mesas — 一些桌子）。不定冠词相当于英语中的 a/an 和 some。
+对应例句：（本例句区未出现不定冠词用法）
+
+定冠词
+确指名词（确定的、说话的双方都知道的某人或某物）前加定冠词（artículo definido）。定冠词有四种形式：阳性单数 el（如 el libro — 那本书）、阴性单数 la（如 la mesa — 那张桌子）、阳性复数 los（如 los libros — 那些书）、阴性复数 las（如 las mesas — 那些桌子）。定冠词相当于英语中的 the。在句中不重读时，定冠词要与名词连读，构成一个语音单位（如例句中 El vino 连读）。
+对应例句：1
+
+复数构成规则
+以元音结尾的名词，变复数时直接加 -s（如 libro → libros、mesa → mesas、chica → chicas）。以辅音结尾的名词，变复数时加 -es（如 móvil → móviles）。部分名词在单数变复数时书写上会发生变化：1）为保持原有发音而改变字母（如 lápiz → lápices，z 变为 c 再加 -es）；2）为保持原有的重读音节而去掉重音符号（如 alemán → alemanes，加了 -es 后重音自然落在倒数第二音节，无需再标重音）；3）为保持原有的重音位置而添加重音符号（如 joven → jóvenes，加 -es 后如果不标重音，重音会落在倒数第二音节的 o 上，与原单数重音落在 jo- 上不符，故需在 jó- 上标重音符号）。
+对应例句：（本例句区未出现名词复数用法）

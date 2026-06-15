@@ -1,0 +1,103 @@
+# 生词
+invitar	邀请 [invito, invitas, invita, invitamos, invitáis, invitan]
+noche	夜晚
+buenas noches	晚上好；晚安
+tanto	如此多的
+prisa	匆忙；急
+comprar	买；购买 [compro, compras, compra, compramos, compráis, compran]
+temer	害怕；担心 [temo, temes, teme, tememos, teméis, temen]
+llegar	到达 [llego, llegas, llega, llegamos, llegáis, llegan]
+tienda	商店
+cerrar	关闭；关门 [cierro, cierras, cierra, cerramos, cerráis, cierran]
+lo	它（宾格代词，阳性单数）
+cumpleaños	生日
+querer	想要；爱（不规则动词） [quiero, quieres, quiere, queremos, queréis, quieren]
+felicitaciones	祝贺
+alegrar	使高兴 [alegro, alegras, alegra, alegramos, alegráis, alegran]
+celebrar	庆祝 [celebro, celebras, celebra, celebramos, celebráis, celebran]
+dieciocho	十八
+año	年；岁
+diecinueve	十九
+ver	看；看见（不规则动词） [veo, ves, ve, vemos, veis, ven]
+poco	一点；少量
+realidad	现实
+en realidad	实际上
+casi	几乎；差不多
+edad	年龄
+restaurante	餐厅；饭店
+entrar	进入 [entro, entras, entra, entramos, entráis, entran]
+allá	那里（较远处）
+libre	空闲的；自由的
+allí	那里
+parecer	觉得；似乎 [parezco, pareces, parece, parecemos, parecéis, parecen]
+bien	好
+me parece bien	我觉得不错
+camarero	服务员
+carta	菜单；信
+recomendar	推荐 [recomiendo, recomiendas, recomienda, recomendamos, recomendáis, recomiendan]
+sopa	汤
+marisco	海鲜
+de segundo	第二道（菜）
+carne	肉
+pescado	鱼（食材）
+idea	主意；想法
+buena idea	好主意
+sin	没有；无
+botella	瓶子
+cómo no	当然（表示同意）
+tinto	红（葡萄酒）
+agua	水
+mineral	矿物的
+agua mineral	矿泉水
+postre	甜点
+después	之后；然后
+más	更；更多
+placer	愉快；荣幸
+
+# 例句
+Buenas noches, Enrique. ¿Adónde vas con tanta prisa?	晚上好，恩里克。你这么急去哪儿？
+Voy a comprar algo y temo llegar tarde a la tienda. Cierra a esta hora.	我去买点东西，怕到店里晚了。这个点商店要关门了。
+¿Puedes hacerlo mañana? Hoy es mi cumpleaños. Quiero invitarte a cenar.	你不能明天再做吗？今天是我的生日。我想请你吃晚饭。
+¡Felicitaciones!	祝贺你！
+Muchas gracias. Me alegra celebrar mis dieciocho años con un amigo. Y tú, ¿cuántos años tienes?	非常感谢。我很高兴能和朋友一起庆祝我的十八岁生日。你呢，你多大？
+Diecinueve. Como ves, soy un poco mayor que tú.	十九岁。如你所见，我比你大一点。
+En realidad, casi somos de la misma edad. ¡Ya! Llegamos al restaurante. ¿Entramos?	其实我们差不多是同龄人。好了！我们到餐厅了。进去吗？
+Sí, ¿ves? Allá hay una mesa libre. ¿Nos sentamos allí?	好啊，你看到了吗？那里有张空桌。我们坐那儿吗？
+Me parece bien. Eh, camarero, la carta, por favor. Gracias. ¿Qué nos recomienda?	我觉得不错。呃，服务员，请给我们看下菜单。谢谢。您给我们推荐什么？
+Tenemos una buena sopa de marisco.	我们有很好的海鲜汤。
+Entonces, pedimos una sopa de marisco. ¿Qué te parece, Enrique?	那么，我们点一份海鲜汤。恩里克，你觉得怎么样？
+Me parece muy bien. Y de segundo, voy a pedir algo de carne.	我觉得很好。第二道菜，我要点一些肉类。
+Y yo, pescado. ¿Pedimos también una ensalada de verduras para los dos?	那我点鱼。我们俩也来一份蔬菜沙拉？
+Buena idea.	好主意。
+Y para beber, ¿qué quieren?	那喝的呢，你们想喝什么？
+No vamos a celebrar un cumpleaños sin vino, ¿pedimos una botella?	我们庆祝生日不能没有酒，我们点一瓶酒？
+¡Cómo no! Un vino tinto y agua mineral.	当然！一瓶红葡萄酒和矿泉水。
+Y el postre, ¿lo piden ahora o después?	那甜点呢，现在点还是待会儿点？
+Lo vamos a pedir más tarde.	我们待会儿再点。
+Muchas gracias por la invitación.	非常感谢你的邀请。
+De nada. Es un placer.	不客气。这是我的荣幸。
+
+# 语法点
+宾格代词 lo 的用法
+lo 是西班牙语中阳性单数宾格代词，相当于汉语的"它"，用来代替上文已提及的阳性单数名词，避免重复。lo 必须放在变位动词之前，如 Lo vamos a pedir más tarde（我们待会儿再点它 = 待会儿再点甜点）。但当 lo 与动词短语如 ir a + inf. 连用时，有两种位置：1）放在变位动词前（Lo vamos a pedir）；2）附在动词原形后连写（Vamos a pedirlo）。本课只出现第一种位置。宾格代词是西班牙语代词体系的核心部分，后续课程将系统介绍。
+对应例句：19,20
+
+动词 querer 的用法
+querer 是常用的不规则动词，意为"想要"或"爱"。其陈述式现在时变位为：quiero, quieres, quiere, queremos, queréis, quieren（注意：第一人称复数 nosotros 保持词根 quer-，其余人称变为 quier-）。本课中出现 quiero（我想要）和 quieren（你们/他们想要）。querer 后可接名词或动词原形，如 Quiero invitarte a cenar（我想请你吃晚饭）。
+对应例句：3,16
+
+动词 parecer 与间接宾语代词
+parecer 表示"觉得、似乎"，其用法为：间接宾语代词 + parece + 评价。间接宾语代词（me, te, le, nos, os, les）表示"对某人而言"。本课中出现了 me parece bien（我觉得不错）、¿Qué te parece?（你觉得怎么样？）、Me parece muy bien（我觉得非常好）。注意 parecer 在此用法中始终用第三人称单数 parece，因为主语是后面的内容（可以是一个事实、一种情况或一个从句）。
+对应例句：9,11,12
+
+地点副词对比：ahí / allí / allá / aquí
+西班牙语中表示地点的主要副词有：aquí（这里，离说话人近）、ahí（那里，离听话人近）、allí（那里，离两者都较远）、allá（那里，更远处或模糊处）。在口语中 allí 和 allá 经常混用。本课中 Allá hay una mesa libre（那边有张空桌）和 ¿Nos sentamos allí?（我们坐那里吗？）展示了这两个词的用法。
+对应例句：8
+
+祝贺与邀请的常用表达
+本课出现了一系列常用社交表达：Buenas noches（晚上好/晚安）、¡Felicitaciones!（祝贺你！）、Muchas gracias（非常感谢）、De nada（不客气）、Es un placer（这是我的荣幸）、¡Cómo no!（当然！）。这些是日常会话中的高频用语，应根据场合灵活使用。
+对应例句：1,4,5,18,21,22
+
+点餐相关用语
+本课对话场景为餐厅点餐，引入了一系列相关词汇和句式：la carta（菜单）、de segundo（第二道菜）、de primero（第一道菜，本课未出现但从 de segundo 可推导）、¿Qué nos recomienda?（您给我们推荐什么？）、pedir algo de carne/pescado（点肉类/鱼）、para beber（喝的呢）、el postre（甜点）、una botella de vino（一瓶酒）等。
+对应例句：9,10,12,13,14,16,17,18,19

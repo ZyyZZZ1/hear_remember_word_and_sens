@@ -1,0 +1,16 @@
+# 生词
+nada	什么都没有，没有任何东西
+sala	房间，客厅，厅
+haber	有，存在（无人称动词，hay为现在时形式） [he, has, ha, hemos, habéis, han]
+comprar	买，购买 [compro, compras, compra, compramos, compráis, compran]
+
+# 例句
+Nada hay en la sala.	房间里什么都没有。
+No hay nada en la sala.	房间里什么都没有。
+Nada va a comprar Luis.	路易斯什么也不会买的。
+Luis no va a comprar nada.	路易斯什么也不会买的。
+
+# 语法点
+不定代词nada的用法
+nada是否定不定代词，意思是"什么都没有、没有任何东西"。它可以放在动词之前，此时动词前不需要再加否定词no；也可以放在动词之后，但此时动词前必须使用否定词no，构成双重否定结构（no...nada）。两种语序表达的意思相同。注意：西班牙语的双重否定不会互相抵消，仍然表示否定含义，这与英语或汉语的逻辑不同。
+对应例句：1,2,3,4

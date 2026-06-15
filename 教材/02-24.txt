@@ -1,0 +1,40 @@
+# 生词
+secretaria	女秘书
+oír	听见 [oigo, oyes, oye, oímos, oís, oyen]
+novia	女朋友
+hora	小时，时间，时刻
+cuándo	什么时候（疑问词）
+llegar	到达 [llego, llegas, llega, llegamos, llegáis, llegan]
+invitado	客人，来宾
+recibir	收到；迎接，接待 [recibo, recibes, recibe, recibimos, recibís, reciben]
+
+# 例句
+La secretaria dice que el gerente no está en la oficina.	女秘书说经理不在办公室。
+¿No oyes que Pedro habla por teléfono con su novia?	你没听见佩德罗在跟他女朋友打电话吗？
+Creo que ellos no van a venir.	我觉得他们不会来。
+¿Puedes decirme qué hora es?	你可以告诉我现在几点了吗？
+El hombre me pregunta quién es aquel joven.	这个男人问我那个年轻人是谁？
+Queremos saber cuándo llegan los invitados.	我们想知道这些客人什么时候到。
+Me pregunta que cómo me llamo.	他问我我叫什么名字。
+Nos preguntan que dónde vivimos.	他们问我们我们住在哪里。
+La vendedora me pregunta si necesito comprar un abrigo impermeable.	售货员问我我是否需要购买一件防水的大衣。
+La vendedora me pregunta que si necesito comprar un abrigo impermeable.	售货员问我我是否需要买一件防水的大衣。
+No sé qué decirte.	我不知道怎么跟你说。
+No sabemos cómo recibirlos.	我们不知道怎么迎接他们。
+
+# 语法点
+直接宾语从句（que 引导）
+及物动词的直接宾语可以是一个由 que 引导的完整句子（即直接宾语从句）。主句动词通常是表示思维、感知、心理活动和语言交际的动词，如 decir（说）、oír（听见）、creer（认为）、pensar（想）、saber（知道）、ver（看见）等。que 在从句中只起连接作用，无实际意义。
+对应例句：1,2,3
+
+疑问词引导的直接宾语从句（不加强 que）
+当直接宾语从句由疑问副词（cómo、dónde、cuándo）或疑问代词（qué、quién）引导时，从句直接与主句动词衔接，通常不加连接词 que。但在口语中，可以添加 que，形成 que + 疑问词的句式。
+对应例句：4,5,6,7,8
+
+si 引导的间接疑问从句
+当直接宾语从句对应的是一个一般疑问句（不带疑问词）时，用 si 与主句连接。si 在此相当于中文的"是否"。同样，口语中可以在 si 前加强 que。
+对应例句：9,10
+
+saber + 疑问词 + 动词原形
+当主句动词为 saber 等感知动词，且从句主语与主句主语相同时，从句动词可使用原形动词。例如 No sé qué decirte（我不知道该跟你说什么），比 No sé qué debo decirte 更简洁。
+对应例句：11,12

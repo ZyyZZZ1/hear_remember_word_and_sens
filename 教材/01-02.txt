@@ -1,0 +1,131 @@
+# 生词
+que	字母组合 qu 的发音例词（什么）
+qui	字母组合 qu 的发音例词（谁）
+saque	取出（动词 sacar 的虚拟式）
+queso	奶酪
+quiso	他/她想要（动词 querer 的简单过去时）
+Quito	基多（厄瓜多尔首都）
+ca	字母 c 在 a 前的发音例词
+co	字母 c 在 o 前的发音例词
+cu	字母 c 在 u 前的发音例词
+cama	床
+laca	发胶
+cosa	东西
+cuna	摇篮
+cupo	名额
+ce	字母 c 在 e 前的发音例词
+ci	字母 c 在 i 前的发音例词
+cena	晚餐
+peces	鱼（复数）
+cine	电影院
+cocina	厨房
+za	字母 z 在 a 前的发音例词
+zo	字母 z 在 o 前的发音例词
+zu	字母 z 在 u 前的发音例词
+taza	杯子
+zapato	鞋子
+zona	地区
+pozo	井
+zumo	果汁
+zumba	嗡嗡声
+da	字母 d 在 a 前的发音例词
+de	字母 d 在 e 前的发音例词
+di	字母 d 在 i 前的发音例词
+do	字母 d 在 o 前的发音例词
+du	字母 d 在 u 前的发音例词
+dato	数据
+dilema	困境
+doma	驯服
+duna	沙丘
+ada	d 的元音间发音例词（ada）
+ede	d 的元音间发音例词（ede）
+idi	d 的元音间发音例词（idi）
+odo	d 的元音间发音例词（odo）
+udu	d 的元音间发音例词（udu）
+cada	每个
+pide	他/她请求（动词 pedir 的陈述式现在时）
+mide	他/她测量（动词 medir 的陈述式现在时）
+pedir	请求 [pido, pides, pide, pedimos, pedís, piden]
+ga	字母 g 在 a 前的发音例词
+go	字母 g 在 o 前的发音例词
+gu	字母 g 在 u 前的发音例词
+gato	猫
+pago	付款
+gota	水滴
+gusta	喜欢（动词 gustar 的陈述式现在时）
+ge	字母 g 在 e 前的发音例词
+gi	字母 g 在 i 前的发音例词
+gente	人们
+gime	他/她呻吟（动词 gemir 的陈述式现在时）
+agencia	代理处
+gigante	巨人
+bla	辅音连缀 bl+a 发音例词
+bra	辅音连缀 br+a 发音例词
+cla	辅音连缀 cl+a 发音例词
+cra	辅音连缀 cr+a 发音例词
+dra	辅音连缀 dr+a 发音例词
+fla	辅音连缀 fl+a 发音例词
+fra	辅音连缀 fr+a 发音例词
+gla	辅音连缀 gl+a 发音例词
+gra	辅音连缀 gr+a 发音例词
+pla	辅音连缀 pl+a 发音例词
+pra	辅音连缀 pr+a 发音例词
+tra	辅音连缀 tr+a 发音例词
+blusa	女衬衫
+brazo	手臂
+clase	班级；课堂
+crema	奶油
+drama	戏剧
+flor	花
+francés	法语；法国人
+glaciar	冰川
+grande	大的
+plato	盘子
+prado	草地
+trabajo	工作
+joven	年轻的；年轻人
+menos	更少
+hablan	他们说（动词 hablar 的陈述式现在时）
+pared	墙
+azul	蓝色的
+fatal	致命的；糟糕的
+lámpara	灯
+inglés	英语；英国人
+información	信息
+jóvenes	年轻的（复数）；年轻人（复数）
+alemán	德语；德国人
+diptongo	二重元音
+sílaba	音节
+acento	重音
+
+# 例句
+（本课无完整西班牙语句子）
+
+# 语法点
+字母组合 qu 的发音规则
+字母组合 qu 在西班牙语中发 [k] 音，且后面只能接元音字母 e 或 i（即 que、qui）。此时 u 不发音，作用仅在于使 q 后能接 e 或 i。这与拼音语言中 q 通常需要 u 来构成硬音是一致的。注意区别于字母 c：c 在 e、i 前发 [θ]（或拉丁美洲的 [s]），而 qu 在 e、i 前发 [k]。
+对应例句：（本课无例句）
+
+字母 c 和 z 的发音规则
+字母 c 在元音字母 a、o、u 前发 [k] 音（如 casa、cosa、cuna）；在元音字母 e、i 前发 [θ] 音（如 cena、cine），舌尖位于上下齿之间，类似英语 think 中的 th 音。字母 z 永远发 [θ] 音，且只出现在字母 a、o、u 的前面（如 taza、zona、zumo）。值得注意的是，在西班牙南部和拉丁美洲的西班牙语国家，[θ] 这个音已被舌尖齿背擦清辅音 [s] 代替，这种现象称为"seseo"。
+对应例句：（本课无例句）
+
+字母 d 的发音规则
+字母 d 有两种发音：在停顿后的词首以及在词内或词组内的 n、l 之后发 [d]（硬音，类似英语 dog 的 d，但舌尖抵住上齿背）；在其他情况下发 [ð]（软音，舌尖轻触上齿，类似英语 this 的 th 浊音）。尤其要注意 d 在词尾时发弱化的 [ð]，几乎听不出来。d 在一对元音之间时发 [ð]（如 cada、pedir）。这两种发音的区分是西班牙语发音的重要特征。
+对应例句：（本课无例句）
+
+字母 g 的发音规则
+字母 g 在元音字母 a、o、u 前发 [g] 音（如 gato、gota、gusta），是浊软腭塞音；在字母 e、i 前发 [χ] 音（如 gente、gigante），是清软腭擦音，类似德语 Bach 中的 ch 音或汉语"喝"的声母。这种分布与 c 的发音变化类似（都是在前元音 e、i 前发生变化），但 g 在 e、i 前发 [χ] 而非 [θ]。
+对应例句：（本课无例句）
+
+辅音连缀
+西班牙语中，塞音/p, b, t, d, k, g/或唇齿音/f/与流音/l, r/可以构成辅音连缀，常见的有：bl、br、cl、cr、dr、fl、fr、gl、gr、pl、pr、tr。发音时两个辅音之间不能插入元音，必须紧凑连贯，两个辅音属于同一个音节。其中 bl、cl、fl、gl、pl 中的 l 发音清晰；br、cr、dr、fr、gr、pr、tr 中的 r 为单击颤音（与词首或 rr 的多击颤音不同）。
+对应例句：（本课无例句）
+
+重音规则
+西班牙语的重音遵循三条基本规则：1）以元音字母或辅音字母 n、s 结尾的词，重音落在倒数第二个音节上（如 joven、menos、hablan），这类词数量最多；2）以除 n、s 外的辅音字母结尾的词，重音落在倒数第一个音节上（如 pared、azul、fatal），这类词较少；3）不符合上述两条规则的词，必须带重音符号（acento ortográfico），重音符号标在重读音节的元音上（如 lámpara、inglés、francés、información、jóvenes、alemán）。重音符号同时具有区分同形异义词的功能（将在后续课程中详细讲解）。
+对应例句：（本课无例句）
+
+二重元音
+西班牙语的五个元音中，a、e、o 为强元音（vocales fuertes/abiertas），i、u 为弱元音（vocales débiles/cerradas）。一个强元音和一个弱元音组合（如 ia、ie、io、ua、ue、uo、ai、ei、oi、au、eu、ou）或两个弱元音组合（如 iu、ui）时，构成二重元音（diptongo）。二重元音算作一个音节，发音时必须一气呵成，中间不可以断开，重音通常落在强元音上。如果二重元音需要打破（即两个元音分属不同音节），则需要在弱元音上加重音符号（如 día、río），这将在后续课程中详细讲解。
+对应例句：（本课无例句）
