@@ -1,5 +1,11 @@
 # 生词
-haber	有（无人称动词） [he, has, ha, hemos, habéis, han; 无人称形式: hay]
+haber	有（无人称动词）
+he	我有
+has	你有
+ha	他/她有
+hemos	我们有
+habéis	你们有
+han; 无人称形式: hay	他们/她们有
 hay	有（haber的陈述式现在时无人称形式）
 campus	校园
 universitario	大学的

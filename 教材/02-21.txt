@@ -3,27 +3,63 @@ acabar de + inf.	刚刚做……（固定搭配）
 alegría	快乐，高兴
 cuánto	多少
 tiempo	时间
-ver	看见 [veo, ves, ve, vemos, veis, ven]
+ver	看见
+veo	我看见
+ves	你看见
+ve	他/她看见
+vemos	我们看见
+veis	你们看见
+ven	他们/她们看见
 gana	愿望；tener ganas de 想要……
 desde	从……，自……
 hotel	酒店，旅馆
 gato	猫
 negro	黑色的
-quedar	位于；剩下 [quedo, quedas, queda, quedamos, quedáis, quedan]
+quedar	位于；剩下
+quedo	我位于
+quedas	你位于
+queda	他/她位于
+quedamos	我们位于
+quedáis	你们位于
+quedan	他们/她们位于
 bastante	相当，足够
 lejos	远
-saber	知道，会 [sé, sabes, sabe, sabemos, sabéis, saben]
-bajar	下去，下来 [bajo, bajas, baja, bajamos, bajáis, bajan]
+saber	知道，会
+sé	我知道
+sabes	你知道
+sabe	他/她知道
+sabemos	我们知道
+sabéis	你们知道
+saben	他们/她们知道
+bajar	下去，下来
+bajo	我下去
+bajas	你下去
+baja	他/她下去
+bajamos	我们下去
+bajáis	你们下去
+bajan	他们/她们下去
 inmediatamente	立刻，马上
 recepción	前台，接待处
-dejar	离开；允许；放下 [dejo, dejas, deja, dejamos, dejáis, dejan]
+dejar	离开；允许；放下
+dejo	我离开
+dejas	你离开
+deja	他/她离开
+dejamos	我们离开
+dejáis	你们离开
+dejan	他们/她们离开
 casa	家，房子
 aquí	这里
 hay	有（haber 的无人称现在时）
 suficiente	足够的
 espacio	空间
 dirección	地址；方向
-dar	给 [doy, das, da, damos, dais, dan]
+dar	给
+doy	我给
+das	你给
+da	他/她给
+damos	我们给
+dais	你们给
+dan	他们/她们给
 por supuesto	当然
 mismo	同一的；ahora mismo 马上
 seguridad	安全
@@ -31,21 +67,63 @@ número	号码，数字
 celular	手机（拉丁美洲用法）
 encendido	开着的（电器等）
 fuera	在外面
-hacer	做，干 [hago, haces, hace, hacemos, hacéis, hacen]
-mirar	看，望 [miro, miras, mira, miramos, miráis, miran]
+hacer	做，干
+hago	我做
+haces	你做
+hace	他/她做
+hacemos	我们做
+hacéis	你们做
+hacen	他们/她们做
+mirar	看，望
+miro	我看
+miras	你看
+mira	他/她看
+miramos	我们看
+miráis	你们看
+miran	他们/她们看
 hacia	朝向
 izquierda	左边
 parada	车站，停靠站
 allí	那里
 línea	线路；线
-correr	跑 [corro, corres, corre, corremos, corréis, corren]
-alcanzar	赶上；达到 [alcanzo, alcanzas, alcanza, alcanzamos, alcanzáis, alcanzan]
+correr	跑
+corro	我跑
+corres	你跑
+corre	他/她跑
+corremos	我们跑
+corréis	你们跑
+corren	他们/她们跑
+alcanzar	赶上；达到
+alcanzo	我赶上
+alcanzas	你赶上
+alcanza	他/她赶上
+alcanzamos	我们赶上
+alcanzáis	你们赶上
+alcanzan	他们/她们赶上
 rápido	快的，快速的
-apearse	下车，下（交通工具） [me apeo, te apeas, se apea, nos apeamos, os apeáis, se apean]
-entrar	进入 [entro, entras, entra, entramos, entráis, entran]
+apearse	下车，下（交通工具）
+me apeo	我下车
+te apeas	你下车
+se apea	他/她下车
+nos apeamos	我们下车
+os apeáis	你们下车
+se apean	他们/她们下车
+entrar	进入
+entro	我进入
+entras	你进入
+entra	他/她进入
+entramos	我们进入
+entráis	你们进入
+entran	他们/她们进入
 estación	车站
 metro	地铁
-coger	拿，取；搭乘（西班牙用法） [cojo, coges, coge, cogemos, cogéis, cogen]
+coger	拿，取；搭乘（西班牙用法）
+cojo	我拿
+coges	你拿
+coge	他/她拿
+cogemos	我们拿
+cogéis	你们拿
+cogen	他们/她们拿
 hasta	直到
 biblioteca	图书馆
 nacional	国家的，国立的
@@ -53,11 +131,35 @@ cerca	附近
 residencial	住宅的
 edificio	建筑物，楼
 claro	清楚的
-creer	相信，认为 [creo, crees, cree, creemos, creéis, creen]
+creer	相信，认为
+creo	我相信
+crees	你相信
+cree	他/她相信
+creemos	我们相信
+creéis	你们相信
+creen	他们/她们相信
 en todo caso	无论如何，不管怎样
-perderse	迷路 [me pierdo, te pierdes, se pierde, nos perdemos, os perdéis, se pierden]
-descuidar	放心，别担心（用于安抚） [descuido, descuidas, descuida, descuidamos, descuidáis, descuidan]
-esperar	等待；希望 [espero, esperas, espera, esperamos, esperáis, esperan]
+perderse	迷路
+me pierdo	我迷路
+te pierdes	你迷路
+se pierde	他/她迷路
+nos perdemos	我们迷路
+os perdéis	你们迷路
+se pierden	他们/她们迷路
+descuidar	放心，别担心（用于安抚）
+descuido	我放心
+descuidas	你放心
+descuida	他/她放心
+descuidamos	我们放心
+descuidáis	你们放心
+descuidan	他们/她们放心
+esperar	等待；希望
+espero	我等待
+esperas	你等待
+espera	他/她等待
+esperamos	我们等待
+esperáis	你们等待
+esperan	他们/她们等待
 nos vemos	再见，回头见（告别语）
 
 # 例句

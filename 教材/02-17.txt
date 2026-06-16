@@ -1,12 +1,42 @@
 # 生词
 pregunta	问题（名词）
-contestar	回答，答复 [contesto, contestas, contesta, contestamos, contestáis, contestan]
-cerrar	关上，关闭 [cierro, cierras, cierra, cerramos, cerráis, cierran]
+contestar	回答，答复
+contesto	我回答
+contestas	你回答
+contesta	他/她回答
+contestamos	我们回答
+contestáis	你们回答
+contestan	他们/她们回答
+cerrar	关上，关闭
+cierro	我关上
+cierras	你关上
+cierra	他/她关上
+cerramos	我们关上
+cerráis	你们关上
+cierran	他们/她们关上
 bolsa	袋子
 verdura	蔬菜
-entregar	交给，交付 [entrego, entregas, entrega, entregamos, entregáis, entregan]
-dejar	留下，留给 [dejo, dejas, deja, dejamos, dejáis, dejan]
-devolver	归还，退还 [devuelvo, devuelves, devuelve, devolvemos, devolvéis, devuelven]
+entregar	交给，交付
+entrego	我交给
+entregas	你交给
+entrega	他/她交给
+entregamos	我们交给
+entregáis	你们交给
+entregan	他们/她们交给
+dejar	留下，留给
+dejo	我留下
+dejas	你留下
+deja	他/她留下
+dejamos	我们留下
+dejáis	你们留下
+dejan	他们/她们留下
+devolver	归还，退还
+devuelvo	我归还
+devuelves	你归还
+devuelve	他/她归还
+devolvemos	我们归还
+devolvéis	你们归还
+devuelven	他们/她们归还
 
 # 例句
 Tengo el libro en casa. Te lo traigo mañana.	这本书我放在家里了。明天给你带过来。

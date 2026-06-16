@@ -5,10 +5,28 @@ cinco	五
 nieto	孙子，孙女；外孙，外孙女
 regalo	礼物
 niño	小孩，孩子
-saltar	跳，跳跃 [salto, saltas, salta, saltamos, saltáis, saltan]
+saltar	跳，跳跃
+salto	我跳
+saltas	你跳
+salta	他/她跳
+saltamos	我们跳
+saltáis	你们跳
+saltan	他们/她们跳
 alegría	高兴，快乐
-besar	亲吻，吻 [beso, besas, besa, besamos, besáis, besan]
-abrir	打开 [abro, abres, abre, abrimos, abrís, abren]
+besar	亲吻，吻
+beso	我亲吻
+besas	你亲吻
+besa	他/她亲吻
+besamos	我们亲吻
+besáis	你们亲吻
+besan	他们/她们亲吻
+abrir	打开
+abro	我打开
+abres	你打开
+abre	他/她打开
+abrimos	我们打开
+abrís	你们打开
+abren	他们/她们打开
 paquete	包裹
 aquel	那个（远指指示形容词，阳性单数）
 marrón	棕色的，棕褐色的
@@ -16,7 +34,13 @@ color	颜色
 amarillo	黄色的
 dentro	在里面，在内部
 cuidado	小心，注意
-romper	打破，弄坏 [rompo, rompes, rompe, rompemos, rompéis, rompen]
+romper	打破，弄坏
+rompo	我打破
+rompes	你打破
+rompe	他/她打破
+rompemos	我们打破
+rompéis	你们打破
+rompen	他们/她们打破
 bonito	漂亮的，好看的
 cariño	爱，亲爱
 beso	吻

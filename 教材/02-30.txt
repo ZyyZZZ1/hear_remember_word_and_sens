@@ -1,8 +1,32 @@
 # 生词
-ensuciar	弄脏 [ensucio, ensucias, ensucia, ensuciamos, ensuciáis, ensucian]
-escuchar	听，聆听 [escucho, escuchas, escucha, escuchamos, escucháis, escuchan]
-vestir	穿；vestirse 穿衣服 [visto, vistes, viste, vestimos, vestís, visten]
-leer	阅读，读 [leo, lees, lee, leemos, leéis, leen]
+ensuciar	弄脏
+ensucio	我弄脏
+ensucias	你弄脏
+ensucia	他/她弄脏
+ensuciamos	我们弄脏
+ensuciáis	你们弄脏
+ensucian	他们/她们弄脏
+escuchar	听，聆听
+escucho	我听
+escuchas	你听
+escucha	他/她听
+escuchamos	我们听
+escucháis	你们听
+escuchan	他们/她们听
+vestir	穿；vestirse 穿衣服
+visto	我穿
+vistes	你穿
+viste	他/她穿
+vestimos	我们穿
+vestís	你们穿
+visten	他们/她们穿
+leer	阅读，读
+leo	我阅读
+lees	你阅读
+lee	他/她阅读
+leemos	我们阅读
+leéis	你们阅读
+leen	他们/她们阅读
 
 # 例句
 Luis está hablando por teléfono con su madre.	路易斯在跟他妈妈打电话。

@@ -1,6 +1,12 @@
 # 生词
 alguien	某人，有人
-arrojar	扔，投掷 [arrojo, arrojas, arroja, arrojamos, arrojáis, arrojan]
+arrojar	扔，投掷
+arrojo	我扔
+arrojas	你扔
+arroja	他/她扔
+arrojamos	我们扔
+arrojáis	你们扔
+arrojan	他们/她们扔
 comida	食物
 
 # 例句

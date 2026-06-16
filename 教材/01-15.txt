@@ -1,14 +1,26 @@
 # 生词
 cuánto	多少
 dónde	哪里
-parecer	看似，好像 [parezco, pareces, parece, parecemos, parecéis, parecen]
+parecer	看似，好像
+parezco	我看似
+pareces	你看似
+parece	他/她看似
+parecemos	我们看似
+parecéis	你们看似
+parecen	他们/她们看似
 ciudad	城市
 bastante	相当，足够
 allí	那里
 verdad	事实；¿verdad? 对吧？
 siete	七
 padres	父母
-suponer	猜想，假设 [supongo, supones, supone, suponemos, suponéis, suponen]
+suponer	猜想，假设
+supongo	我猜想
+supones	你猜想
+supone	他/她猜想
+suponemos	我们猜想
+suponéis	你们猜想
+suponen	他们/她们猜想
 sala de estar	客厅
 cuarto de baño	浴室，卫生间
 todavía	仍然，还

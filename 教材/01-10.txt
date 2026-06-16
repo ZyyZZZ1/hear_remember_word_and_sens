@@ -5,12 +5,24 @@ asignatura 课程、科目
 conversación 对话、交谈、谈话
 otro 另外的、别的、新的
 cosa 物、物品、东西
-trabajar 劳动、工作 [trabajo, trabajas, trabaja, trabajamos, trabajáis, trabajan]
+trabajar	劳动、工作
+trabajo	我劳动
+trabajas	你劳动
+trabaja	他/她劳动
+trabajamos	我们劳动
+trabajáis	你们劳动
+trabajan	他们/她们劳动
 contento 高兴的、愉快的、满意的、满足的
 gramática 语法、文法
 Alemania 德国
 siempre 一直、总是、永远
-preguntar 问、询问、提问 [pregunto, preguntas, pregunta, preguntamos, preguntáis, preguntan]
+preguntar	问、询问、提问
+pregunto	我问
+preguntas	你问
+pregunta	他/她问
+preguntamos	我们问
+preguntáis	你们问
+preguntan	他们/她们问
 me 我（yo的宾格和与格，在句中用作直接宾语或间接宾语）
 hombre 男人、男性、男子、男的
 mujer 妇女、女人、女子、女性、女的
@@ -23,8 +35,20 @@ uno 一个人、某个人、任何人（有时用作讲话人自称）
 ocupado 忙的、繁忙的、忙碌的
 pues 那么、嗯（语气词，一般放在句首）
 cada uno 每个人、每人、大家、所有人
-encargar 委托、托付 [encargo, encargas, encarga, encargamos, encargáis, encargan]
-encargarse 负责、管理、照顾、掌管（+ de） [me encargo, te encargas, se encarga, nos encargamos, os encargáis, se encargan]
+encargar	委托、托付
+encargo	我委托
+encargas	你委托
+encarga	他/她委托
+encargamos	我们委托
+encargáis	你们委托
+encargan	他们/她们委托
+encargarse	负责、管理、照顾、掌管（+ de）
+me encargo	我负责
+te encargas	你负责
+se encarga	他/她负责
+nos encargamos	我们负责
+os encargáis	你们负责
+se encargan	他们/她们负责
 
 # 例句
 Los cuatro somos amigos. 我们四个人是朋友。

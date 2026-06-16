@@ -1,7 +1,13 @@
 # 生词
 hambre	饿，饥饿
 sed	渴，口渴
-acostarse	躺下，睡觉（代词式动词） [me acuesto, te acuestas, se acuesta, nos acostamos, os acostáis, se acuestan]
+acostarse	躺下，睡觉（代词式动词）
+me acuesto	我躺下
+te acuestas	你躺下
+se acuesta	他/她躺下
+nos acostamos	我们躺下
+os acostáis	你们躺下
+se acuestan	他们/她们躺下
 cansado	累的，疲倦的
 agua	水
 

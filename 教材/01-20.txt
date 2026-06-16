@@ -1,10 +1,28 @@
 # 生词
 universitario	大学的；大学生
-quedar	剩下，留下 [quedo, quedas, queda, quedamos, quedáis, quedan]
+quedar	剩下，留下
+quedo	我剩下
+quedas	你剩下
+queda	他/她剩下
+quedamos	我们剩下
+quedáis	你们剩下
+quedan	他们/她们剩下
 algo	某事，某物；一些东西
 apenas	几乎不，勉强
-respirar	呼吸 [respiro, respiras, respira, respiramos, respiráis, respiran]
-descansar	休息 [descanso, descansas, descansa, descansamos, descansáis, descansan]
+respirar	呼吸
+respiro	我呼吸
+respiras	你呼吸
+respira	他/她呼吸
+respiramos	我们呼吸
+respiráis	你们呼吸
+respiran	他们/她们呼吸
+descansar	休息
+descanso	我休息
+descansas	你休息
+descansa	他/她休息
+descansamos	我们休息
+descansáis	你们休息
+descansan	他们/她们休息
 deporte	体育运动
 noche	夜晚
 once	十一

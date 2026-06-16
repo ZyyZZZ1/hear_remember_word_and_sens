@@ -4,12 +4,48 @@ comedor	饭厅，餐厅
 defecto	缺点，缺陷
 diez	十
 poco a poco	一点一点地，逐步地
-encender	点燃，打开（电器） [enciendo, enciendes, enciende, encendemos, encendéis, encienden]
-seguir	跟随，继续 [sigo, sigues, sigue, seguimos, seguís, siguen]
-acostarse	上床睡觉，躺下 [me acuesto, te acuestas, se acuesta, nos acostamos, os acostáis, se acuestan]
-avanzar	前进，推进 [avanzo, avanzas, avanza, avanzamos, avanzáis, avanzan]
-indicar	指出，指示 [indico, indicas, indica, indicamos, indicáis, indican]
-llegar	到达 [llego, llegas, llega, llegamos, llegáis, llegan]
+encender	点燃，打开（电器）
+enciendo	我点燃
+enciendes	你点燃
+enciende	他/她点燃
+encendemos	我们点燃
+encendéis	你们点燃
+encienden	他们/她们点燃
+seguir	跟随，继续
+sigo	我跟随
+sigues	你跟随
+sigue	他/她跟随
+seguimos	我们跟随
+seguís	你们跟随
+siguen	他们/她们跟随
+acostarse	上床睡觉，躺下
+me acuesto	我上床睡觉
+te acuestas	你上床睡觉
+se acuesta	他/她上床睡觉
+nos acostamos	我们上床睡觉
+os acostáis	你们上床睡觉
+se acuestan	他们/她们上床睡觉
+avanzar	前进，推进
+avanzo	我前进
+avanzas	你前进
+avanza	他/她前进
+avanzamos	我们前进
+avanzáis	你们前进
+avanzan	他们/她们前进
+indicar	指出，指示
+indico	我指出
+indicas	你指出
+indica	他/她指出
+indicamos	我们指出
+indicáis	你们指出
+indican	他们/她们指出
+llegar	到达
+llego	我到达
+llegas	你到达
+llega	他/她到达
+llegamos	我们到达
+llegáis	你们到达
+llegan	他们/她们到达
 
 # 例句
 Escríbeme, por favor.	请写信给我。

@@ -4,7 +4,13 @@ vaya	好一个……（感叹词，来自动词 ir）
 más	更，更加
 horario	时间表，日程
 apretado	紧凑的，紧的
-terminar	结束，完成 [termino, terminas, termina, terminamos, termináis, terminan]
+terminar	结束，完成
+termino	我结束
+terminas	你结束
+termina	他/她结束
+terminamos	我们结束
+termináis	你们结束
+terminan	他们/她们结束
 media	一半（media hora = 半个小时）
 hora	小时
 imposible	不可能的

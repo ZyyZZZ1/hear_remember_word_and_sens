@@ -1,37 +1,115 @@
 # 生词
-abrigar	给……穿暖和；保暖 [abrigo, abrigas, abriga, abrigamos, abrigáis, abrigan]
-necesitar	需要 [necesito, necesitas, necesita, necesitamos, necesitáis, necesitan]
-recordar	记得；提醒 [recuerdo, recuerdas, recuerda, recordamos, recordáis, recuerdan]
-traer	带来 [traigo, traes, trae, traemos, traéis, traen]
+abrigar	给……穿暖和；保暖
+abrigo	我给……穿暖和
+abrigas	你给……穿暖和
+abriga	他/她给……穿暖和
+abrigamos	我们给……穿暖和
+abrigáis	你们给……穿暖和
+abrigan	他们/她们给……穿暖和
+necesitar	需要
+necesito	我需要
+necesitas	你需要
+necesita	他/她需要
+necesitamos	我们需要
+necesitáis	你们需要
+necesitan	他们/她们需要
+recordar	记得；提醒
+recuerdo	我记得
+recuerdas	你记得
+recuerda	他/她记得
+recordamos	我们记得
+recordáis	你们记得
+recuerdan	他们/她们记得
+traer	带来
+traigo	我带来
+traes	你带来
+trae	他/她带来
+traemos	我们带来
+traéis	你们带来
+traen	他们/她们带来
 frío	冷；hace frío 天冷
 bien	好，好好地
-jugar	玩，游戏 [juego, juegas, juega, jugamos, jugáis, juegan]
+jugar	玩，游戏
+juego	我玩
+juegas	你玩
+juega	他/她玩
+jugamos	我们玩
+jugáis	你们玩
+juegan	他们/她们玩
 suéter	毛衣，运动衫
 grueso	厚的，粗的
 chaqueta	夹克，外套
 tela	布料，织物
 camisa	衬衫
 nada	什么也没有；一点也不
-pensar	想，认为；打算 [pienso, piensas, piensa, pensamos, pensáis, piensan]
+pensar	想，认为；打算
+pienso	我想
+piensas	你想
+piensa	他/她想
+pensamos	我们想
+pensáis	你们想
+piensan	他们/她们想
 temperatura	温度
 hoy	今天
 bajo	低的
-aconsejar	建议，劝告 [aconsejo, aconsejas, aconseja, aconsejamos, aconsejáis, aconsejan]
+aconsejar	建议，劝告
+aconsejo	我建议
+aconsejas	你建议
+aconseja	他/她建议
+aconsejamos	我们建议
+aconsejáis	你们建议
+aconsejan	他们/她们建议
 pantalones	裤子
 ropa	衣服
-importar	重要，有关系 [importo, importas, importa, importamos, importáis, importan]
+importar	重要，有关系
+importo	我重要
+importas	你重要
+importa	他/她重要
+importamos	我们重要
+importáis	你们重要
+importan	他们/她们重要
 invierno	冬天
 jersey	毛衣，运动衫
-preocuparse	担心，担忧 [me preocupo, te preocupas, se preocupa, nos preocupamos, os preocupáis, se preocupan]
+preocuparse	担心，担忧
+me preocupo	我担心
+te preocupas	你担心
+se preocupa	他/她担心
+nos preocupamos	我们担心
+os preocupáis	你们担心
+se preocupan	他们/她们担心
 poco	少的，少量的
 abrigo	大衣，外套
-comprar	买，购买 [compro, compras, compra, compramos, compráis, compran]
+comprar	买，购买
+compro	我买
+compras	你买
+compra	他/她买
+compramos	我们买
+compráis	你们买
+compran	他们/她们买
 talla	尺码，尺寸
-apuntar	记下，写下 [apunto, apuntas, apunta, apuntamos, apuntáis, apuntan]
-memorizar	记住，背诵 [memorizo, memorizas, memoriza, memorizamos, memorizáis, memorizan]
+apuntar	记下，写下
+apunto	我记下
+apuntas	你记下
+apunta	他/她记下
+apuntamos	我们记下
+apuntáis	你们记下
+apuntan	他们/她们记下
+memorizar	记住，背诵
+memorizo	我记住
+memorizas	你记住
+memoriza	他/她记住
+memorizamos	我们记住
+memorizáis	你们记住
+memorizan	他们/她们记住
 palabra	词，单词
 difícil	困难的
-vender	卖，出售 [vendo, vendes, vende, vendemos, vendéis, venden]
+vender	卖，出售
+vendo	我卖
+vendes	你卖
+vende	他/她卖
+vendemos	我们卖
+vendéis	你们卖
+venden	他们/她们卖
 supermercado	超市
 caro	贵的，昂贵的
 ciudad	城市
@@ -45,7 +123,13 @@ diecinueve	十九
 sobre	在……上面；关于
 largo	长的
 vendedora	女售货员
-pagar	支付，付款 [pago, pagas, paga, pagamos, pagáis, pagan]
+pagar	支付，付款
+pago	我支付
+pagas	你支付
+paga	他/她支付
+pagamos	我们支付
+pagáis	你们支付
+pagan	他们/她们支付
 tarjeta	卡片；信用卡
 texto	课文，文本
 tío	叔叔，舅舅
@@ -66,7 +150,13 @@ marido	丈夫
 todavía	还，仍然
 calzoncillos	内裤
 revista	杂志
-llover	下雨 [lluevo, llueves, llueve, llovemos, llovéis, llueven]
+llover	下雨
+lluevo	我下雨
+llueves	你下雨
+llueve	他/她下雨
+llovemos	我们下雨
+llovéis	你们下雨
+llueven	他们/她们下雨
 impermeable	雨衣；防水的
 padre	父亲
 deber de + inf.	应该，大概（表示推测）

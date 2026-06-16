@@ -9,28 +9,88 @@ en especial	特别是，尤其是
 sin embargo	然而，但是
 persona	人
 mayor	年长的，年纪大的（此处指老年人）
-resistirse	抗拒，拒绝 [me resisto, te resistes, se resiste, nos resistimos, os resistís, se resisten]
-usar	使用 [uso, usas, usa, usamos, usáis, usan]
-temer	害怕，担心 [temo, temes, teme, tememos, teméis, temen]
-estafar	诈骗，欺骗 [estafo, estafas, estafa, estafamos, estafáis, estafan]
+resistirse	抗拒，拒绝
+me resisto	我抗拒
+te resistes	你抗拒
+se resiste	他/她抗拒
+nos resistimos	我们抗拒
+os resistís	你们抗拒
+se resisten	他们/她们抗拒
+usar	使用
+uso	我使用
+usas	你使用
+usa	他/她使用
+usamos	我们使用
+usáis	你们使用
+usan	他们/她们使用
+temer	害怕，担心
+temo	我害怕
+temes	你害怕
+teme	他/她害怕
+tememos	我们害怕
+teméis	你们害怕
+temen	他们/她们害怕
+estafar	诈骗，欺骗
+estafo	我诈骗
+estafas	你诈骗
+estafa	他/她诈骗
+estafamos	我们诈骗
+estafáis	你们诈骗
+estafan	他们/她们诈骗
 en realidad	实际上，其实
 realidad	现实，实际
 gente	人，人们
-ofrecer	提供 [ofrezco, ofreces, ofrece, ofrecemos, ofrecéis, ofrecen]
-servir	服务；有用，用于 [sirvo, sirves, sirve, servimos, servís, sirven]
+ofrecer	提供
+ofrezco	我提供
+ofreces	你提供
+ofrece	他/她提供
+ofrecemos	我们提供
+ofrecéis	你们提供
+ofrecen	他们/她们提供
+servir	服务；有用，用于
+sirvo	我服务
+sirves	你服务
+sirve	他/她服务
+servimos	我们服务
+servís	你们服务
+sirven	他们/她们服务
 ventaja	优势，好处（已在02-09出现）
 acaso	难道（用于反问句）
 al mismo tiempo	同时
 tienda	商店
-preparar	准备 [preparo, preparas, prepara, preparamos, preparáis, preparan]
+preparar	准备
+preparo	我准备
+preparas	你准备
+prepara	他/她准备
+preparamos	我们准备
+preparáis	你们准备
+preparan	他们/她们准备
 comida	食物，饭菜
-adquirir	获得，买到 [adquiero, adquieres, adquiere, adquirimos, adquirís, adquieren]
+adquirir	获得，买到
+adquiero	我获得
+adquieres	你获得
+adquiere	他/她获得
+adquirimos	我们获得
+adquirís	你们获得
+adquieren	他们/她们获得
 solo	仅仅，只
-teclear	敲键盘，打字输入 [tecleo, tecleas, teclea, tecleamos, tecleáis, teclean]
+teclear	敲键盘，打字输入
+tecleo	我敲键盘
+tecleas	你敲键盘
+teclea	他/她敲键盘
+tecleamos	我们敲键盘
+tecleáis	你们敲键盘
+teclean	他们/她们敲键盘
 ordenador	电脑，计算机（西班牙用语）
 computadora	电脑，计算机（拉丁美洲用语）
 universitario	大学的；大学生
-soler	习惯于，通常（做某事） [suelo, sueles, suele, solemos, soléis, suelen]
+soler	习惯于，通常（做某事）
+suelo	我习惯于
+sueles	你习惯于
+suele	他/她习惯于
+solemos	我们习惯于
+soléis	你们习惯于
+suelen	他们/她们习惯于
 
 # 例句
 Hoy en día, es común hacer compras por Internet.	如今，网上购物很普遍。

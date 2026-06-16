@@ -8,22 +8,52 @@ bienvenido	欢迎
 oficina	办公室
 por favor	请
 piso	楼层
-salir	出去，离开 [salgo, sales, sale, salimos, salís, salen]
+salir	出去，离开
+salgo	我出去
+sales	你出去
+sale	他/她出去
+salimos	我们出去
+salís	你们出去
+salen	他们/她们出去
 ascensor	电梯
 derecha	右边
-avanzar	前进，往前走 [avanzo, avanzas, avanza, avanzamos, avanzáis, avanzan]
+avanzar	前进，往前走
+avanzo	我前进
+avanzas	你前进
+avanza	他/她前进
+avanzamos	我们前进
+avanzáis	你们前进
+avanzan	他们/她们前进
 metro	米，公尺
 pasillo	走廊
 segundo	第二
 puerta	门
 gracias	谢谢
 diez	十
-sentir	感觉；Lo siento 抱歉 [siento, sientes, siente, sentimos, sentís, sienten]
-pasar	通过，经过 [paso, pasas, pasa, pasamos, pasáis, pasan]
+sentir	感觉；Lo siento 抱歉
+siento	我感觉
+sientes	你感觉
+siente	他/她感觉
+sentimos	我们感觉
+sentís	你们感觉
+sienten	他们/她们感觉
+pasar	通过，经过
+paso	我通过
+pasas	你通过
+pasa	他/她通过
+pasamos	我们通过
+pasáis	你们通过
+pasan	他们/她们通过
 porque	因为
 seis	六
 está bien	好的，行
-servir	服务；Para servirlos 为您效劳 [sirvo, sirves, sirve, servimos, servís, sirven]
+servir	服务；Para servirlos 为您效劳
+sirvo	我服务
+sirves	你服务
+sirve	他/她服务
+servimos	我们服务
+servís	你们服务
+sirven	他们/她们服务
 
 # 例句
 Buenos días, señorita. Vengo con una delegación. Tenemos una entrevista con el señor gerente.	早上好，小姐。我和一个代表团一起来的。我们和经理先生有个会面。

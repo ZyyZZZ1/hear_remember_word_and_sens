@@ -7,30 +7,78 @@ como	像，如同（比较）
 Madrid	马德里（西班牙首都）
 en efecto	确实，事实上
 época	季节，时期
-mostrar	展示，给……看 [muestro, muestras, muestra, mostramos, mostráis, muestran]
+mostrar	展示，给……看
+muestro	我展示
+muestras	你展示
+muestra	他/她展示
+mostramos	我们展示
+mostráis	你们展示
+muestran	他们/她们展示
 algún	某个，一些（alguno 的短尾形式）
 perdón	抱歉，对不起
 bonito	漂亮的，好看的
 color	颜色
 gris	灰色的
-recomendar	推荐，建议 [recomiendo, recomiendas, recomienda, recomendamos, recomendáis, recomiendan]
+recomendar	推荐，建议
+recomiendo	我推荐
+recomiendas	你推荐
+recomienda	他/她推荐
+recomendamos	我们推荐
+recomendáis	你们推荐
+recomiendan	他们/她们推荐
 oscuro	暗的，深的（颜色）
-probar	试；尝试；试穿 [pruebo, pruebas, prueba, probamos, probáis, prueban]
+probar	试；尝试；试穿
+pruebo	我试
+pruebas	你试
+prueba	他/她试
+probamos	我们试
+probáis	你们试
+prueban	他们/她们试
 detrás	在……后面
 cortina	帘子，窗帘
 amarillo	黄色的
 probador	试衣间
-sentar	适合，合身（sentar bien/mal 合身/不合身） [siento, sientas, sienta, sentamos, sentáis, sientan]
+sentar	适合，合身（sentar bien/mal 合身/不合身）
+siento	我适合
+sientas	你适合
+sienta	他/她适合
+sentamos	我们适合
+sentáis	你们适合
+sientan	他们/她们适合
 perfecto	完美的
-llevarse	带走，买走 [me llevo, te llevas, se lleva, nos llevamos, os lleváis, se llevan]
-deber	欠；应该 [debo, debes, debe, debemos, debéis, deben]
+llevarse	带走，买走
+me llevo	我带走
+te llevas	你带走
+se lleva	他/她带走
+nos llevamos	我们带走
+os lleváis	你们带走
+se llevan	他们/她们带走
+deber	欠；应该
+debo	我欠
+debes	你欠
+debe	他/她欠
+debemos	我们欠
+debéis	你们欠
+deben	他们/她们欠
 más	更，更多
-seguir	跟随；继续 [sigo, sigues, sigue, seguimos, seguís, siguen]
+seguir	跟随；继续
+sigo	我跟随
+sigues	你跟随
+sigue	他/她跟随
+seguimos	我们跟随
+seguís	你们跟随
+siguen	他们/她们跟随
 allá	那里（较远处）
 mostrador	柜台
 además	此外，另外
 lluvia	雨
-elegir	选择 [elijo, eliges, elige, elegimos, elegís, eligen]
+elegir	选择
+elijo	我选择
+eliges	你选择
+elige	他/她选择
+elegimos	我们选择
+elegís	你们选择
+eligen	他们/她们选择
 caja	收银台；盒子
 disposición	支配，安排；a su disposición 听您吩咐
 cualquier	任何一个

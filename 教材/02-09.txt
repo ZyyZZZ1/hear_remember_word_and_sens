@@ -1,8 +1,26 @@
 # 生词
-molestar	打扰，麻烦 [molesto, molestas, molesta, molestamos, molestáis, molestan]
+molestar	打扰，麻烦
+molesto	我打扰
+molestas	你打扰
+molesta	他/她打扰
+molestamos	我们打扰
+molestáis	你们打扰
+molestan	他们/她们打扰
 en absoluto	绝对不，一点也不
-pensar	想，打算，思考 [pienso, piensas, piensa, pensamos, pensáis, piensan]
-hacer	做，干 [hago, haces, hace, hacemos, hacéis, hacen]
+pensar	想，打算，思考
+pienso	我想
+piensas	你想
+piensa	他/她想
+pensamos	我们想
+pensáis	你们想
+piensan	他们/她们想
+hacer	做，干
+hago	我做
+haces	你做
+hace	他/她做
+hacemos	我们做
+hacéis	你们做
+hacen	他们/她们做
 sobre	关于；在……上面
 latino	拉丁的
 América Latina	拉丁美洲
@@ -11,7 +29,13 @@ interesante	有趣的
 tema	主题，话题
 papel	纸
 título	标题，书名
-necesitar	需要 [necesito, necesitas, necesita, necesitamos, necesitáis, necesitan]
+necesitar	需要
+necesito	我需要
+necesitas	你需要
+necesita	他/她需要
+necesitamos	我们需要
+necesitáis	你们需要
+necesitan	他们/她们需要
 lista	清单，列表
 preparado	准备好的
 maravilla	奇迹，绝妙的事物
@@ -32,13 +56,25 @@ Internet	互联网
 buen	好的（bueno的短尾形式，用于阳性单数名词前）
 sistema	系统，方式
 así	这样，如此
-ganar	赢得，获得，节省 [gano, ganas, gana, ganamos, ganáis, ganan]
+ganar	赢得，获得，节省
+gano	我赢得
+ganas	你赢得
+gana	他/她赢得
+ganamos	我们赢得
+ganáis	你们赢得
+ganan	他们/她们赢得
 tiempo	时间
 ventaja	优势，好处
 eso	那，那个（中性指示代词）
 perdón	对不起，抱歉
 medio	媒介，手段，方式
-esperar	等待，希望 [espero, esperas, espera, esperamos, esperáis, esperan]
+esperar	等待，希望
+espero	我等待
+esperas	你等待
+espera	他/她等待
+esperamos	我们等待
+esperáis	你们等待
+esperan	他们/她们等待
 rato	一会儿，片刻
 servicio	服务
 

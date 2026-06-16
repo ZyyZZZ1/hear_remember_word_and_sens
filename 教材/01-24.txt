@@ -1,21 +1,69 @@
 # 生词
-descansar	休息 [descanso, descansas, descansa, descansamos, descansáis, descansan]
+descansar	休息
+descanso	我休息
+descansas	你休息
+descansa	他/她休息
+descansamos	我们休息
+descansáis	你们休息
+descansan	他们/她们休息
 nuevo	新的
-almorzar	吃午饭 [almuerzo, almuerzas, almuerza, almorzamos, almorzáis, almuerzan]
+almorzar	吃午饭
+almuerzo	我吃午饭
+almuerzas	你吃午饭
+almuerza	他/她吃午饭
+almorzamos	我们吃午饭
+almorzáis	你们吃午饭
+almuerzan	他们/她们吃午饭
 cafetería	咖啡馆；咖啡厅
 biblioteca	图书馆
-leer	阅读；读 [leo, lees, lee, leemos, leéis, leen]
+leer	阅读；读
+leo	我阅读
+lees	你阅读
+lee	他/她阅读
+leemos	我们阅读
+leéis	你们阅读
+leen	他们/她们阅读
 prestado	借来的；借出的
-pedir prestado	借（来）；借用 [pedir: pido, pides, pide, pedimos, pedís, piden]
+pedir	prestado	借（来）；借用
+pedir: pido	我prestado	借
+pides	你prestado	借
+pide	他/她prestado	借
+pedimos	我们prestado	借
+pedís	你们prestado	借
+piden	他们/她们prestado	借
 estos	这些（阳性复数）
 esta	这个（阴性单数）
 algo	某事；某物；一些
-hacer	做；干 [hago, haces, hace, hacemos, hacéis, hacen]
+hacer	做；干
+hago	我做
+haces	你做
+hace	他/她做
+hacemos	我们做
+hacéis	你们做
+hacen	他们/她们做
 mismo	相同的；本身
 ahora mismo	立刻；马上
-ir a + inf.	将要做……（动词短语） [ir: voy, vas, va, vamos, vais, van]
-tener que + inf.	必须做……（动词短语） [tener: tengo, tienes, tiene, tenemos, tenéis, tienen]
-venir a + inf.	来做……（动词短语） [venir: vengo, vienes, viene, venimos, venís, vienen]
+ir	a + inf.	将要做……（动词短语）
+ir: voy	我a + inf.	将要做……
+vas	你a + inf.	将要做……
+va	他/她a + inf.	将要做……
+vamos	我们a + inf.	将要做……
+vais	你们a + inf.	将要做……
+van	他们/她们a + inf.	将要做……
+tener	que + inf.	必须做……（动词短语）
+tener: tengo	我que + inf.	必须做……
+tienes	你que + inf.	必须做……
+tiene	他/她que + inf.	必须做……
+tenemos	我们que + inf.	必须做……
+tenéis	你们que + inf.	必须做……
+tienen	他们/她们que + inf.	必须做……
+venir	a + inf.	来做……（动词短语）
+venir: vengo	我a + inf.	来做……
+vienes	你a + inf.	来做……
+viene	他/她a + inf.	来做……
+venimos	我们a + inf.	来做……
+venís	你们a + inf.	来做……
+vienen	他们/她们a + inf.	来做……
 
 # 例句
 Ahora voy a descansar.	我现在要休息了。

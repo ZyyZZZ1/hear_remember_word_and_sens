@@ -1,13 +1,43 @@
 # 生词
-gustar	使喜欢（使动动词） [gusto, gustas, gusta, gustamos, gustáis, gustan]
-encantar	使着迷，使非常喜欢（使动动词） [encanto, encantas, encanta, encantamos, encantáis, encantan]
+gustar	使喜欢（使动动词）
+gusto	我使喜欢
+gustas	你使喜欢
+gusta	他/她使喜欢
+gustamos	我们使喜欢
+gustáis	你们使喜欢
+gustan	他们/她们使喜欢
+encantar	使着迷，使非常喜欢（使动动词）
+encanto	我使着迷
+encantas	你使着迷
+encanta	他/她使着迷
+encantamos	我们使着迷
+encantáis	你们使着迷
+encantan	他们/她们使着迷
 novela	小说
-leer	读，阅读 [leo, lees, lee, leemos, leéis, leen]
+leer	读，阅读
+leo	我读
+lees	你读
+lee	他/她读
+leemos	我们读
+leéis	你们读
+leen	他们/她们读
 fiesta	聚会，节日，派对
-almorzar	吃午饭 [almuerzo, almuerzas, almuerza, almorzamos, almorzáis, almuerzan]
+almorzar	吃午饭
+almuerzo	我吃午饭
+almuerzas	你吃午饭
+almuerza	他/她吃午饭
+almorzamos	我们吃午饭
+almorzáis	你们吃午饭
+almuerzan	他们/她们吃午饭
 cafetería	咖啡馆，自助餐厅
 estilo	风格，方式
-escribir	写，书写 [escribo, escribes, escribe, escribimos, escribís, escriben]
+escribir	写，书写
+escribo	我写
+escribes	你写
+escribe	他/她写
+escribimos	我们写
+escribís	你们写
+escriben	他们/她们写
 nos	我们（与格/宾格代词）
 os	你们（与格/宾格代词）
 les	他们/她们/诸位（与格代词）

@@ -1,8 +1,20 @@
 # 生词
 nada	什么都没有，没有任何东西
 sala	房间，客厅，厅
-haber	有，存在（无人称动词，hay为现在时形式） [he, has, ha, hemos, habéis, han]
-comprar	买，购买 [compro, compras, compra, compramos, compráis, compran]
+haber	有，存在（无人称动词，hay为现在时形式）
+he	我有
+has	你有
+ha	他/她有
+hemos	我们有
+habéis	你们有
+han	他们/她们有
+comprar	买，购买
+compro	我买
+compras	你买
+compra	他/她买
+compramos	我们买
+compráis	你们买
+compran	他们/她们买
 
 # 例句
 Nada hay en la sala.	房间里什么都没有。

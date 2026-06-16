@@ -45,7 +45,13 @@ udu	d 的元音间发音例词（udu）
 cada	每个
 pide	他/她请求（动词 pedir 的陈述式现在时）
 mide	他/她测量（动词 medir 的陈述式现在时）
-pedir	请求 [pido, pides, pide, pedimos, pedís, piden]
+pedir	请求
+pido	我请求
+pides	你请求
+pide	他/她请求
+pedimos	我们请求
+pedís	你们请求
+piden	他们/她们请求
 ga	字母 g 在 a 前的发音例词
 go	字母 g 在 o 前的发音例词
 gu	字母 g 在 u 前的发音例词

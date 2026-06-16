@@ -4,18 +4,42 @@ padre	父亲
 padres	父母
 ensalada	沙拉
 verdura	蔬菜
-saber	知道；会（不规则动词） [sé, sabes, sabe, sabemos, sabéis, saben]
+saber	知道；会（不规则动词）
+sé	我知道
+sabes	你知道
+sabe	他/她知道
+sabemos	我们知道
+sabéis	你们知道
+saben	他们/她们知道
 antes de	在……之前
 cansado	疲劳的；累的
 de acuerdo	同意；好的（固定词组）
 de nada	不客气；没关系（固定词组）
-sentarse	坐下（代词式动词） [me siento, te sientas, se sienta, nos sentamos, os sentáis, se sientan]
-cenar	吃晚饭 [ceno, cenas, cena, cenamos, cenáis, cenan]
+sentarse	坐下（代词式动词）
+me siento	我坐下
+te sientas	你坐下
+se sienta	他/她坐下
+nos sentamos	我们坐下
+os sentáis	你们坐下
+se sientan	他们/她们坐下
+cenar	吃晚饭
+ceno	我吃晚饭
+cenas	你吃晚饭
+cena	他/她吃晚饭
+cenamos	我们吃晚饭
+cenáis	你们吃晚饭
+cenan	他们/她们吃晚饭
 gracias	谢谢
 invitación	邀请
 aquí	这里
 mañana	明天
-salir	出去；离开（不规则动词） [salgo, sales, sale, salimos, salís, salen]
+salir	出去；离开（不规则动词）
+salgo	我出去
+sales	你出去
+sale	他/她出去
+salimos	我们出去
+salís	你们出去
+salen	他们/她们出去
 compra	购买
 salir de compras	去购物
 por supuesto	当然

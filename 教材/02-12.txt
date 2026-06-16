@@ -3,7 +3,13 @@ cuál	哪个，哪一个（疑问代词，单数）
 cuáles	哪些，哪一些（疑问代词，复数）
 señorita	小姐
 maleta	手提箱，行李箱
-viajar	旅行 [viajo, viajas, viaja, viajamos, viajáis, viajan]
+viajar	旅行
+viajo	我旅行
+viajas	你旅行
+viaja	他/她旅行
+viajamos	我们旅行
+viajáis	你们旅行
+viajan	他们/她们旅行
 hotel	酒店，旅馆
 número	数字，号码
 por favor	请，劳驾

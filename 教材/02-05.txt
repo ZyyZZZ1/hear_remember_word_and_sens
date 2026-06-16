@@ -2,22 +2,52 @@
 escritor	作家
 verdad	真相，事实；对吗（反问语气）
 moderno	现代的
-mirar	看，瞧 [miro, miras, mira, miramos, miráis, miran]
+mirar	看，瞧
+miro	我看
+miras	你看
+mira	他/她看
+miramos	我们看
+miráis	你们看
+miran	他们/她们看
 hora	小时，时间，时刻
-recoger	收拾，捡起，收集 [recojo, recoges, recoge, recogemos, recogéis, recogen]
-meter	放入，塞入 [meto, metes, mete, metemos, metéis, meten]
+recoger	收拾，捡起，收集
+recojo	我收拾
+recoges	你收拾
+recoge	他/她收拾
+recogemos	我们收拾
+recogéis	你们收拾
+recogen	他们/她们收拾
+meter	放入，塞入
+meto	我放入
+metes	你放入
+mete	他/她放入
+metemos	我们放入
+metéis	你们放入
+meten	他们/她们放入
 mochila	书包，背包
 algo	某物，某事，一些东西
 poco	少的，少量的
 un poco	一点，一些
 antes	之前，事先
-querer	想，想要；爱 [quiero, quieres, quiere, queremos, queréis, quieren]
+querer	想，想要；爱
+quiero	我想
+quieres	你想
+quiere	他/她想
+queremos	我们想
+queréis	你们想
+quieren	他们/她们想
 sed	渴，口渴
 casualidad	巧合，偶然
 por casualidad	碰巧，偶然
 botella	瓶子
 agua	水
-coger	拿，取，喝（在一些地区使用） [cojo, coges, coge, cogemos, cogéis, cogen]
+coger	拿，取，喝（在一些地区使用）
+cojo	我拿
+coges	你拿
+coge	他/她拿
+cogemos	我们拿
+cogéis	你们拿
+cogen	他们/她们拿
 gracias	谢谢
 de nada	不客气，不用谢
 campus	校园

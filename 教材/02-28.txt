@@ -1,9 +1,39 @@
 # 生词
-escribir	写，书写 [escribo, escribes, escribe, escribimos, escribís, escriben]
-contar	讲述；数，计算 [cuento, cuentas, cuenta, contamos, contáis, cuentan]
-empezar	开始 [empiezo, empiezas, empieza, empezamos, empezáis, empiezan]
-recoger	捡起，收拾；收集 [recojo, recoges, recoge, recogemos, recogéis, recogen]
-sacar	取出，拿出 [saco, sacas, saca, sacamos, sacáis, sacan]
+escribir	写，书写
+escribo	我写
+escribes	你写
+escribe	他/她写
+escribimos	我们写
+escribís	你们写
+escriben	他们/她们写
+contar	讲述；数，计算
+cuento	我讲述
+cuentas	你讲述
+cuenta	他/她讲述
+contamos	我们讲述
+contáis	你们讲述
+cuentan	他们/她们讲述
+empezar	开始
+empiezo	我开始
+empiezas	你开始
+empieza	他/她开始
+empezamos	我们开始
+empezáis	你们开始
+empiezan	他们/她们开始
+recoger	捡起，收拾；收集
+recojo	我捡起
+recoges	你捡起
+recoge	他/她捡起
+recogemos	我们捡起
+recogéis	你们捡起
+recogen	他们/她们捡起
+sacar	取出，拿出
+saco	我取出
+sacas	你取出
+saca	他/她取出
+sacamos	我们取出
+sacáis	你们取出
+sacan	他们/她们取出
 
 # 例句
 Cuéntenselo.	把这件事讲给他听。

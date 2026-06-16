@@ -15,7 +15,13 @@ lápices	铅笔（复数）
 alemanes	德国人（复数）
 vino	酒；葡萄酒
 chica	女孩
-ser	是 [soy, eres, es, somos, sois, son]
+ser	是
+soy	我是
+eres	你是
+es	他/她是
+somos	我们是
+sois	你们是
+son	他们/她们是
 es	他/她/它是（系动词 ser 的第三人称单数）
 de	的；从；关于（前置词）
 artículo	冠词

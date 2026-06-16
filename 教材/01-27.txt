@@ -1,40 +1,112 @@
 # 生词
-invitar	邀请 [invito, invitas, invita, invitamos, invitáis, invitan]
+invitar	邀请
+invito	我邀请
+invitas	你邀请
+invita	他/她邀请
+invitamos	我们邀请
+invitáis	你们邀请
+invitan	他们/她们邀请
 noche	夜晚
 buenas noches	晚上好；晚安
 tanto	如此多的
 prisa	匆忙；急
-comprar	买；购买 [compro, compras, compra, compramos, compráis, compran]
-temer	害怕；担心 [temo, temes, teme, tememos, teméis, temen]
-llegar	到达 [llego, llegas, llega, llegamos, llegáis, llegan]
+comprar	买；购买
+compro	我买
+compras	你买
+compra	他/她买
+compramos	我们买
+compráis	你们买
+compran	他们/她们买
+temer	害怕；担心
+temo	我害怕
+temes	你害怕
+teme	他/她害怕
+tememos	我们害怕
+teméis	你们害怕
+temen	他们/她们害怕
+llegar	到达
+llego	我到达
+llegas	你到达
+llega	他/她到达
+llegamos	我们到达
+llegáis	你们到达
+llegan	他们/她们到达
 tienda	商店
-cerrar	关闭；关门 [cierro, cierras, cierra, cerramos, cerráis, cierran]
+cerrar	关闭；关门
+cierro	我关闭
+cierras	你关闭
+cierra	他/她关闭
+cerramos	我们关闭
+cerráis	你们关闭
+cierran	他们/她们关闭
 lo	它（宾格代词，阳性单数）
 cumpleaños	生日
-querer	想要；爱（不规则动词） [quiero, quieres, quiere, queremos, queréis, quieren]
+querer	想要；爱（不规则动词）
+quiero	我想要
+quieres	你想要
+quiere	他/她想要
+queremos	我们想要
+queréis	你们想要
+quieren	他们/她们想要
 felicitaciones	祝贺
-alegrar	使高兴 [alegro, alegras, alegra, alegramos, alegráis, alegran]
-celebrar	庆祝 [celebro, celebras, celebra, celebramos, celebráis, celebran]
+alegrar	使高兴
+alegro	我使高兴
+alegras	你使高兴
+alegra	他/她使高兴
+alegramos	我们使高兴
+alegráis	你们使高兴
+alegran	他们/她们使高兴
+celebrar	庆祝
+celebro	我庆祝
+celebras	你庆祝
+celebra	他/她庆祝
+celebramos	我们庆祝
+celebráis	你们庆祝
+celebran	他们/她们庆祝
 dieciocho	十八
 año	年；岁
 diecinueve	十九
-ver	看；看见（不规则动词） [veo, ves, ve, vemos, veis, ven]
+ver	看；看见（不规则动词）
+veo	我看
+ves	你看
+ve	他/她看
+vemos	我们看
+veis	你们看
+ven	他们/她们看
 poco	一点；少量
 realidad	现实
 en realidad	实际上
 casi	几乎；差不多
 edad	年龄
 restaurante	餐厅；饭店
-entrar	进入 [entro, entras, entra, entramos, entráis, entran]
+entrar	进入
+entro	我进入
+entras	你进入
+entra	他/她进入
+entramos	我们进入
+entráis	你们进入
+entran	他们/她们进入
 allá	那里（较远处）
 libre	空闲的；自由的
 allí	那里
-parecer	觉得；似乎 [parezco, pareces, parece, parecemos, parecéis, parecen]
+parecer	觉得；似乎
+parezco	我觉得
+pareces	你觉得
+parece	他/她觉得
+parecemos	我们觉得
+parecéis	你们觉得
+parecen	他们/她们觉得
 bien	好
 me parece bien	我觉得不错
 camarero	服务员
 carta	菜单；信
-recomendar	推荐 [recomiendo, recomiendas, recomienda, recomendamos, recomendáis, recomiendan]
+recomendar	推荐
+recomiendo	我推荐
+recomiendas	你推荐
+recomienda	他/她推荐
+recomendamos	我们推荐
+recomendáis	你们推荐
+recomiendan	他们/她们推荐
 sopa	汤
 marisco	海鲜
 de segundo	第二道（菜）

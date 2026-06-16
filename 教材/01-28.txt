@@ -2,26 +2,74 @@
 compañero	同学；同伴
 casa	家；房子
 nueve	九
-empezar	开始（e → ie 词根变化动词） [empiezo, empiezas, empieza, empezamos, empezáis, empiezan]
-ayudar	帮助 [ayudo, ayudas, ayuda, ayudamos, ayudáis, ayudan]
+empezar	开始（e → ie 词根变化动词）
+empiezo	我开始
+empiezas	你开始
+empieza	他/她开始
+empezamos	我们开始
+empezáis	你们开始
+empiezan	他们/她们开始
+ayudar	帮助
+ayudo	我帮助
+ayudas	你帮助
+ayuda	他/她帮助
+ayudamos	我们帮助
+ayudáis	你们帮助
+ayudan	他们/她们帮助
 cocina	厨房
 invitado	客人；来宾
-recibir	接收；迎接 [recibo, recibes, recibe, recibimos, recibís, reciben]
-felicitar	祝贺 [felicito, felicitas, felicita, felicitamos, felicitáis, felicitan]
+recibir	接收；迎接
+recibo	我接收
+recibes	你接收
+recibe	他/她接收
+recibimos	我们接收
+recibís	你们接收
+reciben	他们/她们接收
+felicitar	祝贺
+felicito	我祝贺
+felicitas	你祝贺
+felicita	他/她祝贺
+felicitamos	我们祝贺
+felicitáis	你们祝贺
+felicitan	他们/她们祝贺
 muy	非常
 feliz	幸福的；快乐的
 sala	客厅；大厅
 todavía	仍然；还
 pronto	早；很快
-ponerse a + inf.	开始做…… [me pongo, te pones, se pone, nos ponemos, os ponéis, se ponen]
-charlar	聊天 [charlo, charlas, charla, charlamos, charláis, charlan]
-comenzar	开始（e → ie 词根变化动词） [comienzo, comienzas, comienza, comenzamos, comenzáis, comienzan]
+ponerse	a + inf.	开始做……
+me pongo	我a + inf.	开始做……
+te pones	你a + inf.	开始做……
+se pone	他/她a + inf.	开始做……
+nos ponemos	我们a + inf.	开始做……
+os ponéis	你们a + inf.	开始做……
+se ponen	他们/她们a + inf.	开始做……
+charlar	聊天
+charlo	我聊天
+charlas	你聊天
+charla	他/她聊天
+charlamos	我们聊天
+charláis	你们聊天
+charlan	他们/她们聊天
+comenzar	开始（e → ie 词根变化动词）
+comienzo	我开始
+comienzas	你开始
+comienza	他/她开始
+comenzamos	我们开始
+comenzáis	你们开始
+comienzan	他们/她们开始
 almuerzo	午餐
 sabroso	美味的
 mundo	世界
 todo el mundo	所有人；每个人
 copa	酒杯
-brindar	干杯；祝酒 [brindo, brindas, brinda, brindamos, brindáis, brindan]
+brindar	干杯；祝酒
+brindo	我干杯
+brindas	你干杯
+brinda	他/她干杯
+brindamos	我们干杯
+brindáis	你们干杯
+brindan	他们/她们干杯
 
 # 例句
 Hoy es el cumpleaños de Yolanda. Cumple diecinueve años.	今天是约兰达的生日。她满十九岁。

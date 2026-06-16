@@ -1,7 +1,19 @@
 # 生词
 antes de	在……之前
-salir	出去，离开 [salgo, sales, sale, salimos, salís, salen]
-acostarse	睡觉，就寝 [me acuesto, te acuestas, se acuesta, nos acostamos, os acostáis, se acuestan]
+salir	出去，离开
+salgo	我出去
+sales	你出去
+sale	他/她出去
+salimos	我们出去
+salís	你们出去
+salen	他们/她们出去
+acostarse	睡觉，就寝
+me acuesto	我睡觉
+te acuestas	你睡觉
+se acuesta	他/她睡觉
+nos acostamos	我们睡觉
+os acostáis	你们睡觉
+se acuestan	他们/她们睡觉
 
 # 例句
 Yo me levanto a las siete.	我七点起床。

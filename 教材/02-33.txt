@@ -1,5 +1,11 @@
 # 生词
-agradecer	感谢，感激 [agradezco, agradeces, agradece, agradecemos, agradecéis, agradecen]
+agradecer	感谢，感激
+agradezco	我感谢
+agradeces	你感谢
+agradece	他/她感谢
+agradecemos	我们感谢
+agradecéis	你们感谢
+agradecen	他们/她们感谢
 agradecido	感激的，感恩的
 agradecimiento	谢意，感谢
 de ninguna manera	绝对不（能/可能）
@@ -8,41 +14,119 @@ en vez de	不是……而是；代替
 limitarse	只……，局限于（limitarse a + inf.）
 invitación	邀请
 beso	吻，亲吻
-prestar	借给；提供 [presto, prestas, presta, prestamos, prestáis, prestan]
+prestar	借给；提供
+presto	我借给
+prestas	你借给
+presta	他/她借给
+prestamos	我们借给
+prestáis	你们借给
+prestan	他们/她们借给
 confianza	信任
-brindar	提供，给予 [brindo, brindas, brinda, brindamos, brindáis, brindan]
+brindar	提供，给予
+brindo	我提供
+brindas	你提供
+brinda	他/她提供
+brindamos	我们提供
+brindáis	你们提供
+brindan	他们/她们提供
 turista	游客
 excelente	优秀的，极好的
 atención	注意，关照（02-31已出现）
 guía	导游
-apreciar	欣赏，珍视 [aprecio, aprecias, aprecia, apreciamos, apreciáis, aprecian]
+apreciar	欣赏，珍视
+aprecio	我欣赏
+aprecias	你欣赏
+aprecia	他/她欣赏
+apreciamos	我们欣赏
+apreciáis	你们欣赏
+aprecian	他们/她们欣赏
 ayuda	帮助
 anciano	老人，老年人
 expresión	表情，表达
 cara	脸；面孔
-ofrecer	提供，给予 [ofrezco, ofreces, ofrece, ofrecemos, ofrecéis, ofrecen]
+ofrecer	提供，给予
+ofrezco	我提供
+ofreces	你提供
+ofrece	他/她提供
+ofrecemos	我们提供
+ofrecéis	你们提供
+ofrecen	他们/她们提供
 regalo	礼物（02-33新出现，区别于regalar 02-27）
 Wilfredo	威尔弗雷多（人名）
-invitar	邀请 [invito, invitas, invita, invitamos, invitáis, invitan]
+invitar	邀请
+invito	我邀请
+invitas	你邀请
+invita	他/她邀请
+invitamos	我们邀请
+invitáis	你们邀请
+invitan	他们/她们邀请
 consejo	建议
-atravesar	穿过，横穿 [atravieso, atraviesas, atraviesa, atravesamos, atravesáis, atraviesan]
-asustar	吓唬，惊吓 [asusto, asustas, asusta, asustamos, asustáis, asustan]
-asomarse	探身，探头看 [me asomo, te asomas, se asoma, nos asomamos, os asomáis, se asoman]
+atravesar	穿过，横穿
+atravieso	我穿过
+atraviesas	你穿过
+atraviesa	他/她穿过
+atravesamos	我们穿过
+atravesáis	你们穿过
+atraviesan	他们/她们穿过
+asustar	吓唬，惊吓
+asusto	我吓唬
+asustas	你吓唬
+asusta	他/她吓唬
+asustamos	我们吓唬
+asustáis	你们吓唬
+asustan	他们/她们吓唬
+asomarse	探身，探头看
+me asomo	我探身
+te asomas	你探身
+se asoma	他/她探身
+nos asomamos	我们探身
+os asomáis	你们探身
+se asoman	他们/她们探身
 ventana	窗户
 ventanilla	小窗户，车窗
 noche	夜晚
 media	一半；半小时
 mejor	更好的
-dormir	睡觉 [duermo, duermes, duerme, dormimos, dormís, duermen]
-observar	观察，观看 [observo, observas, observa, observamos, observáis, observan]
-esperar	等待，期望 [espero, esperas, espera, esperamos, esperáis, esperan]
+dormir	睡觉
+duermo	我睡觉
+duermes	你睡觉
+duerme	他/她睡觉
+dormimos	我们睡觉
+dormís	你们睡觉
+duermen	他们/她们睡觉
+observar	观察，观看
+observo	我观察
+observas	你观察
+observa	他/她观察
+observamos	我们观察
+observáis	你们观察
+observan	他们/她们观察
+esperar	等待，期望
+espero	我等待
+esperas	你等待
+espera	他/她等待
+esperamos	我们等待
+esperáis	你们等待
+esperan	他们/她们等待
 sonido	声音，发音
 sobrino	侄子，外甥
-esforzarse	努力 [me esfuerzo, te esfuerzas, se esfuerza, nos esforzamos, os esforzáis, se esfuerzan]
+esforzarse	努力
+me esfuerzo	我努力
+te esfuerzas	你努力
+se esfuerza	他/她努力
+nos esforzamos	我们努力
+os esforzáis	你们努力
+se esfuerzan	他们/她们努力
 comportamiento	行为
 chocante	令人震惊的，怪异的
 león	狮子
-abrir	打开 [abro, abres, abre, abrimos, abrís, abren]
+abrir	打开
+abro	我打开
+abres	你打开
+abre	他/她打开
+abrimos	我们打开
+abrís	你们打开
+abren	他们/她们打开
 ojo	眼睛
 animal	动物
 parque	公园
@@ -50,22 +134,64 @@ señor	先生
 hiena	鬣狗
 oscuro	暗的，深的（02-25已出现）
 claro	浅的，亮的（02-21已出现）
-resultar	结果是，原来是 [resulto, resultas, resulta, resultamos, resultáis, resultan]
-amenazar	威胁 [amenazo, amenazas, amenaza, amenazamos, amenazáis, amenazan]
+resultar	结果是，原来是
+resulto	我结果是
+resultas	你结果是
+resulta	他/她结果是
+resultamos	我们结果是
+resultáis	你们结果是
+resultan	他们/她们结果是
+amenazar	威胁
+amenazo	我威胁
+amenazas	你威胁
+amenaza	他/她威胁
+amenazamos	我们威胁
+amenazáis	你们威胁
+amenazan	他们/她们威胁
 camino	道路，路
 decano	系主任，院长
-enfurecerse	发怒，大发雷霆 [me enfurezco, te enfureces, se enfurece, nos enfurecemos, os enfurecéis, se enfurecen]
-elogiar	夸赞，表扬 [elogio, elogias, elogia, elogiamos, elogiáis, elogian]
+enfurecerse	发怒，大发雷霆
+me enfurezco	我发怒
+te enfureces	你发怒
+se enfurece	他/她发怒
+nos enfurecemos	我们发怒
+os enfurecéis	你们发怒
+se enfurecen	他们/她们发怒
+elogiar	夸赞，表扬
+elogio	我夸赞
+elogias	你夸赞
+elogia	他/她夸赞
+elogiamos	我们夸赞
+elogiáis	你们夸赞
+elogian	他们/她们夸赞
 grupo	群，组
 fiera	野兽
-acercarse	靠近 [me acerco, te acercas, se acerca, nos acercamos, os acercáis, se acercan]
+acercarse	靠近
+me acerco	我靠近
+te acercas	你靠近
+se acerca	他/她靠近
+nos acercamos	我们靠近
+os acercáis	你们靠近
+se acercan	他们/她们靠近
 furgoneta	面包车
 algo	有点，稍微
 vehículo	车辆
 suelo	地板，地面
-pedir	请求，要求（01-02已出现） [pido, pides, pide, pedimos, pedís, piden]
+pedir	请求，要求（01-02已出现）
+pido	我请求
+pides	你请求
+pide	他/她请求
+pedimos	我们请求
+pedís	你们请求
+piden	他们/她们请求
 complicado	复杂的
-firmar	签署 [firmo, firmas, firma, firmamos, firmáis, firman]
+firmar	签署
+firmo	我签署
+firmas	你签署
+firma	他/她签署
+firmamos	我们签署
+firmáis	你们签署
+firman	他们/她们签署
 papeles	文件，纸张
 
 # 例句

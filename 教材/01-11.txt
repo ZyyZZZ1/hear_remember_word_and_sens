@@ -6,14 +6,26 @@ pequeña	小的（阴性）
 grande	大的（无阴阳性变化）
 ahí	那里，在那儿
 casa	房子，家
-vivir	住，居住，生活 [vivo, vives, vive, vivimos, vivís, viven]
+vivir	住，居住，生活
+vivo	我住
+vives	你住
+vive	他/她住
+vivimos	我们住
+vivís	你们住
+viven	他们/她们住
 dormitorio	卧室
 familia	家庭
 colegio	学校
 con	和……一起、带有
 habitación	房间
 instituto	学院，高中
-levantarse	起床 [me levanto, te levantas, se levanta, nos levantamos, os levantáis, se levantan]
+levantarse	起床
+me levanto	我起床
+te levantas	你起床
+se levanta	他/她起床
+nos levantamos	我们起床
+os levantáis	你们起床
+se levantan	他们/她们起床
 
 # 例句
 Mucho gusto.	很高兴认识你。

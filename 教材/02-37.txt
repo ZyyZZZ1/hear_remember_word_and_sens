@@ -2,20 +2,50 @@
 natural	自然的
 africano	非洲的
 señora	女士，夫人
-comenzar	开始 [comienzo, comienzas, comienza, comenzamos, comenzáis, comienzan]
+comenzar	开始
+comienzo	我开始
+comienzas	你开始
+comienza	他/她开始
+comenzamos	我们开始
+comenzáis	你们开始
+comienzan	他们/她们开始
 foto	照片
 dentro	在……里面
-detener	停止，停下 [detengo, detienes, detiene, detenemos, detenéis, detienen]
+detener	停止，停下
+detengo	我停止
+detienes	你停止
+detiene	他/她停止
+detenemos	我们停止
+detenéis	你们停止
+detienen	他们/她们停止
 motivo	原因，理由；por ningún motivo 绝不
 voz	声音；en voz alta 大声地
 alto	高的；大声的
 es decir	也就是说
 mucho menos	更不用说，更何况
-soler	习惯于，通常（soler + inf.） [suelo, sueles, suele, solemos, soléis, suelen]
+soler	习惯于，通常（soler + inf.）
+suelo	我习惯于
+sueles	你习惯于
+suele	他/她习惯于
+solemos	我们习惯于
+soléis	你们习惯于
+suelen	他们/她们习惯于
 demasiado	太，过于
-gritar	喊叫，呼喊 [grito, gritas, grita, gritamos, gritáis, gritan]
+gritar	喊叫，呼喊
+grito	我喊叫
+gritas	你喊叫
+grita	他/她喊叫
+gritamos	我们喊叫
+gritáis	你们喊叫
+gritan	他们/她们喊叫
 personal	人员，员工
-proteger	保护 [protejo, proteges, protege, protegemos, protegéis, protegen]
+proteger	保护
+protejo	我保护
+proteges	你保护
+protege	他/她保护
+protegemos	我们保护
+protegéis	你们保护
+protegen	他们/她们保护
 muchacho	男孩，小伙子
 
 # 例句

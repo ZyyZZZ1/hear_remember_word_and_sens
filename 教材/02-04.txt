@@ -3,9 +3,21 @@ cuándo	什么时候（疑问副词，带重音符号）
 mañana	明天
 ocho	八
 instituto	学院，学校
-invitar	邀请 [invito, invitas, invita, invitamos, invitáis, invitan]
+invitar	邀请
+invito	我邀请
+invitas	你邀请
+invita	他/她邀请
+invitamos	我们邀请
+invitáis	你们邀请
+invitan	他们/她们邀请
 mediodía	中午，正午
-organizar	组织，举办 [organizo, organizas, organiza, organizamos, organizáis, organizan]
+organizar	组织，举办
+organizo	我组织
+organizas	你组织
+organiza	他/她组织
+organizamos	我们组织
+organizáis	你们组织
+organizan	他们/她们组织
 
 # 例句
 ¿Cuándo vamos a ir al instituto?	我们什么时候去学校？

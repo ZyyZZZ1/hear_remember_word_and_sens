@@ -1,28 +1,82 @@
 # 生词
 paquete	包裹，包
 verdad	真相，事实；de verdad 真的
-entender	理解，明白 [entiendo, entiendes, entiende, entendemos, entendéis, entienden]
-cenar	吃晚饭 [ceno, cenas, cena, cenamos, cenáis, cenan]
-acercarse	靠近，接近 [me acerco, te acercas, se acerca, nos acercamos, os acercáis, se acercan]
+entender	理解，明白
+entiendo	我理解
+entiendes	你理解
+entiende	他/她理解
+entendemos	我们理解
+entendéis	你们理解
+entienden	他们/她们理解
+cenar	吃晚饭
+ceno	我吃晚饭
+cenas	你吃晚饭
+cena	他/她吃晚饭
+cenamos	我们吃晚饭
+cenáis	你们吃晚饭
+cenan	他们/她们吃晚饭
+acercarse	靠近，接近
+me acerco	我靠近
+te acercas	你靠近
+se acerca	他/她靠近
+nos acercamos	我们靠近
+os acercáis	你们靠近
+se acercan	他们/她们靠近
 demás	其余的，其他的
-descansar	休息 [descanso, descansas, descansa, descansamos, descansáis, descansan]
+descansar	休息
+descanso	我休息
+descansas	你休息
+descansa	他/她休息
+descansamos	我们休息
+descansáis	你们休息
+descansan	他们/她们休息
 asunto	事情，问题
 importante	重要的
 tema	话题，主题
-viajar	旅行 [viajo, viajas, viaja, viajamos, viajáis, viajan]
+viajar	旅行
+viajo	我旅行
+viajas	你旅行
+viaja	他/她旅行
+viajamos	我们旅行
+viajáis	你们旅行
+viajan	他们/她们旅行
 Chile	智利
 mes	月，月份
-acompañar	陪伴，陪同 [acompaño, acompañas, acompaña, acompañamos, acompañáis, acompañan]
+acompañar	陪伴，陪同
+acompaño	我陪伴
+acompañas	你陪伴
+acompaña	他/她陪伴
+acompañamos	我们陪伴
+acompañáis	你们陪伴
+acompañan	他们/她们陪伴
 persona	人
-mejorar	改善，提高 [mejoro, mejoras, mejora, mejoramos, mejoráis, mejoran]
+mejorar	改善，提高
+mejoro	我改善
+mejoras	你改善
+mejora	他/她改善
+mejoramos	我们改善
+mejoráis	你们改善
+mejoran	他们/她们改善
 pronunciación	发音
 cuál	哪一个
 así	这样，如此
 sin	没有，不
 sala	客厅，厅
 sofá	沙发
-almorzar	吃午饭 [almuerzo, almuerzas, almuerza, almorzamos, almorzáis, almuerzan]
-entregar	交出，提交 [entrego, entregas, entrega, entregamos, entregáis, entregan]
+almorzar	吃午饭
+almuerzo	我吃午饭
+almuerzas	你吃午饭
+almuerza	他/她吃午饭
+almorzamos	我们吃午饭
+almorzáis	你们吃午饭
+almuerzan	他们/她们吃午饭
+entregar	交出，提交
+entrego	我交出
+entregas	你交出
+entrega	他/她交出
+entregamos	我们交出
+entregáis	你们交出
+entregan	他们/她们交出
 nota	分数；笔记；便条
 noventa y cinco	九十五
 sesenta y cinco	六十五
@@ -30,9 +84,27 @@ a pesar de	尽管，虽然
 según	根据，按照
 compañero	同学，同事，同伴
 camiseta	T恤衫
-limpiar	打扫，清洁 [limpio, limpias, limpia, limpiamos, limpiáis, limpian]
-ordenar	整理，收拾 [ordeno, ordenas, ordena, ordenamos, ordenáis, ordenan]
-sentarse	坐下 [me siento, te sientas, se sienta, nos sentamos, os sentáis, se sientan]
+limpiar	打扫，清洁
+limpio	我打扫
+limpias	你打扫
+limpia	他/她打扫
+limpiamos	我们打扫
+limpiáis	你们打扫
+limpian	他们/她们打扫
+ordenar	整理，收拾
+ordeno	我整理
+ordenas	你整理
+ordena	他/她整理
+ordenamos	我们整理
+ordenáis	你们整理
+ordenan	他们/她们整理
+sentarse	坐下
+me siento	我坐下
+te sientas	你坐下
+se sienta	他/她坐下
+nos sentamos	我们坐下
+os sentáis	你们坐下
+se sientan	他们/她们坐下
 luego de	在……之后
 rato	一会儿，片刻
 médico	医生
@@ -40,13 +112,31 @@ papel	纸
 facultad	系，学院
 veinticinco	二十五
 minuto	分钟
-regalar	赠送（礼物） [regalo, regalas, regala, regalamos, regaláis, regalan]
+regalar	赠送（礼物）
+regalo	我赠送
+regalas	你赠送
+regala	他/她赠送
+regalamos	我们赠送
+regaláis	你们赠送
+regalan	他们/她们赠送
 juguete	玩具
 almuerzo	午餐
-bastar	足够 [basto, bastas, basta, bastamos, bastáis, bastan]
+bastar	足够
+basto	我足够
+bastas	你足够
+basta	他/她足够
+bastamos	我们足够
+bastáis	你们足够
+bastan	他们/她们足够
 ninguno	没有一个，任何都不
 lugar	地方
-quedarse	留下，待在 [me quedo, te quedas, se queda, nos quedamos, os quedáis, se quedan]
+quedarse	留下，待在
+me quedo	我留下
+te quedas	你留下
+se queda	他/她留下
+nos quedamos	我们留下
+os quedáis	你们留下
+se quedan	他们/她们留下
 
 # 例句
 ¿Dónde dejo los libros?	我把书放哪里？

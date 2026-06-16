@@ -1,8 +1,20 @@
 # 生词
 bienvenido	欢迎
-quedar	剩下，遗留；处于（某状态） [quedo, quedas, queda, quedamos, quedáis, quedan]
+quedar	剩下，遗留；处于（某状态）
+quedo	我剩下
+quedas	你剩下
+queda	他/她剩下
+quedamos	我们剩下
+quedáis	你们剩下
+quedan	他们/她们剩下
 pendiente	待处理的，悬而未决的
-gritar	喊叫，大声叫嚷 [grito, gritas, grita, gritamos, gritáis, gritan]
+gritar	喊叫，大声叫嚷
+grito	我喊叫
+gritas	你喊叫
+grita	他/她喊叫
+gritamos	我们喊叫
+gritáis	你们喊叫
+gritan	他们/她们喊叫
 carrito	小推车，手推车
 equipaje	行李
 junto	一起的，挨着的
@@ -15,7 +27,13 @@ los demás	其他人，其余的人
 señor	先生，男士
 mostrador	柜台，前台
 dueño	主人，物主
-oír	听见，听到 [oigo, oyes, oye, oímos, oís, oyen]
+oír	听见，听到
+oigo	我听见
+oyes	你听见
+oye	他/她听见
+oímos	我们听见
+oís	你们听见
+oyen	他们/她们听见
 pena	遗憾，可惜，难过
 vecino	邻居
 

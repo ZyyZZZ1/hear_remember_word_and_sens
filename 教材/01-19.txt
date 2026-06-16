@@ -2,31 +2,79 @@
 por qué	为什么
 vida	生活，生命
 alegría	高兴，喜悦
-volver	返回；再次（volver a + 动词原形 = 再次做某事） [vuelvo, vuelves, vuelve, volvemos, volvéis, vuelven]
-hacer	做 [hago, haces, hace, hacemos, hacéis, hacen]
+volver	返回；再次（volver a + 动词原形 = 再次做某事）
+vuelvo	我返回
+vuelves	你返回
+vuelve	他/她返回
+volvemos	我们返回
+volvéis	你们返回
+vuelven	他们/她们返回
+hacer	做
+hago	我做
+haces	你做
+hace	他/她做
+hacemos	我们做
+hacéis	你们做
+hacen	他们/她们做
 aquí	这里
 medio	半，一半（阳性形式；阴性形式 media 见 01-18）
 doctorado	博士学位
 sin	没有
 realidad	现实；en realidad = 实际上
 hay	有（haber 的无人称形式）
-decir	说 [digo, dices, dice, decimos, decís, dicen]
+decir	说
+digo	我说
+dices	你说
+dice	他/她说
+decimos	我们说
+decís	你们说
+dicen	他们/她们说
 mismo	相同的；lo mismo = 同样的事
 baño	洗澡（名词）；浴室
 comedor	食堂，饭厅
-comenzar	开始 [comienzo, comienzas, comienza, comenzamos, comenzáis, comienzan]
+comenzar	开始
+comienzo	我开始
+comienzas	你开始
+comienza	他/她开始
+comenzamos	我们开始
+comenzáis	你们开始
+comienzan	他们/她们开始
 hasta	直到
-leer	阅读 [leo, lees, lee, leemos, leéis, leen]
-repasar	复习 [repaso, repasas, repasa, repasamos, repasáis, repasan]
+leer	阅读
+leo	我阅读
+lees	你阅读
+lee	他/她阅读
+leemos	我们阅读
+leéis	你们阅读
+leen	他们/她们阅读
+repasar	复习
+repaso	我复习
+repasas	你复习
+repasa	他/她复习
+repasamos	我们复习
+repasáis	你们复习
+repasan	他们/她们复习
 lección	课
-prepararse	准备 [me preparo, te preparas, se prepara, nos preparamos, os preparáis, se preparan]
+prepararse	准备
+me preparo	我准备
+te preparas	你准备
+se prepara	他/她准备
+nos preparamos	我们准备
+os preparáis	你们准备
+se preparan	他们/她们准备
 nuevo	新的
 metro	地铁
 real	真正的，实际的
 mediodía	中午
 almuerzo	午餐
 campus	校园
-quedarse	留下，待在 [me quedo, te quedas, se queda, nos quedamos, os quedáis, se quedan]
+quedarse	留下，待在
+me quedo	我留下
+te quedas	你留下
+se queda	他/她留下
+nos quedamos	我们留下
+os quedáis	你们留下
+se quedan	他们/她们留下
 biblioteca	图书馆
 casi	几乎
 

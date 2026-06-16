@@ -1,9 +1,21 @@
 # 生词
 hábito	习惯
-variar	变化，不同 [varío, varías, varía, variamos, variáis, varían]
+variar	变化，不同
+varío	我变化
+varías	你变化
+varía	他/她变化
+variamos	我们变化
+variáis	你们变化
+varían	他们/她们变化
 cultura	文化
 pueblo	人民；村镇
-considerar	认为，考虑 [considero, consideras, considera, consideramos, consideráis, consideran]
+considerar	认为，考虑
+considero	我认为
+consideras	你认为
+considera	他/她认为
+consideramos	我们认为
+consideráis	你们认为
+consideran	他们/她们认为
 normal	正常的
 España	西班牙
 de buenas a primeras	突然地，冷不防地
@@ -12,13 +24,31 @@ casado	已婚的
 aspecto	外表，方面
 nunca	从不，永不
 edad	年龄
-telefonear	打电话 [telefoneo, telefoneas, telefonea, telefoneamos, telefoneáis, telefonean]
+telefonear	打电话
+telefoneo	我打电话
+telefoneas	你打电话
+telefonea	他/她打电话
+telefoneamos	我们打电话
+telefoneáis	你们打电话
+telefonean	他们/她们打电话
 antes de	在……之前
 ocho	八
 once	十一
 sencillamente	简单地，仅仅
-olvidar	忘记 [olvido, olvidas, olvida, olvidamos, olvidáis, olvidan]
-evitar	避免 [evito, evitas, evita, evitamos, evitáis, evitan]
+olvidar	忘记
+olvido	我忘记
+olvidas	你忘记
+olvida	他/她忘记
+olvidamos	我们忘记
+olvidáis	你们忘记
+olvidan	他们/她们忘记
+evitar	避免
+evito	我避免
+evitas	你避免
+evita	他/她避免
+evitamos	我们避免
+evitáis	你们避免
+evitan	他们/她们避免
 enseguida	马上，立刻
 
 # 例句

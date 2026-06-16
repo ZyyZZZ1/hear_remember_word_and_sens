@@ -1,19 +1,61 @@
 # 生词
-comprar	买 [compro, compras, compra, compramos, compráis, compran]
-querer	想要；爱 [quiero, quieres, quiere, queremos, queréis, quieren]
+comprar	买
+compro	我买
+compras	你买
+compra	他/她买
+compramos	我们买
+compráis	你们买
+compran	他们/她们买
+querer	想要；爱
+quiero	我想要
+quieres	你想要
+quiere	他/她想要
+queremos	我们想要
+queréis	你们想要
+quieren	他们/她们想要
 mañana	明天
-invitar	邀请 [invito, invitas, invita, invitamos, invitáis, invitan]
-cenar	吃晚饭 [ceno, cenas, cena, cenamos, cenáis, cenan]
+invitar	邀请
+invito	我邀请
+invitas	你邀请
+invita	他/她邀请
+invitamos	我们邀请
+invitáis	你们邀请
+invitan	他们/她们邀请
+cenar	吃晚饭
+ceno	我吃晚饭
+cenas	你吃晚饭
+cena	他/她吃晚饭
+cenamos	我们吃晚饭
+cenáis	你们吃晚饭
+cenan	他们/她们吃晚饭
 restaurante	餐厅
 fiesta	聚会
 hoy	今天
 compañero	同伴，同学
 lo	他/它（宾格代词，阳性单数；注意区别于定冠词 el）
-ayudar	帮助 [ayudo, ayudas, ayuda, ayudamos, ayudáis, ayudan]
-recibir	迎接，接收 [recibo, recibes, recibe, recibimos, recibís, reciben]
+ayudar	帮助
+ayudo	我帮助
+ayudas	你帮助
+ayuda	他/她帮助
+ayudamos	我们帮助
+ayudáis	你们帮助
+ayudan	他们/她们帮助
+recibir	迎接，接收
+recibo	我迎接
+recibes	你迎接
+recibe	他/她迎接
+recibimos	我们迎接
+recibís	你们迎接
+reciben	他们/她们迎接
 puerta	门
 cumpleaños	生日
-limpiar	打扫，清洁 [limpio, limpias, limpia, limpiamos, limpiáis, limpian]
+limpiar	打扫，清洁
+limpio	我打扫
+limpias	你打扫
+limpia	他/她打扫
+limpiamos	我们打扫
+limpiáis	你们打扫
+limpian	他们/她们打扫
 allá	那里（较远）
 
 # 例句

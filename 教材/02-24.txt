@@ -1,12 +1,30 @@
 # 生词
 secretaria	女秘书
-oír	听见 [oigo, oyes, oye, oímos, oís, oyen]
+oír	听见
+oigo	我听见
+oyes	你听见
+oye	他/她听见
+oímos	我们听见
+oís	你们听见
+oyen	他们/她们听见
 novia	女朋友
 hora	小时，时间，时刻
 cuándo	什么时候（疑问词）
-llegar	到达 [llego, llegas, llega, llegamos, llegáis, llegan]
+llegar	到达
+llego	我到达
+llegas	你到达
+llega	他/她到达
+llegamos	我们到达
+llegáis	你们到达
+llegan	他们/她们到达
 invitado	客人，来宾
-recibir	收到；迎接，接待 [recibo, recibes, recibe, recibimos, recibís, reciben]
+recibir	收到；迎接，接待
+recibo	我收到
+recibes	你收到
+recibe	他/她收到
+recibimos	我们收到
+recibís	你们收到
+reciben	他们/她们收到
 
 # 例句
 La secretaria dice que el gerente no está en la oficina.	女秘书说经理不在办公室。

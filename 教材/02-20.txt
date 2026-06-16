@@ -1,12 +1,30 @@
 # 生词
-volver	返回；重新（volver a + inf. 重新做……） [vuelvo, vuelves, vuelve, volvemos, volvéis, vuelven]
+volver	返回；重新（volver a + inf. 重新做……）
+vuelvo	我返回
+vuelves	你返回
+vuelve	他/她返回
+volvemos	我们返回
+volvéis	你们返回
+vuelven	他们/她们返回
 volver a + inf.	重新做……，再一次做……
 por teléfono	通过电话
 teléfono	电话
 niño	小孩，孩子
-decir	说，告诉 [digo, dices, dice, decimos, decís, dicen]
+decir	说，告诉
+digo	我说
+dices	你说
+dice	他/她说
+decimos	我们说
+decís	你们说
+dicen	他们/她们说
 abuela	祖母，外婆
-querer	想要；爱 [quiero, quieres, quiere, queremos, queréis, quieren]
+querer	想要；爱
+quiero	我想要
+quieres	你想要
+quiere	他/她想要
+queremos	我们想要
+queréis	你们想要
+quieren	他们/她们想要
 
 # 例句
 ¿Volvemos a llamar a Luis por teléfono?	要不要再给路易斯打个电话？

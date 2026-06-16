@@ -1,17 +1,95 @@
 # 生词
-hablar	说话 [hablo, hablas, habla, hablamos, habláis, hablan]
-cantar	唱 [canto, cantas, canta, cantamos, cantáis, cantan]
-estudiar	学习 [estudio, estudias, estudia, estudiamos, estudiáis, estudian]
-comer	吃 [como, comes, come, comemos, coméis, comen]
-beber	喝 [bebo, bebes, bebe, bebemos, bebéis, beben]
-cumplir	完成 [cumplo, cumples, cumple, cumplimos, cumplís, cumplen]
-subir	上升 [subo, subes, sube, subimos, subís, suben]
-estar	处于，在 [estoy, estás, está, estamos, estáis, están]
-tener	有 [tengo, tienes, tiene, tenemos, tenéis, tienen]
-poder	能够 [puedo, puedes, puede, podemos, podéis, pueden]
-poner	放 [pongo, pones, pone, ponemos, ponéis, ponen]
-venir	来 [vengo, vienes, viene, venimos, venís, vienen]
-ir	去 [voy, vas, va, vamos, vais, van]
+hablar	说话
+hablo	我说话
+hablas	你说话
+habla	他/她说话
+hablamos	我们说话
+habláis	你们说话
+hablan	他们/她们说话
+cantar	唱
+canto	我唱
+cantas	你唱
+canta	他/她唱
+cantamos	我们唱
+cantáis	你们唱
+cantan	他们/她们唱
+estudiar	学习
+estudio	我学习
+estudias	你学习
+estudia	他/她学习
+estudiamos	我们学习
+estudiáis	你们学习
+estudian	他们/她们学习
+comer	吃
+como	我吃
+comes	你吃
+come	他/她吃
+comemos	我们吃
+coméis	你们吃
+comen	他们/她们吃
+beber	喝
+bebo	我喝
+bebes	你喝
+bebe	他/她喝
+bebemos	我们喝
+bebéis	你们喝
+beben	他们/她们喝
+cumplir	完成
+cumplo	我完成
+cumples	你完成
+cumple	他/她完成
+cumplimos	我们完成
+cumplís	你们完成
+cumplen	他们/她们完成
+subir	上升
+subo	我上升
+subes	你上升
+sube	他/她上升
+subimos	我们上升
+subís	你们上升
+suben	他们/她们上升
+estar	处于，在
+estoy	我处于
+estás	你处于
+está	他/她处于
+estamos	我们处于
+estáis	你们处于
+están	他们/她们处于
+tener	有
+tengo	我有
+tienes	你有
+tiene	他/她有
+tenemos	我们有
+tenéis	你们有
+tienen	他们/她们有
+poder	能够
+puedo	我能够
+puedes	你能够
+puede	他/她能够
+podemos	我们能够
+podéis	你们能够
+pueden	他们/她们能够
+poner	放
+pongo	我放
+pones	你放
+pone	他/她放
+ponemos	我们放
+ponéis	你们放
+ponen	他们/她们放
+venir	来
+vengo	我来
+vienes	你来
+viene	他/她来
+venimos	我们来
+venís	你们来
+vienen	他们/她们来
+ir	去
+voy	我去
+vas	你去
+va	他/她去
+vamos	我们去
+vais	你们去
+van	他们/她们去
 mucho 很，很多
 qué 什么（疑问词）
 verbo 动词
@@ -20,7 +98,13 @@ libro 书
 mano 手
 un 一个（不定冠词，阳性单数）
 en 在……里；在……上
-conocer	认识 [conozco, conoces, conoce, conocemos, conocéis, conocen]
+conocer	认识
+conozco	我认识
+conoces	你认识
+conoce	他/她认识
+conocemos	我们认识
+conocéis	你们认识
+conocen	他们/她们认识
 tener clase de español 有西班牙语课
 tener novio 有男朋友
 en la mano 在手里

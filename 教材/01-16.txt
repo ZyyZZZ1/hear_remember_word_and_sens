@@ -15,7 +15,13 @@ residencia	宿舍
 verano	夏天
 teléfono	电话
 año	年
-organizar	组织，举办 [organizo, organizas, organiza, organizamos, organizáis, organizan]
+organizar	组织，举办
+organizo	我组织
+organizas	你组织
+organiza	他/她组织
+organizamos	我们组织
+organizáis	你们组织
+organizan	他们/她们组织
 señor	先生
 
 # 例句

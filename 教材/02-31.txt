@@ -8,27 +8,69 @@ educado	有教养的，有礼貌的
 aplicado	用功的，勤奋的
 seguramente	肯定地，大概
 defecto	缺点，缺陷
-precipitarse	匆忙，仓促行事 [me precipito, te precipitas, se precipita, nos precipitamos, os precipitáis, se precipitan]
+precipitarse	匆忙，仓促行事
+me precipito	我匆忙
+te precipitas	你匆忙
+se precipita	他/她匆忙
+nos precipitamos	我们匆忙
+os precipitáis	你们匆忙
+se precipitan	他们/她们匆忙
 poco a poco	一点一点地，慢慢地
 sobre todo	尤其，特别
 relacionado	相关的，有关的
 franqueza	坦率，直率
 interés	兴趣，利益
-comprender	理解，明白 [comprendo, comprendes, comprende, comprendemos, comprendéis, comprenden]
+comprender	理解，明白
+comprendo	我理解
+comprendes	你理解
+comprende	他/她理解
+comprendemos	我们理解
+comprendéis	你们理解
+comprenden	他们/她们理解
 acaso	难道，或许
 mal	坏地，不好地
-pronunciar	发音 [pronuncio, pronuncias, pronuncia, pronunciamos, pronunciáis, pronuncian]
-significar	意味着，意思是 [significo, significas, significa, significamos, significáis, significan]
+pronunciar	发音
+pronuncio	我发音
+pronuncias	你发音
+pronuncia	他/她发音
+pronunciamos	我们发音
+pronunciáis	你们发音
+pronuncian	他们/她们发音
+significar	意味着，意思是
+significo	我意味着
+significas	你意味着
+significa	他/她意味着
+significamos	我们意味着
+significáis	你们意味着
+significan	他们/她们意味着
 por ejemplo	例如
-confundir	混淆 [confundo, confundes, confunde, confundimos, confundís, confunden]
+confundir	混淆
+confundo	我混淆
+confundes	你混淆
+confunde	他/她混淆
+confundimos	我们混淆
+confundís	你们混淆
+confunden	他们/她们混淆
 constantemente	不断地，经常地
 paso	步伐；经过
 vaso	杯子，玻璃杯
 cata	品尝
 gata	母猫
 total	总计，全部
-dotar	赋予，配备 [doto, dotas, dota, dotamos, dotáis, dotan]
-causar	引起，造成 [causo, causas, causa, causamos, causáis, causan]
+dotar	赋予，配备
+doto	我赋予
+dotas	你赋予
+dota	他/她赋予
+dotamos	我们赋予
+dotáis	你们赋予
+dotan	他们/她们赋予
+causar	引起，造成
+causo	我引起
+causas	你引起
+causa	他/她引起
+causamos	我们引起
+causáis	你们引起
+causan	他们/她们引起
 confusión	混淆，混乱
 nadie	没有人，无人
 de modo que	因此，所以

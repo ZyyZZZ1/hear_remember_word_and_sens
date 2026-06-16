@@ -1,9 +1,27 @@
 # 生词
 ruido	噪音，声响
-buscar	寻找，找 [busco, buscas, busca, buscamos, buscáis, buscan]
+buscar	寻找，找
+busco	我寻找
+buscas	你寻找
+busca	他/她寻找
+buscamos	我们寻找
+buscáis	你们寻找
+buscan	他们/她们寻找
 cuento	故事
-molestar	打扰，烦扰 [molesto, molestas, molesta, molestamos, molestáis, molestan]
-encontrar	找到；encontrarse 感觉，处于（健康状态） [encuentro, encuentras, encuentra, encontramos, encontráis, encuentran]
+molestar	打扰，烦扰
+molesto	我打扰
+molestas	你打扰
+molesta	他/她打扰
+molestamos	我们打扰
+molestáis	你们打扰
+molestan	他们/她们打扰
+encontrar	找到；encontrarse 感觉，处于（健康状态）
+encuentro	我找到
+encuentras	你找到
+encuentra	他/她找到
+encontramos	我们找到
+encontráis	你们找到
+encuentran	他们/她们找到
 calle	街道
 peligroso	危险的
 solución	解决方案
@@ -13,11 +31,29 @@ televisor	电视机
 volumen	音量；体积
 mundo	世界；todo el mundo 所有人
 jardín	花园
-regar	浇水，灌溉 [riego, riegas, riega, regamos, regáis, riegan]
+regar	浇水，灌溉
+riego	我浇水
+riegas	你浇水
+riega	他/她浇水
+regamos	我们浇水
+regáis	你们浇水
+riegan	他们/她们浇水
 barro	泥，泥巴
 papá	爸爸
-barrer	打扫，扫 [barro, barres, barre, barremos, barréis, barren]
-estorbar	妨碍，挡路 [estorbo, estorbas, estorba, estorbamos, estorbáis, estorban]
+barrer	打扫，扫
+barro	我打扫
+barres	你打扫
+barre	他/她打扫
+barremos	我们打扫
+barréis	你们打扫
+barren	他们/她们打扫
+estorbar	妨碍，挡路
+estorbo	我妨碍
+estorbas	你妨碍
+estorba	他/她妨碍
+estorbamos	我们妨碍
+estorbáis	你们妨碍
+estorban	他们/她们妨碍
 
 # 例句
 Niños, no hagáis tanto ruido; la gente mayor está descansando.	孩子们，别这么吵；老人们正在休息。

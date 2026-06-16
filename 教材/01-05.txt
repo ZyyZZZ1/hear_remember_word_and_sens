@@ -3,7 +3,13 @@ Ana 安娜（人名）
 Susana 苏珊娜（人名）
 Tomás 托马斯（人名）
 cómo 怎么（疑问词）
-llamarse	叫，名叫 [me llamo, te llamas, se llama, nos llamamos, os llamáis, se llaman]
+llamarse	叫，名叫
+me llamo	我叫
+te llamas	你叫
+se llama	他/她叫
+nos llamamos	我们叫
+os llamáis	你们叫
+se llaman	他们/她们叫
 me 我（宾格/与格代词）
 te 你（宾格/与格代词）
 se 他/她/您（自复代词，第三人称）
@@ -21,7 +27,13 @@ chileno 智利的；智利人（阳性）
 chilena 智利的；智利人（阴性）
 de 的；来自（前置词）
 encantado 很高兴的
-conocer	认识，了解 [conozco, conoces, conoce, conocemos, conocéis, conocen]
+conocer	认识，了解
+conozco	我认识
+conoces	你认识
+conoce	他/她认识
+conocemos	我们认识
+conocéis	你们认识
+conocen	他们/她们认识
 mucho gusto 很高兴（认识你）
 mucho 非常，很多
 gusto 高兴，愉快

@@ -1,44 +1,134 @@
 # 生词
-acabar	结束，完成 [acabo, acabas, acaba, acabamos, acabáis, acaban]
+acabar	结束，完成
+acabo	我结束
+acabas	你结束
+acaba	他/她结束
+acabamos	我们结束
+acabáis	你们结束
+acaban	他们/她们结束
 acabar de	刚刚（做完某事）
-despedirse	告别，告辞 [me despido, te despides, se despide, nos despedimos, os despedís, se despiden]
+despedirse	告别，告辞
+me despido	我告别
+te despides	你告别
+se despide	他/她告别
+nos despedimos	我们告别
+os despedís	你们告别
+se despiden	他们/她们告别
 invitado	客人，受邀者
-encontrar	发现，遇到；觉得 [encuentro, encuentras, encuentra, encontramos, encontráis, encuentran]
+encontrar	发现，遇到；觉得
+encuentro	我发现
+encuentras	你发现
+encuentra	他/她发现
+encontramos	我们发现
+encontráis	你们发现
+encuentran	他们/她们发现
 desarreglado	凌乱的，不整齐的
 suciedad	肮脏，污垢
 ni	也不，也没有
 desorden	混乱，杂乱
-ponerse a	开始（做某事） [me pongo, te pones, se pone, nos ponemos, os ponéis, se ponen]
-retirar	撤去，拿走 [retiro, retiras, retira, retiramos, retiráis, retiran]
+ponerse	a	开始（做某事）
+me pongo	我a	开始
+te pones	你a	开始
+se pone	他/她a	开始
+nos ponemos	我们a	开始
+os ponéis	你们a	开始
+se ponen	他们/她们a	开始
+retirar	撤去，拿走
+retiro	我撤去
+retiras	你撤去
+retira	他/她撤去
+retiramos	我们撤去
+retiráis	你们撤去
+retiran	他们/她们撤去
 vaso	杯子
 copa	高脚杯，酒杯
-lavar	洗，清洗 [lavo, lavas, lava, lavamos, laváis, lavan]
+lavar	洗，清洗
+lavo	我洗
+lavas	你洗
+lava	他/她洗
+lavamos	我们洗
+laváis	你们洗
+lavan	他们/她们洗
 más	更，更多
 periódico	报纸
 revista	杂志
 estantería	书架，搁架
 trapo	抹布
 mojado	湿的，潮湿的
-fregar	擦洗，拖（地） [friego, friegas, friega, fregamos, fregáis, friegan]
+fregar	擦洗，拖（地）
+friego	我擦洗
+friegas	你擦洗
+friega	他/她擦洗
+fregamos	我们擦洗
+fregáis	你们擦洗
+friegan	他们/她们擦洗
 silla	椅子
-terminar	结束，完成 [termino, terminas, termina, terminamos, termináis, terminan]
+terminar	结束，完成
+termino	我结束
+terminas	你结束
+termina	他/她结束
+terminamos	我们结束
+termináis	你们结束
+terminan	他们/她们结束
 escoba	扫帚
-comenzar	开始 [comienzo, comienzas, comienza, comenzamos, comenzáis, comienzan]
-barrer	扫，打扫 [barro, barres, barre, barremos, barréis, barren]
+comenzar	开始
+comienzo	我开始
+comienzas	你开始
+comienza	他/她开始
+comenzamos	我们开始
+comenzáis	你们开始
+comienzan	他们/她们开始
+barrer	扫，打扫
+barro	我扫
+barres	你扫
+barre	他/她扫
+barremos	我们扫
+barréis	你们扫
+barren	他们/她们扫
 por último	最后
-sacar	取出，拿出 [saco, sacas, saca, sacamos, sacáis, sacan]
+sacar	取出，拿出
+saco	我取出
+sacas	你取出
+saca	他/她取出
+sacamos	我们取出
+sacáis	你们取出
+sacan	他们/她们取出
 fregona	拖把
-pasar	经过，通过，拖（地） [paso, pasas, pasa, pasamos, pasáis, pasan]
+pasar	经过，通过，拖（地）
+paso	我经过
+pasas	你经过
+pasa	他/她经过
+pasamos	我们经过
+pasáis	你们经过
+pasan	他们/她们经过
 suelo	地面，地板
-ver	看见，看到 [veo, ves, ve, vemos, veis, ven]
+ver	看见，看到
+veo	我看见
+ves	你看见
+ve	他/她看见
+vemos	我们看见
+veis	你们看见
+ven	他们/她们看见
 limpio	干净的，清洁的
 arreglado	整齐的，收拾好的
-decir	说，告诉 [digo, dices, dice, decimos, decís, dicen]
+decir	说，告诉
+digo	我说
+dices	你说
+dice	他/她说
+decimos	我们说
+decís	你们说
+dicen	他们/她们说
 justo	恰好，正好
 momento	时刻，时候
 alguien	某人，有人
 puerta	门
-tener que	必须，不得不（做某事） [tengo, tienes, tiene, tenemos, tenéis, tienen]
+tener	que	必须，不得不（做某事）
+tengo	我que	必须
+tienes	你que	必须
+tiene	他/她que	必须
+tenemos	我们que	必须
+tenéis	你们que	必须
+tienen	他们/她们que	必须
 
 # 例句
 Beatriz acaba de tener una fiesta con sus amigos.	贝亚特丽斯刚和朋友们举行了一个聚会。

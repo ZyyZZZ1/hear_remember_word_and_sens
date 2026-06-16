@@ -1,9 +1,33 @@
 # 生词
-dar	给，给予 [doy, das, da, damos, dais, dan]
-pagar	支付，付款 [pago, pagas, paga, pagamos, pagáis, pagan]
+dar	给，给予
+doy	我给
+das	你给
+da	他/她给
+damos	我们给
+dais	你们给
+dan	他们/她们给
+pagar	支付，付款
+pago	我支付
+pagas	你支付
+paga	他/她支付
+pagamos	我们支付
+pagáis	你们支付
+pagan	他们/她们支付
 señora	女士，太太，夫人
-prestar	借出，借给 [presto, prestas, presta, prestamos, prestáis, prestan]
-traer	带来，拿来 [traigo, traes, trae, traemos, traéis, traen]
+prestar	借出，借给
+presto	我借出
+prestas	你借出
+presta	他/她借出
+prestamos	我们借出
+prestáis	你们借出
+prestan	他们/她们借出
+traer	带来，拿来
+traigo	我带来
+traes	你带来
+trae	他/她带来
+traemos	我们带来
+traéis	你们带来
+traen	他们/她们带来
 
 # 例句
 Enseño español a estudiantes chinos.	我教中国学生西班牙语。

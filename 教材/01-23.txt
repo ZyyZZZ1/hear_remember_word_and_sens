@@ -11,8 +11,20 @@ once	十一
 veinticinco	二十五
 cincuenta	五十
 en punto	整点；……点整
-decir	说；告诉 [digo, dices, dice, decimos, decís, dicen]
-acostarse	上床睡觉；躺下 [me acuesto, te acuestas, se acuesta, nos acostamos, os acostáis, se acuestan]
+decir	说；告诉
+digo	我说
+dices	你说
+dice	他/她说
+decimos	我们说
+decís	你们说
+dicen	他们/她们说
+acostarse	上床睡觉；躺下
+me acuesto	我上床睡觉
+te acuestas	你上床睡觉
+se acuesta	他/她上床睡觉
+nos acostamos	我们上床睡觉
+os acostáis	你们上床睡觉
+se acuestan	他们/她们上床睡觉
 a qué hora	在几点（询问具体时刻）
 
 # 例句

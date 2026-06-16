@@ -3,13 +3,49 @@ cuando	当……的时候（时间连接词，无重音）
 hambre	饿，饥饿
 casa	房子，家
 sucio	脏的，肮脏的
-limpiar	打扫，清洁 [limpio, limpias, limpia, limpiamos, limpiáis, limpian]
-descansar	休息 [descanso, descansas, descansa, descansamos, descansáis, descansan]
-saber	知道，得知 [sé, sabes, sabe, sabemos, sabéis, saben]
-sentir	感觉，感到 [siento, sientes, siente, sentimos, sentís, sienten]
+limpiar	打扫，清洁
+limpio	我打扫
+limpias	你打扫
+limpia	他/她打扫
+limpiamos	我们打扫
+limpiáis	你们打扫
+limpian	他们/她们打扫
+descansar	休息
+descanso	我休息
+descansas	你休息
+descansa	他/她休息
+descansamos	我们休息
+descansáis	你们休息
+descansan	他们/她们休息
+saber	知道，得知
+sé	我知道
+sabes	你知道
+sabe	他/她知道
+sabemos	我们知道
+sabéis	你们知道
+saben	他们/她们知道
+sentir	感觉，感到
+siento	我感觉
+sientes	你感觉
+siente	他/她感觉
+sentimos	我们感觉
+sentís	你们感觉
+sienten	他们/她们感觉
 muy	很，非常
-entrar	进入 [entro, entras, entra, entramos, entráis, entran]
-sentarse	坐下 [me siento, te sientas, se sienta, nos sentamos, os sentáis, se sientan]
+entrar	进入
+entro	我进入
+entras	你进入
+entra	他/她进入
+entramos	我们进入
+entráis	你们进入
+entran	他们/她们进入
+sentarse	坐下
+me siento	我坐下
+te sientas	你坐下
+se sienta	他/她坐下
+nos sentamos	我们坐下
+os sentáis	你们坐下
+se sientan	他们/她们坐下
 sofá	沙发
 dolor	疼痛，痛
 

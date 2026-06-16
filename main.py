@@ -111,9 +111,9 @@ TEXTBOOK = None   # 当前加载的教材数据：{"name": ..., "vocab": [...], 
 def parse_textbook(filepath):
     """解析教材文件，返回 {name, vocab, sentences, grammar}"""
     name = os.path.splitext(os.path.basename(filepath))[0]
-    result = {"name": name, "vocab": [], "sentences": [], "grammar": []}
+    result = {"name": name, "vocab": [], "sentences": [], "grammar": [], "vocab_note": ""}
 
-    with open(filepath, "r", encoding="utf-8") as f:
+    with open(filepath, "r", encoding="utf-8-sig") as f:
         lines = f.readlines()
 
     section = None
@@ -147,6 +147,12 @@ def parse_textbook(filepath):
                 parts = line.split(None, 1)
                 if len(parts) == 2:
                     result["vocab"].append({"es": parts[0], "zh": parts[1]})
+                else:
+                    # 非生词行（如"（本课无新增生词）"）→ 保存为备注
+                    if result["vocab_note"]:
+                        result["vocab_note"] += " " + line
+                    else:
+                        result["vocab_note"] = line
 
         elif section == "sentence":
             # 格式：西语句子 中文翻译
@@ -251,6 +257,14 @@ def _build_favorites_textbook():
     }
 
 
+def _vocab_display(tb):
+    """生词展示文本：0个生词时若有备注则用备注替代"""
+    n = len(tb["vocab"])
+    if n == 0 and tb.get("vocab_note"):
+        return tb["vocab_note"]
+    return f"{n}个生词"
+
+
 def select_textbook():
     """教材选择菜单，返回用户选择的教材或 None（退出）"""
     textbooks = scan_textbooks()
@@ -266,7 +280,8 @@ def select_textbook():
 
     if len(textbooks) == 1 and not has_fav:
         tb = textbooks[0]
-        print(f"\n自动加载教材：{tb['name']}（{len(tb['vocab'])}个生词 / {len(tb['sentences'])}条例句 / {len(tb['grammar'])}个语法点）\n")
+        vocab_str = _vocab_display(tb)
+        print(f"\n自动加载教材：{tb['name']}（{vocab_str} / {len(tb['sentences'])}条例句 / {len(tb['grammar'])}个语法点）\n")
         return tb
 
     # 教材选择
@@ -279,7 +294,8 @@ def select_textbook():
     for i, tb in enumerate(textbooks, 1):
         n_grammar = len(tb["grammar"])
         grammar_str = f"{n_grammar}个语法点" if n_grammar > 0 else "无语法点"
-        print(f"  [{i}] {tb['name']}（{len(tb['vocab'])}个生词 / {len(tb['sentences'])}条例句 / {grammar_str}）")
+        vocab_str = _vocab_display(tb)
+        print(f"  [{i}] {tb['name']}（{vocab_str} / {len(tb['sentences'])}条例句 / {grammar_str}）")
     print("\n  [Q] 退出")
     print("=" * 36)
 
@@ -867,73 +883,79 @@ def _toggle_favorite(es_text):
 
 # -- 句子实词收藏 ------------------------------------------
 
-# 西班牙语虚词：冠词、介词、连词、代词、常见小品词
-_SPANISH_STOP_WORDS = {
-    'el', 'la', 'los', 'las', 'un', 'una', 'unos', 'unas', 'lo', 'al', 'del',
-    'a', 'de', 'en', 'por', 'para', 'con', 'sin', 'sobre', 'entre', 'hacia',
-    'hasta', 'desde', 'según', 'contra', 'durante', 'tras', 'ante', 'bajo',
-    'y', 'e', 'o', 'u', 'ni', 'que', 'pero', 'sino', 'aunque', 'porque', 'pues', 'si',
-    'yo', 'tú', 'él', 'ella', 'nosotros', 'nosotras', 'vosotros', 'vosotras',
-    'ellos', 'ellas', 'me', 'te', 'se', 'nos', 'os', 'le', 'les',
-    'mi', 'mis', 'tu', 'tus', 'su', 'sus',
-    'no', 'ya', 'sí', 'más', 'menos', 'muy', 'tan', 'cada',
-    'como', 'cuando', 'donde', 'quien', 'quienes', 'cual', 'cuales',
-    'este', 'esta', 'estos', 'estas', 'ese', 'esa', 'esos', 'esas',
-    'aquel', 'aquella', 'aquellos', 'aquellas', 'esto', 'eso', 'aquello',
-    'bien', 'mal', 'así', 'allí', 'allá', 'aquí', 'ahora', 'luego',
-    'después', 'antes', 'siempre', 'nunca', 'también', 'tampoco',
-    'todo', 'toda', 'todos', 'todas', 'mucho', 'mucha', 'muchos', 'muchas',
-    'poco', 'poca', 'pocos', 'pocas', 'otro', 'otra', 'otros', 'otras',
-    'qué', 'cuál', 'cuáles', 'quién', 'quiénes', 'cómo', 'cuándo', 'dónde',
-    'cuánto', 'cuánta', 'cuántos', 'cuántas',
-    'hay', 'ser', 'estar', 'haber',
-}
+_ALL_VOCAB = None  # 全部教材词汇缓存（含屈折变化展开）
 
 
-def _extract_content_words(sentences):
-    """从句子列表中提取实词：去虚词、去重、去已收藏，返回排序列表"""
+def _vocab_morph_expand(word):
+    """将教材词汇展开为多种词形，存入索引。"""
+    forms = {word}
+    # 代词式动词：bañarse → 额外存 bañar（去-se）
+    if word.endswith('se') and len(word) > 3:
+        forms.add(word[:-2])
+    # 动词：bañar → 额外存词干 bañ（匹配变位形 baña, baño, bañe 等）
+    for v_end in ('ar', 'er', 'ir'):
+        if word.endswith(v_end) and len(word) > len(v_end) + 1:
+            forms.add(word[:-len(v_end)])
+    # 名词/形容词复数还原：hermanos→hermano, dientes→diente, papeles→papel
+    if word.endswith('s') and len(word) > 3:
+        forms.add(word[:-1])                     # 元音+s：casas→casa, dientes→diente
+    if word.endswith('es') and len(word) > 4:
+        forms.add(word[:-2])                     # 辅音+es：papeles→papel
+    return forms
+
+
+def _token_match(token, vocab):
+    """判断句中 token 是否命中词汇表（支持去复数 + 去变位词尾）。"""
+    if token in vocab:
+        return True
+    # 去复数候选：dientes→diente, hermanos→hermano, papeles→papel
+    if token.endswith('s') and len(token) > 3 and token[:-1] in vocab:
+        return True
+    if token.endswith('es') and len(token) > 4 and token[:-2] in vocab:
+        return True
+    # 去变位词尾：baña→bañ(ar), come→com(er), vive→viv(ir)
+    if token.endswith(('a', 'e', 'o')) and len(token) > 2:
+        stem = token[:-1]
+        for suf in ('ar', 'er', 'ir', 'arse', 'erse', 'irse'):
+            if stem + suf in vocab:
+                return True
+    return False
+
+
+def _favorite_words_from_sentence(es_text):
+    """从单个句子里提取可收藏单词。"""
     import re
+
+    global _ALL_VOCAB
+    if _ALL_VOCAB is None:
+        _ALL_VOCAB = set()
+        for tb in scan_textbooks():
+            for v in tb.get("vocab", []):
+                for t in re.findall(r"[a-záéíóúüñA-ZÁÉÍÓÚÜÑ]+", v.get("es", "")):
+                    t = t.lower()
+                    if len(t) > 1:
+                        _ALL_VOCAB |= _vocab_morph_expand(t)
+
     already_fav = set(_get_favorites())
-    words = set()
-    for s in sentences:
-        es_text = s.get('es', '')
-        tokens = re.findall(r"[a-záéíóúüñA-ZÁÉÍÓÚÜÑ]+", es_text)
-        for token in tokens:
-            t = token.lower()
-            if len(t) <= 1:
-                continue
-            if t in _SPANISH_STOP_WORDS:
-                continue
-            if t in already_fav:
-                continue
-            words.add(t)
-    return sorted(words)
+    words = []
+    seen = set()
+    for t in re.findall(r"[a-záéíóúüñA-ZÁÉÍÓÚÜÑ]+", es_text):
+        t = t.lower()
+        if len(t) <= 1 or t in seen:
+            continue
+        seen.add(t)
+        if _token_match(t, _ALL_VOCAB) and t not in already_fav:
+            words.append(t)
 
-
-def _prompt_favorite_words(content_words):
-    """枚举展示实词列表，用户输入编号选择收藏。返回收藏数量。"""
-    if not content_words:
+    if not words:
+        print("  本句中无可收藏的单词。")
+        sys.stdout.flush()
         return 0
 
-    n = len(content_words)
-    print(f"\n  {'─' * 30}")
-    print(f"  本课句子中的实词（共 {n} 个，已排除虚词和已收藏词）：")
-    print(f"  {'─' * 30}")
-
-    # 两列展示
-    half = (n + 1) // 2
-    max_left = max((len(content_words[i]) for i in range(half)), default=10)
-    col_width = max(max_left + 7, 30)
-
-    for i in range(half):
-        left = f"  [{i+1}] {content_words[i]}"
-        left_pad = left.ljust(col_width)
-        right_idx = i + half
-        if right_idx < n:
-            right = f"[{right_idx+1}] {content_words[right_idx]}"
-        else:
-            right = ""
-        print(f"{left_pad}{right}")
+    n = len(words)
+    print(f"  本句生词（共 {n} 个）：")
+    for i, w in enumerate(words):
+        print(f"    [{i+1}] {w}")
 
     print(f"  [0] 全选  [Enter] 跳过")
     sys.stdout.flush()
@@ -942,7 +964,6 @@ def _prompt_favorite_words(content_words):
     if not choice.strip():
         return 0
 
-    # 解析编号
     selected = set()
     if choice.strip() == '0':
         selected = set(range(n))
@@ -958,7 +979,6 @@ def _prompt_favorite_words(content_words):
     if not selected:
         return 0
 
-    # 写入收藏夹
     fav = _load_favorites()
     key = TEXTBOOK['name']
     if key not in fav:
@@ -966,7 +986,7 @@ def _prompt_favorite_words(content_words):
 
     added = 0
     for idx in sorted(selected):
-        word = content_words[idx]
+        word = words[idx]
         if word not in fav[key]:
             fav[key].append(word)
             added += 1
@@ -1203,13 +1223,6 @@ def _mode_es_to_zh_sentences():
     items = [{"es": s["es"], "zh": s["zh"]} for s in TEXTBOOK["sentences"]]
     groups = [items[i:i + GROUP_SIZE] for i in range(0, len(items), GROUP_SIZE)]
     _run_group_menu_es_to_zh("句子", groups)
-    # 结束后提示收藏句子中的实词
-    if TEXTBOOK["sentences"]:
-        words = _extract_content_words(TEXTBOOK["sentences"])
-        if words:
-            yn = wait_key("  要收藏本课句子中的实词吗？[Y/N] > ")
-            if yn == "Y":
-                _prompt_favorite_words(words)
 
 
 def _run_group_menu_es_to_zh(kind, groups):
@@ -1301,7 +1314,9 @@ def _run_one_group_es_to_zh(groups, gi, kind):
         tts_speak_zh(zh_text)  # 单词用中文语音读出中文释义
 
         # ── 决策 ──
-        result = _decision_pnbr(gs, es_text, allow_favorite=(kind == "单词"))
+        result = _decision_pnbr(gs, es_text,
+                                allow_favorite=(kind == "单词"),
+                                sentence_fav=(kind == "句子"))
         if result == "quit":
             return
         if result == "goto_next":
@@ -1390,9 +1405,15 @@ def _handle_loop_end(gs):
     return "goto_next"
 
 
-def _decision_pnbr(gs, es_text, allow_favorite=False):
-    """P/N/B/R/G/Q/(F) 决策循环。返回 "quit"/"goto_next" 或 None。"""
-    fav_menu = "  [F]收藏" if allow_favorite else ""
+def _decision_pnbr(gs, es_text, allow_favorite=False, sentence_fav=False):
+    """P/N/B/R/G/Q/(F) 决策循环。返回 "quit"/"goto_next" 或 None。
+    allow_favorite: [F]收藏整个单词（单词模式）
+    sentence_fav:   [F]收藏本句所含生词（句子模式）"""
+    fav_menu = ""
+    if allow_favorite:
+        fav_menu = "  [F]收藏"
+    elif sentence_fav:
+        fav_menu = "  [F]收藏句中单词"
     while True:
         choice = wait_key(f"  [P]通过  [N]保留  [B]上词  [R]重听  [G]下组{fav_menu}  [Q]退出 > ")
         if choice == "P":
@@ -1432,6 +1453,9 @@ def _decision_pnbr(gs, es_text, allow_favorite=False):
             added = _toggle_favorite(es_text)
             print(f"    {'★ 已收藏' if added else '☆ 已取消收藏'}")
             sys.stdout.flush()
+            continue
+        elif choice == "F" and sentence_fav:
+            _favorite_words_from_sentence(es_text)
             continue
         elif choice == "Q":
             return "quit"
@@ -1479,13 +1503,6 @@ def _mode_zh_to_es_sentences():
     items = [{"es": s["es"], "zh": s["zh"]} for s in TEXTBOOK["sentences"]]
     groups = [items[i:i + GROUP_SIZE] for i in range(0, len(items), GROUP_SIZE)]
     _run_group_menu_zh_to_es("句子", groups)
-    # 结束后提示收藏句子中的实词
-    if TEXTBOOK["sentences"]:
-        words = _extract_content_words(TEXTBOOK["sentences"])
-        if words:
-            yn = wait_key("  要收藏本课句子中的实词吗？[Y/N] > ")
-            if yn == "Y":
-                _prompt_favorite_words(words)
 
 
 def _run_group_menu_zh_to_es(kind, groups):
@@ -1569,7 +1586,9 @@ def _run_one_group_zh_to_es(groups, gi, kind):
         sys.stdout.flush()
 
         # ── 决策 ──
-        result = _decision_pnbr(gs, es_text, allow_favorite=(kind == "单词"))
+        result = _decision_pnbr(gs, es_text,
+                                allow_favorite=(kind == "单词"),
+                                sentence_fav=(kind == "句子"))
         if result == "quit":
             return
         if result == "goto_next":
@@ -1947,19 +1966,17 @@ def _mode_dictation_sentences():
                 sys.stdout.flush()
                 tts_speak_async(es_text, is_sentence=True)
 
+            # 提示收藏本句生词
+            ch = wait_key("  收藏本句生词？[F]收藏 [Enter]继续 > ")
+            if ch == "F":
+                _favorite_words_from_sentence(es_text)
+
         print(f"-- 第 {gi} 组通关！--\n")
         sys.stdout.flush()
         time.sleep(0.5)
     print("-- 全部句子通关！--\n")
     sys.stdout.flush()
     time.sleep(0.5)
-    # 提示收藏句子中的实词
-    if TEXTBOOK["sentences"]:
-        words = _extract_content_words(TEXTBOOK["sentences"])
-        if words:
-            yn = wait_key("  要收藏本课句子中的实词吗？[Y/N] > ")
-            if yn == "Y":
-                _prompt_favorite_words(words)
 
 
 # -- 模式 4：跟读 ------------------------------------------
@@ -1985,13 +2002,6 @@ def mode_4_shadowing():
     print("-- 全部句子通关！--\n")
     sys.stdout.flush()
     time.sleep(0.5)
-    # 提示收藏句子中的实词
-    if TEXTBOOK["sentences"]:
-        words = _extract_content_words(TEXTBOOK["sentences"])
-        if words:
-            yn = wait_key("  要收藏本课句子中的实词吗？[Y/N] > ")
-            if yn == "Y":
-                _prompt_favorite_words(words)
 
 
 def _shadow_one(es_text, item, pq):
@@ -2026,19 +2036,23 @@ def _shadow_one(es_text, item, pq):
         tts_speak(es_text, is_sentence=True)
 
         # 自判
-        judge = wait_key("  跟读满意吗？[Y=满意 / N=再来一次 / S=别再问我 / Q=退出] > ")
-        if judge == "Q":
-            return "quit"
-        elif judge == "S":
-            pq.mark_skip(item)
-            return
-        elif judge == "N":
-            continue  # 立即重试同一句
-        else:
-            pq.mark_correct(item)
-            print(f"  剩余：{pq.remaining} 句\n")
-            sys.stdout.flush()
-            return
+        while True:
+            judge = wait_key("  跟读满意吗？[Y=满意 / N=再来一次 / S=别再问我 / F=收藏句中单词 / Q=退出] > ")
+            if judge == "Q":
+                return "quit"
+            elif judge == "S":
+                pq.mark_skip(item)
+                return
+            elif judge == "F":
+                _favorite_words_from_sentence(es_text)
+                continue
+            elif judge == "N":
+                continue  # 立即重试同一句
+            else:
+                pq.mark_correct(item)
+                print(f"  剩余：{pq.remaining} 句\n")
+                sys.stdout.flush()
+                return
 
 
 # -- 模式 5：混着来 ------------------------------------------
@@ -2108,6 +2122,13 @@ def mode_5_mixed():
                     print(f"  剩余：{pq.remaining} 题\n")
                     sys.stdout.flush()
                     tts_speak_async(es_text, is_sentence=is_sentence)
+
+            # 句子模式下提示收藏本句生词
+            if is_sentence:
+                ch = wait_key("  收藏本句生词？[F]收藏 [Enter]继续 > ")
+                if ch == "F":
+                    _favorite_words_from_sentence(es_text)
+
             elif mode == "es→zh":
                 result = _run_es_to_zh_item(item, pq)
                 if result == "quit":
@@ -2123,14 +2144,6 @@ def mode_5_mixed():
     print("-- 全部混着来通关！--\n")
     sys.stdout.flush()
     time.sleep(0.5)
-    # 提示收藏句子中的实词（混着来模式下仅从句型题中提取）
-    sentence_items = [it for it in items if it.get("type") == "sentence"]
-    if sentence_items:
-        words = _extract_content_words(sentence_items)
-        if words:
-            yn = wait_key("  要收藏本课句子中的实词吗？[Y/N] > ")
-            if yn == "Y":
-                _prompt_favorite_words(words)
 
 
 # -- 语法讲解 ----------------------------------------------

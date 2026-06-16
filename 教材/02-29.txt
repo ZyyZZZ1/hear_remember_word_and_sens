@@ -1,8 +1,20 @@
 # 生词
 interesante	有趣的
-interesar	使感兴趣 [intereso, interesas, interesa, interesamos, interesáis, interesan]
+interesar	使感兴趣
+intereso	我使感兴趣
+interesas	你使感兴趣
+interesa	他/她使感兴趣
+interesamos	我们使感兴趣
+interesáis	你们使感兴趣
+interesan	他们/她们使感兴趣
 universitario	大学的，大学（形容词）
-parecer	似乎，好像 [parezco, pareces, parece, parecemos, parecéis, parecen]
+parecer	似乎，好像
+parezco	我似乎
+pareces	你似乎
+parece	他/她似乎
+parecemos	我们似乎
+parecéis	你们似乎
+parecen	他们/她们似乎
 importancia	重要性
 llave	钥匙
 problema	问题
