@@ -20,6 +20,7 @@ os bañáis	你们洗澡
 se bañan	他们/她们洗澡
 secundaria 中学
 diente 牙、齿、牙齿
+cepillarse los dientes 刷牙（固定搭配）
 peinarse	梳头
 me peino	我梳头
 te peinas	你梳头
@@ -63,6 +64,7 @@ autobús 公共汽车、公交汽车、公交车、巴士、大巴、公共巴�
 todo el día 一整天
 para [表示目的]为了
 centro 中心
+centro de estudios 学习中心、教育机构
 estudio 学习
 por la mañana 在早晨、在早上、在上午
 por la tarde 在下午、在午后
@@ -86,7 +88,7 @@ Los abuelos, ya muy mayores, no trabajan. 祖父母年纪已经很大了，不�
 Todos los días se levanta muy temprano. 他每天都起得很早。
 Se baña, se cepilla los dientes y se peina. 他洗澡、刷牙然后梳头。
 Juan estudia bachillerato (la secundaria). 胡安在读高中（中学）。
-Después de desayunar, primero lleva a sus hermanos al colegio (la escuela) y luego toma un autobús para ir al instituto (a su centro de estudios). 吃完早饭后，他先送弟弟妹妹去学校，接着乘坐公交车去往学院（他的学习中心）。
+Después de desayunar, primero lleva a sus hermanos al colegio (la escuela), y luego toma un autobús para ir al instituto (a su centro de estudios). 吃完早饭后，他先送弟弟妹妹去学校，接着乘坐公交车去往学院（他的学习中心）。
 Por la mañana tiene cuatro clases y por la tarde, también cuatro. 他上午有四节课，下午也有四节课。
 Todo el día está muy ocupado, por eso regresa a casa muy tarde. 他一整天都很忙，所以很晚才回到家。
 
