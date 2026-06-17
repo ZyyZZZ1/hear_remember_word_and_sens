@@ -1,7 +1,4 @@
 # 生词
-Ana 安娜（人名）
-Susana 苏珊娜（人名）
-Tomás 托马斯（人名）
 cómo 怎么（疑问词）
 llamarse	叫，名叫
 me llamo	我叫
@@ -43,6 +40,7 @@ nuestro 我们的（物主形容词，阳性单数）
 su 他/她/您/他们的（物主形容词，单数）
 sus 他/她/您/他们的（物主形容词，复数）
 entonces 那么
+ah 啊（感叹词）
 alumno 学生（阳性）
 alumna 学生（阴性）
 

@@ -1,11 +1,9 @@
 # 生词
-Li Meilan	李美兰（人名）
-Manolo	马诺洛（人名）
-Elena	艾蕾娜（人名）
 chico	男孩，小伙子
 chica	女孩，姑娘
 mexicano	墨西哥的；墨西哥人（阳性）
 mexicana	墨西哥的；墨西哥人（阴性）
+china	中国的；中国人（阴性）
 panameño	巴拿马的；巴拿马人（阳性）
 panameña	巴拿马的；巴拿马人（阴性）
 ese	那个（阳性单数指示形容词）
@@ -21,6 +19,8 @@ novios	情侣（复数）
 Solo	仅仅，只是
 Las dos	两人，两个都
 Qué va	哪有的事，才不是呢（口语表达）
+ir	去，走
+va	他/她/您去
 
 # 例句
 Ana y Li Meilan son amigas.	安娜和李美兰是朋友。

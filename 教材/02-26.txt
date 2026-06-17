@@ -7,6 +7,8 @@ ni...ni...	既不……也不……
 mantequilla	黄油
 momento	时刻，片刻
 periódico	报纸
+llamar	打电话（非自复动词）
+llamo	我打电话
 
 # 例句
 Sí, mamá. Estoy en el supermercado. Quiero comprarme un nuevo par de zapatos.	喂，妈妈。我在超市。我想给自己买一双新鞋。

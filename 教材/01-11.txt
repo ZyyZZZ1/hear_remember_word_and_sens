@@ -26,6 +26,7 @@ se levanta	他/她起床
 nos levantamos	我们起床
 os levantáis	你们起床
 se levantan	他们/她们起床
+temprano	早
 
 # 例句
 Mucho gusto.	很高兴认识你。

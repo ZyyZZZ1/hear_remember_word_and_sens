@@ -1,6 +1,13 @@
 # 生词
 por qué	为什么
 vida	生活，生命
+ver	看见
+veo	我看见
+ves	你看见
+ve	他/她看见
+vemos	我们看见
+veis	你们看见
+ven	他们/她们看见
 alegría	高兴，喜悦
 volver	返回；再次（volver a + 动词原形 = 再次做某事）
 vuelvo	我返回
@@ -19,6 +26,7 @@ hacen	他们/她们做
 aquí	这里
 medio	半，一半（阳性形式；阴性形式 media 见 01-18）
 doctorado	博士学位
+España	西班牙
 sin	没有
 realidad	现实；en realidad = 实际上
 hay	有（haber 的无人称形式）
@@ -32,6 +40,7 @@ dicen	他们/她们说
 mismo	相同的；lo mismo = 同样的事
 baño	洗澡（名词）；浴室
 comedor	食堂，饭厅
+curso	课程
 comenzar	开始
 comienzo	我开始
 comienzas	你开始
@@ -40,6 +49,7 @@ comenzamos	我们开始
 comenzáis	你们开始
 comienzan	他们/她们开始
 hasta	直到
+jornada	工作日，一天
 leer	阅读
 leo	我阅读
 lees	你阅读
@@ -54,6 +64,13 @@ repasa	他/她复习
 repasamos	我们复习
 repasáis	你们复习
 repasan	他们/她们复习
+saber	知道
+sé	我知道
+sabes	你知道
+sabe	他/她知道
+sabemos	我们知道
+sabéis	你们知道
+saben	他们/她们知道
 lección	课
 prepararse	准备
 me preparo	我准备
@@ -66,6 +83,8 @@ nuevo	新的
 metro	地铁
 real	真正的，实际的
 mediodía	中午
+nueve	九
+ocho	八
 almuerzo	午餐
 campus	校园
 quedarse	留下，待在
@@ -77,6 +96,7 @@ os quedáis	你们留下
 se quedan	他们/她们留下
 biblioteca	图书馆
 casi	几乎
+como	既然，因为（连词）
 
 # 例句
 ¿Por qué no me hablas más de tu vida?	你为什么不跟我多聊聊你的生活呢？

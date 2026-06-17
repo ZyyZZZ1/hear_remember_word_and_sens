@@ -161,6 +161,8 @@ esperamos	我们等待
 esperáis	你们等待
 esperan	他们/她们等待
 nos vemos	再见，回头见（告别语）
+llamar	打电话（非自复动词）
+llamas	你打电话
 
 # 例句
 Hola, buenas tardes. ¿Con quién tengo el gusto de hablar?	你好，下午好。请问您是哪位？

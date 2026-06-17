@@ -1,5 +1,8 @@
 # 生词
-（本课为物主形容词体系化总结课，所有词汇均已在之前课程中出现，无新词。）
+padres	父母
+abuelos	祖父母
+médico	医生（阳性）
+médica	医生（阴性）
 
 # 例句
 Mis padres trabajan en la universidad.	我父母在大学里工作。

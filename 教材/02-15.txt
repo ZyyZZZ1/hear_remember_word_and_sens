@@ -36,6 +36,8 @@ oís	你们听见
 oyen	他们/她们听见
 pena	遗憾，可惜，难过
 vecino	邻居
+llamar	打电话/敲门（非自复动词）
+llaman	他们/她们打电话/敲门
 
 # 例句
 Buenos días a todos. Bienvenidos.	大家早上好。欢迎。

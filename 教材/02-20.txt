@@ -25,6 +25,7 @@ quiere	他/她想要
 queremos	我们想要
 queréis	你们想要
 quieren	他们/她们想要
+llamar	打电话/敲门（非自复动词）
 
 # 例句
 ¿Volvemos a llamar a Luis por teléfono?	要不要再给路易斯打个电话？

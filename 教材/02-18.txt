@@ -46,6 +46,7 @@ llega	他/她到达
 llegamos	我们到达
 llegáis	你们到达
 llegan	他们/她们到达
+derecha	右边
 
 # 例句
 Escríbeme, por favor.	请写信给我。

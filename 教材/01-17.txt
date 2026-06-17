@@ -14,6 +14,7 @@ se acuesta	他/她睡觉
 nos acostamos	我们睡觉
 os acostáis	你们睡觉
 se acuestan	他们/她们睡觉
+tener que	必须，得（固定表达）
 
 # 例句
 Yo me levanto a las siete.	我七点起床。

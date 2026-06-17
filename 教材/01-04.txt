@@ -21,8 +21,6 @@ son	他们/她们是
 estudiante 学生
 amigo 朋友（阳性）
 amigos 朋友们（阳性复数）
-Lorena 洛雷娜（人名）
-Paco 帕科（人名）
 quién 谁（单数）
 quiénes 谁（复数）
 sí 是的

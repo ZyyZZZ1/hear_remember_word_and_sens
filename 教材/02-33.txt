@@ -193,6 +193,7 @@ firmamos	我们签署
 firmáis	你们签署
 firman	他们/她们签署
 papeles	文件，纸张
+como	既然/因为（连词，无重音）
 
 # 例句
 Elena y Alberto le agradecen a Susana su invitación.	艾蕾娜和阿尔贝托感谢苏珊娜的邀请。

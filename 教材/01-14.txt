@@ -71,6 +71,13 @@ por la tarde 在下午、在午后
 que （比较级连词）比……
 por eso 因此、所以、这就是为什么
 regresar 回、返回、回来、回去
+regreso	我回去
+regresas	你回去
+regresa	他/她回去
+regresamos	我们回去
+regresáis	你们回去
+regresan	他们/她们回去
+enseña	他/她教
 tarde 晚、迟
 abuelos 祖父母
 

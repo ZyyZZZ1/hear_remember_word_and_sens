@@ -1,5 +1,6 @@
 # 生词
 cuatro 四、4
+muy	非常
 todo 全部的、全体的、整个的、所有的、一切的
 asignatura 课程、科目
 conversación 对话、交谈、谈话

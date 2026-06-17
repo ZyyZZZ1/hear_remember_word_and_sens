@@ -24,11 +24,14 @@ descansamos	我们休息
 descansáis	你们休息
 descansan	他们/她们休息
 deporte	体育运动
+jornada	工作日
 noche	夜晚
+por la noche	在晚上
 once	十一
 estudiantil	学生的
 aunque	尽管，虽然
 cansado	疲惫的
+tener que	必须，得（固定表达）
 
 # 例句
 Tenemos un horario muy apretado.	我们有一个非常紧凑的时间表。

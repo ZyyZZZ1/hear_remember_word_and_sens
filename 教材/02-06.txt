@@ -122,6 +122,8 @@ justo	恰好，正好
 momento	时刻，时候
 alguien	某人，有人
 puerta	门
+llamar	打电话/敲门（非自复动词，区别于llamarse叫…名字）
+llama	他/她打电话/敲门
 tener	que	必须，不得不（做某事）
 tengo	我que	必须
 tienes	你que	必须

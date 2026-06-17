@@ -137,6 +137,7 @@ se queda	他/她留下
 nos quedamos	我们留下
 os quedáis	你们留下
 se quedan	他们/她们留下
+como	既然/因为（连词，无重音）
 
 # 例句
 ¿Dónde dejo los libros?	我把书放哪里？

@@ -7,6 +7,7 @@ padres	父母
 seis	六
 cansado	累的，疲倦的
 hoy	今天
+como	既然/因为（连词，无重音，引导原因从句置于主句之前）
 
 # 例句
 ¿Por qué no va a venir Juan?	胡安为什么不来？

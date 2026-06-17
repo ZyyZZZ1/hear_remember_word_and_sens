@@ -21,6 +21,13 @@ invita	他/她邀请
 invitamos	我们邀请
 invitáis	你们邀请
 invitan	他们/她们邀请
+llegar	到达
+llego	我到达
+llegas	你到达
+llega	他/她到达
+llegamos	我们到达
+llegáis	你们到达
+llegan	他们/她们到达
 cenar	吃晚饭
 ceno	我吃晚饭
 cenas	你吃晚饭
@@ -29,6 +36,7 @@ cenamos	我们吃晚饭
 cenáis	你们吃晚饭
 cenan	他们/她们吃晚饭
 restaurante	餐厅
+sala	大厅，厅
 fiesta	聚会
 hoy	今天
 compañero	同伴，同学

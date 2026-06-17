@@ -1,5 +1,7 @@
 # 生词
 hermano 兄弟；兄弟姐妹
+adónde	去哪里（a+dónde合写）
+al	去……（a+el缩合）
 hospital	医院
 
 # 例句

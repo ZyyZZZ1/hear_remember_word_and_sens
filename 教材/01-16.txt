@@ -15,6 +15,7 @@ residencia	宿舍
 verano	夏天
 teléfono	电话
 año	年
+curso	课程
 organizar	组织，举办
 organizo	我组织
 organizas	你组织

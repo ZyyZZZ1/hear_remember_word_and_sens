@@ -1,16 +1,22 @@
 # 生词
-Ricardo 里卡多（人名）
-Rosa 罗莎（人名）
 nuestra 我们的
-lengua 语言
+lenguaje	语言
 universidad 大学
 este 这个
 país 国家
 del ……的（de+el缩写）
-González 冈萨雷斯（人名）
 ahora 现在
-Enseño 教学（我教）
+dónde	哪里
+enseñar	教
+enseño	我教
+enseñas	你教
+enseña	他/她教
+enseñamos	我们教
+enseñáis	你们教
+enseñan	他们/她们教
 vuestra 你们的
+China	中国
+novia	女朋友
 
 # 例句
 Ricardo es el novio de Rosa. 里卡多是罗莎的男朋友。

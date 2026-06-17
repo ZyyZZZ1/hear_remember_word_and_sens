@@ -21,6 +21,8 @@ le 您/他/她（与格代词）向这个人.+动词
 también 也，同样
 hispanohablante 西班牙语母语者
 pero 但是，可是
+China 中国
+gracias 谢谢
 
 # 例句
 Buenas tardes, profesor Ramírez. 下午好，拉米雷斯老师。

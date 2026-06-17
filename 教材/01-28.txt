@@ -34,6 +34,8 @@ felicitáis	你们祝贺
 felicitan	他们/她们祝贺
 muy	非常
 feliz	幸福的；快乐的
+levantar	抬起，举起（非自复用法）
+levanta	他/她抬起
 sala	客厅；大厅
 todavía	仍然；还
 pronto	早；很快
