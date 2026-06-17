@@ -1,5 +1,6 @@
 # 生词
 padres	父母
+hermanos	兄弟；兄弟姐妹（复数）
 abuelos	祖父母
 médico	医生（阳性）
 médica	医生（阴性）

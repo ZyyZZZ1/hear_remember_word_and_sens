@@ -2,6 +2,8 @@
 padre	父亲
 médico	医生
 madre 母亲、妈妈
+colegio	学校
+también 也，同样
 menor 更小的、更少的、较小的、较少的
 ya 已经
 bachillerato 高中课程、学士学位

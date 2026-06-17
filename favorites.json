@@ -9,7 +9,6 @@
     "escuela",
     "padre",
     "médico",
-    "hermanos",
     "colegio",
     "bachillerato",
     "secundaria",
@@ -33,5 +32,6 @@
     "tan",
     "recargado",
     "tiempo"
-  ]
+  ],
+  "收藏集": []
 }

@@ -246,7 +246,9 @@ def _build_favorites_textbook():
         for es_word in fav.get(tb["name"], []):
             for v in tb["vocab"]:
                 if v["es"] == es_word and es_word not in seen:
-                    vocab.append(dict(v))
+                    entry = dict(v)
+                    entry["source_textbook"] = tb["name"]
+                    vocab.append(entry)
                     seen.add(es_word)
                     break
     return {
@@ -868,7 +870,19 @@ def _toggle_favorite(es_text):
     if TEXTBOOK is None:
         return False
     fav = _load_favorites()
+
+    # 收藏集是虚拟教材，实际收藏保存在原始教材的 key 下
     key = TEXTBOOK["name"]
+    if key == "收藏集":
+        source = None
+        for v in TEXTBOOK.get("vocab", []):
+            if v["es"] == es_text:
+                source = v.get("source_textbook")
+                break
+        if source is None:
+            return False
+        key = source
+
     if key not in fav:
         fav[key] = []
     if es_text in fav[key]:
@@ -922,6 +936,22 @@ def _token_match(token, vocab):
     return False
 
 
+def _token_to_lemma(token, vocab):
+    """将句中 token 还原为词汇表中的原形；如果找不到原形则返回 token 本身。"""
+    if token in vocab:
+        return token
+    if token.endswith('s') and len(token) > 3 and token[:-1] in vocab:
+        return token[:-1]
+    if token.endswith('es') and len(token) > 4 and token[:-2] in vocab:
+        return token[:-2]
+    if token.endswith(('a', 'e', 'o')) and len(token) > 2:
+        stem = token[:-1]
+        for suf in ('ar', 'er', 'ir', 'arse', 'erse', 'irse'):
+            if stem + suf in vocab:
+                return stem + suf
+    return token
+
+
 def _favorite_words_from_sentence(es_text):
     """从单个句子里提取可收藏单词。"""
     import re
@@ -944,8 +974,10 @@ def _favorite_words_from_sentence(es_text):
         if len(t) <= 1 or t in seen:
             continue
         seen.add(t)
-        if _token_match(t, _ALL_VOCAB) and t not in already_fav:
-            words.append(t)
+        if _token_match(t, _ALL_VOCAB):
+            lemma = _token_to_lemma(t, _ALL_VOCAB)
+            if lemma not in already_fav and lemma not in seen:
+                words.append(lemma)
 
     if not words:
         print("  本句中无可收藏的单词。")
