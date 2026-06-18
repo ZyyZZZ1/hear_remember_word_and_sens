@@ -1,5 +1,17 @@
 # 生词
 antes de	在……之前
+a la una	在一点
+a las dos	在两点
+a las tres	在三点
+a las cuatro	在四点
+a las cinco	在五点
+a las seis	在六点
+a las siete	在七点
+a las ocho	在八点
+a las nueve	在九点
+a las diez	在十点
+a las once	在十一点
+a las doce	在十二点
 salir	出去，离开
 salgo	我出去
 sales	你出去
