@@ -109,7 +109,7 @@ luego de	在……之后
 rato	一会儿，片刻
 médico	医生
 papel	纸
-facultad	系，学院
+facultad	faculty(英语同源词)系，学院Fakultät(德语同源词)
 veinticinco	二十五
 minuto	分钟
 regalar	赠送（礼物）
