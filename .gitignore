@@ -4,3 +4,5 @@ __pycache__/
 test_report.md
 tasks/
 piper_models/
+
+kokoro_models/

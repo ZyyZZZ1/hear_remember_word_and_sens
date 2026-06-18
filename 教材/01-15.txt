@@ -1,7 +1,7 @@
 # 生词
 cuánto	多少
 dónde	哪里
-parecer	(seem) 看似，好像
+parecer	(means seem) 看似，好像
 parezco	我看似
 pareces	你看似
 parece	他/她看似
@@ -9,23 +9,23 @@ parecemos	我们看似
 parecéis	你们看似
 parecen	他们/她们看似
 ciudad	城市
-bastante	(quite/enough) 相当，足够
+bastante	(means quite or enough) 相当，足够
 allí	那里
-verdad	(truth) 事实；¿verdad? 对吧？
+verdad	(means truth) 事实；¿verdad? 对吧？
 siete	七
-padres	(parents) 父母
-suponer	(suppose) 猜想，假设
+padres	(means parents) 父母
+suponer	(means suppose) 猜想，假设
 supongo	我猜想
 supones	你猜想
 supone	他/她猜想
 suponemos	我们猜想
 suponéis	你们猜想
 suponen	他们/她们猜想
-sala de estar	(living room) 客厅
-cuarto de baño	(bathroom) 浴室，卫生间
-todavía	(still/yet) 仍然，还
+sala de estar	(means living room) 客厅
+cuarto de baño	(means bathroom) 浴室，卫生间
+todavía	(means still/yet) 仍然，还
 desayuno	早餐（名词）
-tan	(so/such) 如此，这么
+tan	(means so/such) 如此，这么
 recargado	繁重的，紧凑的
 muy	非常
 tiempo	时间
