@@ -14,6 +14,8 @@ facultad	faculty(英语同源词)系，学院Fakultät(德语同源词)
 residencia	宿舍
 verano	夏天
 teléfono	电话
+teléfono móvil	手机
+móvil	移动的
 año	年
 curso	课程
 cursos de verano	夏令营（暑期课程）
