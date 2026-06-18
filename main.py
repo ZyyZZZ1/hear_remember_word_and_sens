@@ -20,29 +20,28 @@ from collections import deque
 HAS_TTS = False
 HAS_AUDIO = False
 TTS_VOICE_ES = None   # 西语语音（SAPI fallback）
-TTS_VOICE_ZH = None   # 中文语音（SAPI）
+TTS_VOICE_ZH = None   # 中文语音（SAPI fallback）
 TTS_LOCK = threading.Lock()
-PIPER_VOICES = []      # Piper 西语模型池（随机抽签）
+PIPER_VOICES = []          # Piper 西语模型池（随机抽签）
 PIPER_MODEL_DIR = os.path.join(os.path.dirname(__file__), "piper_models")
 FAVORITES_FILE = os.path.join(os.path.dirname(__file__), "favorites.json")
 
-# 所有可用的 Piper 西班牙语模型
-_PIPER_MODEL_NAMES = [
+_PIPER_ES_MODEL_NAMES = [
     "es_ES-davefx-medium",
     "es_ES-sharvard-medium",
     "es_MX-claude-high",
     "es_AR-daniela-high",
 ]
 
-# sharvard / claude 单字合成末尾截断，仅用于句子模式
 _PIPER_WORD_SAFE = {"es_ES-davefx-medium", "es_AR-daniela-high"}
+
+_PIPER_BY_NAME = {}
 
 # --- Piper TTS（本地神经网络，自然度优于 SAPI）---
 try:
     import numpy as np
     from piper.voice import PiperVoice
-    _PIPER_BY_NAME = {}
-    for name in _PIPER_MODEL_NAMES:
+    for name in _PIPER_ES_MODEL_NAMES:
         model_path = os.path.join(PIPER_MODEL_DIR, f"{name}.onnx")
         config_path = os.path.join(PIPER_MODEL_DIR, f"{name}.onnx.json")
         if os.path.exists(model_path) and os.path.exists(config_path):
@@ -60,6 +59,52 @@ except ImportError:
     print(f"[TTS] Piper 未安装，使用 SAPI 后备", flush=True)
 except Exception as e:
     print(f"[TTS] Piper 加载失败：{e}", flush=True)
+
+# --- Kokoro TTS（中文神经网络，中英混合支持）---
+KOKORO_PIPELINE = None
+_KOKORO_VOICE_DIR = None
+try:
+    import torch
+    from kokoro import KPipeline, KModel
+    _KOKORO_DIR = os.path.join(os.path.dirname(__file__), "kokoro_models")
+    _KOKORO_CONFIG = os.path.join(_KOKORO_DIR, "kmodel_config.json")
+    _KOKORO_MODEL = os.path.join(_KOKORO_DIR, "kokoro-v1_1-zh.pth")
+    if os.path.exists(_KOKORO_CONFIG) and os.path.exists(_KOKORO_MODEL):
+        import warnings
+        import jieba
+        jieba.setLogLevel(jieba.logging.WARNING)
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore")
+            _kokoro_model = KModel(
+                repo_id='hexgrad/Kokoro-82M-v1.1-zh',
+                config=_KOKORO_CONFIG,
+                model=_KOKORO_MODEL,
+            ).to('cpu').eval()
+        _KOKORO_VOICE_DIR = os.path.join(_KOKORO_DIR, "voices")
+        def _kokoro_en_callable(text):
+            from espeakng_loader import get_library_path, get_data_path
+            if "PHONEMIZER_ESPEAK_LIBRARY" not in os.environ:
+                os.environ["PHONEMIZER_ESPEAK_LIBRARY"] = get_library_path()
+            if "ESPEAK_DATA_PATH" not in os.environ:
+                os.environ["ESPEAK_DATA_PATH"] = get_data_path()
+            from phonemizer import phonemize
+            return phonemize(text, language='en-us', backend='espeak',
+                             strip=True, preserve_punctuation=True,
+                             language_switch='remove-flags')
+        KOKORO_PIPELINE = KPipeline(
+            lang_code='z',
+            repo_id='hexgrad/Kokoro-82M-v1.1-zh',
+            model=_kokoro_model,
+            en_callable=_kokoro_en_callable,
+        )
+        print(f"[TTS] Kokoro 中文语音已加载", flush=True)
+        HAS_TTS = True
+    else:
+        print(f"[TTS] Kokoro 模型文件不完整，跳过", flush=True)
+except ImportError:
+    pass
+except Exception as e:
+    print(f"[TTS] Kokoro 加载失败：{e}", flush=True)
 
 
 # --- SAPI TTS（后备方案，中文语音）---
@@ -381,8 +426,23 @@ def tts_speak(text, is_sentence=False):
 _SP_ZH = None
 
 def tts_speak_zh(text):
-    """中文 TTS 朗读（可打断）"""
+    """中文 TTS 朗读（优先 Kokoro，回退 Piper 中文，再回退 SAPI）"""
     global _SP_ZH
+    if KOKORO_PIPELINE and _KOKORO_VOICE_DIR:
+        voice_files = [f for f in os.listdir(_KOKORO_VOICE_DIR)
+                       if f.startswith('z') and f.endswith('.pt')]
+        if voice_files:
+            voice_path = os.path.join(_KOKORO_VOICE_DIR, random.choice(voice_files))
+            try:
+                with TTS_LOCK:
+                    for _, _, audio in KOKORO_PIPELINE(text, voice=voice_path, speed=1.0):
+                        if audio is not None:
+                            audio_np = audio.numpy() if hasattr(audio, 'numpy') else np.array(audio)
+                            sd.play(audio_np, samplerate=24000)
+                            sd.wait()
+                            return
+            except Exception as e:
+                print(f"[TTS Kokoro] 朗读失败：{e}", flush=True)
     if not TTS_VOICE_ZH:
         return
     try:
@@ -396,7 +456,6 @@ def tts_speak_zh(text):
             _SP_ZH.Voice = TTS_VOICE_ZH
             _SP_ZH.Rate = 1
             _SP_ZH.Volume = 100
-        # 后台线程做同步朗读，主线程轮询打断
         done = threading.Event()
         def _speak():
             try:
@@ -409,7 +468,7 @@ def tts_speak_zh(text):
                 sp_local.Voice = TTS_VOICE_ZH
                 sp_local.Rate = 1
                 sp_local.Volume = 100
-                sp_local.Speak(text, 0)  # synchronous
+                sp_local.Speak(text, 0)
             except Exception:
                 pass
             finally:
@@ -420,7 +479,7 @@ def tts_speak_zh(text):
         while not done.is_set():
             if msvcrt.kbhit():
                 msvcrt.getch()
-                _SP_ZH.Speak("", 3)  # purge all SAPI speech
+                _SP_ZH.Speak("", 3)
                 break
             time.sleep(0.1)
         print("\r" + " " * 36 + "\r", end="", flush=True)
@@ -437,9 +496,9 @@ def tts_speak_async(text, is_sentence=False):
 
 def tts_speak_zh_async(text):
     """中文 TTS 朗读（后台线程）"""
-    if not TTS_VOICE_ZH:
-        return
-    t = threading.Thread(target=tts_speak_zh, args=(text,), daemon=True)
+    if KOKORO_PIPELINE or TTS_VOICE_ZH:
+        t = threading.Thread(target=tts_speak_zh, args=(text,), daemon=True)
+        t.start()
     t.start()
 
 
