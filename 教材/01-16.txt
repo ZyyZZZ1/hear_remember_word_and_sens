@@ -10,7 +10,7 @@ aquellos	那些（指示形容词，阳性复数，远指）
 aquellas	那些（指示形容词，阴性复数，远指）
 aquello	那个（指示代词，中性，远指）
 adónde	去哪里（a + dónde 的合写）
-facultad	faculty(英语同源词)系，学院Fakultät(德语同源词)
+facultad	(英语同源词faculty),系，学院,Fakultät(德语同源词)
 residencia	宿舍
 verano	夏天
 teléfono	电话
