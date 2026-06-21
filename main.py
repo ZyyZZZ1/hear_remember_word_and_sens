@@ -384,15 +384,21 @@ def _tts_speak_with_voice(text, voice):
         print(f"[TTS] 朗读失败：{e}", flush=True)
 
 
+_last_voice = None
+
 def _piper_pick(for_sentence=False):
-    """选 Piper 模型：句子全用，单词避开 sharvard/claude"""
+    """选 Piper 模型：句子全用，单词避开 sharvard/claude，避免连续重复"""
+    global _last_voice
     if for_sentence:
-        return random.choice(PIPER_VOICES)
-    # 单词：只选不易截断的模型
-    safe = [v for n, v in _PIPER_BY_NAME.items() if n in _PIPER_WORD_SAFE]
-    if safe:
-        return random.choice(safe)
-    return random.choice(PIPER_VOICES)
+        pool = list(PIPER_VOICES)
+    else:
+        safe = [v for n, v in _PIPER_BY_NAME.items() if n in _PIPER_WORD_SAFE]
+        pool = list(safe) if safe else list(PIPER_VOICES)
+    if len(pool) > 1 and _last_voice is not None:
+        pool = [v for v in pool if v is not _last_voice]
+    voice = random.choice(pool)
+    _last_voice = voice
+    return voice
 
 
 def tts_speak(text, is_sentence=False):
@@ -409,6 +415,8 @@ def tts_speak(text, is_sentence=False):
                 if chunks and HAS_AUDIO:
                     audio = b"".join(chunks)
                     audio_np = np.frombuffer(audio, dtype=np.int16).astype(np.float32) / 32767.0
+                    pad = int(sr * 0.2)
+                    audio_np = np.concatenate([np.zeros(pad, dtype=np.float32), audio_np, np.zeros(pad, dtype=np.float32)])
                     sd.play(audio_np, samplerate=sr)
                     sd.wait()
         except Exception as e:
@@ -438,6 +446,8 @@ def tts_speak_zh(text):
                     for _, _, audio in KOKORO_PIPELINE(text, voice=voice_path, speed=1.0):
                         if audio is not None:
                             audio_np = audio.numpy() if hasattr(audio, 'numpy') else np.array(audio)
+                            pad = int(24000 * 0.2)
+                            audio_np = np.concatenate([np.zeros(pad, dtype=audio_np.dtype), audio_np, np.zeros(pad, dtype=audio_np.dtype)])
                             sd.play(audio_np, samplerate=24000)
                             sd.wait()
                             return
@@ -732,6 +742,8 @@ def stop_and_playback(_unused=None):
         try:
             recording = np.concatenate(REC_CHUNKS)
             if len(recording) > 0:
+                rec_pad = int(SAMPLE_RATE * 0.2)
+                recording = np.concatenate([np.zeros(rec_pad, dtype=recording.dtype), recording, np.zeros(rec_pad, dtype=recording.dtype)])
                 # 后台线程播放，主线程轮询按键打断
                 playback_done = threading.Event()
                 def _play():
@@ -1310,21 +1322,49 @@ def _mode_es_to_zh_words():
 
 
 def _mode_es_to_zh_sentences():
-    """听西语说中文——句子池，组菜单 + GroupSession"""
-    items = [{"es": s["es"], "zh": s["zh"]} for s in TEXTBOOK["sentences"]]
-    groups = [items[i:i + GROUP_SIZE] for i in range(0, len(items), GROUP_SIZE)]
-    _run_group_menu_es_to_zh("句子", groups)
+    """听西语说中文——句子池：先选难度，再组菜单 + GroupSession"""
+    while True:
+        print()
+        print("=" * 36)
+        print("          [模式1-句子] 选难度")
+        print("=" * 36)
+        print("  [1] 听写抓词   —— 连听后敲出抓到的词")
+        print("  [2] 纯听       —— 只听 + 自判")
+        print("  [Q] 返回")
+        print("=" * 36)
+        sys.stdout.flush()
+        choice = wait_key("请选择 > ")
+        if choice == "1":
+            items = [{"es": s["es"], "zh": s["zh"]} for s in TEXTBOOK["sentences"]]
+            groups = [items[i:i + GROUP_SIZE] for i in range(0, len(items), GROUP_SIZE)]
+            _run_group_menu_es_to_zh("句子", groups, difficulty="catch")
+            return
+        if choice == "2":
+            items = [{"es": s["es"], "zh": s["zh"]} for s in TEXTBOOK["sentences"]]
+            groups = [items[i:i + GROUP_SIZE] for i in range(0, len(items), GROUP_SIZE)]
+            _run_group_menu_es_to_zh("句子", groups, difficulty="listen")
+            return
+        if choice == "Q":
+            return
+        print("  无效选项，请重新选择。")
+        sys.stdout.flush()
 
 
-def _run_group_menu_es_to_zh(kind, groups):
-    """组菜单：列出每组词/句，用户选组进入练习"""
+def _run_group_menu_es_to_zh(kind, groups, difficulty=None):
+    """组菜单：列出每组词/句，用户选组进入练习
+    difficulty=None   原行为（单词或句子默认走原流程）
+    difficulty="catch" / "listen"  仅对句子路径生效，走新流程"""
     is_word = (kind == "单词")
     all_items = [{"es": v["es"], "zh": v["zh"]} for v in TEXTBOOK["vocab"]]
+    use_new = (kind == "句子") and (difficulty in ("catch", "listen"))
     while True:
         fav_words = _get_favorites() if is_word else []
         print()
         print("=" * 36)
-        print(f"          [模式1-{kind}] 共 {len(groups)} 组")
+        title = f"[模式1-{kind}] 共 {len(groups)} 组"
+        if use_new:
+            title = f"[模式1-句子·{'听写抓词' if difficulty=='catch' else '纯听'}] 共 {len(groups)} 组"
+        print(f"          {title}")
         print("=" * 36)
         if is_word:
             print(f"  [R] 随机组（{len(all_items)} 个词，乱序）")
@@ -1353,18 +1393,25 @@ def _run_group_menu_es_to_zh(kind, groups):
         try:
             gi = int(choice) - 1
             if 0 <= gi < len(groups):
-                _run_one_group_es_to_zh(groups, gi, kind)
+                _run_one_group_es_to_zh(groups, gi, kind, difficulty)
         except ValueError:
             print("  无效选项，请重新选择。")
             sys.stdout.flush()
 
 
-def _run_one_group_es_to_zh(groups, gi, kind):
-    """单组练习：GroupSession 驱动。groups 是全部组列表，gi 是当前组索引"""
+def _run_one_group_es_to_zh(groups, gi, kind, difficulty=None):
+    """单组练习：GroupSession 驱动。groups 是全部组列表，gi 是当前组索引
+    句子 + difficulty 非空时走新流程（听写抓词/纯听），否则走原流程。"""
     group = groups[gi]
     total_groups = len(groups)
     gs = GroupSession(group)
     is_sent = (kind == "句子")
+    use_new = is_sent and (difficulty in ("catch", "listen"))
+
+    if use_new:
+        _run_one_group_es_to_zh_linkage(groups, gi, kind, difficulty)
+        return
+
 
     while not gs.all_passed:
         item = gs.current
@@ -1390,7 +1437,7 @@ def _run_one_group_es_to_zh(groups, gi, kind):
         time.sleep(0.3)
 
         # ── 录音阶段 ──
-        qq = _record_phase(es_text)
+        qq = _record_phase(es_text, is_sentence=is_sent)
         if qq == "quit":
             return
 
@@ -1407,7 +1454,8 @@ def _run_one_group_es_to_zh(groups, gi, kind):
         # ── 决策 ──
         result = _decision_pnbr(gs, es_text,
                                 allow_favorite=(kind == "单词"),
-                                sentence_fav=(kind == "句子"))
+                                sentence_fav=(kind == "句子"),
+                                is_sentence=is_sent)
         if result == "quit":
             return
         if result == "goto_next":
@@ -1468,7 +1516,7 @@ def _prompt_record(prompt="按 Enter 开始录音", extra_hint=""):
     return ""
 
 
-def _record_phase(es_text):
+def _record_phase(es_text, is_sentence=False):
     """录音阶段：按 Enter 开始录音，再按 Enter 结束。支持 R 重听、Q 退出。
     返回 "quit" 表示退出，否则返回 None。"""
     while True:
@@ -1476,12 +1524,178 @@ def _record_phase(es_text):
         if cmd == "Q":
             return "quit"
         if cmd == "R":
-            tts_speak(es_text)
+            tts_speak(es_text, is_sentence=is_sentence)
             time.sleep(0.3)
-            tts_speak(es_text)
+            tts_speak(es_text, is_sentence=is_sentence)
             continue
         # 正常录音完成（空字符串）
         return None
+
+
+def _run_one_group_es_to_zh_linkage(groups, gi, kind, difficulty):
+    """模式1句子新流程：听写抓词 / 纯听，含词界标注 + 拆听。"""
+    group = groups[gi]
+    total_groups = len(groups)
+    gs = GroupSession(group)
+
+    while not gs.all_passed:
+        item = gs.current
+        es_text = item["es"]
+        zh_text = item["zh"]
+        passed_info = f"  ✓{gs.passed_count}/{gs.total}" if gs.passed_count > 0 else ""
+
+        print(f"\n{'─' * 36}")
+        print(f"  第 {gi+1}/{total_groups} 组 · 第 {gs.current_index}/{gs.total} 句  {passed_info}")
+        print(f"{'─' * 36}")
+        print(f"  （按 V 切词界版 · W 拆听）")
+        sys.stdout.flush()
+
+        for k in (1, 2):
+            print(f"  听原句（第{k}遍）：{es_text}")
+            sys.stdout.flush()
+            tts_speak(es_text, is_sentence=True)
+            time.sleep(0.3)
+
+        if difficulty == "catch":
+            user_input = wait_line("  敲入你听到的词（空格分隔） > ")
+            if user_input.strip().upper() == "Q":
+                return
+            if user_input.strip().upper() == "S":
+                gs.keep_current()
+                continue
+            res = _compare_caught_words(user_input, es_text)
+            print()
+            print(f"  ── 抓词结果 ──")
+            print(f"  ✓ 抓到 ({res['score']})：{', '.join(res['caught']) if res['caught'] else '—'}")
+            print(f"  ✗ 漏掉 ({len(res['missing'])})：{', '.join(res['missing']) if res['missing'] else '—'}")
+            print(f"  ✗ 多打 ({len(res['extra'])})：{', '.join(res['extra']) if res['extra'] else '—'}")
+            print(f"  得分：{res['score']}/{res['total']} 词")
+            sys.stdout.flush()
+
+            print()
+            print(f"  [答案] {es_text} → {zh_text}")
+            sys.stdout.flush()
+            tts_speak_zh(zh_text)
+            show = False
+            while True:
+                _print_sentence_with_linkage(es_text, show_linkage=show)
+                print("  [V]切词界  [R]重听  [W]拆听  [其他键继续] > ", end="", flush=True)
+                ch = wait_key("")
+                if ch == "V":
+                    show = not show
+                    sys.stdout.write("\033[1A\033[2K")
+                    sys.stdout.flush()
+                    continue
+                if ch == "R":
+                    tts_speak(es_text, is_sentence=True)
+                    time.sleep(0.3)
+                    tts_speak(es_text, is_sentence=True)
+                    sys.stdout.write("\033[1A\033[2K")
+                    sys.stdout.flush()
+                    continue
+                if ch == "W":
+                    print("  [拆听] ", end="", flush=True)
+                    _play_word_by_word(es_text)
+                    sys.stdout.write("\033[1A\033[2K")
+                    sys.stdout.flush()
+                    continue
+                sys.stdout.write("\r\033[2K")
+                sys.stdout.flush()
+                break
+
+            print(f"  再听一遍：{es_text}")
+            sys.stdout.flush()
+            tts_speak(es_text, is_sentence=True)
+
+            if res["perfect"]:
+                gs.pass_current()
+                print("  ✓ 全对，自动通过。")
+                sys.stdout.flush()
+            else:
+                gs.keep_current()
+                print("  ✗ 有漏/多，已保留待重练。")
+                sys.stdout.flush()
+            if gs.all_passed and gs.total > 1:
+                result = _handle_loop_end(gs)
+                if result == "goto_next" and gi + 1 < total_groups:
+                    _run_one_group_es_to_zh_linkage(groups, gi + 1, kind, difficulty)
+                return
+        else:
+            show = False
+            while True:
+                _print_sentence_with_linkage(es_text, show_linkage=show)
+                print("  [V]切词界  [R]重听  [W]拆听  [其他键继续] > ", end="", flush=True)
+                ch = wait_key("")
+                if ch == "V":
+                    show = not show
+                    sys.stdout.write("\033[1A\033[2K")
+                    sys.stdout.flush()
+                    continue
+                if ch == "R":
+                    tts_speak(es_text, is_sentence=True)
+                    time.sleep(0.3)
+                    tts_speak(es_text, is_sentence=True)
+                    sys.stdout.write("\033[1A\033[2K")
+                    sys.stdout.flush()
+                    continue
+                if ch == "W":
+                    print("  [拆听] ", end="", flush=True)
+                    _play_word_by_word(es_text)
+                    sys.stdout.write("\033[1A\033[2K")
+                    sys.stdout.flush()
+                    continue
+                sys.stdout.write("\r\033[2K")
+                sys.stdout.flush()
+                break
+            print(f"  [答案] {es_text} → {zh_text}")
+            sys.stdout.flush()
+            tts_speak_zh(zh_text)
+
+            print(f"  再听一遍：{es_text}")
+            sys.stdout.flush()
+            tts_speak(es_text, is_sentence=True)
+
+            while True:
+                choice = wait_key("  [P]通过  [N]保留  [R]重听  [W]拆听  [F]收藏  [Q]退出 > ")
+                if choice == "P":
+                    if gs.pass_current() and gs.total > 1:
+                        result = _handle_loop_end(gs)
+                        if result == "goto_next" and gi + 1 < total_groups:
+                            _run_one_group_es_to_zh_linkage(groups, gi + 1, kind, difficulty)
+                        return
+                    break
+                if choice == "N":
+                    if gs.keep_current() and gs.total > 1:
+                        result = _handle_loop_end(gs)
+                        if result == "goto_next" and gi + 1 < total_groups:
+                            _run_one_group_es_to_zh_linkage(groups, gi + 1, kind, difficulty)
+                        return
+                    break
+                if choice == "R":
+                    tts_speak(es_text, is_sentence=True)
+                    time.sleep(0.3)
+                    tts_speak(es_text, is_sentence=True)
+                    continue
+                if choice == "W":
+                    print("  [拆听] ", end="", flush=True)
+                    _play_word_by_word(es_text)
+                    continue
+                if choice == "F":
+                    _favorite_words_from_sentence(es_text)
+                    continue
+                if choice == "Q":
+                    return
+
+    print(f"\n-- 第 {gi+1} 组结束--")
+    sys.stdout.flush()
+    time.sleep(0.5)
+
+    if gi + 1 < total_groups:
+        nxt = wait_key(f"  [Enter] 继续第 {gi+2} 组  [B] 回组菜单  [Q] 退出 > ")
+        if nxt == "Q":
+            return
+        if nxt != "B":
+            _run_one_group_es_to_zh_linkage(groups, gi + 1, kind, difficulty)
 
 
 def _handle_loop_end(gs):
@@ -1496,7 +1710,7 @@ def _handle_loop_end(gs):
     return "goto_next"
 
 
-def _decision_pnbr(gs, es_text, allow_favorite=False, sentence_fav=False):
+def _decision_pnbr(gs, es_text, allow_favorite=False, sentence_fav=False, is_sentence=False):
     """P/N/B/R/G/Q/(F) 决策循环。返回 "quit"/"goto_next" 或 None。
     allow_favorite: [F]收藏整个单词（单词模式）
     sentence_fav:   [F]收藏本句所含生词（句子模式）"""
@@ -1516,9 +1730,9 @@ def _decision_pnbr(gs, es_text, allow_favorite=False, sentence_fav=False):
                 return _handle_loop_end(gs)
             return None
         elif choice == "R":
-            tts_speak(es_text)
+            tts_speak(es_text, is_sentence=is_sentence)
             time.sleep(0.3)
-            tts_speak(es_text)
+            tts_speak(es_text, is_sentence=is_sentence)
             print()
             sys.stdout.flush()
             continue
@@ -1676,14 +1890,14 @@ def _run_one_group_zh_to_es(groups, gi, kind):
         print(f"\n  [答案] {zh_text} → {es_text}\n")
         sys.stdout.flush()
 
-        # ── 决策 ──
+# ── 决策 ──
         result = _decision_pnbr(gs, es_text,
                                 allow_favorite=(kind == "单词"),
-                                sentence_fav=(kind == "句子"))
+                                sentence_fav=(kind == "句子"),
+                                is_sentence=is_sent)
         if result == "quit":
             return
         if result == "goto_next":
-            # G 跳过或循环结束选下一组：直接进下一组，不提示
             if gi + 1 < total_groups:
                 _run_one_group_zh_to_es(groups, gi + 1, kind)
             return
@@ -2070,29 +2284,506 @@ def _mode_dictation_sentences():
     time.sleep(0.5)
 
 
+# -- 词界连读工具（v4 方案） ------------------------------------------
+
+_VOWELS = set("aeiouáéíóúüAEIOUÁÉÍÓÚÜ")
+_PUNCT_STRIP = ".,;:¿¡!?""«»()[]{}-—…"
+
+
+def _is_vowel_char(ch):
+    return ch in _VOWELS
+
+
+def _strip_punct(token):
+    """去掉 token 两侧的标点，返回 (display, last_char, first_char)。
+    display 保留原大小写/重音（用于屏幕显示）；
+    last_char / first_char 取小写最后一个/第一个字母（用于连读规则判定）。
+    若 cleaned 为空返回 None。"""
+    s = token.strip().strip(_PUNCT_STRIP)
+    if not s:
+        return None
+    s_lower = s.lower()
+    return s, s_lower[-1], s_lower[0]
+
+
+def _classify_boundary(w1_last, w2_first):
+    """根据前一词尾字符 + 后一词首字符返回连读类型。
+    返回 None 表示不连（保留空格），否则返回 'link'（连读，合一）。"""
+    if not w1_last or not w2_first:
+        return None
+    v1, v2 = _is_vowel_char(w1_last), _is_vowel_char(w2_first)
+    if v1 and v2:
+        return "link"  # 合音（异元）或吞音（同元），均合一
+    if (not v1) and v2:
+        return "link"  # 连链
+    if (not v1) and (not v2):
+        return "link"  # 邻接
+    return None  # 元→辅，不连
+
+
+def _tokenize_es_sentence(es_text):
+    """分词 + 去标点。返回 [(display, last, first), ...]（display 保留原大小写重音）。"""
+    out = []
+    for tok in es_text.split():
+        info = _strip_punct(tok)
+        if info is None:
+            continue
+        out.append(info)
+    return out
+
+
+def _build_linkage_blocks(tokens):
+    """tokens: list of (display, last, first)。
+    返回 [(start_idx, end_idx_exclusive), ...] 表示连读块的索引范围（连续合并）。"""
+    if not tokens:
+        return []
+    blocks = []
+    cur_start = 0
+    for i in range(len(tokens) - 1):
+        typ = _classify_boundary(tokens[i][1], tokens[i + 1][2])
+        if typ is None:
+            # 边界不连：结束当前块（如果长度 > 1）
+            if cur_start < i:
+                blocks.append((cur_start, i + 1))
+            cur_start = i + 1
+    # 收尾
+    if cur_start < len(tokens):
+        blocks.append((cur_start, len(tokens)))
+    # 单元素块不画（无意义）
+    return [b for b in blocks if b[1] - b[0] >= 2]
+
+
+def _format_sentence_with_linkage(es_text, show_linkage=False, color_blocks=True):
+    """打印一句西语。
+    show_linkage=False: 原样打印。
+    show_linkage=True: 连读块内单词用 ANSI 颜色交替区分（绿/黄），块间正常空格。
+    color_blocks=False 且 show_linkage=True: 块内去空格相连，块间空格（无颜色）。
+    返回打印的字符串。display 保留原大小写/重音。"""
+    if not show_linkage:
+        return f"  {es_text}"
+    tokens = _tokenize_es_sentence(es_text)
+    if not tokens:
+        return f"  {es_text}"
+    blocks = _build_linkage_blocks(tokens)
+    display_list = [t[0] for t in tokens]
+    out_parts = []
+    block_set = set()
+    for s, e in blocks:
+        for k in range(s, e):
+            block_set.add(k)
+    i = 0
+    while i < len(display_list):
+        if i in block_set:
+            j = i
+            while j + 1 < len(display_list) and (j + 1) in block_set:
+                j += 1
+            block = display_list[i:j + 1]
+            if color_blocks:
+                colored = []
+                for k, w in enumerate(block):
+                    if k % 2 == 0:
+                        colored.append(f"{_COLOR_GREEN}{w}{_COLOR_RESET}")
+                    else:
+                        colored.append(f"{_COLOR_YELLOW}{w}{_COLOR_RESET}")
+                out_parts.append("".join(colored))
+            else:
+                out_parts.append("".join(block))
+            i = j + 1
+        else:
+            out_parts.append(display_list[i])
+            i += 1
+    trailing = ""
+    if es_text and not es_text[-1].isalpha() and not es_text[-1].isspace():
+        trailing = es_text[-1]
+    line = "  " + " ".join(out_parts) + (trailing if trailing else "")
+    return line
+
+
+def _print_sentence_with_linkage(es_text, show_linkage):
+    """打印一行：正常版或词界版（带颜色）。"""
+    line = _format_sentence_with_linkage(es_text, show_linkage=show_linkage, color_blocks=show_linkage)
+    print(line, flush=True)
+
+
+def _play_word_by_word(es_text, gap=0.3):
+    """逐词朗读（用单词安全模型），词间插 gap 秒静音。"""
+    tokens = _tokenize_es_sentence(es_text)
+    if not tokens:
+        return
+    for idx, (cleaned, _, _) in enumerate(tokens):
+        tts_speak(cleaned, is_sentence=False)
+        if idx < len(tokens) - 1:
+            time.sleep(gap)
+
+
+def _parse_caught_input(user_input):
+    """把用户输入拆成词集合（去空、去标点、小写）。返回 set of cleaned words。"""
+    out = set()
+    for tok in user_input.split():
+        info = _strip_punct(tok)
+        if info is None:
+            continue
+        out.add(info[0])
+    return out
+
+
+def _compare_caught_words(user_input, es_text, fuzzy_threshold=0.8):
+    """宽松匹配比对。
+    返回 dict: {caught: [...], missing: [...], extra: [...], total, score, perfect}
+    规则：
+      1. 原句 cleaned 词列表（lowercase 用于规则判定，display 用于显示）
+      2. 用户输入 cleaned 集合（lowercase）
+      3. 对每个 user 词：
+         a. 若 user 长度明显大于平均 target 长度（> avg*1.5 且 ≥ 6 字符），
+            视为"连读块合并输入"——在未匹配 target 中按长度从大到小贪心找
+            "target 是否是 user 的子串"，命中的全部标为抓到。
+         b. 否则在未匹配 target 中找 difflib ratio 最佳（>= 阈值），命中标抓到。
+         c. 都没命中：user 算多打。
+      4. target 中未匹配的词 = 漏掉
+    """
+    token_info = _tokenize_es_sentence(es_text)
+    target_display = [t[0] for t in token_info]
+    target_lower = [t[0].lower() for t in token_info]
+    user_set = _parse_caught_input(user_input)
+    matched_target = [False] * len(target_lower)
+    caught = []
+    extra = []
+    avg_len = (sum(len(t) for t in target_lower) / len(target_lower)) if target_lower else 0
+    for uw in user_set:
+        # a) 长 user_word → 子串贪心
+        if len(uw) >= 6 and len(uw) > avg_len * 1.5:
+            sub_hits = []
+            for ti, tw in enumerate(target_lower):
+                if matched_target[ti]:
+                    continue
+                if tw and tw in uw:
+                    sub_hits.append(ti)
+            if sub_hits:
+                sub_hits.sort(key=lambda i: len(target_lower[i]), reverse=True)
+                for ti in sub_hits:
+                    matched_target[ti] = True
+                    caught.append(target_display[ti])
+                continue
+        # b) ratio 匹配
+        best_idx = -1
+        best_ratio = 0.0
+        for ti, tw in enumerate(target_lower):
+            if matched_target[ti]:
+                continue
+            r = difflib.SequenceMatcher(None, uw, tw).ratio()
+            if r > best_ratio:
+                best_ratio = r
+                best_idx = ti
+        if best_idx >= 0 and best_ratio >= fuzzy_threshold:
+            matched_target[best_idx] = True
+            caught.append(target_display[best_idx])
+        else:
+            # c) 子串兜底：短 user_word 是某 target 的子串也算（容忍小笔误）
+            for ti, tw in enumerate(target_lower):
+                if matched_target[ti]:
+                    continue
+                if len(tw) >= 4 and len(uw) >= 3 and uw in tw:
+                    matched_target[ti] = True
+                    caught.append(target_display[ti])
+                    break
+            else:
+                extra.append(uw)
+    missing = [target_display[i] for i, m in enumerate(matched_target) if not m]
+    total = len(target_display)
+    score = len(caught)
+    return {
+        "caught": caught,
+        "missing": missing,
+        "extra": extra,
+        "total": total,
+        "score": score,
+        "perfect": (total > 0 and not missing and not extra),
+    }
+
+
+def _prompt_linkage_view(es_text):
+    """揭示阶段：循环按 V 切换词界版 / 正常版，按其他键退出循环返回按键。"""
+    show = False
+    while True:
+        _print_sentence_with_linkage(es_text, show_linkage=show)
+        print("  [V]切换词界版  [其他键继续] > ", end="", flush=True)
+        ch = wait_key("")
+        if ch == "V":
+            show = not show
+            # 简单清屏（ANSI 上移当前行 + 清除），避免堆叠
+            sys.stdout.write("\033[1A\033[2K")
+            sys.stdout.flush()
+            continue
+        # 任何其他键：清理本行（V 提示），返回该键
+        sys.stdout.write("\r\033[2K")
+        sys.stdout.flush()
+        return ch
+
+
+def _post_judgment_menu_pnbr(gs, es_text, sentence_fav=True):
+    """模式1句子：揭示后判定菜单（自动判 + P/N 强制 / B/G/F/Q）。返回 quit/goto_next/None。"""
+    while True:
+        choice = wait_key("  [P]通过  [N]保留  [B]上词  [R]重听  [G]下组  [F]收藏句中单词  [Q]退出 > ")
+        if choice == "P":
+            if gs.pass_current() and gs.total > 1:
+                return _handle_loop_end(gs)
+            return None
+        if choice == "N":
+            if gs.keep_current() and gs.total > 1:
+                return _handle_loop_end(gs)
+            return None
+        if choice == "R":
+            tts_speak(es_text, is_sentence=True)
+            time.sleep(0.3)
+            tts_speak(es_text, is_sentence=True)
+            continue
+        if choice == "B":
+            while True:
+                prev_item, was_passed = gs.go_back()
+                if prev_item is None:
+                    print("  已经是第一个词了")
+                    sys.stdout.flush()
+                    return None
+                if not was_passed:
+                    return None
+                sub = wait_key(
+                    f"  [上一词] 「{prev_item['es']}」已通关。"
+                    f"[Y] 拉回来重新练习  [N] 跳过，继续往前退 > "
+                )
+                if sub == "Y":
+                    gs.unpass()
+                    return None
+        if choice == "G":
+            return "goto_next"
+        if choice == "F" and sentence_fav:
+            _favorite_words_from_sentence(es_text)
+            continue
+        if choice == "Q":
+            return "quit"
+
+
+def _post_judgment_menu_ynsfq(gs, es_text, pq=None):
+    """模式4跟读：揭示后判定菜单（Y/N/S/F/Q）。返回 quit 或 None。"""
+    while True:
+        judge = wait_key("  [Y=过 / N=留 / S=跳过 / F=收藏句中单词 / Q=退出] > ")
+        if judge == "Q":
+            return "quit"
+        if judge == "S":
+            if pq is not None:
+                pq.mark_skip({"es": es_text})
+            return "skip"
+        if judge == "F":
+            _favorite_words_from_sentence(es_text)
+            continue
+        if judge == "N":
+            if gs is not None:
+                gs.keep_current()
+            return "keep"
+        # 默认 = Y (过)
+        if gs is not None:
+            gs.pass_current()
+        return "pass"
+
+
+# 暴露 ANSI 黄（方案里要用，原文件只有绿/红）
+_COLOR_YELLOW = '\033[33m'
+
+
 # -- 模式 4：跟读 ------------------------------------------
 
 def mode_4_shadowing():
-    """模式 4：跟读。5句一组，念西语句子 → 用户跟读 → 交替播放对比"""
-    items = [{"type": "sentence", "es": s["es"], "zh": s["zh"]} for s in TEXTBOOK["sentences"]]
-    groups = [items[i:i + GROUP_SIZE] for i in range(0, len(items), GROUP_SIZE)]
-    for gi, group in enumerate(groups, 1):
-        print(f"\n[跟读模式] 第 {gi}/{len(groups)} 组 — 按S跳过 按Q退出\n")
+    """模式 4：跟读。5句一组，念西语句子 → 用户跟读 → 交替播放对比。
+    v4：先选难度（听写抓词 / 纯听），均含词界标注 + 拆听。"""
+    while True:
+        print()
+        print("=" * 36)
+        print("          [模式4-跟读] 选难度")
+        print("=" * 36)
+        print("  [1] 听写抓词   —— 连听后敲出抓到的词")
+        print("  [2] 纯听       —— 只听 + 自判")
+        print("  [Q] 返回")
+        print("=" * 36)
+        sys.stdout.flush()
+        choice = wait_key("请选择 > ")
+        if choice == "1":
+            _run_shadowing_catch()
+            return
+        if choice == "2":
+            _run_shadowing_listen()
+            return
+        if choice == "Q":
+            return
+        print("  无效选项，请重新选择。")
         sys.stdout.flush()
 
-        pq = PracticeQueue(group)
-        while not pq.empty:
-            item = pq.next()
+
+def _run_shadowing_catch():
+    """模式4 听写抓词：复用 GroupSession，含词界 + 拆听。"""
+    items = [{"es": s["es"], "zh": s["zh"]} for s in TEXTBOOK["sentences"]]
+    groups = [items[i:i + GROUP_SIZE] for i in range(0, len(items), GROUP_SIZE)]
+
+    for gi, group in enumerate(groups, 1):
+        gs = GroupSession(group)
+        print(f"\n[跟读-听写抓词] 第 {gi}/{len(groups)} 组 — 按 V 切词界 · W 拆听 · Q 退出\n")
+        sys.stdout.flush()
+        while not gs.all_passed:
+            item = gs.current
             es_text = item["es"]
-            result = _shadow_one(es_text, item, pq)
-            if result == "quit":
+            zh_text = item["zh"]
+            passed_info = f"  ✓{gs.passed_count}/{gs.total}" if gs.passed_count > 0 else ""
+            print(f"\n{'─' * 36}")
+            print(f"  第 {gi}/{len(groups)} 组 · 第 {gs.current_index}/{gs.total} 句  {passed_info}")
+            print(f"{'─' * 36}")
+            sys.stdout.flush()
+            for k in (1, 2):
+                print(f"  听原句（第{k}遍）：{es_text}")
+                sys.stdout.flush()
+                tts_speak(es_text, is_sentence=True)
+                time.sleep(0.3)
+            user_input = wait_line("  敲入你听到的词（空格分隔） > ")
+            if user_input.strip().upper() == "Q":
                 return
+            if user_input.strip().upper() == "S":
+                gs.keep_current()
+                continue
+            res = _compare_caught_words(user_input, es_text)
+            print()
+            print(f"  ── 抓词结果 ──")
+            print(f"  ✓ 抓到 ({res['score']})：{', '.join(res['caught']) if res['caught'] else '—'}")
+            print(f"  ✗ 漏掉 ({len(res['missing'])})：{', '.join(res['missing']) if res['missing'] else '—'}")
+            print(f"  ✗ 多打 ({len(res['extra'])})：{', '.join(res['extra']) if res['extra'] else '—'}")
+            print(f"  得分：{res['score']}/{res['total']} 词")
+            sys.stdout.flush()
+            print(f"\n  [答案] {es_text} → {zh_text}")
+            sys.stdout.flush()
+            tts_speak_zh(zh_text)
+            show = False
+            while True:
+                _print_sentence_with_linkage(es_text, show_linkage=show)
+                print("  [V]切词界  [R]重听  [W]拆听  [其他键继续] > ", end="", flush=True)
+                ch = wait_key("")
+                if ch == "V":
+                    show = not show
+                    sys.stdout.write("\033[1A\033[2K")
+                    sys.stdout.flush()
+                    continue
+                if ch == "R":
+                    tts_speak(es_text, is_sentence=True)
+                    time.sleep(0.3)
+                    tts_speak(es_text, is_sentence=True)
+                    sys.stdout.write("\033[1A\033[2K")
+                    sys.stdout.flush()
+                    continue
+                if ch == "W":
+                    print("  [拆听] ", end="", flush=True)
+                    _play_word_by_word(es_text)
+                    sys.stdout.write("\033[1A\033[2K")
+                    sys.stdout.flush()
+                    continue
+                sys.stdout.write("\r\033[2K")
+                sys.stdout.flush()
+                break
+            print(f"  再听一遍：{es_text}")
+            sys.stdout.flush()
+            tts_speak(es_text, is_sentence=True)
+            if res["perfect"]:
+                gs.pass_current()
+                print("  ✓ 全对，自动通过。")
+            else:
+                gs.keep_current()
+                print("  ✗ 有漏/多，已保留待重练。")
+            sys.stdout.flush()
         print(f"-- 第 {gi} 组通关！--\n")
         sys.stdout.flush()
         time.sleep(0.5)
     print("-- 全部句子通关！--\n")
     sys.stdout.flush()
-    time.sleep(0.5)
+
+
+def _run_shadowing_listen():
+    """模式4 纯听：只听+自判，含词界 + 拆听。复用 GroupSession。"""
+    items = [{"es": s["es"], "zh": s["zh"]} for s in TEXTBOOK["sentences"]]
+    groups = [items[i:i + GROUP_SIZE] for i in range(0, len(items), GROUP_SIZE)]
+
+    for gi, group in enumerate(groups, 1):
+        gs = GroupSession(group)
+        print(f"\n[跟读-纯听] 第 {gi}/{len(groups)} 组 — 按 V 切词界 · W 拆听 · Q 退出\n")
+        sys.stdout.flush()
+        while not gs.all_passed:
+            item = gs.current
+            es_text = item["es"]
+            zh_text = item["zh"]
+            passed_info = f"  ✓{gs.passed_count}/{gs.total}" if gs.passed_count > 0 else ""
+            print(f"\n{'─' * 36}")
+            print(f"  第 {gi}/{len(groups)} 组 · 第 {gs.current_index}/{gs.total} 句  {passed_info}")
+            print(f"{'─' * 36}")
+            sys.stdout.flush()
+            for k in (1, 2):
+                print(f"  听原句（第{k}遍）：{es_text}")
+                sys.stdout.flush()
+                tts_speak(es_text, is_sentence=True)
+                time.sleep(0.3)
+            show = False
+            while True:
+                _print_sentence_with_linkage(es_text, show_linkage=show)
+                print("  [V]切词界  [R]重听  [W]拆听  [其他键继续] > ", end="", flush=True)
+                ch = wait_key("")
+                if ch == "V":
+                    show = not show
+                    sys.stdout.write("\033[1A\033[2K")
+                    sys.stdout.flush()
+                    continue
+                if ch == "R":
+                    tts_speak(es_text, is_sentence=True)
+                    time.sleep(0.3)
+                    tts_speak(es_text, is_sentence=True)
+                    sys.stdout.write("\033[1A\033[2K")
+                    sys.stdout.flush()
+                    continue
+                if ch == "W":
+                    print("  [拆听] ", end="", flush=True)
+                    _play_word_by_word(es_text)
+                    sys.stdout.write("\033[1A\033[2K")
+                    sys.stdout.flush()
+                    continue
+                sys.stdout.write("\r\033[2K")
+                sys.stdout.flush()
+                break
+            print(f"  [答案] {es_text} → {zh_text}")
+            sys.stdout.flush()
+            tts_speak_zh(zh_text)
+            print(f"  再听一遍：{es_text}")
+            sys.stdout.flush()
+            tts_speak(es_text, is_sentence=True)
+            while True:
+                j = wait_key("  [Y]过  [N]留  [R]重听  [W]拆听  [F]收藏  [Q]退出 > ")
+                if j == "Q":
+                    return
+                if j == "Y":
+                    if gs.pass_current() and gs.total > 1:
+                        _handle_loop_end(gs)
+                    break
+                if j == "N":
+                    if gs.keep_current() and gs.total > 1:
+                        _handle_loop_end(gs)
+                    break
+                if j == "R":
+                    tts_speak(es_text, is_sentence=True)
+                    time.sleep(0.3)
+                    tts_speak(es_text, is_sentence=True)
+                    continue
+                if j == "W":
+                    print("  [拆听] ", end="", flush=True)
+                    _play_word_by_word(es_text)
+                    continue
+                if j == "F":
+                    _favorite_words_from_sentence(es_text)
+                    continue
+        print(f"-- 第 {gi} 组通关！--\n")
+        sys.stdout.flush()
+        time.sleep(0.5)
+    print("-- 全部句子通关！--\n")
+    sys.stdout.flush()
 
 
 def _shadow_one(es_text, item, pq):
