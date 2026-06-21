@@ -1,0 +1,123 @@
+# 例句
+
+José va al aeropuerto.	何塞去机场。
+Tiene que estar allí.	他必须在那儿。
+Ya es una hora.	已经一小时了。
+Ana no viene.	Ana 没来。
+Ya es otra hora.	又过了一小时。
+José está muy nervioso.	何塞很紧张。
+Tiene un problema.	他有个问题。
+José tiene el teléfono.	何塞有电话。
+Soy Ana.	我是 Ana。
+El avión no puede salir.	飞机不能起飞。
+Supongo que el avión tiene un problema.	我猜飞机有问题。
+¡Qué va!	哪有的事！
+¿Qué día puedes venir?	你哪一天能来？
+Tengo que estar allí otro día.	我必须在那儿再待一天。
+¡Qué día tan recargado!	多么抓马的一天啊！
+
+(第二天)
+José está todavía en el aeropuerto.	何塞还在机场。
+Ana ya viene.	Ana 已经来了。
+¡Ya estás aquí!	你终于来了！
+¡Cuánto tiempo!	好久！
+Sí, ¡mucho tiempo en el avión!	是的，飞机上很久！
+Yo estoy aquí.	我在这儿呢。
+Tú vas a estar contenta aquí.	你在这儿会开心的。
+¿Tienes tu pasaporte?	你有护照吗？
+Sí, tengo mi pasaporte.	是的，我有护照。
+
+(去宿舍)
+Vamos a la residencia.	我们去宿舍。
+Yo conozco este país bastante bien.	我相当了解这个国家。
+José y Ana toman un tren al centro.	何塞和 Ana 坐火车去市中心。
+El tren es normal.	火车正常。
+Pero el tren no va bien.	但火车走得不好。
+José y Ana salen del tren.	何塞和 Ana 下了火车。
+¡No es aquí!	不是这里！
+José está muy nervioso.	何塞很紧张。
+Tienen otro problema.	他们有另一个问题。
+José y Ana toman un taxi al hotel.	何塞和 Ana 坐出租车去酒店。
+El hotel está en el centro.	酒店在市中心。
+José y Ana están en el hotel.	何塞和 Ana 在酒店。
+
+(第二天再去宿舍)
+José y Ana ya están en la residencia.	何塞和 Ana 已经在宿舍了。
+Subimos al dormitorio.	我们上楼去宿舍。
+¿Subes también?	你也上去吗？
+Sí, subo también.	是的，我也上去。
+Esta habitación es pequeña.	这个房间虽小。
+Pero tiene un cuarto de baño grande.	但有一个大卫生间。
+Y una sala de estar grande.	还有一个大客厅。
+También tiene una cocina grande.	还有一个大厨房。
+Pareces muy contenta.	你看起来非常开心.
+Pero José y Ana tienen un problema con la puerta.	但何塞和 Ana 跟门有问题。
+Tienen otro problema.	他们有另一个问题。
+José y Ana llaman por teléfono.	何塞和 Ana 打电话。
+El señor viene.	先生来了。
+¡Qué bien!	太好了！
+¡Qué momento perfecto!	多么完美的时刻!
+
+(整理)
+Ana pone sus cosas en la habitación.	Ana 把东西放在房间里。
+¿Dónde pones tu libro?	你把书放哪里？
+Pongo el libro en la mesa.	我把书放在桌上。
+¿Tienes un libro en la mano?	你手里有本书吗？
+Sí, tengo un libro en la mano.	是的，我手里有一本书。
+
+(聊家人)
+¿Conoces a mi familia?	你认识我家人吗？
+No, no conozco a tus padres.	不，我不认识你父母。
+Mi padre es médico en Lima.	我爸爸是利马的医生。
+Mis padres viven en una casa pequeña.	我父母住在一间小房子里。
+Tengo tres hermanos.	我有三个兄弟姐妹。
+Mis hermanos estudian en el colegio.	我兄弟姐妹在中学读书。
+Mi hermana menor está en la secundaria.	我妹妹在读中学。
+Mi hermano mayor está en el bachillerato.	我哥在读高中。
+¿Todavía en la escuela?	还在小学？
+Sí, mi otro hermano está en la escuela.	是的，我另一个弟弟还在小学。
+
+(夏令营)
+Los cursos de verano son mañana.	夏令营是明天。
+Cumplo años mañana.	我明天过生日。
+¡Qué bien!	太好了！
+¿Cumples años también?	你也过生日吗？
+Sí, cumplo años.	是的，我过生日。
+¿Cumples con todo?	你完成一切了吗？
+Sí, cumplo con todo.	是的，我完成一切。
+Los profesores enseñan bien el lenguaje español.	老师们教西班牙语教得很好。
+También enseñan cosas de este país.	他们也教这个国家的事。
+Yo puedo enseñar español.	我能教西班牙语。
+¿Puedes hablar?	你能说吗？
+Lleváis los libros al curso, ¿verdad?	你们带书去课程，对吧？
+Otros estudiantes van al curso también.	其他学生也去课程。
+Tienen que tener los libros.	他们必须带书。
+Van a la facultad mañana.	他们明天去学院。
+
+(吃饭)
+Vamos a comer en la cocina.	我们去厨房吃。
+Como queso.	我吃奶酪。
+Yo también como queso.	我也吃奶酪。
+Me cepillo los dientes después de comer.	我饭后刷牙。
+
+(晚上)
+Después de comer, Ana tiene que salir.	吃完后，Ana 必须走。
+¡Qué día tan recargado!	多么抓马的一天啊！
+Todo el tiempo estoy muy ocupado.	我所有时间都很忙。
+Por la tarde tengo que estudiar.	下午我必须学习。
+Tengo que llevar mis libros a la escuela.	我必须把书带去学校。
+Luego no regresas a casa, ¿verdad?	然后你不回家，对吧？
+No, yo no regreso.	不，我不回家。
+Estoy en la residencia.	我在宿舍。
+Todos los días tienes que estudiar mucho.	每天你必须努力学习。
+Ana tiene que venir mañana a la residencia.	Ana 明天必须来宿舍。
+
+(睡觉)
+Ya es tarde.	已经晚了。
+Tengo que bañarme.	我必须洗澡。
+¿Te bañas en el cuarto de baño?	你在卫生间洗澡吗？
+Tengo que acostarme.	我必须睡觉。
+Me acuesto a las siete.	我七点睡觉。
+¿Nos acostamos ya?	我们现在就睡吗？
+Sí, nos acostamos.	是的，我们睡吧。
+Mañana salgo de la residencia a las siete.	明天我七点离开宿舍。
