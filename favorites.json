@@ -2,10 +2,16 @@
   "01-11": [
     "dormitorio",
     "habitación",
-    "colegio"
+    "colegio",
+    "te levantas"
   ],
   "01-12": [
     "hermanos"
+  ],
+  "01-10": [
+    "cada",
+    "cada uno",
+    "asignatura"
   ],
   "01-14": [
     "llevar",
@@ -21,7 +27,8 @@
     "por la tarde",
     "te bañas",
     "regresar",
-    "me cepillo"
+    "me cepillo",
+    "me peino"
   ],
   "01-15": [
     "parecer",
@@ -39,7 +46,22 @@
   "收藏集": [],
   "01-16": [
     "residencia",
-    "verano"
+    "verano",
+    "cursos de verano",
+    "todos los años",
+    "aeropuerto",
+    "hora",
+    "nervioso",
+    "avión",
+    "puerta"
+  ],
+  "01-16-A": [
+    "pequeña",
+    "cumplir con",
+    "todo el tiempo",
+    "suben a",
+    "poner cosa en",
+    "salir de"
   ],
   "01-17": [
     "salgo",
@@ -48,5 +70,45 @@
     "me acuesto",
     "nos acostamos",
     "tener que"
+  ],
+  "01-05": [
+    "conocer",
+    "conozco"
+  ],
+  "01-07": [
+    "cantar",
+    "cumplir",
+    "cumplo",
+    "cumples",
+    "subir",
+    "subo",
+    "subes",
+    "tienes",
+    "poder",
+    "puedo",
+    "puedes",
+    "poner",
+    "pongo",
+    "pones",
+    "vengo",
+    "venir",
+    "vas",
+    "va",
+    "van",
+    "libro",
+    "mano",
+    "conocer",
+    "en la mano"
+  ],
+  "01-08": [
+    "enseñan",
+    "país",
+    "lenguaje"
+  ],
+  "01-02": [
+    "queso"
+  ],
+  "01-03": [
+    "mesa"
   ]
 }

@@ -19,6 +19,7 @@ móvil	移动的
 año	年
 curso	课程
 cursos de verano	夏令营（暑期课程）
+todos los años	每年
 organizar	组织，举办
 organizo	我组织
 organizas	你组织
@@ -27,6 +28,23 @@ organizamos	我们组织
 organizáis	你们组织
 organizan	他们/她们组织
 señor	先生
+problema	(英语同源词problem)问题
+avión	(英语同源词aviation)飞机
+aeropuerto	(英语同源词airport)机场
+puerta	(英语同源词portal)门
+nervioso	(英语同源词nervous)紧张的
+diferente	(英语同源词different)不同的
+pasaporte	(英语同源词passport)护照
+hotel	(英语同源词hotel)酒店
+taxi	(英语同源词taxi)出租车
+tren	(英语同源词train)火车
+minuto	(英语同源词minute)分钟
+hora	(英语同源词hour)小时
+momento	(英语同源词moment)时刻
+normal	(英语同源词normal)正常的
+perfecto	(英语同源词perfect)完美的
+posible	(英语同源词possible)可能的
+diferente	(英语同源词different)不同的
 
 # 例句
 Esta casa tiene muchas habitaciones.	这间房子有很多房间。
