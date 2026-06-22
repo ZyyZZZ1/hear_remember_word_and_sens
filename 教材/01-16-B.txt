@@ -1,3 +1,6 @@
+# 生词
+cuánto tiempo	好久
+
 # 例句
 
 José va al aeropuerto.	何塞去机场。
