@@ -1220,8 +1220,8 @@ def _run_one_group_memory_import(groups, gi):
 
         # P/N/B/R/G/F/Q 决策
         while True:
-            choice = wait_key("  [P]通过  [N]保留  [B]上词  [R]重听  [G]下组  [F]收藏  [Q]退出 > ")
-            if choice == "P":
+            choice = wait_key("  [Enter/P]通过  [N]保留  [B]上词  [R]重听  [G]下组  [F]收藏  [Q]退出 > ")
+            if not choice or choice == "P":
                 if gs.pass_current() and gs.total > 1:
                     result = _handle_loop_end(gs)
                     if result == "goto_next":
@@ -1653,8 +1653,8 @@ def _run_one_group_es_to_zh_linkage(groups, gi, kind, difficulty):
             tts_speak(es_text, is_sentence=True)
 
             while True:
-                choice = wait_key("  [P]通过  [N]保留  [R]重听  [W]拆听  [F]收藏  [Q]退出 > ")
-                if choice == "P":
+                choice = wait_key("  [Enter/P]通过  [N]保留  [R]重听  [W]拆听  [F]收藏  [Q]退出 > ")
+                if not choice or choice == "P":
                     if gs.pass_current() and gs.total > 1:
                         result = _handle_loop_end(gs)
                         if result == "goto_next" and gi + 1 < total_groups:
@@ -1717,8 +1717,8 @@ def _decision_pnbr(gs, es_text, allow_favorite=False, sentence_fav=False, is_sen
     elif sentence_fav:
         fav_menu = "  [F]收藏句中单词"
     while True:
-        choice = wait_key(f"  [P]通过  [N]保留  [B]上词  [R]重听  [G]下组{fav_menu}  [Q]退出 > ")
-        if choice == "P":
+        choice = wait_key(f"  [Enter/P]通过  [N]保留  [B]上词  [R]重听  [G]下组{fav_menu}  [Q]退出 > ")
+        if not choice or choice == "P":
             if gs.pass_current() and gs.total > 1:
                 return _handle_loop_end(gs)
             return None
@@ -2520,8 +2520,8 @@ def _prompt_linkage_view(es_text):
 def _post_judgment_menu_pnbr(gs, es_text, sentence_fav=True):
     """模式1句子：揭示后判定菜单（自动判 + P/N 强制 / B/G/F/Q）。返回 quit/goto_next/None。"""
     while True:
-        choice = wait_key("  [P]通过  [N]保留  [B]上词  [R]重听  [G]下组  [F]收藏句中单词  [Q]退出 > ")
-        if choice == "P":
+        choice = wait_key("  [Enter/P]通过  [N]保留  [B]上词  [R]重听  [G]下组  [F]收藏句中单词  [Q]退出 > ")
+        if not choice or choice == "P":
             if gs.pass_current() and gs.total > 1:
                 return _handle_loop_end(gs)
             return None
