@@ -20,6 +20,7 @@ sale de	他/她从……离开
 salimos de	我们从……离开
 salís de	你们从……离开
 salen de	他们/她们从……离开
+tienen un problema con	和……有问题
 
 # 例句
 
