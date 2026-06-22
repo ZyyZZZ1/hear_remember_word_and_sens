@@ -6,6 +6,13 @@ va a	他/她将要
 vamos a	我们将要
 vais a	你们将要
 van a	他们/她们将要
+ir bien	进展顺利
+voy bien	我进展顺利
+vas bien	你进展顺利
+va bien	他/她进展顺利；运行正常
+vamos bien	我们进展顺利
+vais bien	你们进展顺利
+van bien	他们/她们进展顺利
 
 # 例句
 
