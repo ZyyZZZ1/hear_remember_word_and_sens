@@ -13,6 +13,13 @@ va bien	他/她进展顺利；运行正常
 vamos bien	我们进展顺利
 vais bien	你们进展顺利
 van bien	他们/她们进展顺利
+salir de	从……离开/出来
+salgo de	我从……离开
+sales de	你从……离开
+sale de	他/她从……离开
+salimos de	我们从……离开
+salís de	你们从……离开
+salen de	他们/她们从……离开
 
 # 例句
 
