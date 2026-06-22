@@ -1,5 +1,11 @@
 # 生词
 cuánto tiempo	好久
+voy a	我将要
+vas a	你将要
+va a	他/她将要
+vamos a	我们将要
+vais a	你们将要
+van a	他们/她们将要
 
 # 例句
 
