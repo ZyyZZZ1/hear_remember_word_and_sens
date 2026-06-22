@@ -347,17 +347,14 @@ def select_textbook():
     print("=" * 36)
 
     while True:
-        choice = wait_key("请选择 > ")
+        choice = wait_key("请选择（输入教材代码，如 01-16-A；*=收藏集；Q=退出） > ")
         if choice == "Q":
             return None
         if choice == "*" and has_fav:
             return fav_textbook
-        try:
-            idx = int(choice) - 1
-            if 0 <= idx < len(textbooks):
-                return textbooks[idx]
-        except ValueError:
-            pass
+        for tb in textbooks:
+            if tb["name"].upper() == choice:
+                return tb
         print("  无效选项，请重新选择。")
 
 

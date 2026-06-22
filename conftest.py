@@ -115,13 +115,13 @@ class ProgramRunner:
         """统计 stdout 中某文字出现次数"""
         return self.get_output().count(text)
 
-    def select_textbook_and_wait_menu(self, index=1):
-        """处理教材选择：如果有选择菜单则选第 index 本，然后等待主菜单"""
+    def select_textbook_and_wait_menu(self, code="01-01"):
+        """处理教材选择：如果有选择菜单则按教材代码选择，然后等待主菜单"""
         # 等教材选择界面出现（程序需要解析教材文件，需要更长时间）
         self.wait_for_any(["请选择教材", "西班牙语陪练"], timeout=10)
         out = self.get_output()
         if "请选择教材" in out:
-            self.send(str(index))
+            self.send(code)
             time.sleep(0.5)
         # 等待主菜单
         self.wait_for_text("西班牙语陪练", timeout=5)
