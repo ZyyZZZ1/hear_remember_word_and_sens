@@ -10,3 +10,4 @@ kokoro_models/.cache/
 kokoro_models/__pycache__/
 test_kokoro_official.py
 test_zh_piper.py
+.omo/
