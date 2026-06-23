@@ -158,3 +158,15 @@ ya 是西班牙语常用副词，主要有两种用法：(1) 表示"已经"，�
 动词 + por + 通信手段 —— 表示"通过某方式做某事"
 介词 por 在本课中引出通信/联系方式，表示"通过/用（某种手段）"，相当于英语的 via / by means of。结构为"动词 + por + 通信工具"。本课中 José y Ana llaman por teléfono.（何塞和 Ana 打电话）即为此用法，llamar（呼叫/打电话）+ por（通过）+ teléfono（电话）。类似搭配还有 hablar por teléfono（通电话）、enviar por correo electrónico（通过电子邮件发送）。
 对应例句：48
+
+西班牙"学校"相关词汇辨析
+本课集中出现了多个与"学校"相关的词汇，按西班牙教育体系分级说明如下：
+1. escuela（学校/小学）—— 最泛指的"学校"；在西班牙教育语境中通常指小学（escuela primaria/colegio de primaria），但也可用于任何学校。本课指小学（例句65、66、90）。
+2. colegio（学校）—— 中小学阶段的学校，偏私立或合校（小学+初中）。在拉美也泛指"学校"。本课中 Mis hermanos estudian en el colegio 指中学阶段（例句62）。
+3. instituto（学院/高中）—— 专用于中等教育第二阶段，即上 secundaria 和 bachillerato 的学校场所。在西班牙，上完 colegio 或 escuela primaria 后进入 instituto。本课词汇表中虽未直接出现，但可与 colegio 对照理解。
+4. secundaria（中学/初中）—— 指教育阶段而非学校建筑，约12-16岁，相当于中国初中。在 instituto 里就读。本课 Mi hermana menor está en la secundaria（例句63）。
+5. bachillerato（高中课程）—— 指教育阶段，约16-18岁，相当于中国高中，为大学预科。在 instituto 里就读。本课 Mi hermano mayor está en el bachillerato（例句64）。
+6. facultad（大学学院/系）—— 大学内部按学科划分的学院，如 facultad de medicina（医学院）。大学本身叫 universidad。本课 Van a la facultad mañana（例句81）。
+7. universidad（大学）—— 整个大学机构，包含多个 facultades。本课未直接出现，但与 facultad 对照记忆。
+简短口诀：小学 colegio/escuela → 中学 instituto（内分 secundaria + bachillerato）→ 大学 universidad（内含 facultades）。
+对应例句：62,63,64,65,66,81,90
