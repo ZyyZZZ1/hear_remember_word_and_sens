@@ -431,9 +431,13 @@ def tts_speak(text, is_sentence=False):
 _SP_ZH = None
 
 def tts_speak_zh(text):
-    """中文 TTS 朗读（优先 Kokoro，回退 Piper 中文，再回退 SAPI）"""
+    """中文 TTS 朗读
+    - 纯中文 → SAPI（Kokoro 不参与，避开自回归慢路径）
+    - 中英混合 → Kokoro，失败再回退 SAPI
+    """
     global _SP_ZH
-    if KOKORO_PIPELINE and _KOKORO_VOICE_DIR:
+    use_kokoro = KOKORO_PIPELINE and _KOKORO_VOICE_DIR and not _is_pure_chinese(text)
+    if use_kokoro:
         voice_files = [f for f in os.listdir(_KOKORO_VOICE_DIR)
                        if f.startswith('z') and f.endswith('.pt')]
         if voice_files:
@@ -2316,6 +2320,13 @@ def _classify_boundary(w1_last, w2_first):
     if (not v1) and (not v2):
         return "link"  # 邻接
     return None  # 元→辅，不连
+
+
+def _is_pure_chinese(text):
+    """文本不含任何英文字母则视为纯中文。
+    数字、中文标点、空白允许。
+    检测到 a-z/A-Z 视为混合语种，走 Kokoro。"""
+    return not re.search(r'[a-zA-Z]', text)
 
 
 def _tokenize_es_sentence(es_text):

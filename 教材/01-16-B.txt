@@ -21,6 +21,13 @@ salimos de	我们从……离开
 salís de	你们从……离开
 salen de	他们/她们从……离开
 tienen un problema con	和……有问题
+cumplir años	过生日
+cumplo años	我过生日
+cumples años	你过生日
+cumple años	他/她过生日
+cumplimos años	我们过生日
+cumplís años	你们过生日
+cumplen años	他们/她们过生日
 
 # 例句
 
