@@ -1,6 +1,12 @@
 # 生词
 cómo 怎么（疑问词）
 llamarse	叫，名叫
+llamarme	我（叫）（不定式+自复代词）
+llamarte	你（叫）
+llamarse	他/她（叫）
+llamarnos	我们（叫）
+llamaros	你们（叫）
+llamarse	他们/她们（叫）
 me llamo	我叫
 te llamas	你叫
 se llama	他/她叫

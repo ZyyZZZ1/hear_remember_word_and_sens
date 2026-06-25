@@ -20,6 +20,12 @@ salimos	我们出去
 salís	你们出去
 salen	他们/她们出去
 acostarse	睡觉，就寝
+acostarme	我（去）睡觉（不定式+自复代词）
+acostarte	你（去）睡觉
+acostarse	他（去）睡觉
+acostarnos	我们（去）睡觉
+acostaros	你们（去）睡觉
+acostarse	他们（去）睡觉
 me acuesto	我睡觉
 te acuestas	你睡觉
 se acuesta	他/她睡觉

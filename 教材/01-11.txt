@@ -20,6 +20,12 @@ con	和……一起、带有
 habitación	房间
 instituto	学院，高中
 levantarse	起床
+levantarme	我（去）起床（不定式+自复代词）
+levantarte	你（去）起床
+levantarse	他/她（去）起床
+levantarnos	我们（去）起床
+levantaros	你们（去）起床
+levantarse	他们/她们（去）起床
 me levanto	我起床
 te levantas	你起床
 se levanta	他/她起床

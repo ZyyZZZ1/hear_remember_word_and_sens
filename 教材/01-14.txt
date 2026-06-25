@@ -14,6 +14,12 @@ Lima 利马（秘鲁首都）
 Perú 秘鲁
 temprano 早的、早
 bañarse	洗澡、沐浴
+bañarme	我（去）洗澡（不定式+自复代词）
+bañarte	你（去）洗澡
+bañarse	他（去）洗澡
+bañarnos	我们（去）洗澡
+bañaros	你们（去）洗澡
+bañarse	他们（去）洗澡
 me baño	我洗澡
 te bañas	你洗澡
 se baña	他/她洗澡
@@ -24,6 +30,12 @@ secundaria 中学
 diente 牙、齿、牙齿
 cepillarse los dientes 刷牙（固定搭配）
 peinarse	梳头
+peinarme	我（去）梳头（不定式+自复代词）
+peinarte	你（去）梳头
+peinarse	他（去）梳头
+peinarnos	我们（去）梳头
+peinaros	你们（去）梳头
+peinarse	他们（去）梳头
 me peino	我梳头
 te peinas	你梳头
 se peina	他/她梳头
@@ -32,6 +44,12 @@ os peináis	你们梳头
 se peinan	他们/她们梳头
 después de （表示时间）在……之后
 cepillarse	刷、刷洗 14
+cepillarme	我（去）刷（不定式+自复代词）
+cepillarte	你（去）刷
+cepillarse	他（去）刷
+cepillarnos	我们（去）刷
+cepillaros	你们（去）刷
+cepillarse	他们（去）刷
 me cepillo	我刷
 te cepillas	你刷
 se cepilla	他/她刷
