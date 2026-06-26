@@ -7,12 +7,12 @@ vamos a	我们将要
 vais a	你们将要
 van a	他们/她们将要
 ir bien	进展顺利
-voy bien	我进展顺利
-vas bien	你进展顺利
-va bien	他/她进展顺利；运行正常
-vamos bien	我们进展顺利
-vais bien	你们进展顺利
-van bien	他们/她们进展顺利
+voy bien	(I go well)我进展顺利
+vas bien	(you go well)你进展顺利
+va bien	(he or she goes well)他/她进展顺利；运行正常
+vamos bien	(we go well)我们进展顺利
+vais bien	(you all go well)你们进展顺利
+van bien	(they go well)他们/她们进展顺利
 salir de	从……离开/出来
 salgo de	我从……离开
 sales de	你从……离开
