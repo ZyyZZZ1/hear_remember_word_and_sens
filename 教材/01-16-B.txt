@@ -20,6 +20,13 @@ sale de	他/她从……离开
 salimos de	我们从……离开
 salís de	你们从……离开
 salen de	他们/她们从……离开
+estar allí	在那里
+estoy allí	(I am there)我在那里
+estás allí	(you are there)你在那里
+está allí	(he or she is there)他/她在那里；运行正常
+estamos allí	(we are there)我们在那里
+estáis allí	(you all are there)你们在那里
+están allí	(they are there)他们/她们在那里
 tienen un problema con	和……有问题
 cumplir años	过生日
 cumplo años	我过生日
