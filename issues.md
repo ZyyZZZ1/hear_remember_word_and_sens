@@ -24,3 +24,22 @@
 - **现象**：进入模式 3（听写）后每次 TTS 朗读都报 `[TTS] 朗读失败：(-2147221008, '尚未调用 CoInitialize。')`
 - **原因**：`tts_speak_async` 在子线程中调用 `win32com.client.Dispatch`，COM 需要先 `CoInitialize`
 - **修复**：在 `_tts_speak_with_voice` 开头加 `pythoncom.CoInitialize()`
+
+## 7. 新增「句子收藏夹」功能 ⏳ 待实施
+
+- **主题**：在现有单词收藏夹（`favorites.json` + `[*] 收藏集`）的基础上，平行新增一个**句子级**的全局收藏夹，让用户能把整句西语收藏到独立池子里，便于复习整句结构
+- **完整 Plan**：见本次 opencode 会话内的"完整实施计划：句子收藏夹"回复
+- **关键决策**（用户在会话中确认）：
+  - 存储：扩展 `favorites.json`，新增全局 key `"句子收藏"`
+  - 虚拟教材名：`收藏句子集`
+  - 句子模式快捷键：`[J]收藏本句`
+  - 保留旧功能 `[F]收藏句中单词`
+- **计划入口**：
+  - 教材选择菜单新增 `[**] 收藏句子集（N 个收藏句）`，与现有 `[*] 收藏集` 并列
+  - 句子模式决策菜单新增 `[J]收藏本句`，与现有 `[F]收藏句中单词` 并列
+  - 句子模式组菜单新增 `[*] 收藏句组`
+- **计划新增/修改函数**：
+  - 新增：`_load_sentence_favorites` / `_save_sentence_favorites` / `_get_sentence_favorites` / `_toggle_sentence_favorite` / `_build_sentence_favorites_textbook`
+  - 修改：`select_textbook`、`_decision_pnbr`、`_post_judgment_menu_pnbr`、`_post_judgment_menu_ynsfq`、纯听循环、`_shadow_one`、听写-句子、混着来、`_run_group_menu_es_to_zh`、`_run_group_menu_zh_to_es`
+- **现状**：⏳ **未实施**（仅完成方案讨论，未改 main.py、未改 favorites.json、未写测试）
+- **提出时间**：2026-06-29
