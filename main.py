@@ -347,7 +347,10 @@ def select_textbook():
     print("=" * 36)
 
     while True:
-        choice = wait_key("请选择（输入教材代码，如 01-16-A；*=收藏集；Q=退出） > ")
+        choice = _wait_line_voice(
+            _VP_INPUT,
+            "请选择（输入教材代码，如 01-16-A；*=收藏集；Q=退出） > ",
+        )
         if choice == "Q":
             return None
         if choice == "*" and has_fav:
@@ -429,13 +432,49 @@ def tts_speak(text, is_sentence=False):
 
 # 持久化 SAPI 中文语音对象（用于打断）
 _SP_ZH = None
+_SP_ZH_LOCK = threading.Lock()
 
-def tts_speak_zh(text):
-    """中文 TTS 朗读
-    - 纯中文 → SAPI（Kokoro 不参与，避开自回归慢路径）
-    - 中英混合 → Kokoro，失败再回退 SAPI
-    """
+
+def _get_sp_zh():
+    """获取/初始化 SAPI 中文语音对象（共享，可被外部 purge）"""
     global _SP_ZH
+    with _SP_ZH_LOCK:
+        if _SP_ZH is None:
+            try:
+                import pythoncom
+                pythoncom.CoInitialize()
+            except Exception:
+                pass
+            _SP_ZH = win32com.client.Dispatch("SAPI.SpVoice")
+            _SP_ZH.Voice = TTS_VOICE_ZH
+            _SP_ZH.Rate = 1
+            _SP_ZH.Volume = 100
+        return _SP_ZH
+
+
+def _stop_audio():
+    """立即停止所有正在播放的 TTS（sounddevice + SAPI purge）"""
+    try:
+        sd.stop()
+    except Exception:
+        pass
+    try:
+        if _SP_ZH is not None:
+            _SP_ZH.Speak("", 3)  # SPF_PURGEBEFORESPEAK
+    except Exception:
+        pass
+
+
+def _safe_kbhit():
+    """安全的 msvcrt.kbhit（无控制台时返回 False）"""
+    try:
+        return msvcrt.kbhit()
+    except Exception:
+        return False
+
+
+def _speak_zh_no_poll(text):
+    """朗读中文（不轮询按键，调用方负责打断）。阻塞直到朗读完成或被外部 purge。"""
     use_kokoro = KOKORO_PIPELINE and _KOKORO_VOICE_DIR and not _is_pure_chinese(text)
     if use_kokoro:
         voice_files = [f for f in os.listdir(_KOKORO_VOICE_DIR)
@@ -457,45 +496,35 @@ def tts_speak_zh(text):
     if not TTS_VOICE_ZH:
         return
     try:
-        import pythoncom
-        pythoncom.CoInitialize()
+        sp = _get_sp_zh()
+        sp.Speak(text, 0)
     except Exception:
         pass
-    try:
-        if _SP_ZH is None:
-            _SP_ZH = win32com.client.Dispatch("SAPI.SpVoice")
-            _SP_ZH.Voice = TTS_VOICE_ZH
-            _SP_ZH.Rate = 1
-            _SP_ZH.Volume = 100
-        done = threading.Event()
-        def _speak():
-            try:
-                import pythoncom
-                pythoncom.CoInitialize()
-            except Exception:
-                pass
-            try:
-                sp_local = win32com.client.Dispatch("SAPI.SpVoice")
-                sp_local.Voice = TTS_VOICE_ZH
-                sp_local.Rate = 1
-                sp_local.Volume = 100
-                sp_local.Speak(text, 0)
-            except Exception:
-                pass
-            finally:
-                done.set()
-        t = threading.Thread(target=_speak, daemon=True)
-        t.start()
-        print("  （按任意键跳过中文朗读）", end="", flush=True)
-        while not done.is_set():
-            if msvcrt.kbhit():
-                msvcrt.getch()
-                _SP_ZH.Speak("", 3)
-                break
-            time.sleep(0.1)
-        print("\r" + " " * 36 + "\r", end="", flush=True)
-    except Exception:
-        pass
+
+
+def tts_speak_zh(text):
+    """中文 TTS 朗读（带打断支持）
+    - 纯中文 → SAPI（Kokoro 不参与，避开自回归慢路径）
+    - 中英混合 → Kokoro，失败再回退 SAPI
+    """
+    done = threading.Event()
+    def _speak():
+        try:
+            _speak_zh_no_poll(text)
+        except Exception:
+            pass
+        finally:
+            done.set()
+    t = threading.Thread(target=_speak, daemon=True)
+    t.start()
+    print("  （按任意键跳过中文朗读）", end="", flush=True)
+    while not done.is_set():
+        if _safe_kbhit():
+            msvcrt.getch()
+            _stop_audio()
+            break
+        time.sleep(0.1)
+    print("\r" + " " * 36 + "\r", end="", flush=True)
 
 
 def tts_speak_async(text, is_sentence=False):
@@ -506,11 +535,17 @@ def tts_speak_async(text, is_sentence=False):
 
 
 def tts_speak_zh_async(text):
-    """中文 TTS 朗读（后台线程）"""
+    """中文 TTS 朗读（后台线程，不轮询按键）"""
     if KOKORO_PIPELINE or TTS_VOICE_ZH:
-        t = threading.Thread(target=tts_speak_zh, args=(text,), daemon=True)
+        t = threading.Thread(target=_speak_zh_no_poll, args=(text,), daemon=True)
         t.start()
+
+
+def _speak_zh_async_silent(text):
+    """后台朗读中文（不轮询按键、不打印提示）。返回 Thread 对象。"""
+    t = threading.Thread(target=_speak_zh_no_poll, args=(text,), daemon=True)
     t.start()
+    return t
 
 
 def _tts_speak_es_interruptible(es_text):
@@ -591,7 +626,7 @@ def _spelling_quiz_phase(es_text, zh_text):
     while spelling_attempts < 2 and not spelling_done:
         print(f"  请输入单词拼写（按R重听 / 按Enter跳过 / 按Q退出）:")
         sys.stdout.flush()
-        user_input = wait_line("  > ")
+        user_input = _wait_line_voice(_VP_INPUT, "  > ")
         cmd = user_input.strip()
 
         if cmd.upper() == "Q":
@@ -626,7 +661,7 @@ def _spelling_quiz_phase(es_text, zh_text):
                 print(f"  请照着输入一遍：")
                 sys.stdout.flush()
                 tts_speak(es_text)
-                copy_input = wait_line("  > ").strip()
+                copy_input = _wait_line_voice("请照着输入正确拼写", "  > ").strip()
                 if copy_input.upper() == "Q":
                     return "quit"
                 if copy_input.lower() == es_text.lower():
@@ -647,7 +682,7 @@ def _spelling_quiz_phase(es_text, zh_text):
     while zh_attempts < 2 and not zh_done:
         print(f"  请输入中文意思（按R重听 / 按Enter跳过 / 按Q退出）:")
         sys.stdout.flush()
-        user_input = wait_line("  > ")
+        user_input = _wait_line_voice(_VP_INPUT, "  > ")
         cmd = user_input.strip()
 
         if cmd.upper() == "Q":
@@ -689,7 +724,7 @@ def _spelling_quiz_phase(es_text, zh_text):
                 print(f"  请照着输入一遍：")
                 sys.stdout.flush()
                 tts_speak_zh(zh_text)
-                copy_input = wait_line("  > ").strip()
+                copy_input = _wait_line_voice("请照着输入中文意思", "  > ").strip()
                 if copy_input.upper() == "Q":
                     return "quit"
                 if copy_input == zh_text or any(copy_input == v for v in zh_variants):
@@ -1064,7 +1099,10 @@ def _favorite_words_from_sentence(es_text):
     print(f"  [0] 全选  [Enter] 跳过")
     sys.stdout.flush()
 
-    choice = wait_line("  输入编号（空格分隔）> ")
+    choice = _wait_line_voice(
+        f"本句有{n}个生词，输入编号，空格分隔，0全选，回车跳过",
+        "  输入编号（空格分隔）> ",
+    )
     if not choice.strip():
         return 0
 
@@ -1140,6 +1178,151 @@ def wait_line(prompt="> "):
         return "Q"
 
 
+# -- 语音提醒机制 ----------------------------------------------
+
+# 是否启用语音提醒。非交互环境（stdin 被重定向，例如测试）自动关闭。
+VOICE_REMINDER_ENABLED = sys.stdin.isatty() and HAS_TTS
+
+# 等待时长与重试次数（可用环境变量调节）
+# 间隔故意放久一点（20s），避免频繁打扰；重念次数保持 4 次不变
+VOICE_REMINDER_INTERVAL = int(os.environ.get("VOICE_REMINDER_INTERVAL", "20"))
+VOICE_REMINDER_MAX = int(os.environ.get("VOICE_REMINDER_MAX", "4"))
+
+# 语音提示词常量（短促版：只提示"该做什么"，不念菜单选项）
+_VP_PROMPT = "请选择菜单"           # 通用菜单提示
+_VP_INPUT = "请输入"                 # 通用输入提示
+_VP_GRAMMAR_INPUT = "请选择语法点"   # 语法点列表
+_VP_RECORDING = "请按回车结束录音"   # 录音中提示
+
+
+def _clear_line(width=80):
+    """清除当前行（屏幕底部倒计时用）"""
+    print("\r" + " " * width + "\r", end="", flush=True)
+
+
+def _wait_key_voice(voice_text, screen_prompt="> ", max_attempts=None, interval=None):
+    """等待单键输入，同时播放短促语音提醒。
+    - 按键立即停语音、立即返回（大写）
+    - 单独按 Enter → 返回空串 = 默认动作
+    - interval 秒 × max_attempts 次没动 → 之后静默等，不再念
+    - 在非交互环境（stdin PIPE）自动 fallback 到普通 readline
+    """
+    if max_attempts is None:
+        max_attempts = VOICE_REMINDER_MAX
+    if interval is None:
+        interval = VOICE_REMINDER_INTERVAL
+
+    print(screen_prompt, end="", flush=True)
+    sys.stdout.flush()
+
+    if not VOICE_REMINDER_ENABLED or not voice_text:
+        try:
+            return sys.stdin.readline().strip().upper()
+        except (EOFError, KeyboardInterrupt):
+            return "Q"
+
+    # 单键菜单：清空残留按键（不保留提前输入）
+    while _safe_kbhit():
+        msvcrt.getch()
+
+    for attempt in range(1, max_attempts + 1):
+        _speak_zh_async_silent(voice_text)
+
+        # 等候 interval 秒，每 10ms 检查一次按键
+        deadline = time.time() + interval
+        while time.time() < deadline:
+            if _safe_kbhit():
+                ch = msvcrt.getch().decode('utf-8', errors='ignore')
+                if ch in ('\r', '\n'):
+                    ch = ''
+                _stop_audio()
+                _clear_line()
+                return ch.upper()
+            time.sleep(0.01)
+
+        _stop_audio()
+
+    # 用完所有次数：静默等下一键，不念
+    while not _safe_kbhit():
+        time.sleep(0.01)
+    ch = msvcrt.getch().decode('utf-8', errors='ignore')
+    if ch in ('\r', '\n'):
+        ch = ''
+    _clear_line()
+    return ch.upper()
+
+
+def _wait_line_voice(voice_text, screen_prompt="> ", max_attempts=None, interval=None):
+    """等待一行输入，同时播放短促语音提醒。
+    - 用户开始输入后语音立即停止，不再重念
+    - interval 秒 × max_attempts 次没动 → 之后静默等
+    - 非交互环境自动 fallback 到 readline
+    - 关键：不消费任何按键，所有输入都交给 sys.stdin.readline()
+    """
+    if max_attempts is None:
+        max_attempts = VOICE_REMINDER_MAX
+    if interval is None:
+        interval = VOICE_REMINDER_INTERVAL
+
+    print(screen_prompt, end="", flush=True)
+    sys.stdout.flush()
+
+    if not VOICE_REMINDER_ENABLED or not voice_text:
+        try:
+            return sys.stdin.readline().strip()
+        except (EOFError, KeyboardInterrupt):
+            return "Q"
+
+    stop_event = threading.Event()
+    user_active = [False]
+
+    def _monitor():
+        """只检测键盘活动（peek，不消费），检测到就停语音"""
+        while not stop_event.is_set():
+            if _safe_kbhit():
+                user_active[0] = True
+                _stop_audio()
+            time.sleep(0.05)
+
+    def _voice_loop():
+        for attempt in range(1, max_attempts + 1):
+            if stop_event.is_set() or user_active[0]:
+                return
+            try:
+                _speak_zh_async_silent(voice_text)
+            except Exception:
+                pass
+
+            # 等候 interval，每 50ms 检查用户是否开始输入
+            for _ in range(int(interval * 20)):
+                if stop_event.is_set() or user_active[0]:
+                    return
+                time.sleep(0.05)
+
+    threading.Thread(target=_monitor, daemon=True).start()
+    threading.Thread(target=_voice_loop, daemon=True).start()
+
+    try:
+        line = sys.stdin.readline().strip()
+    except (EOFError, KeyboardInterrupt):
+        line = "Q"
+
+    stop_event.set()
+    _stop_audio()
+    _clear_line()
+    return line
+
+
+def _speak_once(voice_text):
+    """念一次语音（不轮询、不重念）。用于"正在录音"等不需要重念的场景。"""
+    if not VOICE_REMINDER_ENABLED or not voice_text:
+        return
+    try:
+        _speak_zh_async_silent(voice_text)
+    except Exception:
+        pass
+
+
 # -- 模式实现 ----------------------------------------------
 
 # -- 模式 0：记忆导入 ----------------------------------------
@@ -1170,7 +1353,7 @@ def _run_group_menu_memory_import(kind, groups):
         print("=" * 36)
         sys.stdout.flush()
 
-        choice = wait_key("请选择 > ")
+        choice = _wait_key_voice(_VP_PROMPT, "请选择 > ")
         if choice == "B":
             return
         if choice == "R":
@@ -1224,7 +1407,10 @@ def _run_one_group_memory_import(groups, gi):
 
         # P/N/B/R/G/F/Q 决策
         while True:
-            choice = wait_key("  [Enter/P]通过  [N]保留  [B]上词  [R]重听  [G]下组  [F]收藏  [Q]退出 > ")
+            choice = _wait_key_voice(
+                _VP_PROMPT,
+                "  [Enter/P]通过  [N]保留  [B]上词  [R]重听  [G]下组  [F]收藏  [Q]退出 > ",
+            )
             if not choice or choice == "P":
                 if gs.pass_current() and gs.total > 1:
                     result = _handle_loop_end(gs)
@@ -1281,7 +1467,10 @@ def _run_one_group_memory_import(groups, gi):
     time.sleep(0.5)
 
     if gi + 1 < total_groups:
-        nxt = wait_key(f"  [Enter] 继续第 {gi+2} 组  [B] 回组菜单  [Q] 退出 > ")
+        nxt = _wait_key_voice(
+            _VP_PROMPT,
+            f"  [Enter] 继续第 {gi+2} 组  [B] 回组菜单  [Q] 退出 > ",
+        )
         if nxt == "Q":
             return
         if nxt != "B":
@@ -1303,7 +1492,7 @@ def mode_1_listen_es_say_zh():
         print("=" * 36)
         sys.stdout.flush()
 
-        choice = wait_key("请选择 > ")
+        choice = _wait_key_voice(_VP_PROMPT, "请选择 > ")
         if choice == "1":
             _mode_es_to_zh_words()
         elif choice == "2":
@@ -1334,7 +1523,7 @@ def _mode_es_to_zh_sentences():
         print("  [Q] 返回")
         print("=" * 36)
         sys.stdout.flush()
-        choice = wait_key("请选择 > ")
+        choice = _wait_key_voice(_VP_PROMPT, "请选择 > ")
         if choice == "1":
             items = [{"es": s["es"], "zh": s["zh"]} for s in TEXTBOOK["sentences"]]
             groups = [items[i:i + GROUP_SIZE] for i in range(0, len(items), GROUP_SIZE)]
@@ -1378,7 +1567,7 @@ def _run_group_menu_es_to_zh(kind, groups, difficulty=None):
         print("=" * 36)
         sys.stdout.flush()
 
-        choice = wait_key("请选择 > ")
+        choice = _wait_key_voice(_VP_PROMPT, "请选择 > ")
         if choice == "B":
             return
         if choice == "R" and is_word:
@@ -1472,26 +1661,31 @@ def _run_one_group_es_to_zh(groups, gi, kind, difficulty=None):
 
     # 下一组？
     if gi + 1 < total_groups:
-        nxt = wait_key(f"  [Enter] 继续第 {gi+2} 组  [B] 回组菜单  [Q] 退出 > ")
+        nxt = _wait_key_voice(
+            _VP_PROMPT,
+            f"  [Enter] 继续第 {gi+2} 组  [B] 回组菜单  [Q] 退出 > ",
+        )
         if nxt == "Q":
             return
         if nxt != "B":
             _run_one_group_es_to_zh(groups, gi + 1, kind)
 
 
-def _prompt_record(prompt="按 Enter 开始录音", extra_hint=""):
+def _prompt_record(prompt="按 Enter 开始录音", extra_hint="", voice_prompt=None, recording_voice=None):
     """两段式录音：先提示按 Enter 开始，再提示按 Enter 结束。
     录音数据留在 REC_CHUNKS 中，由调用者通过 stop_and_playback() 播放。
     返回用户输入的命令（大写），空字符串表示录音完成。
+
+    voice_prompt: 启动录音前的语音提示文本（None = 静默）
+    recording_voice: 进入录音后的语音提示文本（None = 静默，只念一次）
     """
     if not HAS_AUDIO:
         return ""
 
-    # 清空缓冲区残留输入（TTS 播放期间的误触键可能堆积在此）
-    while msvcrt.kbhit():
-        msvcrt.getch()
-
-    user_input = wait_line(f"  {prompt}{extra_hint}")
+    if voice_prompt:
+        user_input = _wait_line_voice(voice_prompt, f"  {prompt}{extra_hint}")
+    else:
+        user_input = wait_line(f"  {prompt}{extra_hint}")
     cmd = user_input.strip().upper() if user_input else ""
     if cmd:
         return cmd
@@ -1503,6 +1697,8 @@ def _prompt_record(prompt="按 Enter 开始录音", extra_hint=""):
         msvcrt.getch()
 
     print("  正在录音... 按 Enter 结束录音", end="", flush=True)
+    # 录音中只念一次（不重念，避免盖过用户声音）
+    _speak_once(recording_voice or _VP_RECORDING)
     wait_line("")
     print()
     # 停止录音流，但不播放（由调用者决定何时播放）
@@ -1521,7 +1717,11 @@ def _record_phase(es_text, is_sentence=False):
     """录音阶段：按 Enter 开始录音，再按 Enter 结束。支持 R 重听、Q 退出。
     返回 "quit" 表示退出，否则返回 None。"""
     while True:
-        cmd = _prompt_record("按 Enter 开始录音", "  [R]重听 [Q]退出 > ")
+        cmd = _prompt_record(
+            "按 Enter 开始录音",
+            "  [R]重听 [Q]退出 > ",
+            voice_prompt=_VP_PROMPT,
+        )
         if cmd == "Q":
             return "quit"
         if cmd == "R":
@@ -1530,6 +1730,37 @@ def _record_phase(es_text, is_sentence=False):
             tts_speak(es_text, is_sentence=is_sentence)
             continue
         # 正常录音完成（空字符串）
+        return None
+
+
+def _record_phase_zh(zh_text):
+    """录音阶段（模式2）：按 Enter 开始录音，再按 Enter 结束。支持 R 重听中文、Q 退出。"""
+    while True:
+        cmd = _prompt_record(
+            "按 Enter 开始录音",
+            "  [R]重听 [Q]退出 > ",
+            voice_prompt=_VP_PROMPT,
+        )
+        if cmd == "Q":
+            return "quit"
+        if cmd == "R":
+            tts_speak_zh(zh_text)
+            continue
+        return None
+
+
+def _record_phase_shadow(es_text, is_sentence=True):
+    """录音阶段（跟读）：按 Enter 开始跟读，再按 Enter 结束。支持 S 跳过、Q 退出。"""
+    while True:
+        cmd = _prompt_record(
+            "按 Enter 开始跟读",
+            "  [S]跳过 [Q]退出 > ",
+            voice_prompt=_VP_PROMPT,
+        )
+        if cmd == "Q":
+            return "quit"
+        if cmd == "S":
+            return "skip"
         return None
 
 
@@ -1558,7 +1789,7 @@ def _run_one_group_es_to_zh_linkage(groups, gi, kind, difficulty):
             time.sleep(0.3)
 
         if difficulty == "catch":
-            user_input = wait_line("  敲入你听到的词（空格分隔） > ")
+            user_input = _wait_line_voice(_VP_INPUT, "  敲入你听到的词（空格分隔） > ")
             if user_input.strip().upper() == "Q":
                 return
             if user_input.strip().upper() == "S":
@@ -1581,7 +1812,7 @@ def _run_one_group_es_to_zh_linkage(groups, gi, kind, difficulty):
             while True:
                 _print_sentence_with_linkage(es_text, show_linkage=show)
                 print("  [V]切词界  [R]重听  [W]拆听  [其他键继续] > ", end="", flush=True)
-                ch = wait_key("")
+                ch = _wait_key_voice(_VP_PROMPT, "")
                 if ch == "V":
                     show = not show
                     sys.stdout.write("\033[1A\033[2K")
@@ -1626,7 +1857,7 @@ def _run_one_group_es_to_zh_linkage(groups, gi, kind, difficulty):
             while True:
                 _print_sentence_with_linkage(es_text, show_linkage=show)
                 print("  [V]切词界  [R]重听  [W]拆听  [其他键继续] > ", end="", flush=True)
-                ch = wait_key("")
+                ch = _wait_key_voice(_VP_PROMPT, "")
                 if ch == "V":
                     show = not show
                     sys.stdout.write("\033[1A\033[2K")
@@ -1657,7 +1888,10 @@ def _run_one_group_es_to_zh_linkage(groups, gi, kind, difficulty):
             tts_speak(es_text, is_sentence=True)
 
             while True:
-                choice = wait_key("  [Enter/P]通过  [N]保留  [R]重听  [W]拆听  [F]收藏  [Q]退出 > ")
+                choice = _wait_key_voice(
+                    _VP_PROMPT,
+                    "  [Enter/P]通过  [N]保留  [R]重听  [W]拆听  [F]收藏  [Q]退出 > ",
+                )
                 if not choice or choice == "P":
                     if gs.pass_current() and gs.total > 1:
                         result = _handle_loop_end(gs)
@@ -1692,7 +1926,10 @@ def _run_one_group_es_to_zh_linkage(groups, gi, kind, difficulty):
     time.sleep(0.5)
 
     if gi + 1 < total_groups:
-        nxt = wait_key(f"  [Enter] 继续第 {gi+2} 组  [B] 回组菜单  [Q] 退出 > ")
+        nxt = _wait_key_voice(
+            _VP_PROMPT,
+            f"  [Enter] 继续第 {gi+2} 组  [B] 回组菜单  [Q] 退出 > ",
+        )
         if nxt == "Q":
             return
         if nxt != "B":
@@ -1702,7 +1939,10 @@ def _run_one_group_es_to_zh_linkage(groups, gi, kind, difficulty):
 def _handle_loop_end(gs):
     """循环结束：询问用户下一组还是从头开始。
     返回 "goto_next"（下一组）或 None（从头开始）。"""
-    choice = wait_key("  循环结束！[Enter] 下一组  [S] 从头开始 > ")
+    choice = _wait_key_voice(
+        _VP_PROMPT,
+        "  循环结束！[Enter] 下一组  [S] 从头开始 > ",
+    )
     if choice == "S":
         gs.reset_all()
         tts_speak_zh("从头开始")
@@ -1721,7 +1961,10 @@ def _decision_pnbr(gs, es_text, allow_favorite=False, sentence_fav=False, is_sen
     elif sentence_fav:
         fav_menu = "  [F]收藏句中单词"
     while True:
-        choice = wait_key(f"  [Enter/P]通过  [N]保留  [B]上词  [R]重听  [G]下组{fav_menu}  [Q]退出 > ")
+        choice = _wait_key_voice(
+            _VP_PROMPT,
+            f"  [Enter/P]通过  [N]保留  [B]上词  [R]重听  [G]下组{fav_menu}  [Q]退出 > ",
+        )
         if not choice or choice == "P":
             if gs.pass_current() and gs.total > 1:
                 return _handle_loop_end(gs)
@@ -1785,7 +2028,7 @@ def mode_2_listen_zh_say_es():
         print("=" * 36)
         sys.stdout.flush()
 
-        choice = wait_key("请选择 > ")
+        choice = _wait_key_voice(_VP_PROMPT, "请选择 > ")
         if choice == "1":
             _mode_zh_to_es_words()
         elif choice == "2":
@@ -1832,7 +2075,7 @@ def _run_group_menu_zh_to_es(kind, groups):
         print("=" * 36)
         sys.stdout.flush()
 
-        choice = wait_key("请选择 > ")
+        choice = _wait_key_voice(_VP_PROMPT, "请选择 > ")
         if choice == "B":
             return
         if choice == "R" and is_word:
@@ -1909,24 +2152,14 @@ def _run_one_group_zh_to_es(groups, gi, kind):
     time.sleep(0.5)
 
     if gi + 1 < total_groups:
-        nxt = wait_key(f"  [Enter] 继续第 {gi+2} 组  [B] 回组菜单  [Q] 退出 > ")
+        nxt = _wait_key_voice(
+            _VP_PROMPT,
+            f"  [Enter] 继续第 {gi+2} 组  [B] 回组菜单  [Q] 退出 > ",
+        )
         if nxt == "Q":
             return
         if nxt != "B":
             _run_one_group_zh_to_es(groups, gi + 1, kind)
-
-
-def _record_phase_zh(zh_text):
-    """录音阶段（模式2）：按 Enter 开始录音，再按 Enter 结束。支持 R 重听中文、Q 退出。"""
-    while True:
-        cmd = _prompt_record("按 Enter 开始录音", "  [R]重听 [Q]退出 > ")
-        if cmd == "Q":
-            return "quit"
-        if cmd == "R":
-            tts_speak_zh(zh_text)
-            continue
-        # 正常录音完成（空字符串）
-        return None
 
 
 def _run_es_to_zh_item(item, pq):
@@ -1946,7 +2179,11 @@ def _run_es_to_zh_item(item, pq):
 
     # 录音（两段式：按 Enter 开始，再按 Enter 结束）
     while True:
-        cmd = _prompt_record("按 Enter 开始录音", "  [R]重听 [S]跳过 [Q]退出 > ")
+        cmd = _prompt_record(
+            "按 Enter 开始录音",
+            "  [R]重听 [S]跳过 [Q]退出 > ",
+            voice_prompt=_VP_PROMPT,
+        )
         if cmd == "Q":
             return "quit"
         if cmd == "S":
@@ -1969,7 +2206,10 @@ def _run_es_to_zh_item(item, pq):
     tts_speak(es_text)
 
     # 自判
-    judge = wait_key("  答对了吗？[Y=对 / N=错 / S=别再问我 / Q=退出] > ")
+    judge = _wait_key_voice(
+        "Y通过，N错，S跳过，Q退出",
+        "  答对了吗？[Y=对 / N=错 / S=别再问我 / Q=退出] > ",
+    )
     if judge == "Q":
         return "quit"
     elif judge == "S":
@@ -1995,7 +2235,11 @@ def _run_zh_to_es_item(item, pq):
 
     # 录音（两段式：按 Enter 开始，再按 Enter 结束）
     while True:
-        cmd = _prompt_record("按 Enter 开始录音", "  [R]重听 [S]跳过 [Q]退出 > ")
+        cmd = _prompt_record(
+            "按 Enter 开始录音",
+            "  [R]重听 [S]跳过 [Q]退出 > ",
+            voice_prompt=_VP_PROMPT,
+        )
         if cmd == "Q":
             return "quit"
         if cmd == "S":
@@ -2018,7 +2262,10 @@ def _run_zh_to_es_item(item, pq):
     tts_speak(es_text)
 
     # 自判
-    judge = wait_key("  答对了吗？[Y=对 / N=错 / S=别再问我 / Q=退出] > ")
+    judge = _wait_key_voice(
+        "Y通过，N错，S跳过，Q退出",
+        "  答对了吗？[Y=对 / N=错 / S=别再问我 / Q=退出] > ",
+    )
     if judge == "Q":
         return "quit"
     elif judge == "S":
@@ -2047,7 +2294,7 @@ def mode_3_dictation():
         print("=" * 36)
         sys.stdout.flush()
 
-        choice = wait_key("请选择 > ")
+        choice = _wait_key_voice(_VP_PROMPT, "请选择 > ")
         if choice == "1":
             items = [{"es": v["es"], "zh": v["zh"]} for v in TEXTBOOK["vocab"]]
             groups = [items[i:i + GROUP_SIZE] for i in range(0, len(items), GROUP_SIZE)]
@@ -2075,7 +2322,7 @@ def _run_group_menu_dictation_word(groups):
         print("=" * 36)
         sys.stdout.flush()
 
-        choice = wait_key("请选择 > ")
+        choice = _wait_key_voice(_VP_PROMPT, "请选择 > ")
         if choice == "B":
             return
         try:
@@ -2105,7 +2352,7 @@ def _run_one_group_dictation_word(groups, gi):
         sys.stdout.flush()
         tts_speak_async(es_text)
 
-        user_input = wait_line("> ")
+        user_input = _wait_line_voice(_VP_INPUT, "> ")
         cmd = user_input.strip()
 
         if cmd.upper() == "Q":
@@ -2136,7 +2383,10 @@ def _run_one_group_dictation_word(groups, gi):
 
     # 下一组？
     if gi + 1 < total_groups:
-        nxt = wait_key(f"  [Enter] 继续第 {gi+2} 组  [B] 回组菜单  [Q] 退出 > ")
+        nxt = _wait_key_voice(
+            _VP_PROMPT,
+            f"  [Enter] 继续第 {gi+2} 组  [B] 回组菜单  [Q] 退出 > ",
+        )
         if nxt == "Q":
             return
         if nxt != "B":
@@ -2228,7 +2478,7 @@ def _mode_dictation_sentences():
             time.sleep(0.3)
             tts_speak(es_text, is_sentence=True)
 
-            user_input = wait_line("> ")
+            user_input = _wait_line_voice(_VP_INPUT, "> ")
             cmd = user_input.strip()
 
             if cmd.upper() == "Q":
@@ -2244,7 +2494,7 @@ def _mode_dictation_sentences():
                 tts_speak(es_text, is_sentence=True)
                 time.sleep(0.3)
                 tts_speak(es_text, is_sentence=True)
-                user_input = wait_line("> ")
+                user_input = _wait_line_voice(_VP_INPUT, "> ")
                 cmd = user_input.strip()
                 if cmd.upper() == "Q":
                     print()
@@ -2273,7 +2523,7 @@ def _mode_dictation_sentences():
                 tts_speak_async(es_text, is_sentence=True)
 
             # 提示收藏本句生词
-            ch = wait_key("  收藏本句生词？[F]收藏 [Enter]继续 > ")
+            ch = _wait_key_voice(_VP_PROMPT, "  收藏本句生词？[F]收藏 [Enter]继续 > ")
             if ch == "F":
                 _favorite_words_from_sentence(es_text)
 
@@ -2515,7 +2765,7 @@ def _prompt_linkage_view(es_text):
     while True:
         _print_sentence_with_linkage(es_text, show_linkage=show)
         print("  [V]切换词界版  [其他键继续] > ", end="", flush=True)
-        ch = wait_key("")
+        ch = _wait_key_voice("V切换词界版，其他键继续", "")
         if ch == "V":
             show = not show
             # 简单清屏（ANSI 上移当前行 + 清除），避免堆叠
@@ -2531,7 +2781,10 @@ def _prompt_linkage_view(es_text):
 def _post_judgment_menu_pnbr(gs, es_text, sentence_fav=True):
     """模式1句子：揭示后判定菜单（自动判 + P/N 强制 / B/G/F/Q）。返回 quit/goto_next/None。"""
     while True:
-        choice = wait_key("  [Enter/P]通过  [N]保留  [B]上词  [R]重听  [G]下组  [F]收藏句中单词  [Q]退出 > ")
+        choice = _wait_key_voice(
+            _VP_PROMPT,
+            "  [Enter/P]通过  [N]保留  [B]上词  [R]重听  [G]下组  [F]收藏句中单词  [Q]退出 > ",
+        )
         if not choice or choice == "P":
             if gs.pass_current() and gs.total > 1:
                 return _handle_loop_end(gs)
@@ -2573,7 +2826,10 @@ def _post_judgment_menu_pnbr(gs, es_text, sentence_fav=True):
 def _post_judgment_menu_ynsfq(gs, es_text, pq=None):
     """模式4跟读：揭示后判定菜单（Y/N/S/F/Q）。返回 quit 或 None。"""
     while True:
-        judge = wait_key("  [Y=过 / N=留 / S=跳过 / F=收藏句中单词 / Q=退出] > ")
+        judge = _wait_key_voice(
+            _VP_PROMPT,
+            "  [Y=过 / N=留 / S=跳过 / F=收藏句中单词 / Q=退出] > ",
+        )
         if judge == "Q":
             return "quit"
         if judge == "S":
@@ -2612,7 +2868,7 @@ def mode_4_shadowing():
         print("  [Q] 返回")
         print("=" * 36)
         sys.stdout.flush()
-        choice = wait_key("请选择 > ")
+        choice = _wait_key_voice(_VP_PROMPT, "请选择 > ")
         if choice == "1":
             _run_shadowing_catch()
             return
@@ -2648,7 +2904,7 @@ def _run_shadowing_catch():
                 sys.stdout.flush()
                 tts_speak(es_text, is_sentence=True)
                 time.sleep(0.3)
-            user_input = wait_line("  敲入你听到的词（空格分隔） > ")
+            user_input = _wait_line_voice(_VP_INPUT, "  敲入你听到的词（空格分隔） > ")
             if user_input.strip().upper() == "Q":
                 return
             if user_input.strip().upper() == "S":
@@ -2669,7 +2925,7 @@ def _run_shadowing_catch():
             while True:
                 _print_sentence_with_linkage(es_text, show_linkage=show)
                 print("  [V]切词界  [R]重听  [W]拆听  [其他键继续] > ", end="", flush=True)
-                ch = wait_key("")
+                ch = _wait_key_voice(_VP_PROMPT, "")
                 if ch == "V":
                     show = not show
                     sys.stdout.write("\033[1A\033[2K")
@@ -2735,7 +2991,7 @@ def _run_shadowing_listen():
             while True:
                 _print_sentence_with_linkage(es_text, show_linkage=show)
                 print("  [V]切词界  [R]重听  [W]拆听  [其他键继续] > ", end="", flush=True)
-                ch = wait_key("")
+                ch = _wait_key_voice(_VP_PROMPT, "")
                 if ch == "V":
                     show = not show
                     sys.stdout.write("\033[1A\033[2K")
@@ -2764,7 +3020,10 @@ def _run_shadowing_listen():
             sys.stdout.flush()
             tts_speak(es_text, is_sentence=True)
             while True:
-                j = wait_key("  [Y]过  [N]留  [R]重听  [W]拆听  [F]收藏  [Q]退出 > ")
+                j = _wait_key_voice(
+                    _VP_PROMPT,
+                    "  [Y]过  [N]留  [R]重听  [W]拆听  [F]收藏  [Q]退出 > ",
+                )
                 if j == "Q":
                     return
                 if j == "Y":
@@ -2808,7 +3067,11 @@ def _shadow_one(es_text, item, pq):
         time.sleep(0.3)
 
         # 录音跟读（两段式：按 Enter 开始，再按 Enter 结束）
-        cmd = _prompt_record("按 Enter 开始跟读", "  [S]跳过 [Q]退出 > ")
+        cmd = _prompt_record(
+            "按 Enter 开始跟读",
+            "  [S]跳过 [Q]退出 > ",
+            voice_prompt=_VP_PROMPT,
+        )
         if cmd == "Q":
             return "quit"
         if cmd == "S":
@@ -2827,7 +3090,10 @@ def _shadow_one(es_text, item, pq):
 
         # 自判
         while True:
-            judge = wait_key("  跟读满意吗？[Y=满意 / N=再来一次 / S=别再问我 / F=收藏句中单词 / Q=退出] > ")
+            judge = _wait_key_voice(
+                _VP_PROMPT,
+                "  跟读满意吗？[Y=满意 / N=再来一次 / S=别再问我 / F=收藏句中单词 / Q=退出] > ",
+            )
             if judge == "Q":
                 return "quit"
             elif judge == "S":
@@ -2879,7 +3145,10 @@ def mode_5_mixed():
                     print(f"[听写-单词] 当前单词：{es_text}")
                     sys.stdout.flush()
                     tts_speak_async(es_text)
-                user_input = wait_line("> ")
+                if is_sentence:
+                    user_input = _wait_line_voice(_VP_INPUT, "> ")
+                else:
+                    user_input = _wait_line_voice(_VP_INPUT, "> ")
                 cmd = user_input.strip()
                 if cmd.upper() == "Q":
                     print()
@@ -2915,7 +3184,7 @@ def mode_5_mixed():
 
             # 句子模式下提示收藏本句生词
             if is_sentence:
-                ch = wait_key("  收藏本句生词？[F]收藏 [Enter]继续 > ")
+                ch = _wait_key_voice(_VP_PROMPT, "  收藏本句生词？[F]收藏 [Enter]继续 > ")
                 if ch == "F":
                     _favorite_words_from_sentence(es_text)
 
@@ -2952,7 +3221,7 @@ def mode_g_grammar():
             print("  [Q] 返回主菜单")
             print("=" * 40)
             sys.stdout.flush()
-            wait_key("> ")
+            _wait_key_voice("本教材没有语法点，按任意键返回", "> ")
             return
 
         # stdout 约定 F：展示语法点列表（含编号）
@@ -2965,7 +3234,7 @@ def mode_g_grammar():
         print("=" * 40)
         sys.stdout.flush()
 
-        choice = wait_key("请选择语法点（输入编号）> ")
+        choice = _wait_key_voice(_VP_GRAMMAR_INPUT, "请选择语法点（输入编号）> ")
         if choice == "Q":
             return
 
@@ -3000,7 +3269,7 @@ def _show_grammar_detail(idx):
 
     # 子菜单
     while True:
-        cmd = wait_key("[R] 重听例句  [Q] 返回语法列表 > ")
+        cmd = _wait_key_voice(_VP_PROMPT, "[R] 重听例句  [Q] 返回语法列表 > ")
         if cmd == "Q":
             return
         elif cmd == "R":
@@ -3023,7 +3292,7 @@ def main():
     try:
         while True:
             print_menu()
-            choice = wait_key("请选择 > ")
+            choice = _wait_key_voice(_VP_PROMPT, "请选择 > ")
             if choice == "0":
                 mode_0_memory_import()
             elif choice == "1":
