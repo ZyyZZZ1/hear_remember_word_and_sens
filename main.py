@@ -14,6 +14,7 @@ import random
 import difflib
 import msvcrt
 import re
+import ctypes
 from collections import deque
 
 # -- 依赖检测 ----------------------------------------------
@@ -60,51 +61,10 @@ except ImportError:
 except Exception as e:
     print(f"[TTS] Piper 加载失败：{e}", flush=True)
 
-# --- Kokoro TTS（中文神经网络，中英混合支持）---
+# --- Kokoro TTS（已禁用：太慢）---
 KOKORO_PIPELINE = None
 _KOKORO_VOICE_DIR = None
-try:
-    import torch
-    from kokoro import KPipeline, KModel
-    _KOKORO_DIR = os.path.join(os.path.dirname(__file__), "kokoro_models")
-    _KOKORO_CONFIG = os.path.join(_KOKORO_DIR, "kmodel_config.json")
-    _KOKORO_MODEL = os.path.join(_KOKORO_DIR, "kokoro-v1_1-zh.pth")
-    if os.path.exists(_KOKORO_CONFIG) and os.path.exists(_KOKORO_MODEL):
-        import warnings
-        import jieba
-        jieba.setLogLevel(jieba.logging.WARNING)
-        with warnings.catch_warnings():
-            warnings.simplefilter("ignore")
-            _kokoro_model = KModel(
-                repo_id='hexgrad/Kokoro-82M-v1.1-zh',
-                config=_KOKORO_CONFIG,
-                model=_KOKORO_MODEL,
-            ).to('cpu').eval()
-        _KOKORO_VOICE_DIR = os.path.join(_KOKORO_DIR, "voices")
-        def _kokoro_en_callable(text):
-            from espeakng_loader import get_library_path, get_data_path
-            if "PHONEMIZER_ESPEAK_LIBRARY" not in os.environ:
-                os.environ["PHONEMIZER_ESPEAK_LIBRARY"] = get_library_path()
-            if "ESPEAK_DATA_PATH" not in os.environ:
-                os.environ["ESPEAK_DATA_PATH"] = get_data_path()
-            from phonemizer import phonemize
-            return phonemize(text, language='en-us', backend='espeak',
-                             strip=True, preserve_punctuation=True,
-                             language_switch='remove-flags')
-        KOKORO_PIPELINE = KPipeline(
-            lang_code='z',
-            repo_id='hexgrad/Kokoro-82M-v1.1-zh',
-            model=_kokoro_model,
-            en_callable=_kokoro_en_callable,
-        )
-        print(f"[TTS] Kokoro 中文语音已加载", flush=True)
-        HAS_TTS = True
-    else:
-        print(f"[TTS] Kokoro 模型文件不完整，跳过", flush=True)
-except ImportError:
-    pass
-except Exception as e:
-    print(f"[TTS] Kokoro 加载失败：{e}", flush=True)
+print(f"[TTS] Kokoro 已禁用（太慢），中文 TTS 降级为 SAPI", flush=True)
 
 
 # --- SAPI TTS（后备方案，中文语音）---
@@ -497,7 +457,14 @@ def _speak_zh_no_poll(text):
         return
     try:
         sp = _get_sp_zh()
-        sp.Speak(text, 0)
+        sp.Speak(text, 1)  # SPF_ASYNC: 不阻塞线程，允许跨线程 purge
+        while True:
+            try:
+                if sp.Status.RunningState == 1:  # SRSEDone
+                    break
+            except Exception:
+                break
+            time.sleep(0.05)
     except Exception:
         pass
 
@@ -569,6 +536,16 @@ def _tts_speak_es_interruptible(es_text):
     return False  # 正常播完
 
 
+def _minimize_window():
+    """最小化当前终端窗口"""
+    try:
+        hwnd = ctypes.windll.kernel32.GetConsoleWindow()
+        if hwnd:
+            ctypes.windll.user32.ShowWindow(hwnd, 6)  # SW_MINIMIZE
+    except Exception:
+        pass
+
+
 def _memory_import_loop(es_text, zh_text):
     """记忆导入：固定 8 遍（2次西语+1次中文），任意键可打断"""
     print(f"    （按任意键跳过当前词）", end="", flush=True)
@@ -601,6 +578,9 @@ def _memory_import_loop(es_text, zh_text):
             msvcrt.getch()
             interrupted = True
             break
+        # 第一次完整播放后，最小化窗口，让用户只专注听
+        if i == 1:
+            _minimize_window()
     print()
     if interrupted:
         print("    （已跳过）")
@@ -617,7 +597,7 @@ def _spelling_quiz_phase(es_text, zh_text):
     print(f"\n  {'─' * 30}")
     print(f"  🔔 请准备打字！")
     sys.stdout.flush()
-    tts_speak_zh("请准备打字")
+    tts_speak_zh_async("请准备输入西语")
     time.sleep(0.15)
 
     # ── 拼写测验 ──
@@ -626,7 +606,7 @@ def _spelling_quiz_phase(es_text, zh_text):
     while spelling_attempts < 2 and not spelling_done:
         print(f"  请输入单词拼写（按R重听 / 按Enter跳过 / 按Q退出）:")
         sys.stdout.flush()
-        user_input = _wait_line_voice(_VP_INPUT, "  > ")
+        user_input = _wait_line_voice("请输入单词拼写", "  > ")
         cmd = user_input.strip()
 
         if cmd.upper() == "Q":
@@ -678,11 +658,12 @@ def _spelling_quiz_phase(es_text, zh_text):
     zh_attempts = 0
     zh_done = False
     zh_variants = [v.strip() for v in re.split(r'[,，、；;]', zh_text) if v.strip()]
+    zh_first = zh_variants[0] if zh_variants else zh_text
 
     while zh_attempts < 2 and not zh_done:
         print(f"  请输入中文意思（按R重听 / 按Enter跳过 / 按Q退出）:")
         sys.stdout.flush()
-        user_input = _wait_line_voice(_VP_INPUT, "  > ")
+        user_input = _wait_line_voice("请输入中文意思", "  > ")
         cmd = user_input.strip()
 
         if cmd.upper() == "Q":
@@ -690,7 +671,7 @@ def _spelling_quiz_phase(es_text, zh_text):
         if cmd.upper() == "R":
             tts_speak(es_text)
             time.sleep(0.15)
-            tts_speak_zh(zh_text)
+            tts_speak_zh(zh_first)
             continue
         if cmd == "":
             print(f"  （已跳过中文）")
@@ -723,7 +704,7 @@ def _spelling_quiz_phase(es_text, zh_text):
                 print(f"  中文答案：{_COLOR_GREEN}{zh_text}{_COLOR_RESET}")
                 print(f"  请照着输入一遍：")
                 sys.stdout.flush()
-                tts_speak_zh(zh_text)
+                tts_speak_zh(zh_first)
                 copy_input = _wait_line_voice("请照着输入中文意思", "  > ").strip()
                 if copy_input.upper() == "Q":
                     return "quit"
@@ -1188,6 +1169,19 @@ VOICE_REMINDER_ENABLED = sys.stdin.isatty() and HAS_TTS
 VOICE_REMINDER_INTERVAL = int(os.environ.get("VOICE_REMINDER_INTERVAL", "20"))
 VOICE_REMINDER_MAX = int(os.environ.get("VOICE_REMINDER_MAX", "4"))
 
+# 测试标记：环境变量 TEST_MARKER=1 时打印 [TTS START]/[TTS STOP]/[KEY]/[ECHO]/[DISCARD]/[CMD] 等观察行
+_TEST_MARKER_ON = os.environ.get("TEST_MARKER", "").lower() in ("1", "true", "yes", "on")
+
+
+def _marker(kind, detail=""):
+    if not _TEST_MARKER_ON:
+        return
+    if detail:
+        print(f"[{kind}] {detail}", flush=True)
+    else:
+        print(f"[{kind}]", flush=True)
+
+
 # 语音提示词常量（短促版：只提示"该做什么"，不念菜单选项）
 _VP_PROMPT = "请选择菜单"           # 通用菜单提示
 _VP_INPUT = "请输入"                 # 通用输入提示
@@ -1221,34 +1215,55 @@ def _wait_key_voice(voice_text, screen_prompt="> ", max_attempts=None, interval=
         except (EOFError, KeyboardInterrupt):
             return "Q"
 
-    # 单键菜单：清空残留按键（不保留提前输入）
     while _safe_kbhit():
-        msvcrt.getch()
+        _r = msvcrt.getch().decode('utf-8', errors='ignore')
+        _marker("DISCARD", _r if _r and _r not in ('\r', '\n') else "(Enter)")
 
     for attempt in range(1, max_attempts + 1):
         _speak_zh_async_silent(voice_text)
+        _marker("TTS START", voice_text)
 
-        # 等候 interval 秒，每 10ms 检查一次按键
         deadline = time.time() + interval
         while time.time() < deadline:
             if _safe_kbhit():
                 ch = msvcrt.getch().decode('utf-8', errors='ignore')
                 if ch in ('\r', '\n'):
                     ch = ''
+                _marker("KEY", ch if ch else "(Enter)")
                 _stop_audio()
-                _clear_line()
+                _marker("TTS STOP")
+                if ch:
+                    print(ch, end="", flush=True)
+                    _marker("ECHO", ch)
+                time.sleep(0.05)
+                while _safe_kbhit():
+                    extra = msvcrt.getch().decode('utf-8', errors='ignore')
+                    if extra and extra not in ('\r', '\n'):
+                        print(extra, end="", flush=True)
+                        _marker("ECHO", extra)
+                    _marker("DISCARD", extra if extra and extra not in ('\r', '\n') else "(Enter)")
                 return ch.upper()
             time.sleep(0.01)
 
         _stop_audio()
+        _marker("TTS STOP")
 
-    # 用完所有次数：静默等下一键，不念
     while not _safe_kbhit():
         time.sleep(0.01)
     ch = msvcrt.getch().decode('utf-8', errors='ignore')
     if ch in ('\r', '\n'):
         ch = ''
-    _clear_line()
+    _marker("KEY", ch if ch else "(Enter)")
+    if ch:
+        print(ch, end="", flush=True)
+        _marker("ECHO", ch)
+    time.sleep(0.05)
+    while _safe_kbhit():
+        extra = msvcrt.getch().decode('utf-8', errors='ignore')
+        if extra and extra not in ('\r', '\n'):
+            print(extra, end="", flush=True)
+            _marker("ECHO", extra)
+        _marker("DISCARD", extra if extra and extra not in ('\r', '\n') else "(Enter)")
     return ch.upper()
 
 
@@ -1280,6 +1295,8 @@ def _wait_line_voice(voice_text, screen_prompt="> ", max_attempts=None, interval
         """只检测键盘活动（peek，不消费），检测到就停语音"""
         while not stop_event.is_set():
             if _safe_kbhit():
+                if not user_active[0]:
+                    _marker("TTS STOP")
                 user_active[0] = True
                 _stop_audio()
             time.sleep(0.05)
@@ -1290,6 +1307,7 @@ def _wait_line_voice(voice_text, screen_prompt="> ", max_attempts=None, interval
                 return
             try:
                 _speak_zh_async_silent(voice_text)
+                _marker("TTS START", voice_text)
             except Exception:
                 pass
 
@@ -1309,7 +1327,6 @@ def _wait_line_voice(voice_text, screen_prompt="> ", max_attempts=None, interval
 
     stop_event.set()
     _stop_audio()
-    _clear_line()
     return line
 
 
@@ -1353,7 +1370,7 @@ def _run_group_menu_memory_import(kind, groups):
         print("=" * 36)
         sys.stdout.flush()
 
-        choice = _wait_key_voice(_VP_PROMPT, "请选择 > ")
+        choice = _wait_line_voice(_VP_PROMPT, "请选择 > ").upper()
         if choice == "B":
             return
         if choice == "R":
@@ -1400,7 +1417,7 @@ def _run_one_group_memory_import(groups, gi):
         _memory_import_loop(es_text, zh_first)
 
         # 打字测验：拼写 + 中文（非阻塞，输错不影响过题）
-        if _spelling_quiz_phase(es_text, zh_first) == "quit":
+        if _spelling_quiz_phase(es_text, item["zh"]) == "quit":
             print()
             sys.stdout.flush()
             return
@@ -1567,7 +1584,7 @@ def _run_group_menu_es_to_zh(kind, groups, difficulty=None):
         print("=" * 36)
         sys.stdout.flush()
 
-        choice = _wait_key_voice(_VP_PROMPT, "请选择 > ")
+        choice = _wait_line_voice(_VP_PROMPT, "请选择 > ").upper()
         if choice == "B":
             return
         if choice == "R" and is_word:
@@ -2075,7 +2092,7 @@ def _run_group_menu_zh_to_es(kind, groups):
         print("=" * 36)
         sys.stdout.flush()
 
-        choice = _wait_key_voice(_VP_PROMPT, "请选择 > ")
+        choice = _wait_line_voice(_VP_PROMPT, "请选择 > ").upper()
         if choice == "B":
             return
         if choice == "R" and is_word:
@@ -2322,7 +2339,7 @@ def _run_group_menu_dictation_word(groups):
         print("=" * 36)
         sys.stdout.flush()
 
-        choice = _wait_key_voice(_VP_PROMPT, "请选择 > ")
+        choice = _wait_line_voice(_VP_PROMPT, "请选择 > ").upper()
         if choice == "B":
             return
         try:
@@ -3294,27 +3311,37 @@ def main():
             print_menu()
             choice = _wait_key_voice(_VP_PROMPT, "请选择 > ")
             if choice == "0":
+                _marker("CMD", "进入模式 0 记忆导入")
                 mode_0_memory_import()
             elif choice == "1":
+                _marker("CMD", "进入模式 1 听西语说中文")
                 mode_1_listen_es_say_zh()
             elif choice == "2":
+                _marker("CMD", "进入模式 2 听中文说西语")
                 mode_2_listen_zh_say_es()
             elif choice == "3":
+                _marker("CMD", "进入模式 3 听写")
                 mode_3_dictation()
             elif choice == "4":
+                _marker("CMD", "进入模式 4 跟读")
                 mode_4_shadowing()
             elif choice == "5":
+                _marker("CMD", "进入模式 5 混着来")
                 mode_5_mixed()
             elif choice == "G":
+                _marker("CMD", "进入语法讲解")
                 mode_g_grammar()
             elif choice == "T":
+                _marker("CMD", "选择教材")
                 new_tb = select_textbook()
                 if new_tb is not None:
                     TEXTBOOK = new_tb
             elif choice == "Q":
+                _marker("CMD", "退出")
                 print("\nAdiós! \n")
                 break
             else:
+                _marker("CMD", f"无效选项: {choice!r}")
                 print("  无效选项，请重新选择。")
                 sys.stdout.flush()
     finally:
