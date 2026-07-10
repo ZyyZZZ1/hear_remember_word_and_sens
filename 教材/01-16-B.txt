@@ -1,11 +1,11 @@
 # 生词
 cuánto tiempo	(how long / it's been so long)好久；有歧义——疑问句（¿...?）= 多久？感叹句（¡...!）= 好久啊！靠标点区分
-voy a	我将要
-vas a	你将要
-va a	他/她将要
-vamos a	我们将要
-vais a	你们将要
-van a	他们/她们将要
+voy a	我将要去（I am going to）
+vas a	你将要（you are going to）
+va a	他/她将要（he/she is going to）
+vamos a	我们将要（we are going to）
+vais a	你们将要（you (pl.) are going to）
+van a	他们/她们将要（they are going to）
 ir bien	进展顺利
 voy bien	(I go well)我进展顺利
 vas bien	(you go well)你进展顺利
@@ -28,6 +28,13 @@ estamos allí	(we are there)我们在那里
 estáis allí	(you all are there)你们在那里
 están allí	(they are there)他们/她们在那里
 qué día	哪一天（疑问短语：¿Qué día ...? 哪天……？不带 tan/形容词时是疑问用法；详见感叹句式 ¡Qué día tan + adj! 区别）
+venir de	从……来（come from）
+vengo de	我从……来（I come from）
+vienes de	你从……来（you come from）
+viene de	他/她从……来（he/she comes from）
+venimos de	我们从……来（we come from）
+venís de	你们从……来（you (pl.) come from）
+vienen de	他们/她们从……来（they come from）
 tienen un problema con	和……有问题
 cumplir años	过生日
 cumplo años	我过生日

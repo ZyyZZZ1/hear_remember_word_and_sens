@@ -281,6 +281,13 @@ vas
 vengo
 venimos
 venir
+venir de
+vengo de
+vienes de
+viene de
+venimos de
+venís de
+vienen de
 venís
 verbo
 viene
