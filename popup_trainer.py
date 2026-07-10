@@ -108,23 +108,32 @@ def get_console_hwnd():
 
 
 def set_console_visible(hwnd, visible):
-    """设置控制台显隐（显示时置顶+聚焦）。
+    """设置控制台显隐（显示时置顶+聚焦），并同步进程内状态。
+
     用 ShowWindowAsync 替代 ShowWindow，避免被主线程阻塞，降低弹出/收起延迟。
     HWND_TOPMOST 在 setup_console() 中一次性设置，此处不再重复调用。
+
+    关键：同步更新 _state["hidden"]。toggle() 依赖 _state 而非 IsWindowVisible()，
+    因为 ShowWindowAsync 是异步的，调用后 IsWindowVisible 可能仍返回旧值（WS_VISIBLE
+    标志位未即时更新），导致 toggle 误判方向——首次按键本应 show 却执行 hide，
+    需按两次热键才能弹出窗口（见 popup_status.log 启动后首条 toggle 为 hide 的现象）。
     """
     if visible:
         user32.ShowWindowAsync(hwnd, win32con.SW_RESTORE)
         user32.SetForegroundWindow(hwnd)
     else:
         user32.ShowWindowAsync(hwnd, win32con.SW_HIDE)
+    _state["hidden"] = not visible
 
 
 def toggle(hwnd):
-    """切换控制台显隐，返回新的可见状态。"""
-    visible = bool(win32gui.IsWindowVisible(hwnd))
-    new_state = not visible
+    """切换控制台显隐，返回新的可见状态。
+
+    状态源为进程内 _state["hidden"]，不查询 IsWindowVisible()——后者对异步
+    ShowWindow 的判断会滞后，曾导致首次按键方向反转（hide 而非 show）。
+    """
+    new_state = _state.get("hidden", False)  # 当前隐藏→显示(True)；当前显示→隐藏(False)
     set_console_visible(hwnd, new_state)
-    _state["hidden"] = not new_state
     _state["toggle_count"] += 1
     log(f"toggle {'show' if new_state else 'hide'} (count={_state['toggle_count']})")
     return new_state
