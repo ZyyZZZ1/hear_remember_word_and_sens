@@ -80,25 +80,32 @@ servicio	服务
 
 # 例句
 Buenos días, profesora, ¿la molesto?	早上好，老师，我打扰您了吗？
-¿Molestar? ¡En absoluto!	打扰？一点也不！
-Pase. Está usted en su casa.	请进。就当在自己家一样。
-Gracias. Profesora, pienso hacer un trabajo sobre América Latina y vengo a pedirle prestados algunos libros en español.	谢谢。老师，我想做一个关于拉丁美洲的作业，来向您借一些西班牙语书。
+¿Molestar?	打扰？
+¡En absoluto!	一点也不！
+Pase.	请进。
+Está usted en su casa.	就当在自己家一样。
+Gracias.	谢谢。
+Profesora, pienso hacer un trabajo sobre América Latina y vengo a pedirle prestados algunos libros en español.	老师，我想做一个关于拉丁美洲的作业，来向您借一些西班牙语书。
 Tengo libros interesantes sobre el tema.	我有关于这个主题的有趣的书。
 Se los voy a prestar con mucho gusto, pero ¿por qué no escribe en este papel los títulos que necesita?	我很乐意把它们借给您，但为什么不把您需要的书名写在这张纸上呢？
 Ya tengo la lista.	我已经有清单了。
 Ah, viene preparado.	啊，您是有备而来。
 Entonces, vamos a mi estudio.	那么，我们去我的书房吧。
-¡Oh, qué maravilla! ¡Cuántas estanterías y todas llenas de libros!	哦，太棒了！这么多书架，全都装满了书！
+¡Oh, qué maravilla!	哦，太棒了！
+¡Cuántas estanterías y todas llenas de libros!	这么多书架，全都装满了书！
 Tiene usted una biblioteca bien surtida.	您有一个藏书丰富的图书馆啊。
 No es para tanto.	没那么夸张。
 Siempre compro libros.	我一直买书。
 Lo hago porque tengo el hábito de leer.	我这么做是因为我有阅读的习惯。
 Leo, sobre todo, obras literarias.	我尤其读文学作品。
-Pero ¿cómo compra los libros? ¿Va a la librería?	但您怎么买书呢？去书店吗？
-Algunas veces. Ahora, lo hago por Internet.	有时候去。现在，我通过互联网买。
+Pero ¿cómo compra los libros?	但您怎么买书呢？
+¿Va a la librería?	去书店吗？
+Algunas veces.	有时候去。
+Ahora, lo hago por Internet.	现在，我通过互联网买。
 Es un buen sistema.	这是个好方式。
 Así, ya no voy a la librería, y gano tiempo.	这样，我就不去书店了，还节省时间。
-Es verdad. Comprar por Internet tiene esa ventaja.	确实。网上购物有那个优势。
+Es verdad.	确实。
+Comprar por Internet tiene esa ventaja.	网上购物有那个优势。
 ¿Qué es eso?	那是什么？
 Perdón, llaman a la puerta.	对不起，有人敲门。
 Voy a ver quién es.	我去看看是谁。
@@ -110,20 +117,20 @@ Voy a pagar el servicio.	我去付一下服务费。
 # 语法点
 宾格与格代词同时出现时的语序
 当宾格代词和与格代词同时出现在动词前时，与格代词在前，宾格代词在后。本课"Se los voy a prestar"中，se（与格代词le的变体）+ los（宾格代词，指代libros）= 把它们借给您。注意：与格代词le/les在宾格代词lo/la/los/las之前时，必须变为se。
-对应例句：6
+对应例句：9
 
 短尾形容词buen
 bueno在阳性单数名词之前时，需去掉词尾-o，变为短尾形式buen。如"un buen sistema"（一个好方式）。阴性形式buena和复数形式buenos/buenas不发生短尾变化。
-对应例句：19
+对应例句：24
 
 中性指示代词eso
 eso是中性指示代词，用于指代不确定性别的事物、抽象概念或前面提到过的整件事。与指示形容词ese/esa/esos/esas不同，eso不与名词连用，而是独立使用。本课"¿Qué es eso?"（那是什么？）中eso指代未知的事物。
-对应例句：22
+对应例句：28
 
 疑问词cuánto
 cuánto是疑问词，意为"多少"，有性数变化：cuánto（阳性单数）、cuánta（阴性单数）、cuántos（阳性复数）、cuántas（阴性复数），须与所修饰的名词保持性数一致。本课"¡Cuántas estanterías!"（多少书架啊！）中cuántas修饰阴性复数名词estanterías。
-对应例句：10
+对应例句：14
 
 no es para tanto
 "no es para tanto"是西班牙语常用口语表达，意为"没那么夸张、不至于、没那么大不了"，用于谦虚地回应别人的夸奖或淡化某事的严重性。
-对应例句：12
+对应例句：16

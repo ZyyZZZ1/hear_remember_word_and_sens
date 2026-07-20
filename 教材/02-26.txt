@@ -11,28 +11,35 @@ llamar	打电话（非自复动词）
 llamo	我打电话
 
 # 例句
-Sí, mamá. Estoy en el supermercado. Quiero comprarme un nuevo par de zapatos.	喂，妈妈。我在超市。我想给自己买一双新鞋。
+Sí, mamá.	喂，妈妈。
+Estoy en el supermercado.	我在超市。
+Quiero comprarme un nuevo par de zapatos.	我想给自己买一双新鞋。
 Te llamo justo para hacerte algunos encargos.	我打电话给你正是要托你办几件事。
 Dime lo que quieres.	告诉我你想要什么。
 Ve a la sección de alimentos y tráeme dos barras de pan, un kilo de arroz, una botella de aceite y…	去食品区给我带两条面包、一公斤米、一瓶油，还有……
 Sigue.	继续（说）。
-Espera y déjame pensar. Ah, ya no tenemos ni leche ni yogur ni queso ni mantequilla ni mermelada…	等等，让我想想。啊，我们已经没有牛奶、酸奶、奶酪、黄油和果酱了……
-¡Un momento! ¿Cómo voy a recordar tantas cosas? Tengo que apuntarlas en mi móvil.	等一下！我怎么记得住这么多东西？我得把它们记在手机上。
-Pues apúntalas. Otra cosa: el periódico de hoy para tu padre. Tráeselo.	那就记下来。还有一件事：今天的报纸给你爸。带给他。
+Espera y déjame pensar.	等等，让我想想。
+Ah, ya no tenemos ni leche ni yogur ni queso ni mantequilla ni mermelada…	啊，我们已经没有牛奶、酸奶、奶酪、黄油和果酱了……
+¡Un momento!	等一下！
+¿Cómo voy a recordar tantas cosas?	我怎么记得住这么多东西？
+Tengo que apuntarlas en mi móvil.	我得把它们记在手机上。
+Pues apúntalas.	那就记下来。
+Otra cosa: el periódico de hoy para tu padre.	还有一件事：今天的报纸给你爸。
+Tráeselo.	带给他。
 
 # 语法点
 否定连词 ni...ni...（既不……也不……）
 ni...ni... 是西班牙语中表示"既不……也不……"的否定并列连词，用于连接两个或多个被否定的成分。在句中代替 y 用于否定列举。当 ni...ni... 位于动词之后时，动词前需加 no（如 no tenemos ni leche ni yogur）。本课中列举了五个被否定的事物：ni leche ni yogur ni queso ni mantequilla ni mermelada，形成冗长的否定列举。
-对应例句：6
+对应例句：9
 
 关系代词 lo que（……的东西/事情）
 lo que 是中性关系代词，用于指代前面提到的或泛指的事物、概念，相当于中文的"……的东西"或"……的事情"。lo 没有性和数的变化。本课中 Dime lo que quieres（告诉我你要什么）展示了 lo que 的典型用法。
-对应例句：3
+对应例句：5
 
 电话委托的常用表达
 本课提供了电话委托购物的核心表达：hacer encargos（托办事情）、Dime lo que quieres（告诉我你要什么）、Sigue（继续说）、apúntalas（记下来）。这些是电话沟通场景中的实用表达。
-对应例句：2,3,5,8
+对应例句：4,5,7,13,14,15
 
 亲昵式（tú）肯定命令式
 本课中出现了多个 tú 形式的肯定命令式：Ve（去）、Sigue（继续）、Espera（等）、déjame（让我）、apúntalas（记下它们）、Tráeselo（带给他）。tú 的肯定命令式形式与陈述式现在时第三人称单数变位相同（以 -ar 结尾加 -a，以 -er/-ir 结尾加 -e），但少数动词不规则（如 ir→ve, hacer→haz, poner→pon, salir→sal, tener→ten, venir→ven, decir→di）。
-对应例句：4,5,6,8
+对应例句：6,7,8,9,13,14,15

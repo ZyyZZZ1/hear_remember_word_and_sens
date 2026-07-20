@@ -39,32 +39,39 @@ devolvéis	你们归还
 devuelven	他们/她们归还
 
 # 例句
-Tengo el libro en casa. Te lo traigo mañana.	这本书我放在家里了。明天给你带过来。
+Tengo el libro en casa.	这本书我放在家里了。
+Te lo traigo mañana.	明天给你带过来。
 Os hacemos unas preguntas en español y nos las contestáis en español también.	我们用西班牙语向你们提问，你们也用西班牙语回答这些问题。
-La maleta y los maletines están abiertos. ¿Nos los pueden cerrar, por favor?	手提箱和这些手提包都打开着。可以请诸位帮我们把它们关上吗？
-Estas son las llaves de mi hermano. Yo se las llevo.	这些是我弟弟的钥匙。我给他带过去。
+La maleta y los maletines están abiertos.	手提箱和这些手提包都打开着。
+¿Nos los pueden cerrar, por favor?	可以请诸位帮我们把它们关上吗？
+Estas son las llaves de mi hermano.	这些是我弟弟的钥匙。
+Yo se las llevo.	我给他带过去。
 Si ustedes quieren usar estas maletas, se las presto.	如果诸位想要用这些手提箱，我就把它们借给诸位。
 Luis regresa a casa con la bolsa llena de verduras y se la entrega a su mujer.	路易斯带着装满蔬菜的袋子回到家并把它交给了他妻子。
 Te lo voy a traer mañana.	我明天把它带给你。
 Voy a traértelo mañana.	我明天把它带给你。
-¿Necesitáis estas revistas? Os las puedo prestar.	你们需要这些杂志吗？我可以把它们借给你们。
-¿Necesitáis estas revistas? Puedo prestároslas.	你们需要这些杂志吗？我可以把它们借给你们。
-Les dejamos estas revistas. Nos las tienen que devolver mañana.	我们把这些杂志留给诸位。诸位明天把它们还给我们。
-Les dejamos estas revistas. Tienen que devolvérnoslas mañana.	我们把这些杂志留给诸位。诸位明天要把它们还给我们。
+¿Necesitáis estas revistas?	你们需要这些杂志吗？
+Os las puedo prestar.	我可以把它们借给你们。
+¿Necesitáis estas revistas?	你们需要这些杂志吗？
+Puedo prestároslas.	我可以把它们借给你们。
+Les dejamos estas revistas.	我们把这些杂志留给诸位。
+Nos las tienen que devolver mañana.	诸位明天把它们还给我们。
+Les dejamos estas revistas.	我们把这些杂志留给诸位。
+Tienen que devolvérnoslas mañana.	诸位明天要把它们还给我们。
 
 # 语法点
 宾格与格代词同时出现的语序规则
 当动词的直接宾语和间接宾语同时分别由宾格和与格人称代词指代时，与格代词在前，宾格代词在后。即：与格代词 + 宾格代词 + 变位动词。例如：Te lo traigo（我把它带给你，te=与格，lo=宾格）、Nos las contestáis（你们回答我们这些问题，nos=与格，las=宾格）。
-对应例句：1,2,3,4,5,6
+对应例句：1,2,3,4,5,6,7,8,9
 
 与格代词第三人称的变体se
 当与格代词第三人称le或les与宾格代词lo/la/los/las同时出现时，le/les必须变为se。这是为了避免le lo/les la等音素重复。se在这里不是自复代词，而是与格代词的变体。例如：se las llevo（我把它们带给他/她/您/他们，se代替le/les）、se la entrega（把它交给他/她，se代替le）。
-对应例句：4,5,6
+对应例句：6,7,8,9
 
 代词置于原形动词之后连写
 宾格和与格代词可以置于能愿动词或动词短语之前分写，也可以置于原形动词之后与之连写。连写时，为保持动词原形的重音不位移，需在原来的重读音节上添加重音符号。例如：Te lo voy a traer. = Voy a traértelo.（我把它带给你）。两种语序意思完全相同。
-对应例句：7,8,9,10,11,12
+对应例句：10,11,12,13,14,15,16,17,18,19
 
 重音符号添加规则
 代词与原形动词连写时重音符号的添加：traer + te + lo → traértelo（重音保持在traer的e上），prestar + os + las → prestároslas（重音保持在prestar的a上），devolver + nos + las → devolvérnoslas（重音保持在devolver的e上）。重音符号的作用是保持原形动词原有的重音位置不因代词后附而发生位移。
-对应例句：8,10,12
+对应例句：11,14,15,18,19

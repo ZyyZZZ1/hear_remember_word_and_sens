@@ -56,26 +56,39 @@ servís	你们服务
 sirven	他们/她们服务
 
 # 例句
-Buenos días, señorita. Vengo con una delegación. Tenemos una entrevista con el señor gerente.	早上好，小姐。我和一个代表团一起来的。我们和经理先生有个会面。
-Buenos días. Bienvenidos. El señor gerente los espera en su oficina. Por favor, suban al piso 24. Al salir del ascensor, tomen a la derecha y avancen unos metros por el pasillo. Llamen en la segunda puerta de la izquierda, el número 2473.	早上好。欢迎。经理先生在他的办公室等你们。请上24楼。出电梯后，向右拐，沿着走廊往前走几米。敲左边第二扇门，门牌号2473。
-Muchas gracias. Yo quiero preguntarle otra cosa. Somos diez. ¿Podemos entrar todos a la oficina del gerente?	非常感谢。我想问您另一件事。我们十个人。我们都能进经理的办公室吗？
-Lo siento. Solo pueden pasar cuatro, porque la oficina es muy pequeña.	抱歉。只能进去四个人，因为办公室非常小。
-Está bien. Entonces ustedes seis, esperen aquí. Muchas gracias, señorita.	好的。那么你们六个，在这里等。非常感谢，小姐。
+Buenos días, señorita.	早上好，小姐。
+Vengo con una delegación.	我和一个代表团一起来的。
+Tenemos una entrevista con el señor gerente.	我们和经理先生有个会面。
+Buenos días.	早上好。
+Bienvenidos.	欢迎。
+El señor gerente los espera en su oficina.	经理先生在他的办公室等你们。
+Por favor, suban al piso 24.	请上24楼。
+Al salir del ascensor, tomen a la derecha y avancen unos metros por el pasillo.	出电梯后，向右拐，沿着走廊往前走几米。
+Llamen en la segunda puerta de la izquierda, el número 2473.	敲左边第二扇门，门牌号2473。
+Muchas gracias.	非常感谢。
+Yo quiero preguntarle otra cosa.	我想问您另一件事。
+Somos diez.	我们十个人。
+¿Podemos entrar todos a la oficina del gerente?	我们都能进经理的办公室吗？
+Lo siento.	抱歉。
+Solo pueden pasar cuatro, porque la oficina es muy pequeña.	只能进去四个人，因为办公室非常小。
+Está bien.	好的。
+Entonces ustedes seis, esperen aquí.	那么你们六个，在这里等。
+Muchas gracias, señorita.	非常感谢，小姐。
 Para servirlos.	为您效劳。
 
 # 语法点
 肯定命令式（礼貌式 ustedes）的基本用法
 本课首次出现命令式（imperativo）。西班牙语命令式用来表达命令、请求或指示。本课中使用的是礼貌式 ustedes（诸位）的肯定命令式形式：suban（请上）、tomen（请走/拐）、avancen（请前进）、Llamen（请敲/叫）、esperen（请等）。规则动词的 ustedes 命令式变位：以 -ar 结尾的动词去掉 -ar 加 -en（如 subir→suban 其实是以 -ir 结尾，规则后续课程详述）；以 -er/-ir 结尾的动词去掉词尾加 -an。注意命令式常与 por favor（请）连用，使语气更礼貌。
-对应例句：2,5
+对应例句：4,5,6,7,8,9,16,17,18
 
 介词短语 al + inf.（一……就……/当……时）
 al + 动词原形表示"在做某事的时候"或"一……就……"，相当于一个时间状语从句。本课中 Al salir del ascensor 意为"出电梯时/一出电梯"。al 是 a + el 的缩合形式。
-对应例句：2
+对应例句：8
 
 道歉表达 Lo siento
 Lo siento 是西班牙语中最常用的道歉表达，意为"抱歉、对不起"，来自动词 sentir（感觉）。比 perdón 更加正式和诚恳。
-对应例句：4
+对应例句：14
 
 礼貌回应 Para servirlos
 Para servirlos 意为"为您效劳"，是在提供服务后的礼貌回应语，常用于客服、商务等正式场合。字面意思为"为了服务诸位"。
-对应例句：6
+对应例句：19

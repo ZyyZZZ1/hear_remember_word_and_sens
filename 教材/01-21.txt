@@ -82,14 +82,20 @@ Invitamos a nuestros amigos a cenar en un restaurante español.	我们请我们�
 Sí, quiero invitarlos a cenar.	是的，我想请他们吃晚饭。
 ¿A qué hora hacéis los trabajos?	你们几点干活？
 Los hacemos a las cuatro de la tarde.	我们下午四点做。
-Mis compañeros son muy buenos. Me ayudan mucho.	我的同学非常好。他们帮了我很多。
-Esta tarde no estamos ocupados. Puedes venir a vernos.	今天下午我们不忙。你可以来看我们。
-Pepe tiene dos hermanas. Todos los días por la mañana las lleva al instituto.	佩佩有两个妹妹。他每天上午把她们送去学校。
+Mis compañeros son muy buenos.	我的同学非常好。
+Me ayudan mucho.	他们帮了我很多。
+Esta tarde no estamos ocupados.	今天下午我们不忙。
+Puedes venir a vernos.	你可以来看我们。
+Pepe tiene dos hermanas.	佩佩有两个妹妹。
+Todos los días por la mañana las lleva al instituto.	他每天上午把她们送去学校。
 Los amigos llegan y Rebeca los recibe en la puerta antes de llevarlos a la sala.	朋友们到了，在把他们带去客厅前，丽贝卡在门口迎接他们。
-Hoy es mi cumpleaños. Os invito a comer.	今天是我的生日。我请你们吃饭。
+Hoy es mi cumpleaños.	今天是我的生日。
+Os invito a comer.	我请你们吃饭。
 Yolanda recibe a sus amigos y los lleva al comedor.	约兰达迎接她的朋友们并把他们带到了饭厅。
-Esta es vuestra habitación. Tenéis que limpiarla.	这是你们的房间。你们必须把它打扫干净。
-¿Estudias en esa universidad? ¿Puedes llevarnos allá?	你在那所大学读书吗？你可以带我们去那边吗？
+Esta es vuestra habitación.	这是你们的房间。
+Tenéis que limpiarla.	你们必须把它打扫干净。
+¿Estudias en esa universidad?	你在那所大学读书吗？
+¿Puedes llevarnos allá?	你可以带我们去那边吗？
 
 # 语法点
 直接宾语的概念
@@ -106,8 +112,8 @@ Esta es vuestra habitación. Tenéis que limpiarla.	这是你们的房间。你�
 
 宾格代词的位置规则
 宾格代词在句子中可以置于变位动词之前，与之分写（如 Los hacemos），也可置于原形动词之后，与之连写（如 invitarlos、limpiarla、llevarnos）。当句子中有情态动词或助动词时，宾格代词可以放在情态动词之前（如 Puedes llevarnos），也可以连在原形动词之后。
-对应例句：13,14,15,17,22,23
+对应例句：13,14,15,19,27,29
 
 第三人称宾格代词的性数一致
 第三人称宾格代词必须与所替代的名词保持性、数一致：阳性单数用 lo，阴性单数用 la，阳性复数用 los，阴性复数用 las。例如替代 hermanas（阴性复数）用 las，替代 amigos（阳性复数）用 los。
-对应例句：18,19
+对应例句：21,22

@@ -80,35 +80,51 @@ razón	道理；tener razón 有道理，说得对
 tener en cuenta	考虑到，记住
 
 # 例句
-Profesor, los alumnos ya llevamos más de dos meses en contacto con usted. ¿Qué piensa de nosotros? ¿Puede hacer algún comentario sobre nuestros estudios de español?	老师，我们学生已经和您接触两个多月了。您觉得我们怎么样？您能对我们的西班牙语学习做个评价吗？
-Precisamente, es un tema sobre el que quiero hablar con vosotros. Para empezar, os digo que sois unos chicos sanos, alegres, bien educados con ganas de conocer cosas y muy aplicados en el estudio.	正好，这就是我想跟你们谈的话题。首先，我告诉你们，你们是一群健康、开朗、有教养、渴望了解新事物并且在学业上非常用功的学生。
-Es usted muy amable. Pero, seguramente tenemos también defectos. Por favor, díganos cuáles son.	您太客气了。但是，我们肯定也有缺点。请告诉我们有哪些。
-No os precipitéis. Dejadme ir poco a poco. Claro que voy a hablaros de los problemas que tenéis, sobre todo, de aquellos relacionados con el tema de cómo estudiar el español.	你们别急。让我慢慢来。我当然要跟你们讲你们存在的问题，尤其是那些和如何学习西班牙语有关的问题。
+Profesor, los alumnos ya llevamos más de dos meses en contacto con usted.	老师，我们学生已经和您接触两个多月了。
+¿Qué piensa de nosotros?	您觉得我们怎么样？
+¿Puede hacer algún comentario sobre nuestros estudios de español?	您能对我们的西班牙语学习做个评价吗？
+Precisamente, es un tema sobre el que quiero hablar con vosotros.	正好，这就是我想跟你们谈的话题。
+Para empezar, os digo que sois unos chicos sanos, alegres, bien educados con ganas de conocer cosas y muy aplicados en el estudio.	首先，我告诉你们，你们是一群健康、开朗、有教养、渴望了解新事物并且在学业上非常用功的学生。
+Es usted muy amable.	您太客气了。
+Pero, seguramente tenemos también defectos.	但是，我们肯定也有缺点。
+Por favor, díganos cuáles son.	请告诉我们有哪些。
+No os precipitéis.	你们别急。
+Dejadme ir poco a poco.	让我慢慢来。
+Claro que voy a hablaros de los problemas que tenéis, sobre todo, de aquellos relacionados con el tema de cómo estudiar el español.	我当然要跟你们讲你们存在的问题，尤其是那些和如何学习西班牙语有关的问题。
 Eso nos interesa mucho.	这让我们很感兴趣。
-Entonces, os voy a hablar con franqueza. Me parece que muchos de vosotros no mostráis suficiente interés por mejorar vuestra pronunciación. No comprendo por qué. ¿Creéis acaso que es una cosa que no tiene importancia? ¡No! La pronunciación es muy importante porque una palabra mal pronunciada puede significar otra cosa. Por ejemplo, si confundís constantemente paso y vaso, cata y gata, total y dotar, vais a causar una gran confusión y nadie os va a entender. De modo que prestad más atención a la pronunciación.	那么，我就跟你们坦率地说。我觉得你们中很多人对提高发音没有表现出足够的兴趣。我不明白为什么。你们难道认为这是一件不重要的事吗？不！发音非常重要，因为一个发音错误的单词可能意味着另一件事。例如，如果你们经常混淆 paso 和 vaso、cata 和 gata、total 和 dotar，你们会造成巨大的混淆，没有人能听懂你们的话。因此，要更加注意发音。
-Tiene usted razón. Vamos a tomar muy en cuenta lo que nos dice. Muchas gracias.	您说得有道理。我们会非常重视您说的话。非常感谢。
+Entonces, os voy a hablar con franqueza.	那么，我就跟你们坦率地说。
+Me parece que muchos de vosotros no mostráis suficiente interés por mejorar vuestra pronunciación.	我觉得你们中很多人对提高发音没有表现出足够的兴趣。
+No comprendo por qué.	我不明白为什么。
+¿Creéis acaso que es una cosa que no tiene importancia?	你们难道认为这是一件不重要的事吗？
+¡No!	不！
+La pronunciación es muy importante porque una palabra mal pronunciada puede significar otra cosa.	发音非常重要，因为一个发音错误的单词可能意味着另一件事。
+Por ejemplo, si confundís constantemente paso y vaso, cata y gata, total y dotar, vais a causar una gran confusión y nadie os va a entender.	例如，如果你们经常混淆 paso 和 vaso、cata 和 gata、total 和 dotar，你们会造成巨大的混淆，没有人能听懂你们的话。
+De modo que prestad más atención a la pronunciación.	因此，要更加注意发音。
+Tiene usted razón.	您说得有道理。
+Vamos a tomar muy en cuenta lo que nos dice.	我们会非常重视您说的话。
+Muchas gracias.	非常感谢。
 
 # 语法点
 发音辨析：容易混淆的辅音对
 本课展示了西班牙语中三对因发音相近而容易混淆的单词：paso（步伐）/ vaso（杯子）——区别在于 p 和 v 的发音；cata（品尝）/ gata（母猫）——区别在于 c 和 g 的发音；total（总计）/ dotar（赋予）——区别在于 t 和 d 的发音。准确区分这些辅音对是地道西班牙语发音的关键。
-对应例句：6
+对应例句：19
 
 固定短语 tener razón（有道理）
 tener razón 意为"有道理、说得对"，是西班牙语中表达同意对方观点的常用短语。否定形式为 no tener razón（没有道理）。本课中 Tiene usted razón 意为"您说得对"。
-对应例句：7
+对应例句：21
 
 固定短语 prestar atención（注意）
 prestar atención (a) 意为"注意、留神"，prestar 本义为"借出"，在此引申为"给予"。本课中 prestad más atención a la pronunciación 意为"要更加注意发音"。在否定命令式中，代词前置于 no 和动词之间。
-对应例句：6
+对应例句：20
 
 固定短语 tener en cuenta（考虑到、记住）
 tener en cuenta 意为"考虑到、记住、重视"。本课中 Vamos a tomar muy en cuenta lo que nos dice 意为"我们会非常重视您说的话"。其中 tomar en cuenta 与 tener en cuenta 同义。
-对应例句：7
+对应例句：22
 
 固定短语 de modo que（因此、所以）
 de modo que 意为"因此、所以"，用于引导结果从句，相当于 por eso（因此）。本课中 de modo que prestad más atención 意为"因此要更加注意"。
-对应例句：6
+对应例句：20
 
 短语 sobre todo（尤其、特别）
 sobre todo 意为"尤其、特别"，用于强调或突出某一个方面。注意区别于 todo sobre（关于……的一切）。
-对应例句：4
+对应例句：11

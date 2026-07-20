@@ -20,7 +20,8 @@ imposible	(impossible)不可能的
 ¡Qué bien!	真好！
 ¡Qué bien hablas español!	你西语说得真好！
 ¡Vaya horario más apretado!	多么紧凑的时间表！
-¿Terminar este trabajo en media hora? ¡Imposible!	半个小时之内结束这项工作？不可能！
+¿Terminar este trabajo en media hora?	半个小时之内结束这项工作？
+¡Imposible!	不可能！
 
 # 语法点
 感叹句的基本结构
@@ -37,4 +38,4 @@ imposible	(impossible)不可能的
 
 其他感叹形式
 感叹句也可以采用疑问句形式来表达惊讶或质疑，如 ¿Terminar este trabajo en media hora? ¡Imposible!（半个小时之内结束这项工作？不可能！）。这种用法不需要回答，纯粹是修辞性感叹。
-对应例句：5
+对应例句：5,6

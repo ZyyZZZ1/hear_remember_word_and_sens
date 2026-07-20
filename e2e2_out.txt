@@ -1,0 +1,22 @@
+﻿鍚姩 popup (POPUP_TEST=1, POPUP_STDIN_HOOK=1) ...
+PID=46200
+=== 鍚姩鍚?popup_status.log ===
+[POPUP] popup_trainer.py 鍚姩 (test_mode=True)
+
+console_hwnd = 0x0
+鍚姩 IsWindowVisible = False
+
+[1] 鍙?TOGGLE (visible -> hide) ...
+python.exe : Traceback (most recent call last):
+所在位置 行:1 字符: 78
++ ... lyContinue; & "C:\Users\12099\miniconda3\python.exe" "D:\程序\脚本\01-08\ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "D:\绋嬪簭\鑴氭湰\01-08\test_e2e_2.py", line 53, in <module>
+    p.stdin.flush()
+    ~~~~~~~~~~~~~^^
+OSError: [Errno 22] Invalid argument
+Exception ignored in: <_io.BufferedWriter name=4>
+OSError: [Errno 22] Invalid argument

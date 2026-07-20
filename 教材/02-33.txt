@@ -198,7 +198,8 @@ como	既然/因为（连词，无重音）
 # 例句
 Elena y Alberto le agradecen a Susana su invitación.	艾蕾娜和阿尔贝托感谢苏珊娜的邀请。
 Al recibir cada uno sus regalos que la abuela les trae de su viaje, los niños se lo agradecen con besos.	当每个人收到奶奶从旅行中带给他们的礼物时，孩子们用亲吻来感谢她。
-Profesor, estos libros que usted me presta en este momento son de gran importancia para mí. Se lo agradezco mucho.	老师，您现在借我的这些书对我很重要。我真的很感激。
+Profesor, estos libros que usted me presta en este momento son de gran importancia para mí.	老师，您现在借我的这些书对我很重要。
+Se lo agradezco mucho.	我真的很感激。
 Compañeros, os estoy muy agradecido por vuestra ayuda.	同事们，非常感谢你们的帮助。
 Inés se siente muy agradecida por la confianza que le brinda su amiga.	Inés对她的朋友给予她的信任感到非常感激。
 Los turistas quedan muy agradecidos por la excelente atención de la guía.	游客们非常感谢导游的高度关注。
@@ -213,40 +214,44 @@ Por favor, no asusten a los animales de ninguna manera.	请绝对不要吓唬动
 ¿Puedo asomarme por esta ventanilla?	我能看看窗外吗？
 ¡No, de ninguna manera!	不，绝对不行！
 Mauricio, ¿puedo llamar al abuelo esta noche a las diez y media?	毛里西奥，今晚十点半我能给爷爷打电话吗？
-¡No, de ninguna manera! A esa hora él ya está durmiendo.	不，绝对不行！到那时他已经在睡觉了。
+¡No, de ninguna manera!	不，绝对不行！
+A esa hora él ya está durmiendo.	到那时他已经在睡觉了。
 Renato está estudiando pero de vez en cuando se levanta y se acerca a la ventana para observar la calle como esperando a alguien.	雷纳托正在学习，但他不时站起来，走到窗前观察街道，就好像在等人。
 Tú hablas bastante bien español pero de vez en cuando confundes algunos sonidos.	你西班牙语说得很好，但有时你会混淆一些发音。
 Mi sobrino se esfuerza por ser mejor: ahora, solo de vez en cuando tiene un comportamiento chocante.	我的侄子努力变得更好：现在，他只是不时地有令人震惊的行为。
 El león está durmiendo y de vez en cuando abre los ojos para ver si se acerca algún otro animal.	狮子正在睡觉，它不时睁开眼睛，看看是否有其他动物正在接近。
-Los dos amigos no se ven mucho. Muy de vez en cuando se encuentran en la calle o en algún parque.	这两个朋友不常见面。他们偶尔会在街上或公园见面。
+Los dos amigos no se ven mucho.	这两个朋友不常见面。
+Muy de vez en cuando se encuentran en la calle o en algún parque.	他们偶尔会在街上或公园见面。
 Señor guía, queremos ver leones en vez de hienas.	导游先生，我们想看狮子而不是鬣狗。
 Señorita, ¿no tiene un abrigo de color oscuro en vez de este de color tan claro, que no me gusta nada?	小姐，您有深色的外套吗？而不是这件浅色的，我根本不喜欢。
 ¡Ahora resulta que, en vez de agradecerme, me amenazas!	现在结果是，你不是感谢我，而是威胁我！
 Si ustedes quieren ir al supermercado, tienen que atravesar el parque en vez de seguir ese camino.	如果诸位想去超市，必须穿过公园，而不是沿着那条路走。
-Descuiden. Creo que el decano, en vez de enfurecerse por lo que ustedes le van a decir, los va a elogiar.	别担心。我觉得系主任不会大发雷霆，相反他会因诸位将要告诉他的事情而夸赞诸位。
+Descuiden.	别担心。
+Creo que el decano, en vez de enfurecerse por lo que ustedes le van a decir, los va a elogiar.	我觉得系主任不会大发雷霆，相反他会因诸位将要告诉他的事情而夸赞诸位。
 Tengo mucho que decirte, pero por el momento me limito a darte algunos consejos.	我有很多要告诉你的，但眼下我只给你一些建议。
 Un grupo de fieras se acerca a la furgoneta y los turistas, algo asustados, se limitan a observar las a través de las ventanas del vehículo.	一群野生动物接近面包车，游客们有点害怕，只敢通过车辆的窗户看着它们。
-No hables tanto. Limítate a decir lo más importante.	你别说那么多。只说最重要的事就行了。
+No hables tanto.	你别说那么多。
+Limítate a decir lo más importante.	只说最重要的事就行了。
 Como no tenemos tiempo para limpiar toda la casa, limitémonos a barrer el suelo.	既然我们没有时间打扫整个房子，那我们就只擦地板吧。
 Señoras y señores, no les pedimos nada complicado: limítense a firmar estos papeles.	女士们先生们，我们不要求任何复杂的事情：只需签署这些文件。
 
 # 语法点
 动词 agradecer 的用法与派生词
 agradecer 意为"感谢、感激"，是及物动词。其变位为第一人称单数词干变化类（agradecer → agradezco）。派生词包括：agradecido/agradecida（形容词"感激的"）和 agradecimiento（名词"谢意"）。常用结构：agradecer algo a alguien（为某事感谢某人）、estar agradecido por algo（因某事而感激）、en agradecimiento a/por algo（为感谢某事）。
-对应例句：1,2,3,4,5,6,7,8,9,10
+对应例句：1,2,3,4,5,6,7,8,9,10,11
 
 短语 de ninguna manera（绝对不）
 de ninguna manera 表示坚决的否定，意为"绝对不（能/可能）"，语气比 no 更强烈。可用于回答提议（如 —¿Puedo...? —¡De ninguna manera!）或命令句中加强否定语气（如 ¡no atravieséis esa calle de ninguna manera!）。
-对应例句：11,12,13,14,15,16,17,18
+对应例句：12,13,14,15,16,17,18,19
 
 短语 de vez en cuando（不时、间或）
 de vez en cuando 意为"不时、间或、偶尔"，表示动作发生的频率较低，在句中作时间状语。加强形式 muy de vez en cuando 表示"非常偶尔、极少"。与 siempre（总是）形成频率上的对比。
-对应例句：19,20,21,22,23
+对应例句：21,22,23,24,25,26
 
 短语 en vez de（不是……而是、代替）
 en vez de + 名词/动词原形表示"不是……而是"或"代替"。当后接动词原形时，表示选择做某事而不是另一件事。注意与 en lugar de 的区别：二者基本同义，en vez de 更口语化。
-对应例句：24,25,26,27,28
+对应例句：27,28,29,30,31,32
 
 动词 limitarse a + inf.（只……、局限于）
 limitarse 是代词式动词，后接 a + 动词原形，意为"只做某事、局限于做某事"。表示将行为限定在某个范围内，不超出这一范围。在命令式中使用：Limítate a...（你只需……）、limitémonos a...（我们只需……）、limítense a...（诸位只需……）。
-对应例句：29,30,31,32,33
+对应例句：33,34,35,36,37,38

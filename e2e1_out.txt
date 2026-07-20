@@ -1,0 +1,15 @@
+﻿鍚姩 popup 瀛愯繘绋?(CREATE_NEW_CONSOLE, 涓嶉噸瀹氬悜 stdout) ...
+PID=49316
+=== popup_status.log ===
+[POPUP] popup_trainer.py 鍚姩 (test_mode=False)
+[POPUP] console_hwnd=0x220F28
+[POPUP] message_hwnd=0x1407BC
+[POPUP] hotkey registered Ctrl+Alt+;
+[POPUP] startup hidden
+
+========================================
+console_hwnd = 0x220F28
+message_hwnd = 0x1407BC
+IsWindowVisible(popup_console_hwnd) = False
+kill 瀛愯繘绋?..
+done.

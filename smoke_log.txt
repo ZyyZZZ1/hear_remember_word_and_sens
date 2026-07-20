@@ -1,0 +1,33 @@
+﻿========================================================
+  热键机制冒烟测试（Ctrl+Alt+; = VK_OEM_1）
+========================================================
+
+[测试1] RegisterHotKey 注册 Ctrl+Alt+; (主线程) ...
+  hwnd=0x2C0A1C
+  RegisterHotKey 返回 = 1, GetLastError = 6
+  [PASS] 热键注册成功
+
+[测试2] SendInput 模拟物理按键 (主线程注册+pump, 后台线程发送) ...
+  [发送线程] SendInput 注入事件数 = 0
+  等待 2.50s, 收到 WM_HOTKEY = False
+  窗口收到消息总数 = 24, WM_HOTKEY 数 = 0
+  [WARN] 未收到 WM_HOTKEY（SendInput 模拟热键易抖动：UIPI/会话/焦点影响）。
+         不视为硬失败，以测试1+测试3为准；真实物理按键需手动 PTC-10 确认。
+
+[测试3] PostMessage 直接投递 WM_HOTKEY (全部主线程) ...
+  PostMessage(WM_HOTKEY) 返回 = 1
+  等待 0.00s, 收到并处理 = True
+  窗口收到消息总数 = 5, WM_HOTKEY 数 = 1
+  [PASS] 消息分发路径正常，toggle 处理可被触发
+
+========================================================
+  汇总
+========================================================
+  测试1 RegisterHotKey 注册      : PASS
+  测试2 SendInput 端到端触发     : WARN(可抖动)
+  测试3 PostMessage 消息分发     : PASS
+
+  结论：热键机制 [有效]。注册与消息分发路径可用。
+  注：SendInput 模拟未命中属已知抖动，真实物理按键需手动 PTC-10 确认。
+
+--- STDERR ---

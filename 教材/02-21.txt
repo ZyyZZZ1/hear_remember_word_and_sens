@@ -165,43 +165,67 @@ llamar	打电话（非自复动词）
 llamas	你打电话
 
 # 例句
-Hola, buenas tardes. ¿Con quién tengo el gusto de hablar?	你好，下午好。请问您是哪位？
-¡Rita, soy yo: Bella! Acabo de llegar.	丽塔，是我：贝拉！我刚到。
-¡Bella! ¡Qué alegría! ¡Cuánto tiempo sin vernos!	贝拉！太高兴了！好久不见！
+Hola, buenas tardes.	你好，下午好。
+¿Con quién tengo el gusto de hablar?	请问您是哪位？
+¡Rita, soy yo: Bella!	丽塔，是我：贝拉！
+Acabo de llegar.	我刚到。
+¡Bella!	贝拉！
+¡Qué alegría!	太高兴了！
+¡Cuánto tiempo sin vernos!	好久不见！
 ¡Sí, y qué ganas tengo de verte!	是啊，我多想见到你！
 ¿Desde dónde me llamas?	你从哪里给我打的电话？
 Desde el hotel Gato Negro.	从黑猫酒店。
-¿Gato Negro? Queda bastante lejos. ¿Sabes? Baja inmediatamente a la recepción para decir que dejas el hotel. Ven a mi casa. Aquí hay suficiente espacio para las dos.	黑猫？那相当远。你知道吗？马上去前台退房。来我家。这里空间足够我们两人。
-Pero no tengo tu dirección. ¿Puedes decírmela?	但我没有你的地址。你能告诉我吗？
-Por supuesto. Te la doy ahora mismo. Para mayor seguridad, dame el número de tu móvil (celular) y déjalo encendido.	当然。我现在就给你。为了更保险，把你的手机号码给我，并保持开机。
-Hola, Rita, ya estoy fuera del hotel. ¿Qué hago?	你好，丽塔，我已经在酒店外面了。我该怎么做？
-Mira hacia la izquierda. ¿Ves una parada de autobús? Allí, toma la línea 674.	朝左边看。你看到一个公交车站吗？在那里，乘坐674路。
-Veo ahí un autobús. Voy corriendo, a ver si alcanzo.	我看到那里有一辆公交车。我跑去，看看能不能赶上。
-Eso, corre rápido. Apéate en la parada Tres Pinos. Entra en la estación del metro y coge (toma) la línea 12 hasta La Biblioteca Nacional. Allí cerca hay una zona residencial llamada Aguas Claras. Yo vivo en el 1402, a la izquierda del edificio 11. ¿Está claro?	对，快跑。在三松站下车。进入地铁站，乘坐12号线到国家图书馆。那附近有一个叫清水苑的住宅区。我住在11号楼左边的1402室。清楚了吗？
-Creo que sí. En todo caso, si me pierdo, te vuelvo a llamar.	我想是的。不管怎样，如果我迷路了，我会再给你打电话。
-Descuida. Nos vemos. Te espero.	放心。再见。我等你。
+¿Gato Negro?	黑猫？
+Queda bastante lejos.	那相当远。
+¿Sabes?	你知道吗？
+Baja inmediatamente a la recepción para decir que dejas el hotel.	马上去前台退房。
+Ven a mi casa.	来我家。
+Aquí hay suficiente espacio para las dos.	这里空间足够我们两人。
+Pero no tengo tu dirección.	但我没有你的地址。
+¿Puedes decírmela?	你能告诉我吗？
+Por supuesto.	当然。
+Te la doy ahora mismo.	我现在就给你。
+Para mayor seguridad, dame el número de tu móvil (celular) y déjalo encendido.	为了更保险，把你的手机号码给我，并保持开机。
+Hola, Rita, ya estoy fuera del hotel.	你好，丽塔，我已经在酒店外面了。
+¿Qué hago?	我该怎么做？
+Mira hacia la izquierda.	朝左边看。
+¿Ves una parada de autobús?	你看到一个公交车站吗？
+Allí, toma la línea 674.	在那里，乘坐674路。
+Veo ahí un autobús.	我看到那里有一辆公交车。
+Voy corriendo, a ver si alcanzo.	我跑去，看看能不能赶上。
+Eso, corre rápido.	对，快跑。
+Apéate en la parada Tres Pinos.	在三松站下车。
+Entra en la estación del metro y coge (toma) la línea 12 hasta La Biblioteca Nacional.	进入地铁站，乘坐12号线到国家图书馆。
+Allí cerca hay una zona residencial llamada Aguas Claras.	那附近有一个叫清水苑的住宅区。
+Yo vivo en el 1402, a la izquierda del edificio 11.	我住在11号楼左边的1402室。
+¿Está claro?	清楚了吗？
+Creo que sí.	我想是的。
+En todo caso, si me pierdo, te vuelvo a llamar.	不管怎样，如果我迷路了，我会再给你打电话。
+Descuida.	放心。
+Nos vemos.	再见。
+Te espero.	我等你。
 
 # 语法点
 固定短语 acabar de + inf.（刚刚做……）
 acabar de + 动词原形表示刚刚完成的动作，相当于中文的"刚刚……"。acabar 按人称变位，后面动词原形不变。本课中 Acabo de llegar 意为"我刚到"。
-对应例句：2
+对应例句：4
 
 固定短语 tener ganas de + inf.（想要做……）
 tener ganas de + 动词原形是西班牙语常用表达，表示"渴望、想要做某事"。ganas 为阴性复数名词，前面用 tener 的相应变位形式。本课中 ¡qué ganas tengo de verte! 意为"我多想见到你"。
-对应例句：4
+对应例句：8
 
 无人称动词 haber 的形式 hay（有）
 hay 是动词 haber 的无人称现在时形式，意为"有"，表示某处存在某物或某人。hay 只有这一种形式，不分单复数，后面直接跟名词。本课中 Aquí hay suficiente espacio 意为"这里有足够的空间"。
-对应例句：7
+对应例句：16
 
 指路常用表达
 本课提供了丰富的指路用语：Mira hacia la izquierda（朝左边看）、toma la línea...（乘坐……路/号线）、Apéate en la parada...（在……站下车）、Entra en la estación del metro（进入地铁站）、coge la línea... hasta...（乘坐……号线到……）、a la izquierda del edificio...（在……楼的左边）。这些是指路场景的核心表达。
-对应例句：11,12,13,14
+对应例句：24,25,26,27,28,29,30,31,32,33,34,35,36
 
 告别语 Nos vemos
 Nos vemos 是西班牙语常用告别语，意为"再见、回头见"，字面意思是"我们见面"，比 Hasta luego 更加口语化和随意。类似的表达还有 Te espero（我等你），表示期待再次见面。
-对应例句：15
+对应例句：37,38,39
 
 固定短语 por supuesto（当然）
 por supuesto 意为"当然"，是表达肯定回答的常用短语，比 sí 更加正式和强调。通常放在句首。
-对应例句：9
+对应例句：19

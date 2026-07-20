@@ -1,0 +1,6 @@
+﻿[POPUP] message_hwnd=0x15E0160
+[POPUP] hotkey registered Ctrl+Alt+;
+[POPUP] startup visible (test_mode=False)
+[TTS] Piper ���������Ѽ��أ�es_ES-davefx-medium
+
+--- STDERR ---

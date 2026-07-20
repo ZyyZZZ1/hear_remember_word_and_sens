@@ -30,21 +30,26 @@ leen	他们/她们阅读
 
 # 例句
 Luis está hablando por teléfono con su madre.	路易斯在跟他妈妈打电话。
-¿Qué estás haciendo? No ves que lo ensucias todo.	你在做什么？你没看见你把所有东西都弄脏了吗？
-Habla, por favor. Te estamos escuchando.	你请讲，我们在听。
-Habla, por favor. Estamos escuchándote.	你请讲，我们在听。
-Espere un momento. Me estoy vistiendo.	你等一下。我在穿衣服。
-Espere un momento. Estoy vistiéndome.	你等一下。我在穿衣服。
+¿Qué estás haciendo?	你在做什么？
+No ves que lo ensucias todo.	你没看见你把所有东西都弄脏了吗？
+Habla, por favor.	你请讲。
+Te estamos escuchando.	我们在听。
+Habla, por favor.	你请讲。
+Estamos escuchándote.	我们在听。
+Espere un momento.	你等一下。
+Me estoy vistiendo.	我在穿衣服。
+Espere un momento.	你等一下。
+Estoy vistiéndome.	我在穿衣服。
 
 # 语法点
 副动词（gerundio）的构成规则
 副动词是西班牙语动词的一种非人称形式，相当于英语的 -ing 形式。构成规则：第一变位动词（-ar）去掉词尾加 -ando（如 trabajar → trabajando）；第二、三变位动词（-er/-ir）去掉词尾加 -iendo（如 comer → comiendo, vivir → viviendo）。部分动词在加 -iendo 时需将 i 变为 y，如 creer → creyendo、ir → yendo、leer → leyendo、traer → trayendo。另有一些动词的副动词词干元音发生变化，如 decir → diciendo、pedir → pidiendo、poder → pudiendo、seguir → siguiendo、servir → sirviendo、venir → viniendo、vestir → vistiendo。
-对应例句：1,2,3,5
+对应例句：1,2,5,7,9,11
 
 动词短语 estar + gerundio（正在做……）
 estar + 副动词表示"正在做某事"，是西班牙语中表达进行时的核心结构。estar 按人称变位，副动词保持不变。本课展示了所有人称的使用：está hablando（他正在说）、estás haciendo（你正在做）、estamos escuchando（我们正在听）、me estoy vistiendo（我正在穿衣服）。
-对应例句：1,2,3,5
+对应例句：1,2,5,7,9,11
 
 副动词结构中代词的位置
 在 estar + gerundio 结构中，宾格、与格和自复代词有两种位置：1）置于助动词 estar 之前，与之分写（如 Te estamos escuchando、Me estoy vistiendo）；2）置于副动词之后，与之合写（如 Estamos escuchándote、Estoy vistiéndome）。代词后附于副动词时，必须在重读音节上加标重音符号以保持原重音位置。
-对应例句：3,4,5,6
+对应例句：5,7,9,11

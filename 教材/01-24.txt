@@ -71,7 +71,8 @@ Va a venir un nuevo profesor.	马上要来一位新老师。
 Luis y su novia van a almorzar a esa cafetería.	路易斯和他女朋友去那家咖啡馆吃午饭。
 Los alumnos van a la biblioteca a leer.	学生们去图书馆看书。
 Vengo a pedirle prestados estos libros.	我来跟你借这些书。
-¿A qué venís? ¿A decirme algo?	你们来干什么？要跟我说点什么吗？
+¿A qué venís?	你们来干什么？
+¿A decirme algo?	要跟我说点什么吗？
 Usted tiene que ir al colegio esta tarde.	您今天下午必须去学校。
 Tenemos que hacer este trabajo ahora mismo.	我们必须立刻做这项工作。
 
@@ -82,7 +83,7 @@ Tenemos que hacer este trabajo ahora mismo.	我们必须立刻做这项工作。
 
 动词短语 venir a + inf.：表示来做某事
 动词 venir 加前置词 a 再加动词原形构成短语 venir a + inf.，表示"来做……"，强调来的目的。例如 Vengo a pedirle prestados estos libros（我来跟你借这些书）、¿A qué venís? ¿A decirme algo?（你们来干什么？要跟我说点什么吗？）。
-对应例句：5,6
+对应例句：5,6,7
 
 动词短语 tener que + inf.：表示必须做某事
 助动词 tener 加 que 再加动词原形构成短语 tener que + inf.，表示"必须……""不得不……"，有强制性。与 ir a + inf. 表示意向不同，tener que + inf. 强调义务或必要。例如 Tiene que ir al colegio（您必须去学校）、Tenemos que hacer este trabajo ahora mismo（我们必须立刻做这项工作）。

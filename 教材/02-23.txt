@@ -164,7 +164,8 @@ tienda	商店
 yogur	酸奶
 
 # 例句
-Jaime, estos días hace bastante frío. Abriga bien a la niña al llevarla al colegio.	Jaime，这些天天气很冷。送女孩子去上学的时候给她穿暖和点儿。
+Jaime, estos días hace bastante frío.	Jaime，这些天天气很冷。
+Abriga bien a la niña al llevarla al colegio.	送女孩子去上学的时候给她穿暖和点儿。
 Como el niño quiere salir a jugar, la abuela lo abrigaba con un suéter grueso.	因为小男孩想出去玩，奶奶就给他穿上了厚厚的毛线衫。
 Espera, Tomasito, te voy a abrigar con una chaqueta de tela gruesa.	等等，小托马斯，我要给你穿上厚厚的织物夹克。
 La camisa que llevas no abrigaba nada, piensa que la temperatura de hoy es muy baja.	你穿的衬衫不保暖，你要考虑到今天的温度很低。
@@ -174,14 +175,17 @@ Chicos, abrigaos bien: ya estamos en invierno.	小伙子们，穿暖和点：已
 Abrígate bien, ponte un jersey, que afuera hace mucho frío.	你穿暖和点，穿件毛衣，外面很冷。
 No te preocupes: si baja mucho la temperatura ya sabemos con que abrigarnos.	你别担心：如果温度很低我们知道怎么穿暖和。
 ¡Qué bien abrigados vienen ustedes!	诸位穿的真暖和啊！
-¡Eh, chicas, vais poco abrigadas! La temperatura de hoy es muy baja.	嘿，姑娘们，你们穿得不暖和！今天的温度很低。
+¡Eh, chicas, vais poco abrigadas!	嘿，姑娘们，你们穿得不暖和！
+La temperatura de hoy es muy baja.	今天的温度很低。
 ¿Crees que estoy bien abrigado para ir a esa zona?	你觉得我这样去那个区域够暖和了吗？
-Creo que este abrigo no te va a quedar bien. Tienes que comprar otro de la talla S.	我认为这件大衣你穿不合适。你应该买另一件S号的。
+Creo que este abrigo no te va a quedar bien.	我认为这件大衣你穿不合适。
+Tienes que comprar otro de la talla S.	你应该买另一件S号的。
 Profesor, ¿cree usted que tenemos que apuntar todo lo que dice?	老师，您认为我们必须把您说的每句话都记下来吗？
 Los estudiantes creemos que memorizar palabras en español es cosa difícil.	学生们认为背西班牙语单词是一件困难的事。
 Mis abuelos creen que todo lo que se vende en el supermercado es caro.	我的祖父母认为超市里卖的东西都很贵。
 ¿Creéis que en nuestra ciudad no hace tanto frío?	你们认为我们的城市没有那么冷吗？
-Buenos días, señor. ¿Necesita usted algo?	先生早上好。您需要什么吗？
+Buenos días, señor.	先生早上好。
+¿Necesita usted algo?	您需要什么吗？
 Necesito una gorra.	我需要一顶帽子。
 Para el viaje, ¿cuántos pares de calcetines necesitáis?	为了旅行你们需要多少双袜子？
 Necesitamos diecinueve.	我们需要十九双。
@@ -189,14 +193,19 @@ Por favor, deja esos libros sobre la mesa: los necesito ahora mismo.	请把那�
 Necesitamos comprar mucha ropa para pasar un largo invierno en esta zona.	我们需要买很多衣服才能在这个地区度过一个漫长的冬天。
 La vendedora me dice que necesita saber si voy a pagar con tarjeta.	女售货员告诉我她需要知道我是否要用卡支付。
 La alumna le pregunta al profesor si necesita recordar todo el texto.	女学生问老师是否需要记住整个课文。
-Ya no recuerdo el nombre de tu novio. ¿Cómo se llama?	我不记得你男朋友的名字了。他叫什么？
+Ya no recuerdo el nombre de tu novio.	我不记得你男朋友的名字了。
+¿Cómo se llama?	他叫什么？
 Tu tío necesita un abrigo, ¿recuerdas su talla?	你叔叔需要一件外套，你还记得他的尺寸吗？
 ¡Cómo no voy a recordar aquel amigo tuyo!	我怎么会不记得你的那个朋友！
-Te recuerdo que tienes que comprar dos kilos de carne, un kilo de arroz, tres barras de pan, una botella de aceite... Ah, también: leche, queso y mermelada.	我提醒你，你必须买两公斤肉，一公斤米，三个面包，一瓶油……哦，还有：牛奶，奶酪和果酱。
+Te recuerdo que tienes que comprar dos kilos de carne, un kilo de arroz, tres barras de pan, una botella de aceite...	我提醒你，你必须买两公斤肉，一公斤米，三个面包，一瓶油……
+Ah, también: leche, queso y mermelada.	哦，还有：牛奶，奶酪和果酱。
 Al salir de la sección de alimentos, Berta recuerda a su marido que todavía tienen que ir a comprar camisas, calzoncillos, chaquetas y pantalones en la sección de ropa.	离开食品区，Berta提醒她的丈夫，他们还必须去服装区购买衬衫，内裤，夹克和裤子。
-Ya sabe que necesito esas revistas. Por favor, tráigamelas esta tarde.	您已经知道我需要那些杂志。今天下午请您把它们带给我。
-Gregorio, creo que va a llover. Lleva el impermeable a tu padre, que debe de estar todavía en su oficina.	Gregorio，我想要下雨了。你把雨衣带给你爸，他应该还在他办公室里。
-Ahora mismo voy a la tienda. ¿Te traigo leche o yogur?	我现在去店里。我要给你带牛奶还是酸奶？
+Ya sabe que necesito esas revistas.	您已经知道我需要那些杂志。
+Por favor, tráigamelas esta tarde.	今天下午请您把它们带给我。
+Gregorio, creo que va a llover.	Gregorio，我想要下雨了。
+Lleva el impermeable a tu padre, que debe de estar todavía en su oficina.	你把雨衣带给你爸，他应该还在他办公室里。
+Ahora mismo voy a la tienda.	我现在去店里。
+¿Te traigo leche o yogur?	我要给你带牛奶还是酸奶？
 Tráeme yogur.	你给我带酸奶。
 ¿Adónde llevan ustedes tantas cosas?	诸位把这么多东西带到哪里去？
 A la oficina del gerente.	带到经理的办公室去。
@@ -204,32 +213,32 @@ A la oficina del gerente.	带到经理的办公室去。
 # 语法点
 动词 abrigar 的多重用法
 abrigar 可作及物动词（给……穿暖和，如 Abriga bien a la niña）、不及物动词（保暖，如 La camisa no abriga nada）和代词式动词（穿暖和，如 Abrígate bien）。其过去分词 abrigado/abrigada 可用作形容词，表示"穿得暖和的"。本课展示了 abrigar 在四种功能下的完整例句。
-对应例句：1,4,7,10
+对应例句：1,2,5,8,11
 
 动词 creer 的用法
 creer 意为"相信、认为"，是及物动词，后面常接由 que 引导的宾语从句（如 Creo que este abrigo no te va a quedar bien）。creer 的陈述式现在时变位为：creo, crees, cree, creemos, creéis, creen。本课系统展示了所有人称的使用。
-对应例句：13,14,15,16,17
+对应例句：15,16,17,18,19,20
 
 动词 necesitar 的两种接法
 necesitar 意为"需要"，可接名词（necesitar + n.，如 Necesito una gorra）或动词原形（necesitar + inf.，如 Necesitamos comprar mucha ropa）。两种用法在本课均有例句。
-对应例句：18,23
+对应例句：21,22,27
 
 动词 recordar 的两层含义
 recordar 既是"记得"（如 ¿Recuerdas su talla?），也是"提醒"（如 Te recuerdo que tienes que comprar...）。作"提醒"讲时，常接 que 引导的从句。注意其变位为词干元音变化动词（o→ue）：recuerdo, recuerdas, recuerda, recordamos, recordáis, recuerdan。
-对应例句：26,29
+对应例句：30,31,34
 
 traer 与 llevar 的区分
 traer 意为"带来"（向说话人方向移动），llevar 意为"带去"（离开说话人方向移动）。这是西班牙语中一对重要的方向性对立动词。在命令式中，tráigame（您给我带来）和 lleva（你带去）分别体现两种方向。
-对应例句：31,33,35
+对应例句：37,38,41,42,44
 
 天气表达 hace frío
 hace + 名词（frío/calor等）是西班牙语表达天气的常用结构，hace 为 hacer 的第三人称单数无人称形式。类似表达还有 hace calor（天热）、hace viento（刮风）。本课中多次出现 hace frío 和 hace bastante frío。
-对应例句：1,5,8,17
+对应例句：1,2,6,9,20
 
 固定短语 tener que + inf.（必须、不得不）
 tener que + 动词原形表示"必须做某事、不得不做某事"，是表达义务和必要性的常用结构。本课例句 Tienes que comprar otro de la talla S（你应该买另一件S号的）展示了这一结构的使用。
-对应例句：13,14,29,30
+对应例句：15,16,17,34,36
 
 短语 deber de + inf.（表示推测）
 deber de + 动词原形表示推测，意为"大概、可能"，区别于不带 de 的 deber + inf.（应该、必须）。本课中 que debe de estar todavía en su oficina（他应该还在他办公室里）展示了推测用法。
-对应例句：32
+对应例句：38,39

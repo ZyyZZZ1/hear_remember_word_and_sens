@@ -1,0 +1,543 @@
+# 生词
+# ── 规则 -ar 动词 ──
+hablar	说，讲
+hablo	我说
+hablas	你说
+habla	他/她说
+hablamos	我们说
+habláis	你们说
+hablan	他们/她们说
+cantar	唱歌
+canto	我唱歌
+cantas	你唱歌
+canta	他/她唱歌
+cantamos	我们唱歌
+cantáis	你们唱歌
+cantan	他们/她们唱歌
+estudiar	学习
+estudio	我学习
+estudias	你学习
+estudia	他/她学习
+estudiamos	我们学习
+estudiáis	你们学习
+estudian	他们/她们学习
+enseñar	教
+enseño	我教
+enseñas	你教
+enseña	他/她教
+enseñamos	我们教
+enseñáis	你们教
+enseñan	他们/她们教
+presentar	介绍
+presento	我介绍
+presentas	你介绍
+presenta	他/她介绍
+presentamos	我们介绍
+presentáis	你们介绍
+presentan	他们/她们介绍
+trabajar	工作
+trabajo	我工作
+trabajas	你工作
+trabaja	他/她工作
+trabajamos	我们工作
+trabajáis	你们工作
+trabajan	他们/她们工作
+preguntar	问
+pregunto	我问
+preguntas	你问
+pregunta	他/她问
+preguntamos	我们问
+preguntáis	你们问
+preguntan	他们/她们问
+encargar	负责；委托
+encargo	我负责
+encargas	你负责
+encarga	他/她负责
+encargamos	我们负责
+encargáis	你们负责
+encargan	他们/她们负责
+desayunar	吃早餐
+desayuno	我吃早餐
+desayunas	你吃早餐
+desayuna	他/她吃早餐
+desayunamos	我们吃早餐
+desayunáis	你们吃早餐
+desayunan	他们/她们吃早餐
+llevar	带；穿
+llevo	我带
+llevas	你带
+lleva	他/她带
+llevamos	我们带
+lleváis	你们带
+llevan	他们/她们带
+tomar	拿；喝；乘坐
+tomo	我拿
+tomas	你拿
+toma	他/她拿
+tomamos	我们拿
+tomáis	你们拿
+toman	他们/她们拿
+regresar	返回
+regreso	我返回
+regresas	你返回
+regresa	他/她返回
+regresamos	我们返回
+regresáis	你们返回
+regresan	他们/她们返回
+organizar	组织
+organizo	我组织
+organizas	你组织
+organiza	他/她组织
+organizamos	我们组织
+organizáis	你们组织
+organizan	他们/她们组织
+terminar	结束
+termino	我结束
+terminas	你结束
+termina	他/她结束
+terminamos	我们结束
+termináis	你们结束
+terminan	他们/她们结束
+repasar	复习
+repaso	我复习
+repasas	你复习
+repasa	他/她复习
+repasamos	我们复习
+repasáis	你们复习
+repasan	他们/她们复习
+# ── 规则 -er 动词 ──
+comer	吃
+como	我吃
+comes	你吃
+come	他/她吃
+comemos	我们吃
+coméis	你们吃
+comen	他们/她们吃
+beber	喝
+bebo	我喝
+bebes	你喝
+bebe	他/她喝
+bebemos	我们喝
+bebéis	你们喝
+beben	他们/她们喝
+leer	阅读
+leo	我阅读
+lees	你阅读
+lee	他/她阅读
+leemos	我们阅读
+leéis	你们阅读
+leen	他们/她们阅读
+# ── 规则 -ir 动词 ──
+cumplir	完成；履行
+cumplo	我完成
+cumples	你完成
+cumple	他/她完成
+cumplimos	我们完成
+cumplís	你们完成
+cumplen	他们/她们完成
+subir	上升；上（楼）
+subo	我上
+subes	你上
+sube	他/她上
+subimos	我们上
+subís	你们上
+suben	他们/她们上
+vivir	生活；居住
+vivo	我居住
+vives	你居住
+vive	他/她居住
+vivimos	我们居住
+vivís	你们居住
+viven	他们/她们居住
+pedir	请求
+pido	我请求
+pides	你请求
+pide	他/她请求
+pedimos	我们请求
+pedís	你们请求
+piden	他们/她们请求
+# ── ser（是）──
+ser	是
+soy	我是
+eres	你是
+es	他/她是
+somos	我们是
+sois	你们是
+son	他们/她们是
+# ── estar（在；处于状态）──
+estar	在；处于
+estoy	我在
+estás	你在
+está	他/她在
+estamos	我们在
+estáis	你们在
+están	他们/她们在
+# ── ir（去）──
+ir	去
+voy	我去
+vas	你去
+va	他/她去
+vamos	我们去
+vais	你们去
+van	他们/她们去
+# ── tener（有；e→ie 词干变化 + 第一人称 -go）──
+tener	有
+tengo	我有
+tienes	你有
+tiene	他/她有
+tenemos	我们有
+tenéis	你们有
+tienen	他们/她们有
+# ── venir（来；e→ie 词干变化 + 第一人称 -go）──
+venir	来
+vengo	我来
+vienes	你来
+viene	他/她来
+venimos	我们来
+venís	你们来
+vienen	他们/她们来
+# ── poder（能；o→ue 词干变化）──
+poder	能
+puedo	我能
+puedes	你能
+puede	他/她能
+podemos	我们能
+podéis	你们能
+pueden	他们/她们能
+# ── volver（返回；o→ue 词干变化）──
+volver	返回
+vuelvo	我返回
+vuelves	你返回
+vuelve	他/她返回
+volvemos	我们返回
+volvéis	你们返回
+vuelven	他们/她们返回
+# ── comenzar（开始；e→ie 词干变化）──
+comenzar	开始
+comienzo	我开始
+comienzas	你开始
+comienza	他/她开始
+comenzamos	我们开始
+comenzáis	你们开始
+comienzan	他们/她们开始
+# ── hacer（做；第一人称 -go）──
+hacer	做
+hago	我做
+haces	你做
+hace	他/她做
+hacemos	我们做
+hacéis	你们做
+hacen	他们/她们做
+# ── poner（放；第一人称 -go）──
+poner	放
+pongo	我放
+pones	你放
+pone	他/她放
+ponemos	我们放
+ponéis	你们放
+ponen	他们/她们放
+# ── salir（出去；第一人称 -go）──
+salir	出去
+salgo	我出去
+sales	你出去
+sale	他/她出去
+salimos	我们出去
+salís	你们出去
+salen	他们/她们出去
+# ── suponer（假设；第一人称 -go）──
+suponer	假设
+supongo	我假设
+supones	你假设
+supone	他/她假设
+suponemos	我们假设
+suponéis	你们假设
+suponen	他们/她们假设
+# ── decir（说；第一人称 -go + e→i 词干变化）──
+decir	说
+digo	我说
+dices	你说
+dice	他/她说
+decimos	我们说
+decís	你们说
+dicen	他们/她们说
+# ── ver（看见）──
+ver	看见
+veo	我看见
+ves	你看见
+ve	他/她看见
+vemos	我们看见
+veis	你们看见
+ven	他们/她们看见
+# ── saber（知道）──
+saber	知道
+sé	我知道
+sabes	你知道
+sabe	他/她知道
+sabemos	我们知道
+sabéis	你们知道
+saben	他们/她们知道
+# ── conocer（认识；-zco 动词）──
+conocer	认识
+conozco	我认识
+conoces	你认识
+conoce	他/她认识
+conocemos	我们认识
+conocéis	你们认识
+conocen	他们/她们认识
+# ── parecer（好像；-zco 动词）──
+parecer	好像
+parezco	我好像
+pareces	你好像
+parece	他/她好像
+parecemos	我们好像
+parecéis	你们好像
+parecen	他们/她们好像
+# ── haber / hay（有，无人称）──
+haber	有（无人称）
+hay	有
+# ── querer（想要；e→ie 词干变化）──
+querer	想要
+quiero	我想要
+quieres	你想要
+quiere	他/她想要
+queremos	我们想要
+queréis	你们想要
+quieren	他们/她们想要
+# ── gustar（喜欢；特殊动词）──
+gustar	喜欢
+me gusta	我喜欢
+te gusta	你喜欢
+le gusta	他/她喜欢
+nos gusta	我们喜欢
+os gusta	你们喜欢
+les gusta	他们/她们喜欢
+me gustan	我喜欢（复数）
+te gustan	你喜欢（复数）
+le gustan	他/她喜欢（复数）
+nos gustan	我们喜欢（复数）
+os gustan	你们喜欢（复数）
+les gustan	他们/她们喜欢（复数）
+# ── 反身动词 ──
+llamarse	名叫
+me llamo	我叫
+te llamas	你叫
+se llama	他/她叫
+nos llamamos	我们叫
+os llamáis	你们叫
+se llaman	他们/她们叫
+levantarse	起床
+me levanto	我起床
+te levantas	你起床
+se levanta	他/她起床
+nos levantamos	我们起床
+os levantáis	你们起床
+se levantan	他们/她们起床
+bañarse	洗澡
+me baño	我洗澡
+te bañas	你洗澡
+se baña	他/她洗澡
+nos bañamos	我们洗澡
+os bañáis	你们洗澡
+se bañan	他们/她们洗澡
+peinarse	梳头
+me peino	我梳头
+te peinas	你梳头
+se peina	他/她梳头
+nos peinamos	我们梳头
+os peináis	你们梳头
+se peinan	他们/她们梳头
+cepillarse	刷牙
+me cepillo	我刷牙
+te cepillas	你刷牙
+se cepilla	他/她刷牙
+nos cepillamos	我们刷牙
+os cepilláis	你们刷牙
+se cepillan	他们/她们刷牙
+encargarse	负责
+me encargo	我负责
+te encargas	你负责
+se encarga	他/她负责
+nos encargamos	我们负责
+os encargáis	你们负责
+se encargan	他们/她们负责
+acostarse	睡觉
+me acuesto	我睡觉
+te acuestas	你睡觉
+se acuesta	他/她睡觉
+nos acostamos	我们睡觉
+os acostáis	你们睡觉
+se acuestan	他们/她们睡觉
+prepararse	准备
+me preparo	我准备
+te preparas	你准备
+se prepara	他/她准备
+nos preparamos	我们准备
+os preparáis	你们准备
+se preparan	他们/她们准备
+quedarse	留下
+me quedo	我留下
+te quedas	你留下
+se queda	他/她留下
+nos quedamos	我们留下
+os quedáis	你们留下
+se quedan	他们/她们留下
+irse	离开
+me voy	我离开
+te vas	你离开
+se va	他/她离开
+nos vamos	我们离开
+os vais	你们离开
+se van	他们/她们离开
+
+# 例句
+# 以下为不同动词之间的混淆对比，每组两句突出一个容易混淆的变位对
+
+# ── 1. vengo (venir) vs veo (ver) ──
+# vengo = "我来"，veo = "我看见"
+Vengo a la universidad en metro.	我坐地铁来大学。
+Veo a mi profesor en la escuela.	我在学校看到我的老师。
+
+# ── 2. vamos (ir) vs vemos (ver) ──
+# vamos = "我们去"，vemos = "我们看见"
+Nosotros vamos al cine esta tarde.	我们今天下午去电影院。
+Nosotros vemos un programa de tele.	我们看一个电视节目。
+
+# ── 3. ven (ver) vs vienen (venir) ──
+# ven = "他们看见"（ver 的 ellos），vienen = "他们来"（venir 的 ellos）
+Ellos ven la televisión en la sala.	他们在客厅看电视。
+Ellos vienen a la facultad a las ocho.	他们八点来学院。
+
+# ── 4. tengo (tener) vs vengo (venir) ──
+# tengo = "我有"，vengo = "我来"；两个都是 -go 结尾的 yo 形式
+Tengo una clase de inglés.	我有一节英语课。
+Vengo a la biblioteca para leer.	我来图书馆看书。
+
+# ── 5. soy (ser) vs estoy (estar) ──
+# soy = "我是"（本质/身份），estoy = "我在"（位置/状态）
+Soy médico.	我是医生。
+Estoy en el hospital.	我在医院。
+
+# ── 6. es (ser) vs está (estar) ──
+# es = "他是"（身份/特征），está = "他在"（位置/状态）
+Él es profesor de alemán.	他是德语老师。
+Él está en la residencia de estudiantes.	他在学生宿舍。
+
+# ── 7. ve (ver) vs va (ir) ──
+# ve = "他看见"，va = "他去"
+Ella ve la tele en casa.	她在家看电视。
+Ella va al hospital por la mañana.	她早上去医院。
+
+# ── 8. ves (ver) vs vas (ir) ──
+# ves = "你看见"，vas = "你去"
+¿Ves a tu amigo en el colegio?	你在学校看到你的朋友了吗？
+¿Vas al instituto esta tarde?	你今天下午去学院吗？
+
+# ── 9. hago (hacer) vs digo (decir) ──
+# hago = "我做"，digo = "我说"
+Yo hago las preguntas para la lectura.	我为阅读做提问。
+Yo digo la verdad a mis padres.	我跟父母说实话。
+
+# ── 10. pongo (poner) vs puedo (poder) ──
+# pongo = "我放"，puedo = "我能"
+Pongo el teléfono en el baño.	我把手机放在浴室里。
+Puedo leer en francés.	我能用法语阅读。
+
+# ── 11. salgo (salir) vs hago (hacer) ──
+# 都是 -go yo 形式，salgo = "我出去"，hago = "我做"
+Salgo de casa a las siete de la mañana.	我早上七点出门。
+Hago un curso de chino.	我上一门中文课。
+
+# ── 12. conozco (conocer) vs parezco (parecer) ──
+# 都是 -zco 动词，conozco = "我认识"，parezco = "我好像"
+Yo conozco a la profesora nueva.	我认识这位新女老师。
+Yo parezco muy contento en el instituto.	我在学院看起来很高兴。
+
+# ── 13. sé (saber) vs se (代词/反身标记) ──
+# sé 带重音 = "我知道"，se 不带重音 = 代词
+Yo sé la lección de español.	我知道西班牙语的课文。
+Él se llama José y ella se llama Ana.	他叫何塞，她叫安娜。
+
+# ── 14. vive (vivir) vs viene (venir) ──
+# vive = "他居住"，viene = "他来"
+Mi hermano vive en Madrid, España.	我的兄弟住在西班牙马德里。
+Él viene a mi ciudad este verano.	他今年夏天来我的城市。
+
+# ── 15. quiero (querer) vs puedo (poder) ──
+# quiero = "我想要"，puedo = "我能"
+Quiero aprender inglés muy bien.	我想学好英语。
+Puedo hablar un poco con los alumnos.	我能跟学生们说一点点。
+
+# ── 16. me gusta (gustar) vs me llamo (llamarse) ──
+# gustar = "某物让我喜欢"，llamarse = "我叫"
+Me gusta el café por la mañana.	我喜欢早上喝咖啡。
+Me llamo Carlos, ¿y tú?	我叫卡洛斯，你呢？
+
+# ── 17. supongo (suponer) vs pongo (poner) ──
+# supongo = "我假设"，pongo = "我放"
+Supongo que la conversación es interesante.	我猜这个对话很有趣。
+Pongo la lección en el dormitorio.	我把课文放在卧室里。
+
+# ── 18. somos (ser) vs vamos (ir) ──
+# somos = "我们是"，vamos = "我们去"
+Nosotros somos estudiantes de francés.	我们是法语学生。
+Nosotros vamos al centro de estudios.	我们去学习中心。
+
+# ── 19. hablo (hablar) vs vivo (vivir) ──
+# hablo = "我说"，vivo = "我居住"
+Yo hablo alemán con los chicos.	我和男孩子们说德语。
+Yo vivo en una ciudad grande.	我住在一个大城市里。
+
+# ── 20. veo (ver) vs leo (leer) ──
+# veo = "我看见"，leo = "我阅读"
+Veo la televisión en el comedor por la noche.	我晚上在食堂看电视。
+Leo una lectura de español.	我读一篇西班牙语阅读。
+
+# ── 21. tiene (tener) vs viene (venir) ──
+# tiene = "他有"，viene = "他来"
+Él tiene un problema.	他有一个问题。
+Él viene a la escuela con su madre.	他和他母亲来学校。
+
+# ── 22. me voy (irse) vs me levanto (levantarse) ──
+# 反身动词辨析：irse = "离开"，levantarse = "起床"
+Me voy de la habitación a las ocho.	我八点离开房间。
+Me levanto a las siete todos los días.	我每天七点起床。
+
+# ── 23. se va (irse) vs se queda (quedarse) ──
+# va = "离开" vs queda = "留下"，方向相反
+Mi amigo se va del centro a las ocho.	我朋友八点离开中心。
+Yo me quedo en la biblioteca hasta las nueve.	我在图书馆待到九点。
+
+# ── 24. pone (poner) vs puede (poder) ──
+# pone = "他/她放"，puede = "他/她能"
+Ella pone el teléfono en la cocina.	她把手机放在厨房里。
+Ella puede cantar muy bien.	她唱歌唱得很好。
+
+# ── 25. le (与格代词) vs lee (leer) ──
+# le = "给他/她"（代词），lee = "他/她读"（leer 变位）
+Le doy un problema a mi hermano.	我给我兄弟一个问题。
+Mi madre lee la gramática en el colegio.	我母亲在学校里读语法。
+
+# ── 26. soy (ser) vs voy (ir) ──
+# soy = "我是"，voy = "我去"
+Yo soy estudiante del curso de verano.	我是夏令营的学生。
+Yo voy al aeropuerto en metro.	我坐地铁去机场。
+
+# ── 27. tiene (tener) vs estudia (estudiar) ──
+# tiene = "他有"（所属），estudia = "他学习"（活动）
+Él tiene mucho interés en la historia.	他对历史很有兴趣。
+Él estudia historia en la facultad.	他在系里学历史。
+
+# ── 28. hago (hacer) vs enseño (enseñar) ──
+# hago = "我做"，enseño = "我教"
+Yo hago el trabajo para el hotel.	我为酒店做工作。
+Yo enseño a los alumnos.	我教学生们。
+
+# ── 29. vuelvo (volver) vs empiezo (empezar) ──
+# vuelvo = "我返回"，empiezo = "我开始"
+Vuelvo a la residencia por la noche.	我晚上回宿舍。
+Empiezo el trabajo a las nueve.	我九点开始工作。
+
+# ── 30. llevas (llevar) vs llamas (llamarse) ──
+# llevas = "你带/穿"，llamas = "你叫"
+¿Qué llevas a la universidad?	你带什么来大学？
+¿Cómo te llamas?	你叫什么名字？

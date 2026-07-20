@@ -1,0 +1,82 @@
+﻿============================================================
+闃舵 1: 鐑敭鏈哄埗鍐掔儫娴嬭瘯
+============================================================
+
+[PTC-01] RegisterHotKey 娉ㄥ唽 Ctrl+Alt+K ... PASS
+  evidence: RegisterHotKey 杩斿洖=1 GetLastError=6 hwnd=0x3D0672
+
+[PTC-03] PostMessage 娑堟伅鍒嗗彂 ... PASS
+  evidence: PostMessage 杩斿洖=1, WM_HOTKEY_count=1, got_event=True, elapsed=0.000s
+
+============================================================
+闃舵 2: popup_trainer.py 鍚姩娴嬭瘯
+============================================================
+popup_status.log:
+[POPUP] popup_trainer.py 鍚姩 (test_mode=False)
+[POPUP] console_hwnd=0x1FA0A22
+[POPUP] message_hwnd=0x2B0F00
+[POPUP] hotkey registered Ctrl+Alt+;
+[POPUP] startup hidden
+
+
+[PTC-05/06] popup 鍚姩: console_hwnd 闈?0 ... PASS
+  evidence: console_hwnd=0x1FA0A22 (鏉ヨ嚜 [POPUP] console_hwnd= 鏃ュ織)
+
+[PTC-05b] popup 鍚姩: message_hwnd 闈?0 ... PASS
+  evidence: message_hwnd=0x2B0F00 (鏉ヨ嚜 [POPUP] message_hwnd= 鏃ュ織)
+
+[PTC-07] popup 鍚姩鍗抽殣钘?... PASS
+  evidence: 鏃ュ織鍚?[POPUP] startup hidden
+
+[PTC-01b] popup 鐑敭娉ㄥ唽鎴愬姛 (鍚?fallback) ... PASS
+  evidence: 鏃ュ織鍚?'hotkey registered Ctrl+Alt+;' 鎴?'hotkey fallback Ctrl+Alt+''
+
+[PTC-07b] 璺ㄨ繘绋?IsWindowVisible(console) == False ... PASS
+  evidence: IsWindowVisible(0x1FA0A22) = False锛堝惎鍔ㄥ悗鎺у埗鍙板簲闅愯棌锛?
+
+============================================================
+闃舵 3: 缁堢鐗?main.py 鍥炲綊娴嬭瘯锛堟棤鐮村潖锛?
+============================================================
+
+[REG-TC-01] 缁堢鐗?涓昏彍鍗曞惎鍔?... PASS
+  evidence: 9 鏂█
+
+[REG-TC-02] 缁堢鐗?涓昏彍鍗曢€夋ā寮?... FAIL
+  evidence: 12 鏂█, 1 FAIL
+
+[REG-TC-03] 缁堢鐗?Q 閫€鍑?... PASS
+  evidence: 2 鏂█
+
+[REG-TC-16] 缁堢鐗?鎷煎啓姝ｇ‘ ... FAIL
+  evidence: 1 鏂█, 1 FAIL
+
+[REG-TC-17] 缁堢鐗?鎷煎啓閿欒 ... FAIL
+  evidence: 1 鏂█, 1 FAIL
+
+[REG-TC-18] 缁堢鐗?涓ゆ姝ｇ‘閫氳繃 ... FAIL
+  evidence: 1 鏂█, 1 FAIL
+
+[REG-TC-29] 缁堢鐗?璇硶鐐瑰垪琛?... FAIL
+  evidence: 5 鏂█, 2 FAIL
+
+============================================================
+鏈€缁堟眹鎬?
+============================================================
+ID         鍚嶇О                                       鐘舵€?
+----------------------------------------------------------------------
+PTC-01     RegisterHotKey 娉ㄥ唽 Ctrl+Alt+K             PASS
+PTC-03     PostMessage 娑堟伅鍒嗗彂                         PASS
+PTC-05/06  popup 鍚姩: console_hwnd 闈?0               PASS
+PTC-05b    popup 鍚姩: message_hwnd 闈?0               PASS
+PTC-07     popup 鍚姩鍗抽殣钘?                             PASS
+PTC-01b    popup 鐑敭娉ㄥ唽鎴愬姛 (鍚?fallback)                PASS
+PTC-07b    璺ㄨ繘绋?IsWindowVisible(console) == False    PASS
+REG-TC-01  缁堢鐗?涓昏彍鍗曞惎鍔?                               PASS
+REG-TC-02  缁堢鐗?涓昏彍鍗曢€夋ā寮?                              FAIL
+REG-TC-03  缁堢鐗?Q 閫€鍑?                                PASS
+REG-TC-16  缁堢鐗?鎷煎啓姝ｇ‘                                 FAIL
+REG-TC-17  缁堢鐗?鎷煎啓閿欒                                 FAIL
+REG-TC-18  缁堢鐗?涓ゆ姝ｇ‘閫氳繃                               FAIL
+REG-TC-29  缁堢鐗?璇硶鐐瑰垪琛?                               FAIL
+
+閫氳繃 9 / 澶辫触 5 / 鎬?14

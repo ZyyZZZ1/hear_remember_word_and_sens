@@ -142,7 +142,8 @@ Luego recoge los libros, los periódicos y las revistas para ponerlos después e
 Toma un trapo mojado y friega con él las mesas y las sillas.	她拿起一块湿抹布，用它擦洗桌子和椅子。
 Cuando termina, coge una escoba y comienza a barrer.	当她完成后，拿起一把扫帚开始扫地。
 Por último, saca una fregona y la pasa por todo el suelo.	最后，她拿出拖把，把它拖过整个地面。
-Al verlo todo limpio y arreglado, dice: "¡Qué contenta me siento! Ahora puedo descansar."	一看到一切都干净整齐了，她说："我感到多么高兴啊！现在我可以休息了。"
+Al verlo todo limpio y arreglado, dice: "¡Qué contenta me siento!"	一看到一切都干净整齐了，她说："我感到多么高兴啊！"
+Al verlo todo limpio y arreglado, dice: "Ahora puedo descansar."	一看到一切都干净整齐了，她说："现在我可以休息了。"
 Se sienta en el sofá.	她坐到沙发上。
 Saca una revista de la estantería y se pone a leer.	她从书架上拿出一本杂志开始读起来。
 Pero justo en este momento alguien llama a la puerta.	但就在这时候有人敲门。
@@ -155,11 +156,11 @@ acabar de + 原形动词
 
 ponerse a + 原形动词
 "ponerse a + 动词原形"表示"开始做某事"，强调动作的启动。与comenzar a / empezar a 意思相近，但ponerse a 更口语化。
-对应例句：4,12
+对应例句：4,13
 
 tener que + 原形动词
 "tener que + 动词原形"表示"必须/不得不做某事"，表达义务或必要性。这是西班牙语中极为常用的义务表达结构。
-对应例句：14
+对应例句：15
 
 否定连词 ni
 ni 是否定连词，用于连接两个或多个否定成分，相当于"也不、也没有"。在"no...ni..."结构中，ni 连接被否定的并列成分。例如本课中"no le gustan la suciedad ni el desorden"（她不喜欢脏也不喜欢乱）。

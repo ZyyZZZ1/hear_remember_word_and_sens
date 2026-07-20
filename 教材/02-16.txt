@@ -49,12 +49,15 @@ beso	吻
 Dolores regresa de un viaje a China y les trae a sus cinco nietos muchos regalos.	多洛雷斯从一趟中国之旅回来，给她的五个孙子孙女带了很多礼物。
 Los niños gritan, saltan de alegría y besan a su abuela.	孩子们叫着、高兴地跳着，亲吻他们的祖母。
 Luego, abren los paquetes y comienzan a sacar los regalos.	然后，他们打开包裹，开始拿出礼物。
-La camiseta verde es mía. ¿Y la tuya, Isabel, cuál es?	绿色的汗衫是我的。那你的呢，伊莎贝尔，是哪件？
+La camiseta verde es mía.	绿色的汗衫是我的。
+¿Y la tuya, Isabel, cuál es?	那你的呢，伊莎贝尔，是哪件？
 La mía es esa roja.	我的是那件红色的。
 Paco, ¿y aquella marrón es de Pepe o de Marta?	帕科，那件棕褐色的是佩佩的还是玛尔塔的？
-Es mía. El color marrón me encanta.	是我的。棕褐色我非常喜欢。
+Es mía.	是我的。
+El color marrón me encanta.	棕褐色我非常喜欢。
 La azul es de Pepe.	蓝色的那件是佩佩的。
-¿Y tú Alicia?, ¿de qué color es la tuya?	那你呢，艾丽西亚？你的是什么颜色的？
+¿Y tú Alicia?	那你呢，艾丽西亚？
+¿De qué color es la tuya?	你的是什么颜色的？
 La mía es amarilla.	我的是黄色的。
 Mira, aquí hay otro paquete.	看，这里还有一个包裹。
 A ver, qué hay dentro.	来看看，里面有什么。
@@ -62,22 +65,25 @@ A ver, qué hay dentro.	来看看，里面有什么。
 ¡Cuidado con romper los regalos!	小心别弄坏礼物！
 Yo sé hacer las cosas: voy a abrir el paquete con mucho cuidado.	我知道怎么做：我会非常小心地打开包裹。
 ¡Ya está!	好了！
-¡Oh, mira, son juguetes! Hay para todos nosotros.	哦，看，是玩具！每个人都有。
+¡Oh, mira, son juguetes!	哦，看，是玩具！
+Hay para todos nosotros.	每个人都有。
 ¿Os gustan los regalos?	你们喜欢这些礼物吗？
-Son muy bonitos. Gracias, abuela.	非常漂亮。谢谢，奶奶。
+Son muy bonitos.	非常漂亮。
+Gracias, abuela.	谢谢，奶奶。
 ¿Podemos darte ahora nuestro regalo?	现在我们可以给你我们的礼物吗？
-¿Un regalo? ¿Y cuál es ese regalo?	一个礼物？是什么礼物呢？
+¿Un regalo?	一个礼物？
+¿Y cuál es ese regalo?	是什么礼物呢？
 Nuestro cariño en un beso.	我们的爱在一个吻里。
 
 # 语法点
 远指指示形容词aquel
 aquel/aquella/aquellos/aquellas是指示形容词的第三档，指代离说话人和听话人都较远的人或事物，意为"那个、那些"（远处的）。西班牙语的指示系统为三档：este（这，离说话人近）、ese（那，离听话人近或离说话人远）、aquel（那，离双方都远）。本课中"aquella marrón"（那件棕褐色的）中的aquella即属此档。
-对应例句：6
+对应例句：7
 
 颜色形容词
 颜色形容词在西班牙语中须与所修饰的名词保持性和数的一致。以-o结尾的颜色形容词有阴阳性变化（如rojo/roja, amarillo/amarilla），以其他字母结尾的通常无阴阳性变化但仍有单复数变化（如verde/verdes, azul/azules, marrón/marrones）。颜色形容词可单独与定冠词连用，替代"颜色形容词+名词"，如"la azul"（那件蓝色的）、"la tuya"（你的那件）。
-对应例句：4,5,6,7,8,9,10
+对应例句：4,5,6,7,8,9,10,11,12,13
 
 感叹语/固定表达
 本课出现多个常用口语表达：a ver（来看看、让我看看，用于引出动作）、¡Cuidado con...!（小心……！当心……！）、¡Ya está!（好了！完成了！）、saltar de alegría（高兴得跳起来，de+名词表示原因）。
-对应例句：12,14,16
+对应例句：15,17,19
